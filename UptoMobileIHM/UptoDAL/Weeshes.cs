@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UptoSAL
+namespace UptoDAL
 {
-    public class Class1
+    class Weeshes
     {
     }
 }
