@@ -15,6 +15,20 @@ namespace UptoBusiness
             scope: "",
             authorizeUrl: new Uri("https://m.facebook.com/dialog/oauth/"),
             redirectUrl: new Uri("http://www.facebook.com/connect/login_success.html"));
+
+            auth.Completed += (sender, eventArgs) => {
+                // We presented the UI, so it's up to us to dimiss it on iOS.
+                DismissViewController(true, null);
+
+                if (eventArgs.IsAuthenticated)
+                {
+                    // Use eventArgs.Account to do wonderful things
+                }
+                else
+                {
+                    // The user cancelled
+                }
+            };
         }
 
         public void TwitterLogin()
