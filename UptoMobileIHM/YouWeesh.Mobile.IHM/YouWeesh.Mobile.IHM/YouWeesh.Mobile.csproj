@@ -36,7 +36,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="Business\Authenticator.cs" />
+    <Compile Include="Business\Users.cs" />
+    <Compile Include="Business\Weeshes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SAL\HttpRequester.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">

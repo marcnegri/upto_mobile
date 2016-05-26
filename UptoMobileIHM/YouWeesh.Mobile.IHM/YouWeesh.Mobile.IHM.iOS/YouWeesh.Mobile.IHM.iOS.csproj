@@ -98,8 +98,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\YouWeesh.Mobile.IHM\YouWeesh.Mobile.IHM.csproj">
-      <Name>YouWeesh.Mobile.IHM</Name>
+    <ProjectReference Include="..\YouWeesh.Mobile.IHM\YouWeesh.Mobile.csproj">
+      <Name>YouWeesh.Mobile</Name>
+      <Project>{CDCC1975-61EF-4F2C-BB9A-CD6543D17733}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
