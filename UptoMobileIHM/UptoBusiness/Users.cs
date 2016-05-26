@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UptoDAL
 {
-    public class Weeshes
+    public class Users
     {
     }
 }
