@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Net;
 using System.IO;
 
-namespace UptoSAL
+namespace YouWeesh.Mobile.SAL
 {
     public class HttpRequester
     {

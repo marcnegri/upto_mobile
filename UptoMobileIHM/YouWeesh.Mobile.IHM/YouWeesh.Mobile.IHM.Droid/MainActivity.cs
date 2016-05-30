@@ -9,7 +9,7 @@ using Android.OS;
 
 namespace YouWeesh.Mobile.IHM.Droid
 {
-    [Activity(Label = "YouWeesh.Mobile.IHM", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "YouWeesh", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsApplicationActivity
     {
         protected override void OnCreate(Bundle bundle)
