@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace YouWeesh.Mobile
+namespace YouWeesh.Mobile.Views
 {
     public partial class LoginForm : ContentPage
     {

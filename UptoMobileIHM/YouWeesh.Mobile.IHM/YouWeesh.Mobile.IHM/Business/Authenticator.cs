@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Auth;
 
-namespace UptoBusiness
+namespace YouWeesh.Mobile.Business
 {
     public class Authenticator
     {
