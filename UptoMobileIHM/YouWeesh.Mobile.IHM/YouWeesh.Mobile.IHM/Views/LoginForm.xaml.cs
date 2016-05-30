@@ -28,7 +28,7 @@ namespace YouWeesh.Mobile
 
         public void btnLogin_Clicked(object sender, EventArgs e)
         {
-            this.Navigation.PushModalAsync(new WelcomeForm());
+            this.Navigation.PushModalAsync(new Views.HomePage());
         }
     }
 }
