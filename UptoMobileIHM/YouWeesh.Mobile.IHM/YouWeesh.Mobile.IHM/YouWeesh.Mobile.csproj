@@ -39,12 +39,12 @@
     <Compile Include="Business\Authenticator.cs" />
     <Compile Include="Business\Users.cs" />
     <Compile Include="Business\Weeshes.cs" />
-    <Compile Include="PageTest.xaml.cs">
-      <DependentUpon>PageTest.xaml</DependentUpon>
+    <Compile Include="Views\LoginForm.xaml.cs">
+      <DependentUpon>LoginForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SAL\HttpRequester.cs" />
-    <Compile Include="WelcomeForm.xaml.cs">
+    <Compile Include="Views\WelcomeForm.xaml.cs">
       <DependentUpon>WelcomeForm.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -70,7 +70,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="PageTest.xaml">
+    <EmbeddedResource Include="Views\LoginForm.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -79,7 +79,7 @@
     <Content Include="Medias\test.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="WelcomeForm.xaml">
+    <EmbeddedResource Include="Views\WelcomeForm.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

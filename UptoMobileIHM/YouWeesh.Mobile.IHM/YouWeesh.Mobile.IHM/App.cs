@@ -12,7 +12,7 @@ namespace YouWeesh.Mobile
         public App()
         {
             // The root page of your application
-            MainPage = new PageTest();
+            MainPage = new LoginForm();
         }
 
         protected override void OnStart()
