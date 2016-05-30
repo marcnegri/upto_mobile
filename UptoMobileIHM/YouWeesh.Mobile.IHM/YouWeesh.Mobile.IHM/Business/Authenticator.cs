@@ -18,7 +18,7 @@ namespace UptoBusiness
 
             auth.Completed += (sender, eventArgs) => {
                 // We presented the UI, so it's up to us to dimiss it on iOS.
-                DismissViewController(true, null);
+                //DismissViewController(true, null);
 
                 if (eventArgs.IsAuthenticated)
                 {

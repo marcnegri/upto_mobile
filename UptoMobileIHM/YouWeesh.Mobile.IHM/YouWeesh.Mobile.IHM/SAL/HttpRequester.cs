@@ -69,7 +69,7 @@ namespace UptoSAL
         /// </summary>
         /// <returns>json String</returns>
         public string CallService()
-        {
+        {/*
             var httpRequest = HttpWebRequest.Create(string.Format(this.request, this.rxcui));
             using (HttpWebResponse response = httpRequest.GetResponse() as HttpWebResponse)
             {
@@ -89,7 +89,8 @@ namespace UptoSAL
 
                     //Assert.NotNull(content);
                 }
-            }
+            }*/
+            return "1";
         }
     }
 }

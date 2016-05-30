@@ -5,26 +5,14 @@ using System.Text;
 
 using Xamarin.Forms;
 
-namespace YouWeesh.Mobile.IHM
+namespace YouWeesh.Mobile
 {
     public class App : Application
     {
         public App()
         {
             // The root page of your application
-            MainPage = new ContentPage
-            {
-                Content = new StackLayout
-                {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = {
-                        new Label {
-                            XAlign = TextAlignment.Center,
-                            Text = "Welcome to Xamarin Forms!"
-                        }
-                    }
-                }
-            };
+            MainPage = new PageTest();
         }
 
         protected override void OnStart()
