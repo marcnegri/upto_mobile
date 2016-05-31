@@ -3,18 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="YouWeesh.Mobile.Views.LoginForm">
   <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center"/>
-  <StackLayout>
-    <Label Text="Image ici"></Label>
-    <Image Source="model.jpg"  VerticalOptions="Center" HorizontalOptions="Center"/>
-    <Entry Text="Login" TextColor="Blue" BackgroundColor="Gray" Focused="Entry_Focused" ></Entry>
-    <Entry Text="Password" TextColor="Blue" IsPassword="true"  Placeholder="Password" ></Entry>
-    <Button Text="Login" HorizontalOptions="Center" Clicked="btnLogin_Clicked"/>
-    <Button Text="Login With Facebook"  />
-    <Button Text="Login With Twitter" Clicked="BtnTwitter_Clicked" />
-    <Button Text="Login With Google+" />
+  <ScrollView>
+    <StackLayout>
+      <Label Text="Welcome to You Weesh" HorizontalOptions="CenterAndExpand"></Label>
+      <Entry Text="Login" TextColor="White" BackgroundColor="Silver" Focused="Entry_Focused" ></Entry>
+      <Entry Text="Password" TextColor="White" IsPassword="true" BackgroundColor="Silver" Placeholder="Password" ></Entry>
+      <Image x:Name="imgTwitter" Source="twitter128.png"/>
+      <Button Text="Login" HorizontalOptions="Center" Clicked="btnLogin_Clicked" BackgroundColor="Silver" />
+      <Button Text="Login With Facebook"  />
+      <Button Text="Login With Twitter" Clicked="BtnTwitter_Clicked" />
+      <Button Text="Login With Google+" />
 
-    <Label Text="Don't have an account yet ?" VerticalOptions="Center" HorizontalOptions="Center"/>
+      <Label Text="Don't have an account yet ?" VerticalOptions="Center" HorizontalOptions="Center"/>
     
-    <Button Text="Register" />
-  </StackLayout>
+      <Button Text="Register" />
+    </StackLayout>
+  </ScrollView>
 </ContentPage>

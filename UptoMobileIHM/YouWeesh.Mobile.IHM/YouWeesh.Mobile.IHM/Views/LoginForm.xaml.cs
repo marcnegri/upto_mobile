@@ -14,11 +14,12 @@ namespace YouWeesh.Mobile.Views
         {
             this.BackgroundColor = Color.White;
             InitializeComponent();
+            imgTwitter.Aspect = Aspect.AspectFit;
         }
 
         public void Entry_Focused(object sender, EventArgs e)
         {
-            ((Entry)sender).Text = "Well Done !";
+            ((Entry)sender).Text = "";
         }
 
         async void BtnTwitter_Clicked(object sender, EventArgs e)

@@ -11,8 +11,11 @@ namespace YouWeesh.Mobile
     {
         public App()
         {
-            // The root page of your application
             MainPage = new Views.LoginForm();
+            MainPage.BackgroundColor = Color.FromRgb(70, 146, 221);
+            //var backgroundImage = new Image();
+            //backgroundImage.Source = ImageSource.FromFile("model.jpg");
+            //MainPage.BackgroundImage = "model.jpg";
         }
 
         protected override void OnStart()
