@@ -39,6 +39,9 @@
     <Compile Include="Business\Authenticator.cs" />
     <Compile Include="Business\Users.cs" />
     <Compile Include="Business\Weeshes.cs" />
+    <Compile Include="Views\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\LoginForm.xaml.cs">
       <DependentUpon>LoginForm.xaml</DependentUpon>
     </Compile>
@@ -46,6 +49,9 @@
     <Compile Include="SAL\HttpRequester.cs" />
     <Compile Include="Views\RegisterForm.xaml.cs">
       <DependentUpon>RegisterForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MenuPage.xaml.cs">
+      <DependentUpon>MenuPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\WelcomeForm.xaml.cs">
       <DependentUpon>WelcomeForm.xaml</DependentUpon>
@@ -86,6 +92,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\RegisterForm.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\HomePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\MenuPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
