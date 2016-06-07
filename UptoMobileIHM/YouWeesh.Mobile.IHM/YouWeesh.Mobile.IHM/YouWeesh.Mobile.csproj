@@ -47,12 +47,16 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SAL\HttpRequester.cs" />
+    <Compile Include="Views\WeeshesEventsFlowForm.xaml.cs">
+      <DependentUpon>WeeshesEventsFlowForm.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\RegisterForm.xaml.cs">
       <DependentUpon>RegisterForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MenuPage.xaml.cs">
       <DependentUpon>MenuPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\WeeshesTest.cs" />
     <Compile Include="Views\WelcomeForm.xaml.cs">
       <DependentUpon>WelcomeForm.xaml</DependentUpon>
     </Compile>
@@ -76,6 +80,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -104,6 +109,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\MenuPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\WeeshesEventsFlowForm.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

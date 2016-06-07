@@ -29,7 +29,7 @@ namespace YouWeesh.Mobile.Views
 
         public void btnLogin_Clicked(object sender, EventArgs e)
         {
-            this.Navigation.PushModalAsync(new Views.HomePage());
+            this.Navigation.PushModalAsync(new Views.WeeshesTest());
         }
     }
 }
