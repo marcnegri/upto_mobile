@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:YouWeesh.Mobile.Views;assembly=YouWeesh"
              x:Class="YouWeesh.Mobile.Views.MenuPage">         
   <MasterDetailPage.Master>
-    <ContentPage Title="Menu">
+    <ContentPage Title="Menu" Icon="hamburger.png">
       <StackLayout  Orientation="Vertical">
-        <Button Text="Sports"/>
-        <Button Text="Economy"/>
-        <Button Text="Education"/>
-        <Button Text="Science"/>
+        <Button Text="My Weeshes"/>
+        <Button Text="My Next Events"/>
+        <Button Text="Feed"/>
+        <Button Text="Friends"/>
+        <Button Text="Settings"/>
       </StackLayout>
     </ContentPage>
   </MasterDetailPage.Master>
-  <MasterDetailPage.Detail>
-     <ContentPage Title="Home">
-         <Label Text="Salut tous le monde" VerticalOptions="Center" HorizontalOptions="Center" />
-    </ContentPage>
+  <MasterDetailPage.Detail>     
+         <local:Feed />    
   </MasterDetailPage.Detail>
 </MasterDetailPage>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="YouWeesh.Mobile.Views.Feed">  
+  <ContentPage Title="List View">
+  <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+  <SearchBar Placeholder="Search terms..." TextChanged="SearchBar_OnTextChanged"></SearchBar>
+  <ListView x:Name="feedView">
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ImageCell Text="{Binding Title}" Detail="{Binding Creator}" ImageSource="{Binding Image}"/>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+  </ListView>
+  </StackLayout>
+  </ContentPage>  
+  <NavigationPage Title="Map View">
+    <x:Arguments>
+      <ContentPage>
+        <StackLayout VerticalOptions="StartAndExpand" Padding="30">
+          <maps:Map HeightRequest = "600"
+                WidthRequest = "250"
+              x:Name="MyMap"
+              IsShowingUser="true"/>
+        </StackLayout>
+      </ContentPage>
+    </x:Arguments>
+  </NavigationPage>  
+</TabbedPage>
