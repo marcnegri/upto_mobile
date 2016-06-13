@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="YouWeesh.YouWeesh" android:installLocation="auto">
-	<uses-sdk android:minSdkVersion="15" />
+	<uses-sdk android:minSdkVersion="15" android:targetSdkVersion="19"/>
 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
@@ -9,7 +9,7 @@
 	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 	<uses-permission android:name="android.permission.INTERNET" />
 	<application android:label="YouWeesh" android:icon="@drawable/icon">
-	<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAqH7BB5sOisJkbnr1EY488a7wGU1VLFwo" />
-	<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
-  </application>
+		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAqH7BB5sOisJkbnr1EY488a7wGU1VLFwo" />
+		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+	</application>
 </manifest>

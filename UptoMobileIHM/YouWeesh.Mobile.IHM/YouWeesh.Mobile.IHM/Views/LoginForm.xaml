@@ -1,22 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="YouWeesh.Mobile.Views.LoginForm">
-  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center"/>
+             x:Class="YouWeesh.Mobile.Views.LoginForm" Padding="5">
   <ScrollView>
-    <StackLayout>
-      <Label Text="Welcome to You Weesh" HorizontalOptions="CenterAndExpand"></Label>
-      <Entry Text="Login" TextColor="White" BackgroundColor="Silver" Focused="Entry_Focused" ></Entry>
-      <Entry Text="Password" TextColor="White" IsPassword="true" BackgroundColor="Silver" Placeholder="Password" ></Entry>
-      <Image x:Name="imgTwitter" Source="twitter128.png"/>
-      <Button Text="Login" HorizontalOptions="Center" Clicked="btnLogin_Clicked" BackgroundColor="Silver" />
-      <Button Text="Login With Facebook"  />
-      <Button Text="Login With Twitter" Clicked="BtnTwitter_Clicked" />
-      <Button Text="Login With Google+" />
-
+    <StackLayout x:Name="stk">
+      <Image x:Name="imgWeesh" Source="weesh72.png" HorizontalOptions="Center"/>
+      <Entry Text="Username" TextColor="White" BackgroundColor="Silver" Focused="Entry_Focused" ></Entry>
+      <Entry Text="Password" TextColor="White" IsPassword="true" BackgroundColor="Silver" Placeholder="Password" Focused="Entry_Focused"></Entry>
+      <Button Text="Login" Clicked="btnLogin_Clicked" BackgroundColor="Silver"/>
+      <Button Text="Login With Facebook" Image="facebook32.png"/>
+      <Button Text="Login With Twitter" Clicked="BtnTwitter_Clicked" Image="twitter32.png"/>
+      <Button Text="Login With Google+" Image="google32.png"/>
       <Label Text="Don't have an account yet ?" VerticalOptions="Center" HorizontalOptions="Center"/>
     
-      <Button Text="Register" />
+      <Button Text="Register" Clicked="btnRegister_Clicked"/>
     </StackLayout>
   </ScrollView>
 </ContentPage>
