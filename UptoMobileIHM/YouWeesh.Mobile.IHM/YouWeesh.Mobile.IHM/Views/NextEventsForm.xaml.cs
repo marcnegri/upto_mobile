@@ -8,9 +8,9 @@ using Xamarin.Forms;
 
 namespace YouWeesh.Mobile.Views
 {
-    public partial class WelcomeForm : ContentPage
+    public partial class NextEventsForm : ContentPage
     {
-        public WelcomeForm()
+        public NextEventsForm()
         {
             InitializeComponent();
         }

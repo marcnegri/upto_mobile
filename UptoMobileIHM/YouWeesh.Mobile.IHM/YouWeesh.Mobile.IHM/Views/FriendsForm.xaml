@@ -3,4 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="YouWeesh.Mobile.Views.FriendsForm">
   <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+  <StackLayout>
+    <ScrollView Scrolled="scrlMainView_Scrolled" x:Name="scrlMainView">
+      <ListView x:Name="feedView" ItemAppearing="feedView_OnItemAppaering">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ImageCell Text="" Image=""/>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </ScrollView>
+  </StackLayout>
 </ContentPage>
