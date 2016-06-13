@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YouWeesh.Mobile.Views.SettingsForm">
+  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+  <ScrollView>
+    <StackLayout>
+      <Label Text="Profile" HorizontalOptions="StartAndExpand" ></Label>
+      <Label Text="Language" HorizontalOptions="StartAndExpand" ></Label>
+      <Label Text="Weeshes matching" HorizontalOptions="StartAndExpand" ></Label>
+      <Label Text="Notifications" HorizontalOptions="StartAndExpand" ></Label>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

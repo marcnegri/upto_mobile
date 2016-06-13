@@ -8,16 +8,11 @@ using Xamarin.Forms;
 
 namespace YouWeesh.Mobile.Views
 {
-    public partial class MenuPage : MasterDetailPage
+    public partial class SettingsForm : ContentPage
     {
-        public MenuPage()
+        public SettingsForm()
         {
             InitializeComponent();
-        }
-
-        private void btnSettings_Clicked(object sender, EventArgs e)
-        {
-            this.Navigation.PushModalAsync(new Views.SettingsForm());
         }
     }
 }

@@ -8,9 +8,9 @@
       <StackLayout  Orientation="Vertical">
         <Button Text="My Weeshes"/>
         <Button Text="My Next Events"/>
-        <Button Text="Feed"/>
-        <Button Text="Friends"/>
-        <Button Text="Settings"/>
+        <Button Text="Weeshes/Events feed"/>
+        <Button Text="Friends" Image="friends72.png"/>
+        <Button Text="Settings" Image="settings72.png" x:Name="btnSettings" Clicked="btnSettings_Clicked"/>
       </StackLayout>
     </ContentPage>
   </MasterDetailPage.Master>

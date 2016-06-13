@@ -42,13 +42,16 @@
     <Compile Include="Views\Feed.xaml.cs">
       <DependentUpon>Feed.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\FriendsForm.xaml.cs">
+      <DependentUpon>FriendsForm.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\LoginForm.xaml.cs">
       <DependentUpon>LoginForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SAL\HttpRequester.cs" />
-    <Compile Include="Views\WeeshesEventsFlowForm.xaml.cs">
-      <DependentUpon>WeeshesEventsFlowForm.xaml</DependentUpon>
+    <Compile Include="Views\SettingsForm.xaml.cs">
+      <DependentUpon>SettingsForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\RegisterForm.xaml.cs">
       <DependentUpon>RegisterForm.xaml</DependentUpon>
@@ -56,7 +59,6 @@
     <Compile Include="Views\MenuPage.xaml.cs">
       <DependentUpon>MenuPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\WeeshesTest.cs" />
     <Compile Include="Views\WelcomeForm.xaml.cs">
       <DependentUpon>WelcomeForm.xaml</DependentUpon>
     </Compile>
@@ -112,13 +114,19 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\WeeshesEventsFlowForm.xaml">
+    <EmbeddedResource Include="Views\Feed.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Feed.xaml">
+    <EmbeddedResource Include="Views\SettingsForm.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\FriendsForm.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
