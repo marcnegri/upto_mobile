@@ -14,7 +14,7 @@ namespace YouWeesh.Mobile.Views
         {
             this.BackgroundColor = Color.White;
             InitializeComponent();
-            imgTwitter.Aspect = Aspect.AspectFit;
+            imgTwitter.Aspect = Aspect.AspectFit;           
         }
 
         public void Entry_Focused(object sender, EventArgs e)

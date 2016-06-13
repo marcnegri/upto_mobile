@@ -9,11 +9,11 @@ using Xamarin.Forms.Maps;
 
 namespace YouWeesh.Mobile.Views
 {
-    public partial class Feed : TabbedPage
+    public partial class FeedView : TabbedPage
     {
         ObservableCollection<Weesh> weeshes = new ObservableCollection<Weesh>();
 
-        public Feed()
+        public FeedView()
         {
             InitializeComponent();
             
@@ -39,7 +39,7 @@ namespace YouWeesh.Mobile.Views
             MyMap.Pins.Add(pinMarcus);
 
             // 1 - test hide /unhide during an event (scroll)
-            grdListType.HeightRequest = 0;
+           // grdListType.HeightRequest = 0;
 
         }
 
@@ -77,6 +77,12 @@ namespace YouWeesh.Mobile.Views
             {
                 feedView.BackgroundColor = Color.Aqua;
             }
+        }
+
+        async void BtnFilter_Clicked(object sender, EventArgs e)
+        {
+            //var action = await DisplayActionSheet("ActionSheet: Send to?", "Cancel", null, "Email", "Twitter", "Facebook");
+            await Navigation.PushModalAsync(new FeedFilterForm());
         }
 
     }

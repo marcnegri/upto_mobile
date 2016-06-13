@@ -2,8 +2,8 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
-             x:Class="YouWeesh.Mobile.Views.Feed">  
-  <ContentPage>
+             x:Class="YouWeesh.Mobile.Views.FeedView">  
+  <ContentPage Title="List">
   <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" BackgroundColor="White">
   <Grid >
     <Grid.ColumnDefinitions>
@@ -13,7 +13,7 @@
       <RowDefinition Height="Auto" />
     </Grid.RowDefinitions>
         <SearchBar Placeholder="Search terms..." TextChanged="SearchBar_OnTextChanged" Grid.Row="0" Grid.Column="0"></SearchBar>
-        <Button Image="emptyFilter48.png" Grid.Row="0" Grid.Column="1" ></Button>
+        <Button Image="filter.png" Grid.Row="0" Grid.Column="1" Clicked="BtnFilter_Clicked" ></Button>
   </Grid> 
     <ScrollView Scrolled="scrlMainView_Scrolled" x:Name="scrlMainView">
      <ListView x:Name="feedView" ItemAppearing="feedView_OnItemAppaering">
@@ -31,12 +31,10 @@
     <Grid.RowDefinitions>
       <RowDefinition Height="Auto" />
     </Grid.RowDefinitions>
-        <Button Image="list48.png" Grid.Row="0" Grid.Column="0" BackgroundColor="White"></Button>
-        <Button Image="location48.png" Grid.Row="0" Grid.Column="1" BackgroundColor="White" ></Button>
   </Grid> 
   </StackLayout>
   </ContentPage>  
-  <NavigationPage>
+  <NavigationPage Title="Map">
     <x:Arguments>
       <ContentPage>
         <StackLayout VerticalOptions="StartAndExpand" Padding="30">
