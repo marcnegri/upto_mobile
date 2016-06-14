@@ -40,7 +40,7 @@ namespace YouWeesh.Mobile.Views
             MyMap.Pins.Add(pinMarcus);
 
             // 1 - test hide /unhide during an event (scroll)
-            // grdListType.HeightRequest = 0;
+           // grdListType.HeightRequest = 0;
 
         }
 
@@ -73,8 +73,8 @@ namespace YouWeesh.Mobile.Views
 
         private void scrlMainView_Scrolled(object sender, ScrolledEventArgs e)
         {
-
-            if (((ScrollView)sender).ScrollY < e.ScrollY)
+            
+            if (((ScrollView)sender).ScrollY < e.ScrollY )
             {
                 feedView.BackgroundColor = Color.Aqua;
             }
