@@ -10,8 +10,8 @@
         <Label Text="Profile" Grid.Row="0" Grid.Column="0" BackgroundColor="Blue" TextColor="White" Grid.ColumnSpan="2"></Label>
         <Label Text="Username" Grid.Row="1" Grid.Column="0"></Label>
         <Label Text="Vincent" Grid.Row="1" Grid.Column="1"></Label>
-      </Grid>
-
+      </Grid>      
+      
       <Grid Padding="20">
         <Grid.ColumnDefinitions>
           <ColumnDefinition Width="Auto" />
@@ -23,7 +23,7 @@
         <Label Text="Language" Grid.Row="1" Grid.Column="0"></Label>
         <Picker Title="Language" Grid.Row="1" Grid.Column="1" x:Name="pkrLanguage" ></Picker>
       </Grid>
-
+      
       <Grid Padding="20">
         <Grid.ColumnDefinitions>
           <ColumnDefinition Width="Auto" />
@@ -40,7 +40,7 @@
         <Picker Title="Range" Grid.Row="3" Grid.Column="1" x:Name="pkrMatchingZone"></Picker>
         <Label Text="Km" HorizontalOptions="StartAndExpand" Grid.Row="3" Grid.Column="2"></Label>
       </Grid>
-
+      
       <Grid Padding="20">
         <Grid.ColumnDefinitions>
           <ColumnDefinition Width="Auto" />
@@ -57,8 +57,8 @@
         <Switch HorizontalOptions="Center" Grid.Row="3" Grid.Column="1"></Switch>
         <Label Text="Friends requests" HorizontalOptions="StartAndExpand" Grid.Row="4" Grid.Column="0"></Label>
         <Switch HorizontalOptions="Center" Grid.Row="4" Grid.Column="1"></Switch>
-      </Grid>
-
+      </Grid>      
+      
     </StackLayout>
   </ScrollView>
 </ContentPage>
