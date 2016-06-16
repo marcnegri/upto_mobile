@@ -15,6 +15,11 @@ namespace YouWeesh.Mobile.Views
             InitializeComponent();
         }
 
+        private void btnFriends_Clicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushModalAsync(new Views.FriendsForm());
+        }
+
         private void btnSettings_Clicked(object sender, EventArgs e)
         {
             this.Navigation.PushModalAsync(new Views.SettingsForm());

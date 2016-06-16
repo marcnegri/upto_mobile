@@ -5,9 +5,11 @@
   <ScrollView>
     <StackLayout x:Name="stk">
       <Image x:Name="imgWeesh" Source="weesh72.png" HorizontalOptions="Center"/>
-      <Entry Text="Username" TextColor="White" BackgroundColor="Silver" Focused="Entry_Focused" ></Entry>
-      <Entry Text="Password" TextColor="White" IsPassword="true" BackgroundColor="Silver" Placeholder="Password" Focused="Entry_Focused"></Entry>
+      <Entry TextColor="White" BackgroundColor="Silver" Focused="Entry_Focused" Placeholder="Username" ></Entry>
+      <Entry TextColor="White" IsPassword="true" BackgroundColor="Silver" Placeholder="Password" Focused="Entry_Focused"></Entry>
       <Button Text="Login" Clicked="btnLogin_Clicked" BackgroundColor="Silver"/>
+      <Label Text="Forgot password?" VerticalOptions="Center" HorizontalOptions="Center"/>
+      
       <Button Text="Login With Facebook" Image="facebook32.png"/>
       <Button Text="Login With Twitter" Clicked="BtnTwitter_Clicked" Image="twitter32.png"/>
       <Button Text="Login With Google+" Image="google32.png"/>

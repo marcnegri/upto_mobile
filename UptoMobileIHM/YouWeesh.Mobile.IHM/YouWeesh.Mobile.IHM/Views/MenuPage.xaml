@@ -9,7 +9,7 @@
         <Button Text="My Weeshes"/>
         <Button Text="My Next Events"/>
         <Button Text="Weeshes/Events feed"/>
-        <Button Text="Friends" Image="friends72.png"/>
+        <Button Text="Friends" Image="friends72.png" x:Name="btnFriends" Clicked="btnFriends_Clicked" />
         <Button Text="Settings" Image="settings72.png" x:Name="btnSettings" Clicked="btnSettings_Clicked"/>
       </StackLayout>
     </ContentPage>

@@ -17,7 +17,8 @@ namespace YouWeesh.Mobile.Views
             InitializeComponent();
             imgWeesh.Aspect = Aspect.AspectFit;
 
-            int photoSize = Device.OnPlatform(50, 50, 80);
+            /* HERE TEST CIRCLE IMAGE
+            int photoSize = Device.OnPlatform(50, 50, 70);
             var photo = new CircleImage
             {
                 WidthRequest = photoSize,
@@ -29,7 +30,7 @@ namespace YouWeesh.Mobile.Views
 
             //photo.Source = "google32.png";
 
-            stk.Children.Add(photo);
+            stk.Children.Add(photo);*/
         }
 
         public void Entry_Focused(object sender, EventArgs e)
