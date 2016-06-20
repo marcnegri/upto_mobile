@@ -1,10 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="YouWeesh.Mobile.Views.FriendsForm" >
+             x:Class="YouWeesh.Mobile.Views.FriendsForm"
+             xmlns:controls="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile">
   <StackLayout BackgroundColor="White">
     <ScrollView>
       <Label Text="OIJAfoiajfoiajofiajfoiajfoij" TextColor="Black"></Label>
+      <ListView x:Name="feedView">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <controls:CustomViewCell Text="testoijeotisjoti"></controls:CustomViewCell>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
     </ScrollView>
   </StackLayout>
 </ContentPage>
