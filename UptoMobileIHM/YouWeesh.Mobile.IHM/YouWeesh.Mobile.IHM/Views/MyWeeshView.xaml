@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YouWeesh.Mobile.Views.MyWeeshView">
+  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+  <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+    <Grid >
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto" />
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+      <SearchBar Placeholder="Search terms..." Grid.Row="0" Grid.Column="0"></SearchBar>
+    </Grid>
+    <ScrollView x:Name="scrlMainView">
+      <ListView x:Name="feedView" ItemAppearing="feedView_OnItemAppaering">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <ImageCell Text="{Binding Label}" />
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </ScrollView>
+  </StackLayout>
+</ContentPage>

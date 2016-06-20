@@ -19,19 +19,11 @@
         <ListView x:Name="feedView" ItemAppearing="feedView_OnItemAppaering">
           <ListView.ItemTemplate>
             <DataTemplate>
-              <ImageCell Text="{Binding Title}" Detail="{Binding Creator}" ImageSource="{Binding Image}" Tapped="ImageCell_OnTapped"/>
+              <ImageCell Text="{Binding Title}" Detail="{Binding Creator}" ImageSource="{Binding Image}" />
             </DataTemplate>
           </ListView.ItemTemplate>
         </ListView>
       </ScrollView>
-      <Grid HorizontalOptions="Center" WidthRequest="190" HeightRequest="60" x:Name="grdListType">
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="Auto" />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-          <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-      </Grid>
     </StackLayout>
   </ContentPage>
   <NavigationPage Title="Map">

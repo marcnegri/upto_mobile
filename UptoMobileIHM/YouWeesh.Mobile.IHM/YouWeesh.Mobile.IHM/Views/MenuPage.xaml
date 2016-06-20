@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:YouWeesh.Mobile.Views;assembly=YouWeesh"
+             xmlns:local="clr-namespace:YouWeesh.Mobile.Views;assembly=YouWeesh.Mobile"
              x:Class="YouWeesh.Mobile.Views.MenuPage">         
   <MasterDetailPage.Master>
     <ContentPage Title="Menu" Icon="hamburger.png">
       <StackLayout  Orientation="Vertical">
-        <Button Text="My Weeshes"/>
+        <Button Text="My Weesh" x:Name="btnMyWeesh" Clicked="btnMyWeesh_Clicked" />
         <Button Text="My Next Events"/>
-        <Button Text="Weeshes/Events feed"/>
+        <Button Text="Weesh/Events feed"/>
         <Button Text="Friends" Image="friends72.png" x:Name="btnFriends" Clicked="btnFriends_Clicked" />
         <Button Text="Settings" Image="settings72.png" x:Name="btnSettings" Clicked="btnSettings_Clicked"/>
       </StackLayout>

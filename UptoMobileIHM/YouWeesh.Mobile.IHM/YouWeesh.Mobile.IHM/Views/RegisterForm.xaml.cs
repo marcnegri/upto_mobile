@@ -13,6 +13,8 @@ namespace YouWeesh.Mobile.Views
         public RegisterForm()
         {
             InitializeComponent();
+            pkrGender.Items.Add("Male");
+            pkrGender.Items.Add("Female");
         }
     }
 }
