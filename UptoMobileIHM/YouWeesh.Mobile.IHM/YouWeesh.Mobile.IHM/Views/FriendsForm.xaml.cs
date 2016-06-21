@@ -22,18 +22,24 @@ namespace YouWeesh.Mobile.Views
             Users ami = new Users();
             ami.FirstName = "Marc";
             ami.Username = "Marcus";
-            ami.Picture = "icon.png";
+            ami.Picture = "portrait.jpg";
 
             Users ami2 = new Users();
             ami2.FirstName = "Vincent";
             ami2.Username = "Vince";
-            ami2.Picture = "icon.png";
+            ami2.Picture = "portrait.jpg";
+
+            Users ami3 = new Users();
+            ami3.FirstName = "Jérémy";
+            ami3.Username = "Jezzer";
+            ami3.Picture = "portrait.jpg";
 
             usersList.Add(ami);
             usersList.Add(ami2);
+            usersList.Add(ami3);
             #endregion
 
-            //lstFriends.ItemsSource = usersList;
+            feedView.ItemsSource = usersList;
 
         }
     }

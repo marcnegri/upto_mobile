@@ -22,6 +22,10 @@ namespace YouWeesh.Mobile.Views
             Business.Weesh w1 = new Business.Weesh();
             w1.Label = "Je veux regarde un #concert ce soir !";
 
+            weeshes.Add(w);
+            weeshes.Add(w1);
+
+            weeshView.ItemsSource = weeshes;
         }
     }
 }

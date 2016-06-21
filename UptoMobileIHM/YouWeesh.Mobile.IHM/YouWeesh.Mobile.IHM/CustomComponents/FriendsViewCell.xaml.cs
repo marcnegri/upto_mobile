@@ -8,9 +8,9 @@ using Xamarin.Forms;
 
 namespace YouWeesh.Mobile.CustomComponents
 {
-    public partial class CustomViewCell : ViewCell
+    public partial class FriendsViewCell : ViewCell
     {
-        public CustomViewCell()
+        public FriendsViewCell()
         {
             InitializeComponent();
         }

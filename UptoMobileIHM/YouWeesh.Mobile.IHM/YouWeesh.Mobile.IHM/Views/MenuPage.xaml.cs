@@ -29,6 +29,16 @@ namespace YouWeesh.Mobile.Views
         {
             this.Navigation.PushModalAsync(new Views.MyWeeshView());
         }
+
+        private void btnWE_Clicked(object sender, EventArgs e)
+        {
+            //this.Navigation.PushModalAsync(new Views.MyNextEventsView());
+        }
+
+        private void btnNextEvents_Clicked(object sender, EventArgs e)
+        {
+            this.Navigation.PushModalAsync(new Views.MyNextEventsView());
+        }
         
     }
 }

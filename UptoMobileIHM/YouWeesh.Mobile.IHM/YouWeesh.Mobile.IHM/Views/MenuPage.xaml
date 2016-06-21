@@ -7,8 +7,8 @@
     <ContentPage Title="Menu" Icon="hamburger.png">
       <StackLayout  Orientation="Vertical">
         <Button Text="My Weesh" x:Name="btnMyWeesh" Clicked="btnMyWeesh_Clicked" />
-        <Button Text="My Next Events"/>
-        <Button Text="Weesh/Events feed"/>
+        <Button Text="My Next Events" x:Name="btnNextEvents" Clicked="btnNextEvents_Clicked"/>
+        <Button Text="Weesh/Events feed" x:Name="btnWE" Clicked="btnWE_Clicked"/>
         <Button Text="Friends" Image="friends72.png" x:Name="btnFriends" Clicked="btnFriends_Clicked" />
         <Button Text="Settings" Image="settings72.png" x:Name="btnSettings" Clicked="btnSettings_Clicked"/>
       </StackLayout>

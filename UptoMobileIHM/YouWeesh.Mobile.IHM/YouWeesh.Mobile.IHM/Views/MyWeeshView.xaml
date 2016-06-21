@@ -14,7 +14,7 @@
       <SearchBar Placeholder="Search terms..." Grid.Row="0" Grid.Column="0"></SearchBar>
     </Grid>
     <ScrollView x:Name="scrlMainView">
-      <ListView x:Name="feedView" ItemAppearing="feedView_OnItemAppaering">
+      <ListView x:Name="weeshView">
         <ListView.ItemTemplate>
           <DataTemplate>
             <ImageCell Text="{Binding Label}" />
