@@ -8,11 +8,11 @@ using Xamarin.Forms;
 
 namespace YouWeesh.Mobile.Views
 {
-    public partial class MyNextEventsView : ContentPage
-    {
-        public MyNextEventsView()
-        {
-            InitializeComponent();
-        }
-    }
+	public partial class MyNextEventsView : ContentPage
+	{
+		public MyNextEventsView ()
+		{
+			InitializeComponent ();
+		}
+	}
 }
