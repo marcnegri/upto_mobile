@@ -167,6 +167,7 @@
     <AndroidResource Include="Resources\icon.png" />
     <AndroidResource Include="Resources\list48.png" />
     <AndroidResource Include="Resources\location48.png" />
+    <BundleResource Include="Resources\filter.png" />
     <Content Include="Resources\model.jpg" />
     <AndroidResource Include="Resources\settings72.png" />
     <AndroidResource Include="Resources\showmenu.png" />

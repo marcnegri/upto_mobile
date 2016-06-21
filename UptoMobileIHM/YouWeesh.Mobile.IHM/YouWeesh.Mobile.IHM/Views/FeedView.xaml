@@ -2,10 +2,11 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:local="clr-namespace:YouWeesh.Mobile.Views;assembly=YouWeesh.Mobile"
              x:Class="YouWeesh.Mobile.Views.FeedView">
   <ContentPage Title="List">
     <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" BackgroundColor="White">
-      <Grid >
+      <Grid>
         <Grid.ColumnDefinitions>
           <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
@@ -13,8 +14,9 @@
           <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <SearchBar Placeholder="Search terms..." TextChanged="SearchBar_OnTextChanged" Grid.Row="0" Grid.Column="0"></SearchBar>
-        <Button Image="filter.png" Grid.Row="0" Grid.Column="1" Clicked="BtnFilter_Clicked" ></Button>
+        <Button Image="filter.png" Grid.Row="0" Grid.Column="1" Clicked="BtnFilter_Clicked" BackgroundColor="White"></Button>
       </Grid>
+      <local:FeedFilterForm x:Name="filterView" IsVisible="false" />
       <ScrollView Scrolled="scrlMainView_Scrolled" x:Name="scrlMainView">
         <ListView x:Name="feedView" ItemAppearing="feedView_OnItemAppaering">
           <ListView.ItemTemplate>
@@ -23,7 +25,7 @@
             </DataTemplate>
           </ListView.ItemTemplate>
         </ListView>
-      </ScrollView>
+      </ScrollView>  
       <Grid HorizontalOptions="Center" WidthRequest="190" HeightRequest="60" x:Name="grdListType">
         <Grid.ColumnDefinitions>
           <ColumnDefinition Width="Auto" />
@@ -31,9 +33,9 @@
         <Grid.RowDefinitions>
           <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-      </Grid>
+      </Grid>    
     </StackLayout>
-  </ContentPage>
+   </ContentPage>
   <NavigationPage Title="Map">
     <x:Arguments>
       <ContentPage>

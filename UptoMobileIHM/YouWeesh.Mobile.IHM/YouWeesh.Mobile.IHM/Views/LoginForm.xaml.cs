@@ -46,7 +46,7 @@ namespace YouWeesh.Mobile.Views
         public void btnLogin_Clicked(object sender, EventArgs e)
         {
             this.Navigation.PushModalAsync(new Views.MenuPage());
-            //this.Navigation.PushModalAsync(new Views.WeeshesTest());
+            //this.Navigation.PushModalAsync(new Views.WeeshesTesst());
         }
 
         public void btnRegister_Clicked(object sender, EventArgs e)

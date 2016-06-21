@@ -83,8 +83,13 @@ namespace YouWeesh.Mobile.Views
         async void BtnFilter_Clicked(object sender, EventArgs e)
         {
             //var action = await DisplayActionSheet("ActionSheet: Send to?", "Cancel", null, "Email", "Twitter", "Facebook");
-            await Navigation.PushModalAsync(new FeedFilterForm());
+            //await Navigation.PushModalAsync(new FeedFilterForm());
+            filterView.IsVisible = !filterView.IsVisible;
+
+
         }
+
+
 
     }
 

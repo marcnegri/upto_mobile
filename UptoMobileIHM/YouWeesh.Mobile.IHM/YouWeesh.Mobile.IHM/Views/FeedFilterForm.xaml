@@ -1,6 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="YouWeesh.Mobile.Views.FeedFilterForm">
-  <Label Text="Filter" VerticalOptions="Center" HorizontalOptions="Center" />
-</ContentPage>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                       x:Class="YouWeesh.Mobile.Views.FeedFilterForm">
+  <RelativeLayout BackgroundColor="Blue">
+     <Grid Padding="20">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto" />
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+      <Label Text="Filters" BackgroundColor="Blue" TextColor="White" Grid.Row="0" Grid.ColumnSpan="2"></Label>
+      <Label Text="Weesh" HorizontalOptions="StartAndExpand" Grid.Row="1" Grid.Column="0"></Label>
+      <Switch HorizontalOptions="Center" Grid.Row="1" Grid.Column="1"></Switch>
+      <Label Text="Events" HorizontalOptions="StartAndExpand" Grid.Row="2" Grid.Column="0"></Label>
+      <Switch HorizontalOptions="Center" Grid.Row="2" Grid.Column="1"></Switch>
+      <Label Text="Distance" HorizontalOptions="StartAndExpand" Grid.Row="3" Grid.Column="0"></Label>
+      <Slider Maximum="50" Minimum="1" HorizontalOptions="StartAndExpand" Grid.Row="3" Grid.Column="1"></Slider>
+    </Grid>
+  </RelativeLayout>
+</ContentView>

@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 namespace YouWeesh.Mobile.Views
 {
-    public partial class FeedFilterForm : ContentPage
+    public partial class FeedFilterForm : ContentView
     {
         public FeedFilterForm()
         {
