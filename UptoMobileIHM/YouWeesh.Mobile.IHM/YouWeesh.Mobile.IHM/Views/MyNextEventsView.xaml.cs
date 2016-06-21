@@ -8,13 +8,11 @@ using Xamarin.Forms;
 
 namespace YouWeesh.Mobile.Views
 {
-    public partial class RegisterForm : CarouselPage
+    public partial class MyNextEventsView : ContentPage
     {
-        public RegisterForm()
+        public MyNextEventsView()
         {
             InitializeComponent();
-            pkrGender.Items.Add("Male");
-            pkrGender.Items.Add("Female");
         }
     }
 }

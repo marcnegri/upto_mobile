@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace YouWeesh.Mobile.Views
+namespace YouWeesh.Mobile.CustomComponents
 {
-    public partial class NextEventsForm : ContentPage
+    public partial class FriendsViewCell : ViewCell
     {
-        public NextEventsForm()
+        public FriendsViewCell()
         {
             InitializeComponent();
         }

@@ -3,15 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ImageCircle.Forms.Plugin.Abstractions;
+using Xamarin.Forms;
 
 namespace YouWeesh.Mobile.Business
 {
     public class Users
     {
+        #region PROPERTIES
         private String firstName;
         private String lastName;
         private String username;
+        private String picture;
+        #endregion
 
+        #region ACCESSORS
         public string FirstName
         {
             get
@@ -24,7 +30,6 @@ namespace YouWeesh.Mobile.Business
                 firstName = value;
             }
         }
-
         public string LastName
         {
             get
@@ -37,7 +42,6 @@ namespace YouWeesh.Mobile.Business
                 lastName = value;
             }
         }
-
         public string Username
         {
             get
@@ -50,5 +54,20 @@ namespace YouWeesh.Mobile.Business
                 username = value;
             }
         }
+        public string Picture
+        {
+            get
+            {
+                return picture;
+            }
+
+            set
+            {
+                picture = value;
+            }
+        }
+        #endregion
+
+        public Users(){  }
     }
 }

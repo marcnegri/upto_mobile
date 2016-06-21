@@ -37,8 +37,11 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="Business\Authenticator.cs" />
+    <Compile Include="CustomComponents\FriendsViewCell.xaml.cs">
+      <DependentUpon>FriendsViewCell.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Business\Users.cs" />
-    <Compile Include="Business\Weeshes.cs" />
+    <Compile Include="Business\Weesh.cs" />
     <Compile Include="Views\FeedFilterForm.xaml.cs">
       <DependentUpon>FeedFilterForm.xaml</DependentUpon>
     </Compile>
@@ -53,6 +56,9 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SAL\HttpRequester.cs" />
+    <Compile Include="Views\MyWeeshView.xaml.cs">
+      <DependentUpon>MyWeeshView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\NextEventsForm.xaml.cs">
       <DependentUpon>NextEventsForm.xaml</DependentUpon>
     </Compile>
@@ -140,6 +146,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\FeedView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\MyWeeshView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CustomComponents\FriendsViewCell.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

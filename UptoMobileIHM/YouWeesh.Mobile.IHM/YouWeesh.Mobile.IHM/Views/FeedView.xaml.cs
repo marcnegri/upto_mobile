@@ -58,7 +58,7 @@ namespace YouWeesh.Mobile.Views
 
         private void ImageCell_OnTapped(object sender, EventArgs e)
         {
-            grdListType.HeightRequest = 60;
+            //grdListType.HeightRequest = 60;
         }
 
         /// <summary>

@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="YouWeesh.Mobile.Views.FriendsForm" BackgroundColor="White">
-  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
-  <StackLayout>
+             x:Class="YouWeesh.Mobile.Views.FriendsForm"
+             xmlns:controls="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile">
+  <StackLayout BackgroundColor="White">
     <ScrollView>
-      <ListView x:Name="lstFriends">
+      <Label Text="OIJAfoiajfoiajofiajfoiajfoij" TextColor="Black"></Label>
+      <ListView x:Name="feedView" BackgroundColor="Lime">
         <ListView.ItemTemplate>
           <DataTemplate>
-            <ImageCell Text="Blallallalvla"/>
+            <controls:FriendsViewCell></controls:FriendsViewCell>
           </DataTemplate>
         </ListView.ItemTemplate>
       </ListView>
