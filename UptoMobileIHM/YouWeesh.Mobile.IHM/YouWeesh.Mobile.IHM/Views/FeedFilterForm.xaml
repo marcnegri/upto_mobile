@@ -5,18 +5,20 @@
   <RelativeLayout BackgroundColor="Blue">
      <Grid Padding="20">
       <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="Auto"/>
       </Grid.ColumnDefinitions>
       <Grid.RowDefinitions>
         <RowDefinition Height="Auto" />
       </Grid.RowDefinitions>
       <Label Text="Filters" BackgroundColor="Blue" TextColor="White" Grid.Row="0" Grid.ColumnSpan="2"></Label>
       <Label Text="Weesh" HorizontalOptions="StartAndExpand" Grid.Row="1" Grid.Column="0"></Label>
-      <Switch HorizontalOptions="Center" Grid.Row="1" Grid.Column="1"></Switch>
+      <Switch HorizontalOptions="StartAndExpand" Grid.Row="1" Grid.Column="1"></Switch>
       <Label Text="Events" HorizontalOptions="StartAndExpand" Grid.Row="2" Grid.Column="0"></Label>
-      <Switch HorizontalOptions="Center" Grid.Row="2" Grid.Column="1"></Switch>
-      <Label Text="Distance" HorizontalOptions="StartAndExpand" Grid.Row="3" Grid.Column="0"></Label>
-      <Slider Maximum="50" Minimum="1" HorizontalOptions="StartAndExpand" Grid.Row="3" Grid.Column="1"></Slider>
+      <Switch HorizontalOptions="StartAndExpand" Grid.Row="2" Grid.Column="1"></Switch>
+       <Label Text="Friends" HorizontalOptions="StartAndExpand" Grid.Row="3" Grid.Column="0"></Label>
+       <Switch HorizontalOptions="StartAndExpand" Grid.Row="3" Grid.Column="1"></Switch>
+      <Label Text="Distance" HorizontalOptions="StartAndExpand" Grid.Row="4" Grid.Column="0"></Label>
+      <Slider Maximum="300" Minimum="1" HorizontalOptions="StartAndExpand" Grid.Row="4" Grid.Column="1" WidthRequest="200"></Slider>
     </Grid>
   </RelativeLayout>
 </ContentView>
