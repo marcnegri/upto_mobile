@@ -1,62 +1,53 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage x:Class="YouWeesh.Mobile.Views.SettingsForm"
+             xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="YouWeesh.Mobile.Views.SettingsForm" BackgroundColor="White">
-  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
-  <ScrollView>
-    <StackLayout>
-      <Grid Padding="20">
-
-        <Label Text="Profile" Grid.Row="0" Grid.Column="0" BackgroundColor="Blue" TextColor="White" Grid.ColumnSpan="2"></Label>
-        <Label Text="Username" Grid.Row="1" Grid.Column="0"></Label>
-        <Label Text="Vincent" Grid.Row="1" Grid.Column="1"></Label>
-      </Grid>
-
-      <Grid Padding="20">
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="Auto" />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-          <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <Label Text="General"  Grid.Row="0" Grid.Column="0" BackgroundColor="Blue" TextColor="White" Grid.ColumnSpan="2"></Label>
-        <Label Text="Language" Grid.Row="1" Grid.Column="0"></Label>
-        <Picker Title="Language" Grid.Row="1" Grid.Column="1" x:Name="pkrLanguage" ></Picker>
-      </Grid>
-
-      <Grid Padding="20">
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="Auto" />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-          <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <Label Text="Weeshes matching" Grid.Row="0" Grid.Column="0" BackgroundColor="Blue" TextColor="White" Grid.ColumnSpan="3"></Label>
-        <Label Text="Matching locations" HorizontalOptions="StartAndExpand" Grid.Row="1" Grid.Column="0"></Label>
-        <Switch HorizontalOptions="Center" Grid.Row="1" Grid.Column="1"></Switch>
-        <Label Text="Current location" HorizontalOptions="StartAndExpand" Grid.Row="2" Grid.Column="0"></Label>
-        <Switch HorizontalOptions="Center" Grid.Row="2" Grid.Column="1"></Switch>
-        <Label Text="Matching zone" HorizontalOptions="StartAndExpand" Grid.Row="3" Grid.Column="0"></Label>
-        <Picker Title="Range" Grid.Row="3" Grid.Column="1" x:Name="pkrMatchingZone"></Picker>
-        <Label Text="Km" HorizontalOptions="StartAndExpand" Grid.Row="3" Grid.Column="2"></Label>
-      </Grid>
-      <Grid Padding="20">
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="Auto" />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-          <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <Label Text="Notifications" BackgroundColor="Blue" TextColor="White" Grid.Row="0" Grid.ColumnSpan="2"></Label>
-        <Label Text="Weeshback" HorizontalOptions="StartAndExpand" Grid.Row="1" Grid.Column="0"></Label>
-        <Switch HorizontalOptions="Center" Grid.Row="1" Grid.Column="1"></Switch>
-        <Label Text="Weeshes matching" HorizontalOptions="StartAndExpand" Grid.Row="2" Grid.Column="0"></Label>
-        <Switch HorizontalOptions="Center" Grid.Row="2" Grid.Column="1"></Switch>
-        <Label Text="My Events News/modification" HorizontalOptions="StartAndExpand" Grid.Row="3" Grid.Column="0"></Label>
-        <Switch HorizontalOptions="Center" Grid.Row="3" Grid.Column="1"></Switch>
-        <Label Text="Friends requests" HorizontalOptions="StartAndExpand" Grid.Row="4" Grid.Column="0"></Label>
-        <Switch HorizontalOptions="Center" Grid.Row="4" Grid.Column="1"></Switch>
-      </Grid>
-    </StackLayout>
-  </ScrollView>
+             BackgroundColor="White">
+    <Label HorizontalOptions="Center"
+           Text="{Binding MainText}"
+           VerticalOptions="Center" />
+    <ScrollView>
+        <StackLayout>
+            <TableView Intent="Settings">
+                <TableRoot>
+                    <TableSection Title="Profile">
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="portrait.jpg" />
+                                <Label Text="Username" TextColor="#f35e20" />
+                                <Label HorizontalOptions="EndAndExpand"
+                                       Text="Vincent"
+                                       TextColor="#503026" />
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection Title="General">
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Language" />
+                                <Picker x:Name="pkrLanguage" Title="Language" />
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection Title="Weesh matching">
+                        <SwitchCell Text="Matching locations" />
+                        <SwitchCell Text="Current location" />
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Matching zone" />
+                                <Picker x:Name="pkrMatchingZone" Title="Language" />
+                                <Label Text="km" />
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection Title="Notifications">
+                        <SwitchCell Text="Weeshback" />
+                        <SwitchCell Text="Weeshes matching" />
+                        <SwitchCell Text="My Events News/modification" />
+                        <SwitchCell Text="Friends requests" />
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

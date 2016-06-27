@@ -1,7 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="YouWeesh.Mobile.Views.MyNextEventsView">
-  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
-  <Label Text="Test"></Label>
+<ContentPage x:Class="YouWeesh.Mobile.Views.MyNextEventsView"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <StackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <SearchBar Grid.Row="0"
+                       Grid.Column="0"
+                       Placeholder="Search terms..." />
+            <Button Grid.Row="0"
+                    Grid.Column="1"
+                    BackgroundColor="White"
+                    Image="filter.png" />
+        </Grid>
+        <ScrollView>
+            <Label Text="Tue 20 June" />
+            <ListView x:Name="nextEvent">
+                <ListView.ItemTemplate>
+                    <DataTemplate />
+                </ListView.ItemTemplate>
+            </ListView>
+            <Label Text="Fri 23 June" />
+            <ListView x:Name="nextEvent_">
+                <ListView.ItemTemplate>
+                    <DataTemplate />
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollView>
+
+    </StackLayout>
 </ContentPage>
