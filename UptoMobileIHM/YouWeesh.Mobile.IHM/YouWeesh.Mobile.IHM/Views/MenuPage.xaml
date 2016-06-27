@@ -15,6 +15,6 @@
     </ContentPage>
   </MasterDetailPage.Master>
   <MasterDetailPage.Detail>     
-         <local:FeedView />    
+         <local:FeedView x:Name="feedView" />    
   </MasterDetailPage.Detail>
 </MasterDetailPage>

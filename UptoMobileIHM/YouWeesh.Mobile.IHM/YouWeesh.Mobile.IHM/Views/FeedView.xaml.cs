@@ -86,7 +86,15 @@ namespace YouWeesh.Mobile.Views
             //await Navigation.PushModalAsync(new FeedFilterForm());
             filterView.IsVisible = !filterView.IsVisible;
 
+            if(filterView.IsVisible == true)
+            {
+                   
+                await filterView.LayoutTo(new Rectangle(filterView.X, filterView.Y - filterView.Height, filterView.Width, filterView.Height), 0);
+                await filterView.LayoutTo(new Rectangle(filterView.X, filterView.Y + filterView.Height, filterView.Width, filterView.Height), 150);
 
+            }
+    
+       
         }
 
 
