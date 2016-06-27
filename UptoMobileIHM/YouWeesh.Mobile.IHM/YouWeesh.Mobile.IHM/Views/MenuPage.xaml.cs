@@ -14,7 +14,6 @@ namespace YouWeesh.Mobile.Views
         public MenuPage()
         {
             InitializeComponent();
-
             var masterPageItems = new List<MasterPageItem>();
             masterPageItems.Add(new MasterPageItem
             {

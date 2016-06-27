@@ -1,22 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:YouWeesh.Mobile.Views;assembly=YouWeesh.Mobile"
-             x:Class="YouWeesh.Mobile.Views.MenuPage">         
-  <MasterDetailPage.Master>
-    <ContentPage Title="Menu" Icon="hamburger.png">
-      <StackLayout  VerticalOptions="FillAndExpand">
-         <ListView x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="None" ItemSelected="OnItemSelected">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ImageCell Text="{Binding Title}" ImageSource="{Binding IconSource}" />
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-        </ListView>
-      </StackLayout>
-    </ContentPage>
-  </MasterDetailPage.Master>
-  <MasterDetailPage.Detail>     
-         <local:FeedView x:Name="feedView" />    
-  </MasterDetailPage.Detail>
+<MasterDetailPage x:Class="YouWeesh.Mobile.Views.MenuPage"
+                  xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:local="clr-namespace:YouWeesh.Mobile.Views;assembly=YouWeesh.Mobile">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu" Icon="hamburger.png">
+            <StackLayout VerticalOptions="FillAndExpand">
+                <ListView x:Name="listView"
+                          ItemSelected="OnItemSelected"
+                          SeparatorVisibility="None"
+                          VerticalOptions="FillAndExpand">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell ImageSource="{Binding IconSource}" Text="{Binding Title}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <local:FeedView x:Name="feedView" />
+    </MasterDetailPage.Detail>
 </MasterDetailPage>

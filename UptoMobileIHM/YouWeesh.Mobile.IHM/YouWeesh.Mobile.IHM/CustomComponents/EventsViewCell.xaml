@@ -2,11 +2,19 @@
 <ViewCell x:Class="YouWeesh.Mobile.CustomComponents.EventsViewCell"
           xmlns="http://xamarin.com/schemas/2014/forms"
           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-    <StackLayout Orientation="Horizontal" Padding="2">
-        <Image Source="" />
-        <Label Text="{Binding FirstName}" TextColor="#f35e20" />
-        <Label HorizontalOptions="EndAndExpand"
-               Text="{Binding Username}"
-               TextColor="#503026" />
+    <StackLayout Orientation="Horizontal"
+                 Padding="5"
+                 VerticalOptions="FillAndExpand">
+        <Image x:Name="img"
+               Source="{Binding Picture}"
+               WidthRequest="90" />
+        <StackLayout>
+            <Label Text="{Binding Title}" TextColor="Black" />
+            <Label Text="{Binding Location}" TextColor="#f35e20" />
+        </StackLayout>
+        <StackLayout>
+            <Label Text="{Binding StartDatetime}" TextColor="Black" />
+            <Label Text="{Binding EndDatetime}" TextColor="Black" />
+        </StackLayout>
     </StackLayout>
 </ViewCell>

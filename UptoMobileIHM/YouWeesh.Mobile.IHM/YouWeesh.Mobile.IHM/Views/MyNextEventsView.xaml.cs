@@ -16,9 +16,16 @@ namespace YouWeesh.Mobile.Views
         public MyNextEventsView ()
 		{
 			InitializeComponent ();
-            events.Add(new Business.Events { Title = "Tennis", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "tennis.jpg" });
-            events.Add(new Business.Events { Title = "Tennis", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "tennis.jpg" });
-            //weeshes.Add(new Weesh { Title = "Jouer au #foot", Creator = "Vince", Image = "weesh.png" });
+
+            #region Events MOCKS
+            events.Add(new Business.Events { Title = "Tennis playing", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "tennis.jpg", Location = "Centre sportif du bout du monde"});
+            events.Add(new Business.Events { Title = "Vernissage", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "drink.jpg", Location = "Centre sportif du bout du monde" });
+            events.Add(new Business.Events { Title = "Poker party", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "poker.jpg", Location = "Pickwick Bar" });
+            events.Add(new Business.Events { Title = "Drinking", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "drink.jpg", Location = "Pickwick Bar" });
+            events.Add(new Business.Events { Title = "#Futsal", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "futsal.jpg", Location = "Bout du monde" });
+
+            nextEvent.ItemsSource = events;
+            #endregion
         }
 	}
 }

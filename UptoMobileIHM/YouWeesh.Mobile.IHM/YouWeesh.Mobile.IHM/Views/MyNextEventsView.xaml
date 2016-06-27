@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage x:Class="YouWeesh.Mobile.Views.MyNextEventsView"
              xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile"
+             BackgroundColor="White">
     <StackLayout>
         <Grid>
             <Grid.ColumnDefinitions>
@@ -19,19 +21,20 @@
                     Image="filter.png" />
         </Grid>
         <ScrollView>
-            <Label Text="Tue 20 June" />
-            <ListView x:Name="nextEvent">
+            <ListView x:Name="nextEvent" RowHeight="100">
                 <ListView.ItemTemplate>
-                    <DataTemplate />
+                    <DataTemplate>
+                        <controls:EventsViewCell />
+                    </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Label Text="Fri 23 June" />
+            <!--<Label Text="Fri 23 June" />
             <ListView x:Name="nextEvent_">
                 <ListView.ItemTemplate>
                     <DataTemplate />
                 </ListView.ItemTemplate>
             </ListView>
+            -->
         </ScrollView>
-
     </StackLayout>
 </ContentPage>

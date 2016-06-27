@@ -13,6 +13,7 @@ namespace YouWeesh.Mobile.Business
         private String startDatetime;
         private String endDatetime;
         private List<Users> participants;
+        private Users creator;
         private String location;
         private String picture;
         #endregion
@@ -88,6 +89,18 @@ namespace YouWeesh.Mobile.Business
             set
             {
                 picture = value;
+            }
+        }
+        public Users Creator
+        {
+            get
+            {
+                return creator;
+            }
+
+            set
+            {
+                creator = value;
             }
         }
 
