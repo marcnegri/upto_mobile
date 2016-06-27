@@ -43,7 +43,7 @@ namespace YouWeesh.Mobile.Views
             masterPageItems.Add(new MasterPageItem
             {
                 Title = "Settings",
-                IconSource = "reminders.png",
+                IconSource = "settings.png",
                 TargetType = typeof(SettingsForm)
             });
             listView.ItemsSource = masterPageItems;

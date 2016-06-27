@@ -2485,32 +2485,35 @@ namespace YouWeesh.Mobile.IHM.Droid
 			// aapt resource value: 0x7f0200d3
 			public const int mr_ic_play_light = 2130837715;
 			
-			// aapt resource value: 0x7f0200dc
-			public const int notification_template_icon_bg = 2130837724;
+			// aapt resource value: 0x7f0200dd
+			public const int notification_template_icon_bg = 2130837725;
 			
 			// aapt resource value: 0x7f0200d4
 			public const int portrait = 2130837716;
 			
 			// aapt resource value: 0x7f0200d5
-			public const int settings72 = 2130837717;
+			public const int settings = 2130837717;
 			
 			// aapt resource value: 0x7f0200d6
-			public const int showmenu = 2130837718;
+			public const int settings72 = 2130837718;
 			
 			// aapt resource value: 0x7f0200d7
-			public const int tennis = 2130837719;
+			public const int showmenu = 2130837719;
 			
 			// aapt resource value: 0x7f0200d8
-			public const int twitter128 = 2130837720;
+			public const int tennis = 2130837720;
 			
 			// aapt resource value: 0x7f0200d9
-			public const int twitter32 = 2130837721;
+			public const int twitter128 = 2130837721;
 			
 			// aapt resource value: 0x7f0200da
-			public const int weesh = 2130837722;
+			public const int twitter32 = 2130837722;
 			
 			// aapt resource value: 0x7f0200db
-			public const int weesh72 = 2130837723;
+			public const int weesh = 2130837723;
+			
+			// aapt resource value: 0x7f0200dc
+			public const int weesh72 = 2130837724;
 			
 			static Drawable()
 			{

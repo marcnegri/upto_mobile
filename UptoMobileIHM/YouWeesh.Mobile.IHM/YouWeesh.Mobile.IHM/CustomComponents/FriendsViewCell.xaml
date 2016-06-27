@@ -3,12 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="YouWeesh.Mobile.CustomComponents.FriendsViewCell"
              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions">
-      <StackLayout Orientation="Horizontal" Padding="2">
-        <controls:CircleImage Source="{Binding Picture}" Aspect="AspectFit" ></controls:CircleImage>
-        <Label Text="{Binding FirstName}"
-        TextColor="#f35e20" />
-        <Label Text="{Binding Username}"
-        HorizontalOptions="EndAndExpand"
-        TextColor="#503026" />
-      </StackLayout>
+  <StackLayout Orientation="Horizontal" Padding="2">
+    <controls:CircleImage Source="{Binding Picture}" Aspect="AspectFit" ></controls:CircleImage>
+    <Label Text="{Binding FirstName}"
+    TextColor="#f35e20" />
+    <Label Text="{Binding Username}"
+    HorizontalOptions="EndAndExpand"
+    TextColor="#503026" />
+  </StackLayout>
 </ViewCell>

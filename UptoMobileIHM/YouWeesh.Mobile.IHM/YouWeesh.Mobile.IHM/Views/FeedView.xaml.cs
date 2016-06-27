@@ -12,6 +12,8 @@ namespace YouWeesh.Mobile.Views
     public partial class FeedView : TabbedPage
     {
         ObservableCollection<Weesh> weeshes = new ObservableCollection<Weesh>();
+        bool filterVisible = false;
+        FeedFilterForm feedFilterForm = new FeedFilterForm();
 
         public FeedView()
         {
@@ -37,7 +39,7 @@ namespace YouWeesh.Mobile.Views
                 Label = "Marcus",
                 Address = "Marcus Home"
             };
-            MyMap.Pins.Add(pinMarcus);
+            MyMap.Pins.Add(pinMarcus);          
 
             // 1 - test hide /unhide during an event (scroll)
             // grdListType.HeightRequest = 0;
@@ -83,18 +85,22 @@ namespace YouWeesh.Mobile.Views
         async void BtnFilter_Clicked(object sender, EventArgs e)
         {
             //var action = await DisplayActionSheet("ActionSheet: Send to?", "Cancel", null, "Email", "Twitter", "Facebook");
-            //await Navigation.PushModalAsync(new FeedFilterForm());
-            filterView.IsVisible = !filterView.IsVisible;
+            //await Navigation.PushModalAsync(new FeedFilterForm());           
 
-            if(filterView.IsVisible == true)
+            filterVisible = !filterVisible;
+
+            if (filterVisible == true)
             {
-                   
-                await filterView.LayoutTo(new Rectangle(filterView.X, filterView.Y - filterView.Height, filterView.Width, filterView.Height), 0);
-                await filterView.LayoutTo(new Rectangle(filterView.X, filterView.Y + filterView.Height, filterView.Width, filterView.Height), 150);
-
+                relativeLayout.Children.Add(feedFilterForm, Constraint.Constant(0),Constraint.Constant(-400));
+                await feedFilterForm.LayoutTo(new Rectangle(0, 0, feedFilterForm.Width, feedFilterForm.Height), 250);                
             }
-    
-       
+            else
+            {
+                await feedFilterForm.LayoutTo(new Rectangle(0, -1 * feedFilterForm.Height, feedFilterForm.Width, feedFilterForm.Height), 250);
+                relativeLayout.Children.Remove(feedFilterForm);
+            }
+
+
         }
 
 
