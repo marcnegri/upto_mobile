@@ -40,7 +40,6 @@
         <Picker Title="Range" Grid.Row="3" Grid.Column="1" x:Name="pkrMatchingZone"></Picker>
         <Label Text="Km" HorizontalOptions="StartAndExpand" Grid.Row="3" Grid.Column="2"></Label>
       </Grid>
-
       <Grid Padding="20">
         <Grid.ColumnDefinitions>
           <ColumnDefinition Width="Auto" />
@@ -58,7 +57,6 @@
         <Label Text="Friends requests" HorizontalOptions="StartAndExpand" Grid.Row="4" Grid.Column="0"></Label>
         <Switch HorizontalOptions="Center" Grid.Row="4" Grid.Column="1"></Switch>
       </Grid>
-
     </StackLayout>
   </ScrollView>
 </ContentPage>

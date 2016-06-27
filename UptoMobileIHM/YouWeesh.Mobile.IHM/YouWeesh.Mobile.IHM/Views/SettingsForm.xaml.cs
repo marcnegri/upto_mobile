@@ -14,10 +14,10 @@ namespace YouWeesh.Mobile.Views
         {
             InitializeComponent();
             Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0);
-
+            /*
             pkrLanguage.Items.Add("French");
             pkrLanguage.Items.Add("English");
-            pkrLanguage.Items.Add("Spanish");
+            pkrLanguage.Items.Add("Spanish");*/
         }
     }
 }

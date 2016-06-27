@@ -17,7 +17,7 @@
         <Button Image="filter.png" Grid.Row="0" Grid.Column="1" Clicked="BtnFilter_Clicked" BackgroundColor="White"></Button>
       </Grid>
       <local:FeedFilterForm x:Name="filterView" IsVisible="false"  />
-      <ScrollView Scrolled="scrlMainView_Scrolled" x:Name="scrlMainView">
+      <ScrollView Scrolled="scrlMainView_Scrolled" x:Name="scrlMainView" HeightRequest="900">
         <ListView x:Name="feedView" ItemAppearing="feedView_OnItemAppaering">
           <ListView.ItemTemplate>
             <DataTemplate>
@@ -25,15 +25,7 @@
             </DataTemplate>
           </ListView.ItemTemplate>
         </ListView>
-      </ScrollView>  
-      <Grid HorizontalOptions="Center" WidthRequest="190" HeightRequest="60" x:Name="grdListType">
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="Auto" />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-          <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-      </Grid>    
+      </ScrollView>       
     </StackLayout>
    </ContentPage>
   <NavigationPage Title="Map">

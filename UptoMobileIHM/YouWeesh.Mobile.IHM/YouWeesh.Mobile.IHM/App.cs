@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using Xamarin.Forms.Xaml;
 using Xamarin.Forms;
 
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace YouWeesh.Mobile
 {
+
     public class App : Application
     {
         public App()
