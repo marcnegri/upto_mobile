@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ViewCell x:Class="YouWeesh.Mobile.CustomComponents.EventsViewCell"
+          xmlns="http://xamarin.com/schemas/2014/forms"
+          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <StackLayout Orientation="Horizontal" Padding="2">
+        <Image Source="" />
+        <Label Text="{Binding FirstName}" TextColor="#f35e20" />
+        <Label HorizontalOptions="EndAndExpand"
+               Text="{Binding Username}"
+               TextColor="#503026" />
+    </StackLayout>
+</ViewCell>
