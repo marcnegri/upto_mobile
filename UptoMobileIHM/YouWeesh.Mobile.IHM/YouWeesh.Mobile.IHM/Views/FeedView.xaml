@@ -30,7 +30,7 @@
             <ScrollView x:Name="scrlMainView" Scrolled="scrlMainView_Scrolled">
                 <RelativeLayout x:Name="relativeLayout">
                     <ListView x:Name="feedView"
-                              HeightRequest="900"
+                              HeightRequest="901"
                               ItemAppearing="feedView_OnItemAppaering">
                         <ListView.ItemTemplate>
                             <DataTemplate>
