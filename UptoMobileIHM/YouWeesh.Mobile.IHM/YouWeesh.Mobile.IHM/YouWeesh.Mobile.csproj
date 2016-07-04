@@ -38,11 +38,15 @@
     <Compile Include="App.cs" />
     <Compile Include="Business\Authenticator.cs" />
     <Compile Include="Business\Events.cs" />
+    <Compile Include="CustomComponents\ContentViewFeedCell.cs" />
     <Compile Include="CustomComponents\EventsViewCell.xaml.cs">
       <DependentUpon>EventsViewCell.xaml</DependentUpon>
     </Compile>
     <Compile Include="Business\Users.cs" />
     <Compile Include="Business\Weesh.cs" />
+    <Compile Include="CustomComponents\FeedViewCell.xaml.cs">
+      <DependentUpon>FeedViewCell.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CustomComponents\FriendsViewCell.xaml.cs">
       <DependentUpon>FriendsViewCell.xaml</DependentUpon>
     </Compile>
@@ -181,6 +185,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\EventDetailsView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CustomComponents\FeedViewCell.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
