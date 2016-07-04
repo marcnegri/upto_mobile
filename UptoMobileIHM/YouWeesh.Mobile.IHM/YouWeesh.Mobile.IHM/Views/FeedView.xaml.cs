@@ -20,14 +20,14 @@ namespace YouWeesh.Mobile.Views
             InitializeComponent();
             this.BackgroundColor = Color.FromRgb(70, 146, 221);
 
-            weeshes.Add(new Weesh { Title = "Jouer au #foot", Creator = "Vince", Image = "weesh.png" });
-            weeshes.Add(new Weesh { Title = "Faire une partie de #tennis", Creator = "Marcus", Image = "weesh.png" });
-            weeshes.Add(new Weesh { Title = "Motivé pour aller au #theatre", Creator = "James", Image = "weesh.png" });
-            weeshes.Add(new Weesh { Title = "#courrir !!", Creator = "Nadia", Image = "weesh.png" });
-            weeshes.Add(new Weesh { Title = "Discuter autour d'un #verre", Creator = "Jenny", Image = "weesh.png" });
-            weeshes.Add(new Weesh { Title = "Aller regarder l'#euro", Creator = "Loic", Image = "weesh.png" });
-            weeshes.Add(new Weesh { Title = "Je vais mater l'#euro a la #fanzone", Creator = "Marcus", Image = "weesh.png" });
-            weeshes.Add(new Weesh { Title = "J'ai faim de  #nectarine", Creator = "Vivi", Image = "weesh.png" });
+            weeshes.Add(new Weesh { Title = "Jouer au #foot", Creator = "Vince", Image = "portrait.jpg" });
+            weeshes.Add(new Weesh { Title = "Faire une partie de #tennis", Creator = "Marcus", Image = "portrait.jpg" });
+            weeshes.Add(new Weesh { Title = "Motivé pour aller au #theatre", Creator = "James", Image = "portrait.jpg" });
+            weeshes.Add(new Weesh { Title = "#courrir !!", Creator = "Nadia", Image = "portrait.jpg" });
+            weeshes.Add(new Weesh { Title = "Discuter autour d'un #verre", Creator = "Jenny", Image = "portrait.jpg" });
+            weeshes.Add(new Weesh { Title = "Aller regarder l'#euro", Creator = "Loic", Image = "portrait.jpg" });
+            weeshes.Add(new Weesh { Title = "Je vais mater l'#euro a la #fanzone", Creator = "Marcus", Image = "portrait.jpg" });
+            weeshes.Add(new Weesh { Title = "J'ai faim de  #nectarine", Creator = "Vivi", Image = "portrait.jpg" });
 
             feedView.ItemsSource = weeshes;
 
