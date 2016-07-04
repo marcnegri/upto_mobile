@@ -4,7 +4,9 @@
                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                   xmlns:local="clr-namespace:YouWeesh.Mobile.Views;assembly=YouWeesh.Mobile">
     <MasterDetailPage.Master>
-        <ContentPage Title="Menu" Icon="hamburger.png">
+        <ContentPage x:Name="ctnHeader"
+                     Title="Menu"
+                     Icon="hamburger.png">
             <StackLayout VerticalOptions="FillAndExpand">
                 <ListView x:Name="listView"
                           ItemSelected="OnItemSelected"

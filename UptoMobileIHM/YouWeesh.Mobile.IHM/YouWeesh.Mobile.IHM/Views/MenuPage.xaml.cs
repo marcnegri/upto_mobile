@@ -14,6 +14,8 @@ namespace YouWeesh.Mobile.Views
         public MenuPage()
         {
             InitializeComponent();
+            ctnHeader.BackgroundColor = Color.Yellow;
+            this.BackgroundColor = Color.FromRgb(70, 146, 221);
             var masterPageItems = new List<MasterPageItem>();
             masterPageItems.Add(new MasterPageItem
             {

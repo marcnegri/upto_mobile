@@ -2,12 +2,12 @@
 <ViewCell x:Class="YouWeesh.Mobile.CustomComponents.EventsViewCell"
           xmlns="http://xamarin.com/schemas/2014/forms"
           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-    <StackLayout Orientation="Horizontal"
-                 Padding="5"
+    <StackLayout x:Name="mainLayout"
+                 BackgroundColor="Yellow"
+                 Orientation="Horizontal"
+                 Padding="10"
                  VerticalOptions="FillAndExpand">
-        <Image x:Name="img"
-               Source="{Binding Picture}"
-               WidthRequest="90" />
+        <Image x:Name="img" Source="{Binding Picture}" />
         <StackLayout>
             <Label Text="{Binding Title}" TextColor="Black" />
             <Label Text="{Binding Location}" TextColor="#f35e20" />

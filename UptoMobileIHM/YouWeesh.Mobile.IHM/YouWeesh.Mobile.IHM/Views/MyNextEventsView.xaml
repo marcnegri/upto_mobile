@@ -1,40 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage x:Class="YouWeesh.Mobile.Views.MyNextEventsView"
-             xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:controls="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile"
-             BackgroundColor="White">
-    <StackLayout>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto" />
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
-            <SearchBar Grid.Row="0"
-                       Grid.Column="0"
-                       Placeholder="Search terms..." />
-            <Button Grid.Row="0"
-                    Grid.Column="1"
-                    BackgroundColor="White"
-                    Image="filter.png" />
-        </Grid>
-        <ScrollView>
-            <ListView x:Name="nextEvent" RowHeight="100">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <controls:EventsViewCell />
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            <!--<Label Text="Fri 23 June" />
-            <ListView x:Name="nextEvent_">
-                <ListView.ItemTemplate>
-                    <DataTemplate />
-                </ListView.ItemTemplate>
-            </ListView>
-            -->
-        </ScrollView>
-    </StackLayout>
-</ContentPage>
+<CarouselPage x:Class="YouWeesh.Mobile.Views.MyNextEventsView"
+              xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:controls="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile"
+              xmlns:fab="clr-namespace:FAB.Forms;assembly=FAB.Forms">
+    <ContentPage x:Name="eventsListPage">
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <SearchBar Grid.Row="0"
+                           Grid.Column="0"
+                           Placeholder="Search terms..." />
+            </Grid>
+            <ScrollView>
+                <ListView x:Name="nextEvent"
+                          GroupDisplayBinding="{Binding Title}"
+                          GroupShortNameBinding="{Binding ShortName}"
+                          HasUnevenRows="True"
+                          HeightRequest="600"
+                          IsGroupingEnabled="true"
+                          RowHeight="20"
+                          SeparatorColor="Black">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <controls:EventsViewCell x:Name="evtViewCell" Tapped="eventViewCell_Taped" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage>
+</CarouselPage>

@@ -18,7 +18,6 @@ namespace YouWeesh.Mobile.Views
         public FeedView()
         {
             InitializeComponent();
-            this.BackgroundColor = Color.FromRgb(70, 146, 221);
 
             weeshes.Add(new Weesh { Title = "Jouer au #foot", Creator = "Vince", Image = "weesh.png" });
             weeshes.Add(new Weesh { Title = "Faire une partie de #tennis", Creator = "Marcus", Image = "weesh.png" });

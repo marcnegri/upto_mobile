@@ -1,44 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
-             xmlns:local="clr-namespace:YouWeesh.Mobile.Views;assembly=YouWeesh.Mobile"
-             x:Class="YouWeesh.Mobile.Views.FeedView">
-  <ContentPage Title="List" x:Name="contentPage">
-    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" BackgroundColor="White" x:Name="stackLayout">
-      <Grid>
-        <Grid.ColumnDefinitions>
-          <ColumnDefinition Width="Auto" />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-          <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <SearchBar Placeholder="Search terms..." TextChanged="SearchBar_OnTextChanged" Grid.Row="0" Grid.Column="0" BackgroundColor="White"></SearchBar>
-        <Button Image="filter.png" Grid.Row="0" Grid.Column="1" Clicked="BtnFilter_Clicked" BackgroundColor="White"></Button>
-      </Grid>     
-       <ScrollView Scrolled="scrlMainView_Scrolled" x:Name="scrlMainView">
-          <RelativeLayout x:Name="relativeLayout">
-          <ListView x:Name="feedView" ItemAppearing="feedView_OnItemAppaering" HeightRequest="900">
-            <ListView.ItemTemplate>
-              <DataTemplate>
-                <ImageCell Text="{Binding Title}" Detail="{Binding Creator}" ImageSource="{Binding Image}" Tapped="ImageCell_OnTapped"/>
-              </DataTemplate>
-            </ListView.ItemTemplate>
-          </ListView>
-          </RelativeLayout>
-       </ScrollView>
-    </StackLayout>
-   </ContentPage>
-  <NavigationPage Title="Map">
-    <x:Arguments>
-      <ContentPage>
-        <StackLayout VerticalOptions="StartAndExpand" Padding="30">
-          <maps:Map HeightRequest = "600"
-                WidthRequest = "250"
-              x:Name="MyMap"
-              IsShowingUser="true"/>
+<TabbedPage x:Class="YouWeesh.Mobile.Views.FeedView"
+            xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:YouWeesh.Mobile.Views;assembly=YouWeesh.Mobile"
+            xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
+    <ContentPage x:Name="contentPage" Title="List">
+        <StackLayout x:Name="stackLayout"
+                     BackgroundColor="White"
+                     HorizontalOptions="FillAndExpand"
+                     Orientation="Vertical">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <SearchBar Grid.Row="0"
+                           Grid.Column="0"
+                           BackgroundColor="White"
+                           Placeholder="Search terms..."
+                           TextChanged="SearchBar_OnTextChanged" />
+                <Button Grid.Row="0"
+                        Grid.Column="1"
+                        BackgroundColor="White"
+                        Clicked="BtnFilter_Clicked"
+                        Image="filter.png" />
+            </Grid>
+            <ScrollView x:Name="scrlMainView" Scrolled="scrlMainView_Scrolled">
+                <RelativeLayout x:Name="relativeLayout">
+                    <ListView x:Name="feedView"
+                              HeightRequest="900"
+                              ItemAppearing="feedView_OnItemAppaering">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ImageCell Detail="{Binding Creator}"
+                                           ImageSource="{Binding Image}"
+                                           Tapped="ImageCell_OnTapped"
+                                           Text="{Binding Title}" />
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </RelativeLayout>
+            </ScrollView>
         </StackLayout>
-      </ContentPage>
-    </x:Arguments>
-  </NavigationPage>
+    </ContentPage>
+    <NavigationPage Title="Map">
+        <x:Arguments>
+            <ContentPage>
+                <StackLayout Padding="30" VerticalOptions="StartAndExpand">
+                    <maps:Map x:Name="MyMap"
+                              HeightRequest="600"
+                              IsShowingUser="true"
+                              WidthRequest="250" />
+                </StackLayout>
+            </ContentPage>
+        </x:Arguments>
+    </NavigationPage>
 </TabbedPage>
