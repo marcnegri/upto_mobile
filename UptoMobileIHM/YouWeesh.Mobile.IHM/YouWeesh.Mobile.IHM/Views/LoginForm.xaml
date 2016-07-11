@@ -1,21 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage x:Class="YouWeesh.Mobile.Views.LoginForm"
+             xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="YouWeesh.Mobile.Views.LoginForm" Padding="5">
-  <ScrollView>
-    <StackLayout x:Name="stk">
-      <Image x:Name="imgWeesh" Source="weesh72.png" HorizontalOptions="Center"/>
-      <Entry TextColor="White" BackgroundColor="Silver" Focused="Entry_Focused" Placeholder="Username" ></Entry>
-      <Entry TextColor="White" IsPassword="true" BackgroundColor="Silver" Placeholder="Password" Focused="Entry_Focused"></Entry>
-      <Button Text="Login" Clicked="btnLogin_Clicked" BackgroundColor="Silver"/>
-      <Label Text="Forgot password?" VerticalOptions="Center" HorizontalOptions="Center"/>
-      
-      <Button Text="Login With Facebook" Image="facebook32.png"/>
-      <Button Text="Login With Twitter" Clicked="BtnTwitter_Clicked" Image="twitter32.png"/>
-      <Button Text="Login With Google+" Image="google32.png"/>
-      <Label Text="Don't have an account yet ?" VerticalOptions="Center" HorizontalOptions="Center"/>
-    
-      <Button Text="Register" Clicked="btnRegister_Clicked"/>
-    </StackLayout>
-  </ScrollView>
+             Padding="5">
+    <ScrollView>
+        <StackLayout x:Name="stk">
+            <Image x:Name="imgWeesh"
+                   HorizontalOptions="Center"
+                   Source="weesh72.png" />
+            <Entry BackgroundColor="Silver"
+                   Focused="Entry_Focused"
+                   Placeholder="Username"
+                   TextColor="White" />
+            <Entry BackgroundColor="Silver"
+                   Focused="Entry_Focused"
+                   IsPassword="true"
+                   Placeholder="Password"
+                   TextColor="White" />
+            <Button BackgroundColor="Silver"
+                    Clicked="btnLogin_Clicked"
+                    Text="Login" />
+            <Label HorizontalOptions="Center"
+                   Text="Forgot password?"
+                   VerticalOptions="Center" />
+
+
+            <Button Image="facebook32.png" Text="Login With Facebook" />
+            <Button Clicked="BtnTwitter_Clicked"
+                    Image="twitter32.png"
+                    Text="Login With Twitter" />
+            <Button Image="google32.png" Text="Login With Google+" />
+            <Label HorizontalOptions="Center"
+                   Text="Don't have an account yet ?"
+                   VerticalOptions="Center" />
+
+            <Button Clicked="btnRegister_Clicked" Text="Register" />
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

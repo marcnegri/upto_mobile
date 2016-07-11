@@ -12,6 +12,7 @@ namespace YouWeesh.Mobile.Business
         private String title;
         private String startDatetime;
         private String endDatetime;
+        private String description;
         private List<Users> participants;
         private Users creator;
         private String location;
@@ -101,6 +102,19 @@ namespace YouWeesh.Mobile.Business
             set
             {
                 creator = value;
+            }
+        }
+
+        public string Description
+        {
+            get
+            {
+                return description;
+            }
+
+            set
+            {
+                description = value;
             }
         }
 

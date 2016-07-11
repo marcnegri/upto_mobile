@@ -2,19 +2,47 @@
 <ViewCell x:Class="YouWeesh.Mobile.CustomComponents.EventsViewCell"
           xmlns="http://xamarin.com/schemas/2014/forms"
           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-    <StackLayout x:Name="mainLayout"
-                 BackgroundColor="Yellow"
-                 Orientation="Horizontal"
-                 Padding="10"
-                 VerticalOptions="FillAndExpand">
-        <Image x:Name="img" Source="{Binding Picture}" />
-        <StackLayout>
-            <Label Text="{Binding Title}" TextColor="Black" />
-            <Label Text="{Binding Location}" TextColor="#f35e20" />
+    <StackLayout>
+        <StackLayout x:Name="mainLayout" Spacing="0">
+            <Image x:Name="img" Source="{Binding Picture}" />
+            <Grid BackgroundColor="White"
+                  ColumnSpacing="10"
+                  Padding="5,5,1,0"
+                  RowSpacing="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="2"
+                       FontAttributes="Bold"
+                       FontSize="24"
+                       Text="{Binding Title}"
+                       TextColor="Black"
+                       XAlign="Center"
+                       YAlign="Center" />
+                <Label Grid.Row="1"
+                       Grid.Column="0"
+                       Text="{Binding StartDatetime}"
+                       TextColor="Black" />
+                <Label Grid.Row="1"
+                       Grid.Column="1"
+                       Text="{Binding Description}"
+                       TextColor="Black" />
+                <Label Grid.Row="2"
+                       Grid.Column="0"
+                       Text="{Binding EndDatetime}"
+                       TextColor="Black" />
+            </Grid>
         </StackLayout>
-        <StackLayout>
-            <Label Text="{Binding StartDatetime}" TextColor="Black" />
-            <Label Text="{Binding EndDatetime}" TextColor="Black" />
+        <StackLayout BackgroundColor="Black" HeightRequest="2">
+            <Label Text=" " />
         </StackLayout>
     </StackLayout>
 </ViewCell>

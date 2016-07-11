@@ -3,7 +3,7 @@
               xmlns="http://xamarin.com/schemas/2014/forms"
               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
               xmlns:controls="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile"
-              xmlns:fab="clr-namespace:FAB.Forms;assembly=FAB.Forms">
+              BackgroundColor="White">
     <ContentPage x:Name="eventsListPage">
         <StackLayout>
             <Grid>
@@ -22,10 +22,10 @@
                           GroupDisplayBinding="{Binding Title}"
                           GroupShortNameBinding="{Binding ShortName}"
                           HasUnevenRows="True"
-                          HeightRequest="600"
                           IsGroupingEnabled="true"
                           RowHeight="20"
-                          SeparatorColor="Black">
+                          SeparatorVisibility="None">
+
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <controls:EventsViewCell x:Name="evtViewCell" Tapped="eventViewCell_Taped" />

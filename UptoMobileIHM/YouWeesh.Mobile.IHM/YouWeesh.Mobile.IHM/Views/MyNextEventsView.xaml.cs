@@ -17,20 +17,22 @@ namespace YouWeesh.Mobile.Views
             InitializeComponent();
 
             #region Events MOCKS
+            /*
             events.Add(new Business.Events { Title = "Tennis playing", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "tennis.jpg", Location = "Centre sportif du bout du monde" });
             events.Add(new Business.Events { Title = "Vernissage", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "drink.jpg", Location = "Centre sportif du bout du monde" });
             events.Add(new Business.Events { Title = "Poker party", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "poker.jpg", Location = "Pickwick Bar" });
             events.Add(new Business.Events { Title = "Drinking", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "drink.jpg", Location = "Pickwick Bar" });
             events.Add(new Business.Events { Title = "#Futsal", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "futsal.jpg", Location = "Bout du monde" });
-
+            */
             //nextEvent.ItemsSource = events;
 
             List<PageTypeGroup> pgs = new List<PageTypeGroup>
             {
                 new PageTypeGroup("27.06.2016")
                 {
+                    new Business.Events { Title = "Tennis playing", StartDatetime = "2:30 ago", EndDatetime = "<-> 205km", Picture = "tennis.jpg", Location = "Centre sportif du bout du monde", Description="Samedi une marche découverte et dimanche les courses avec 3 distances : 12 km, 20 km et 32 km" },
                     new Business.Events { Title = "Tennis playing", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "tennis.jpg", Location = "Centre sportif du bout du monde" },
-                    new Business.Events { Title = "Tennis playing", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "tennis.jpg", Location = "Centre sportif du bout du monde" }
+                    new Business.Events { Title = "Poker party", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "poker.jpg", Location = "Pickwick Bar", Description="Final des WPT avec Patrick Bruel en Guest Star ! Du lourd " }
                 },
                 new PageTypeGroup("30.06.2016")
                 {
@@ -46,7 +48,6 @@ namespace YouWeesh.Mobile.Views
                 },
             };
             #endregion
-
             nextEvent.ItemsSource = pgs;
         }
 
