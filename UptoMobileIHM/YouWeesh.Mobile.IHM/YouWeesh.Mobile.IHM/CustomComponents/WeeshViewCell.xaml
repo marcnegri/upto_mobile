@@ -5,13 +5,15 @@
           xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
           xmlns:controls2="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile">
   <controls2:ContentViewFeedCell x:Name="contentView">
-    <StackLayout Orientation="Horizontal" Padding="20">
-      <controls:CircleImage VerticalOptions="Center" Aspect="AspectFit" Source="{Binding Image}" Scale="1.5" />
-      <StackLayout Orientation="Vertical" Padding="10, 1, 0, 0">
-        <Label Text="{Binding Title}" TextColor="#000000" FontAttributes="Bold" />
-        <Label HorizontalOptions="Start"
-           Text="{Binding Creator}"
-           TextColor="#503026" />
+    <StackLayout Orientation="Horizontal" Padding="30, 0, 0, 0">
+      <controls:CircleImage VerticalOptions="Center" Aspect="AspectFit" Source="{Binding Image}" Scale="2" />
+      <StackLayout Orientation="Vertical" Padding="20, 10, 0, 0">
+        <Label Text="{Binding Title}" TextColor="#000000" FontAttributes="Bold"/>
+        <Label Text="{Binding Creator}" TextColor="#503026" FontSize="11"/>
+        <StackLayout Orientation="Vertical" Padding="0, 7, 0, 0">
+          <Label Text="{Binding CreationDate}" TextColor="Gray" FontSize="8"/>
+          <Label Text="{Binding Distance}" TextColor="Gray" FontSize="8"/>
+        </StackLayout>     
       </StackLayout>
       <Button Text="Delete" WidthRequest="0" x:Name="buttonDelete" IsVisible="false" TextColor="#f35e20" HorizontalOptions="End"></Button>
    </StackLayout>  
