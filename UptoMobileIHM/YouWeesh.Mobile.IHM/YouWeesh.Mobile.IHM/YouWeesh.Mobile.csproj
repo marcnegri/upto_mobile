@@ -44,11 +44,14 @@
     </Compile>
     <Compile Include="Business\Users.cs" />
     <Compile Include="Business\Weesh.cs" />
-    <Compile Include="CustomComponents\FeedViewCell.xaml.cs">
+    <Compile Include="Sandbox\FeedViewCell.xaml.cs">
       <DependentUpon>FeedViewCell.xaml</DependentUpon>
     </Compile>
     <Compile Include="CustomComponents\FriendsViewCell.xaml.cs">
       <DependentUpon>FriendsViewCell.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomComponents\WeeshViewCell.xaml.cs">
+      <DependentUpon>WeeshViewCell.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\EventDetailsView.xaml.cs">
       <DependentUpon>EventDetailsView.xaml</DependentUpon>
@@ -190,7 +193,13 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CustomComponents\FeedViewCell.xaml">
+    <EmbeddedResource Include="Sandbox\FeedViewCell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CustomComponents\WeeshViewCell.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

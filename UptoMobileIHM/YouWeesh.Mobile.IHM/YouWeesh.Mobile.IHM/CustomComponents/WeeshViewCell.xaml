@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ViewCell x:Class="YouWeesh.Mobile.CustomComponents.WeeshViewCell"
+          xmlns="http://xamarin.com/schemas/2014/forms"
+          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+          xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+          xmlns:controls2="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile">
+  <controls2:ContentViewFeedCell x:Name="contentView">
+    <StackLayout Orientation="Horizontal" Padding="20">
+      <controls:CircleImage VerticalOptions="Center" Aspect="AspectFit" Source="{Binding Image}" Scale="1.5" />
+      <StackLayout Orientation="Vertical" Padding="10, 1, 0, 0">
+        <Label Text="{Binding Title}" TextColor="#000000" FontAttributes="Bold" />
+        <Label HorizontalOptions="Start"
+           Text="{Binding Creator}"
+           TextColor="#503026" />
+      </StackLayout>
+      <Button Text="Delete" WidthRequest="0" x:Name="buttonDelete" IsVisible="false" TextColor="#f35e20" HorizontalOptions="End"></Button>
+   </StackLayout>  
+ </controls2:ContentViewFeedCell>
+</ViewCell>

@@ -19,14 +19,14 @@
       </Grid>     
        <ScrollView Scrolled="scrlMainView_Scrolled" x:Name="scrlMainView">       
           <RelativeLayout x:Name="relativeLayout">
-          <ListView x:Name="feedView" ItemAppearing="feedView_OnItemAppaering" HeightRequest="900">
+          <ListView x:Name="feedView" ItemAppearing="feedView_OnItemAppaering" HasUnevenRows="True">
             <ListView.ItemTemplate>
               <DataTemplate>
-                <controls:FeedViewCell Tapped="ImageCell_OnTapped"/>              
+                <controls:WeeshViewCell Tapped="ImageCell_OnTapped" Height="100"/>              
               </DataTemplate>
             </ListView.ItemTemplate>
           </ListView>
-          </RelativeLayout>
+         </RelativeLayout>
        </ScrollView>
     </StackLayout>
    </ContentPage>
