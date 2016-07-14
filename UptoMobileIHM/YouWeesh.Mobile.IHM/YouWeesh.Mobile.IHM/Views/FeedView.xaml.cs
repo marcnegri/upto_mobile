@@ -19,14 +19,14 @@ namespace YouWeesh.Mobile.Views
         {
             InitializeComponent();
 
-            weeshes.Add(new Weesh { Title = "Jouer au #foot", Creator = "Vince", Image = "portrait.jpg" });
-            weeshes.Add(new Weesh { Title = "Faire une partie de #tennis", Creator = "Marcus", Image = "portrait.jpg" });
-            weeshes.Add(new Weesh { Title = "Motivé pour aller au #theatre", Creator = "James", Image = "portrait.jpg" });
-            weeshes.Add(new Weesh { Title = "#courrir !!", Creator = "Nadia", Image = "portrait.jpg" });
-            weeshes.Add(new Weesh { Title = "Discuter autour d'un #verre", Creator = "Jenny", Image = "portrait.jpg" });
-            weeshes.Add(new Weesh { Title = "Aller regarder l'#euro", Creator = "Loic", Image = "portrait.jpg" });
-            weeshes.Add(new Weesh { Title = "Je vais mater l'#euro a la #fanzone", Creator = "Marcus", Image = "portrait.jpg" });
-            weeshes.Add(new Weesh { Title = "J'ai faim de  #nectarine", Creator = "Vivi", Image = "portrait.jpg" });
+            weeshes.Add(new Weesh { Title = "Jouer au #foot", Creator = "Vince", Image = "portrait.jpg", CreationDate = "01h30 ago", Distance = "1 km" });
+            weeshes.Add(new Weesh { Title = "Faire une partie de #tennis", Creator = "Marcus", Image = "portrait.jpg", CreationDate = "03h30 ago", Distance = "1,5 km" });
+            weeshes.Add(new Weesh { Title = "Motivé pour aller au #theatre", Creator = "James", Image = "portrait.jpg", CreationDate = "06h00 ago", Distance = "0.5 km" });
+            weeshes.Add(new Weesh { Title = "#courrir !!", Creator = "Nadia", Image = "portrait.jpg", CreationDate = "06h15 ago", Distance = "2 km" });
+            weeshes.Add(new Weesh { Title = "Discuter autour d'un #verre", Creator = "Jenny", Image = "portrait.jpg", CreationDate = "06h45 ago", Distance = "1,2 km" });
+            weeshes.Add(new Weesh { Title = "Aller regarder l'#euro", Creator = "Loic", Image = "portrait.jpg", CreationDate = "07h00 ago", Distance = "2,6 km" });
+            weeshes.Add(new Weesh { Title = "Je vais mater l'#euro a la #fanzone", Creator = "Marcus", Image = "portrait.jpg", CreationDate = "07h15 ago", Distance = "0.6 km" });
+            weeshes.Add(new Weesh { Title = "J'ai faim de  #nectarine", Creator = "Vivi", Image = "portrait.jpg", CreationDate = "12h00 ago", Distance = "0,3 km" });
 
             feedView.ItemsSource = weeshes;
 
@@ -111,6 +111,8 @@ namespace YouWeesh.Mobile.Views
         public string Title { get; set; }
         public string Creator { get; set; }
         public string Image { get; set; }
+        public string CreationDate { get; set; }
+        public string Distance { get; set; }
     }
 
 
