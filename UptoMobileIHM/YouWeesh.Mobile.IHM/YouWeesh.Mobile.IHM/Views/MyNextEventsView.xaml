@@ -17,7 +17,7 @@
                            Grid.Column="0"
                            Placeholder="Search terms..." />
             </Grid>
-            <ScrollView>
+            <ScrollView VerticalOptions="LayoutOptions.FillAndExpand">
                 <ListView x:Name="nextEvent"
                           GroupDisplayBinding="{Binding Title}"
                           GroupShortNameBinding="{Binding ShortName}"

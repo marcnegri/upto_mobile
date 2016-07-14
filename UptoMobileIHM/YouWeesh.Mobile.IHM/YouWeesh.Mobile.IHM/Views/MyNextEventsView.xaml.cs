@@ -15,7 +15,7 @@ namespace YouWeesh.Mobile.Views
         public MyNextEventsView()
         {
             InitializeComponent();
-
+            
             #region Events MOCKS
             /*
             events.Add(new Business.Events { Title = "Tennis playing", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "tennis.jpg", Location = "Centre sportif du bout du monde" });

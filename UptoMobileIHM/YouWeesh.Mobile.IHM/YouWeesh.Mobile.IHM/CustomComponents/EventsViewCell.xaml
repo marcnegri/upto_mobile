@@ -7,7 +7,7 @@
             <Image x:Name="img" Source="{Binding Picture}" />
             <Grid BackgroundColor="White"
                   ColumnSpacing="10"
-                  Padding="5,5,1,0"
+                  Padding="5,1,1,0"
                   RowSpacing="5">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -34,7 +34,7 @@
                 <Label Grid.Row="1"
                        Grid.Column="1"
                        Text="{Binding Description}"
-                       TextColor="Black" />
+                       TextColor="Gray" />
                 <Label Grid.Row="2"
                        Grid.Column="0"
                        Text="{Binding EndDatetime}"
