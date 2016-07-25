@@ -6,39 +6,20 @@
             xmlns:local="clr-namespace:YouWeesh.Mobile.Views;assembly=YouWeesh.Mobile"
             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
     	<StackLayout x:Name="stackLayout"
-                     BackgroundColor="White"
+                     BackgroundColor="#EEEEEE"
                      HorizontalOptions="FillAndExpand"
                      Orientation="Vertical">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" />
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
-                <SearchBar Grid.Row="0"
-                           Grid.Column="0"
-                           BackgroundColor="White"
-                           Placeholder="Search terms..."
-                           TextChanged="SearchBar_OnTextChanged" />
-                <Button Grid.Row="0"
-                        Grid.Column="1"
-                        BackgroundColor="White"
-                        Clicked="BtnFilter_Clicked"
-                        Image="filter.png" />
-            </Grid>
-            <ScrollView x:Name="scrlMainView"
-                        Scrolled="scrlMainView_Scrolled"
-                        VerticalOptions="LayoutOptions.FillAndExpand">
+    		<ScrollView x:Name="scrlMainView"
+                         Margin="0,10,0,0"  VerticalOptions="LayoutOptions.FillAndExpand">
                 <RelativeLayout x:Name="relativeLayout">
+                	<ContentPage.Resources>
+    				<ResourceDictionary>
+      					<controls:FeedViewTemplateSelector x:Key="ElementTemplateSelector"></controls:FeedViewTemplateSelector>
+    				</ResourceDictionary>
+  					</ContentPage.Resources>
                     <ListView x:Name="feedView"
                               HasUnevenRows="True"
-                              ItemAppearing="feedView_OnItemAppaering">
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <controls:WeeshViewCell Height="100" Tapped="ImageCell_OnTapped" />
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
+							  ItemTemplate="{StaticResource ElementTemplateSelector}" >
                     </ListView>
                 </RelativeLayout>
             </ScrollView>

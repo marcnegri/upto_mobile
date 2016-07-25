@@ -11,7 +11,7 @@ namespace YouWeesh.Mobile.Views
 {
 	public partial class FeedView : ContentPage
 	{
-		ObservableCollection<Weesh> weeshes = new ObservableCollection<Weesh>();
+		ObservableCollection<Business.Element> elements = new ObservableCollection<Business.Element>();
 		bool filterVisible = false;
 		FeedFilterForm feedFilterForm = new FeedFilterForm();
 
@@ -41,19 +41,26 @@ namespace YouWeesh.Mobile.Views
 				Text = "Filter",
 				Icon = "Filtericon.png",
 				Order = ToolbarItemOrder.Primary,
+				Command = new Command(this.ShowFilterView),
 				Priority = 1
 			});
 
-			weeshes.Add(new Weesh { Title = "Jouer au #foot", Creator = "Vince", Image = "portrait.jpg", CreationDate = "01h30 ago", Distance = "1 km" });
-			weeshes.Add(new Weesh { Title = "Faire une partie de #tennis", Creator = "Marcus", Image = "portrait.jpg", CreationDate = "03h30 ago", Distance = "1,5 km" });
-			weeshes.Add(new Weesh { Title = "Motivé pour aller au #theatre", Creator = "James", Image = "portrait.jpg", CreationDate = "06h00 ago", Distance = "0.5 km" });
-			weeshes.Add(new Weesh { Title = "#courrir !!", Creator = "Nadia", Image = "portrait.jpg", CreationDate = "06h15 ago", Distance = "2 km" });
-			weeshes.Add(new Weesh { Title = "Discuter autour d'un #verre", Creator = "Jenny", Image = "portrait.jpg", CreationDate = "06h45 ago", Distance = "1,2 km" });
-			weeshes.Add(new Weesh { Title = "Aller regarder l'#euro", Creator = "Loic", Image = "portrait.jpg", CreationDate = "07h00 ago", Distance = "2,6 km" });
-			weeshes.Add(new Weesh { Title = "Je vais mater l'#euro a la #fanzone", Creator = "Marcus", Image = "portrait.jpg", CreationDate = "07h15 ago", Distance = "0.6 km" });
-			weeshes.Add(new Weesh { Title = "J'ai faim de  #nectarine", Creator = "Vivi", Image = "portrait.jpg", CreationDate = "12h00 ago", Distance = "0,3 km" });
+			elements.Add(new Business.Element { Title = "Jouer au #foot", Picture = "portrait2.png", CreationDate = "01h30 ago", Location = "1 km", IsEvent=false });
+			elements.Add(new Business.Element { Title = "Faire une partie de #tennis", Picture = "portrait3.png", CreationDate = "03h30 ago", Location = "1,5 km", IsEvent = false });
+			elements.Add(new Business.Element { Title = "Trail des Roussets", StartDatetime = "2:30 ago", EndDatetime = "<-> 205km",CreationDate = "02h30 ago", Picture = "trail.jpg", Location = "Centre sportif du bout du monde", Description = "Samedi une marche découverte et dimanche les courses avec 3 distances : 12 km, 20 km et 32 km", IsEvent = true });
+			elements.Add(new Business.Element { Title = "Tennis playing", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "tennis.jpg", CreationDate = "03h30 ago", Location = "Centre sportif du bout du monde", IsEvent=true });
+			elements.Add(new Business.Element { Title = "Vernissage", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "drink.jpg", CreationDate = "02h20 ago", Location = "Centre sportif du bout du monde", IsEvent=true });
+			elements.Add(new Business.Element { Title = "Motivé pour aller au #theatre", Picture = "portrait4.png", CreationDate = "06h00 ago", Location = "0.5 km", IsEvent = false });
+			elements.Add(new Business.Element { Title = "#Futsal", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "futsal.jpg", CreationDate = "04h40 ago", Location = "Bout du monde", IsEvent = true });
+			elements.Add(new Business.Element { Title = "Poker party", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "poker.jpg", CreationDate = "05h50 ago", Location = "Pickwick Bar", IsEvent = true });
+			elements.Add(new Business.Element { Title = "#courrir !!", Picture = "portrait5.png", CreationDate = "06h15 ago", Location = "2 km", IsEvent = false });
+			elements.Add(new Business.Element { Title = "Discuter autour d'un #verre", Picture = "portrait.jpg", CreationDate = "06h45 ago", Location = "1,2 km", IsEvent = false });
+			elements.Add(new Business.Element { Title = "Aller regarder l'#euro", Picture = "portrait2.png", CreationDate = "07h00 ago", Location = "2,6 km", IsEvent = false });
+			elements.Add(new Business.Element { Title = "Poker party", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "poker.jpg", CreationDate = "01h30 ago", Location = "Pickwick Bar", Description = "Final des WPT avec Patrick Bruel en Guest Star ! Du lourd ", IsEvent = true });
+			elements.Add(new Business.Element { Title = "Je vais mater l'#euro a la #fanzone", Picture = "portrait3.png", CreationDate = "07h15 ago", Location = "0.6 km", IsEvent = false });
+			elements.Add(new Business.Element { Title = "J'ai faim de  #nectarine", Picture = "portrait4.png", CreationDate = "12h00 ago", Location = "0,3 km", IsEvent = false });
 
-			feedView.ItemsSource = weeshes;
+			feedView.ItemsSource = elements;
 
 			var positionMarcus = new Position(46.1914286, 6.1354516);
 			var pinMarcus = new Pin
@@ -75,9 +82,9 @@ namespace YouWeesh.Mobile.Views
 			feedView.BeginRefresh();
 
 			if (string.IsNullOrWhiteSpace(e.NewTextValue))
-				feedView.ItemsSource = weeshes;
+				feedView.ItemsSource = elements;
 			else
-				feedView.ItemsSource = weeshes.Where(i => i.Title.ToLower().Contains(e.NewTextValue) || i.Creator.ToLower().Contains(e.NewTextValue));
+				feedView.ItemsSource = elements.Where(i => i.Title.ToLower().Contains(e.NewTextValue));
 
 			feedView.EndRefresh();
 		}
@@ -92,25 +99,9 @@ namespace YouWeesh.Mobile.Views
 		/// </summary>
 		/// <param name="sender"></param>
 		/// <param name="e"></param>
-		private void feedView_OnItemAppaering(object sender, EventArgs e)
+
+		async void ShowFilterView()
 		{
-			//grdListType.HeightRequest = 60;
-		}
-
-		private void scrlMainView_Scrolled(object sender, ScrolledEventArgs e)
-		{
-
-			if (((ScrollView)sender).ScrollY < e.ScrollY)
-			{
-				feedView.BackgroundColor = Color.Aqua;
-			}
-		}
-
-		async void BtnFilter_Clicked(object sender, EventArgs e)
-		{
-			//var action = await DisplayActionSheet("ActionSheet: Send to?", "Cancel", null, "Email", "Twitter", "Facebook");
-			//await Navigation.PushModalAsync(new FeedFilterForm());           
-
 			filterVisible = !filterVisible;
 
 			if (filterVisible == true)
@@ -124,20 +115,10 @@ namespace YouWeesh.Mobile.Views
 				relativeLayout.Children.Remove(feedFilterForm);
 			}
 
-
 		}
 
 
 
-	}
-
-	public class Weesh
-	{
-		public string Title { get; set; }
-		public string Creator { get; set; }
-		public string Image { get; set; }
-		public string CreationDate { get; set; }
-		public string Distance { get; set; }
 	}
 
 

@@ -166,6 +166,10 @@
     <AndroidResource Include="Resources\drawable\Filtericon.png" />
     <AndroidResource Include="Resources\drawable\Listviewicon.png" />
     <AndroidResource Include="Resources\drawable\Mappinicon.png" />
+    <AndroidResource Include="Resources\drawable\portrait2.png" />
+    <AndroidResource Include="Resources\drawable\portrait3.png" />
+    <AndroidResource Include="Resources\drawable\portrait4.png" />
+    <AndroidResource Include="Resources\drawable\portrait5.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml">

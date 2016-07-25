@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ViewCell x:Class="YouWeesh.Mobile.CustomComponents.EventsViewCell"
           xmlns="http://xamarin.com/schemas/2014/forms"
           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -27,7 +27,11 @@
 				<StackLayout Margin="10,10,10,10" Opacity="0.80" 
 				BackgroundColor="White" 
 				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
+<<<<<<< HEAD
 				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-90}"
+=======
+				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-80}"
+>>>>>>> dc15489... - FeedVIew - Integration Multiple Template
 				Orientation="Horizontal">
 					<Customcontrols:TofinoLabel 
                        Text="{Binding Description}"
