@@ -27,11 +27,8 @@
 				<StackLayout Margin="10,10,10,10" Opacity="0.80" 
 				BackgroundColor="White" 
 				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
-<<<<<<< HEAD
 				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-90}"
-=======
-				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-80}"
->>>>>>> dc15489... - FeedVIew - Integration Multiple Template
+
 				Orientation="Horizontal">
 					<Customcontrols:TofinoLabel 
                        Text="{Binding Description}"
