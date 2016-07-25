@@ -14,7 +14,7 @@ namespace YouWeesh.Mobile
         public App()
         {
             MainPage = new Views.LoginForm();
-            MainPage.BackgroundColor = Color.FromRgb(70, 146, 221);
+            MainPage.BackgroundColor = Color.FromRgb(243, 243, 243);
             //var backgroundImage = new Image();
             //backgroundImage.Source = ImageSource.FromFile("model.jpg");
             //MainPage.BackgroundImage = "model.jpg";

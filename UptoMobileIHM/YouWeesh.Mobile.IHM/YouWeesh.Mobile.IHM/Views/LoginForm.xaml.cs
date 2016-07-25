@@ -17,20 +17,7 @@ namespace YouWeesh.Mobile.Views
             InitializeComponent();
             imgWeesh.Aspect = Aspect.AspectFit;
 
-            /* HERE TEST CIRCLE IMAGE
-            int photoSize = Device.OnPlatform(50, 50, 70);
-            var photo = new CircleImage
-            {
-                WidthRequest = photoSize,
-                HeightRequest = photoSize,
-                Aspect = Aspect.AspectFill,
-                HorizontalOptions = LayoutOptions.Center,
-                Source = "weesh72.png"
-            };
-
-            //photo.Source = "google32.png";
-
-            stk.Children.Add(photo);*/
+			//normalFab.SizeChanged += (sender, args) => { layout.ForceLayout(); };
         }
 
         public void Entry_Focused(object sender, EventArgs e)

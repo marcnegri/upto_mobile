@@ -2,6 +2,7 @@
 <ContentPage x:Class="YouWeesh.Mobile.Views.LoginForm"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:fab="clr-namespace:FAB.Forms;assembly=FAB.Forms"
              Padding="5">
     <ScrollView>
         <StackLayout x:Name="stk">
@@ -35,6 +36,6 @@
                    VerticalOptions="Center" />
 
             <Button Clicked="btnRegister_Clicked" Text="Register" />
-        </StackLayout>
+		</StackLayout>
     </ScrollView>
 </ContentPage>

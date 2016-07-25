@@ -49,7 +49,7 @@ namespace YouWeesh.Mobile.Views
             });
             listView.ItemsSource = masterPageItems;
             NavigationPage p = new NavigationPage(new FeedView());
-            p.BarBackgroundColor = Color.FromRgb(90,199,249);
+            p.BarBackgroundColor = Color.FromRgb(49,159,212);
             Detail = p;
         }
 
@@ -60,7 +60,7 @@ namespace YouWeesh.Mobile.Views
             {
                 Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType))
                 {
-                    BarBackgroundColor = Color.FromRgb(90, 199, 249)
+                    BarBackgroundColor = Color.FromRgb(49, 159, 212)
                 };
                 listView.SelectedItem = null;
                 IsPresented = false;

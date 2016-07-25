@@ -15,23 +15,26 @@
                 </Grid.RowDefinitions>
                 <SearchBar Grid.Row="0"
                            Grid.Column="0"
-                           Placeholder="Search terms..." />
+                           Placeholder="Search terms..." TextColor="Black"/>
             </Grid>
             <ScrollView VerticalOptions="LayoutOptions.FillAndExpand">
-                <ListView x:Name="nextEvent"
-                          GroupDisplayBinding="{Binding Title}"
-                          GroupShortNameBinding="{Binding ShortName}"
-                          HasUnevenRows="True"
-                          IsGroupingEnabled="true"
-                          RowHeight="20"
-                          SeparatorVisibility="None">
-
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <controls:EventsViewCell x:Name="evtViewCell" Tapped="eventViewCell_Taped" />
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
+				<RelativeLayout>
+	                <ListView x:Name="nextEvent"
+	                          GroupDisplayBinding="{Binding Title}"
+	                          GroupShortNameBinding="{Binding ShortName}"
+	                          HasUnevenRows="True"
+	                          IsGroupingEnabled="true"
+	                          SeparatorVisibility="None" 
+							  BackgroundColor="White"
+							  RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
+							  RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+	                    <ListView.ItemTemplate>
+	                        <DataTemplate>
+	                            <controls:EventsViewCell x:Name="evtViewCell" Tapped="eventViewCell_Taped" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" />
+	                        </DataTemplate>
+	                    </ListView.ItemTemplate>
+	                </ListView>
+				</RelativeLayout>
             </ScrollView>
         </StackLayout>
     </ContentPage>

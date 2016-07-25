@@ -1,48 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ViewCell x:Class="YouWeesh.Mobile.CustomComponents.EventsViewCell"
           xmlns="http://xamarin.com/schemas/2014/forms"
-          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-    <StackLayout>
-        <StackLayout x:Name="mainLayout" Spacing="0">
-            <Image x:Name="img" Source="{Binding Picture}" />
-            <Grid BackgroundColor="White"
-                  ColumnSpacing="10"
-                  Padding="5,1,1,0"
-                  RowSpacing="5">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
+          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		  xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions">
+			<RelativeLayout x:Name="mainLayout" HeightRequest="250">
+				<Image Source="{Binding Picture}" 
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
 
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Label Grid.Row="0"
-                       Grid.Column="0"
-                       Grid.ColumnSpan="2"
+				HeightRequest="250"
+				Aspect="AspectFill"
+				Margin="5,5,5,5">
+		</Image>
+				<StackLayout Margin="10,10,10,10" 
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
+				Orientation="Horizontal">
+				<controls:CircleImage Aspect="AspectFit" Source="portrait.jpg" HeightRequest="50" WidthRequest="50"/>
+				<Label 
                        FontAttributes="Bold"
                        FontSize="24"
                        Text="{Binding Title}"
-                       TextColor="Black"
+                       TextColor="White"
                        XAlign="Center"
                        YAlign="Center" />
-                <Label Grid.Row="1"
-                       Grid.Column="0"
-                       Text="{Binding StartDatetime}"
-                       TextColor="Black" />
-                <Label Grid.Row="1"
-                       Grid.Column="1"
+				</StackLayout>
+				<StackLayout Margin="10,10,10,10" Opacity="0.80" 
+				BackgroundColor="White" 
+				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
+				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.75}"
+				Orientation="Horizontal">
+					<Label 
                        Text="{Binding Description}"
-                       TextColor="Gray" />
-                <Label Grid.Row="2"
-                       Grid.Column="0"
-                       Text="{Binding EndDatetime}"
-                       TextColor="Black" />
-            </Grid>
-        </StackLayout>
-        <StackLayout BackgroundColor="Black" HeightRequest="2">
+                       TextColor="Black" Margin="2,2,2,2"/>
+				</StackLayout>
+        </RelativeLayout>
+        <!--StackLayout BackgroundColor="Black" HeightRequest="2">
             <Label Text=" " />
-        </StackLayout>
-    </StackLayout>
+        </StackLayout -->
 </ViewCell>
