@@ -15,7 +15,7 @@
 				<StackLayout Margin="10,10,10,10" 
 				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
 				Orientation="Horizontal">
-				<controls:CircleImage Aspect="AspectFit" Source="portrait.jpg" HeightRequest="50" WidthRequest="50"/>
+				<controls:CircleImage Aspect="AspectFit" Source="portrait.jpg" HeightRequest="50" WidthRequest="50" />
 				<Customcontrols:TofinoLabel 
                        FontAttributes="Bold"
                        FontSize="24"
