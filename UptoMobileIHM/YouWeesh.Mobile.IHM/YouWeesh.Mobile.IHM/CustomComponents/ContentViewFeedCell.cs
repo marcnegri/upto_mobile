@@ -11,8 +11,6 @@ namespace YouWeesh.Mobile.CustomComponents
     {
         public ContentViewFeedCell()
         {
-
-
         }
 
         public event EventHandler SwipeDown;

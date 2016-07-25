@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using YouWeesh.Mobile.Business;
 using Xamarin.Forms;
+using FAB;
 
 namespace YouWeesh.Mobile.Views
 {
@@ -14,10 +15,22 @@ namespace YouWeesh.Mobile.Views
         ObservableCollection<Business.Events> events = new ObservableCollection<Business.Events>();
         public MyNextEventsView()
         {
+			
 			InitializeComponent();
+
 			eventsListPage.BackgroundColor = Color.FromRgb(243, 243, 243);
-            
-            #region Events MOCKS
+
+			#region Events MOCKSvar layout = new RelativeLayout();
+
+			var normalFab = new FAB.Forms.FloatingActionButton();
+			normalFab.Source = "icon.png";
+			normalFab.Size = FAB.Forms.FabSize.Normal;
+			/*
+			rllEvents.Children.Add(
+				normalFab,
+				xConstraint: Constraint.RelativeToParent((parent) => { return (parent.Width - normalFab.Width) - 16; }),
+				yConstraint: Constraint.RelativeToParent((parent) => { return (parent.Height - normalFab.Height) - 16; })
+			);
             /*
             events.Add(new Business.Events { Title = "Tennis playing", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "tennis.jpg", Location = "Centre sportif du bout du monde" });
             events.Add(new Business.Events { Title = "Vernissage", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "drink.jpg", Location = "Centre sportif du bout du monde" });
@@ -32,13 +45,13 @@ namespace YouWeesh.Mobile.Views
                 new PageTypeGroup("27.06.2016")
                 {
                     new Business.Events { Title = "Trail des Roussets", StartDatetime = "2:30 ago", EndDatetime = "<-> 205km", Picture = "trail.jpg", Location = "Centre sportif du bout du monde", Description="Samedi une marche découverte et dimanche les courses avec 3 distances : 12 km, 20 km et 32 km" },
-                    new Business.Events { Title = "Tennis playing", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "tennis.jpg", Location = "Centre sportif du bout du monde" },
+                    new Business.Events { Title = "Tennis playing", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "tennis.jpg", Location = "Centre sportif du bout du monde", Description="Grand tournoi de Tennis au bout du monde. Un public en folie avec une journée pleine de grands matchs. Venez nombreux !" },
                     new Business.Events { Title = "Poker party", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "poker.jpg", Location = "Pickwick Bar", Description="Final des WPT avec Patrick Bruel en Guest Star ! Du lourd " }
                 },
                 new PageTypeGroup("30.06.2016")
                 {
                     new Business.Events { Title = "Vernissage", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "drink.jpg", Location = "Centre sportif du bout du monde", Description="Soirée atelier Cocktails à la potinière. Ambiance cosy avec un pianiste spécialiste de la Bossa Nova. Venez nombreux gouter nos Mojitos !" },
-                    new Business.Events { Title = "#Futsal", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "futsal.jpg", Location = "Bout du monde", Description="Match de futsal entre potes, inscrits pour jouer avec nous !" },
+                    new Business.Events { Title = "#Futsal", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "futsal.jpg", Location = "Bout du monde", Description="Match de futsal entre potes, inscrits toi pour jouer avec nous !" },
                     new Business.Events { Title = "Poker party", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "poker.jpg", Location = "Pickwick Bar", Description="Tournoi de poker hebdomadaire, vous remportez des points et montez dans le classement au fil des tournois" }
                 },
                 new PageTypeGroup("14.07.2016")

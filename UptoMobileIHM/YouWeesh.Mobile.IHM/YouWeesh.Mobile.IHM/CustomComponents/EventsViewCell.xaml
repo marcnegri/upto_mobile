@@ -2,12 +2,13 @@
 <ViewCell x:Class="YouWeesh.Mobile.CustomComponents.EventsViewCell"
           xmlns="http://xamarin.com/schemas/2014/forms"
           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-		  xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions">
-			<RelativeLayout x:Name="mainLayout" HeightRequest="250">
+		  xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+		  xmlns:Customcontrols="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile">
+			<RelativeLayout x:Name="mainLayout" HeightRequest="210">
 				<Image Source="{Binding Picture}" 
 				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
 
-				HeightRequest="250"
+				HeightRequest="210"
 				Aspect="AspectFill"
 				Margin="5,5,5,5">
 		</Image>
@@ -15,7 +16,7 @@
 				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
 				Orientation="Horizontal">
 				<controls:CircleImage Aspect="AspectFit" Source="portrait.jpg" HeightRequest="50" WidthRequest="50"/>
-				<Label 
+				<Customcontrols:TofinoLabel 
                        FontAttributes="Bold"
                        FontSize="24"
                        Text="{Binding Title}"
@@ -26,11 +27,11 @@
 				<StackLayout Margin="10,10,10,10" Opacity="0.80" 
 				BackgroundColor="White" 
 				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
-				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-20}"
+				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-90}"
 				Orientation="Horizontal">
-					<Label 
+					<Customcontrols:TofinoLabel 
                        Text="{Binding Description}"
-                       TextColor="Black" Margin="2,2,2,2"/>
+                       TextColor="Black" Margin="3,3,3,3" x:Name="lblDescription"/>
 				</StackLayout>
         </RelativeLayout>
         <!--StackLayout BackgroundColor="Black" HeightRequest="2">

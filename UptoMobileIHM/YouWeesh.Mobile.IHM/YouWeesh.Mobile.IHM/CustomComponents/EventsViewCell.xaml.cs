@@ -14,6 +14,7 @@ namespace YouWeesh.Mobile.CustomComponents
         {
             InitializeComponent();
             mainLayout.Padding = new Thickness(5,5,5,5);
+			lblDescription.FontFamily = Device.OnPlatform("Tofino-Black","Tofino-Black", null);
         }
     }
 }

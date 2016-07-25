@@ -18,7 +18,7 @@
                            Placeholder="Search terms..." TextColor="Black"/>
             </Grid>
             <ScrollView VerticalOptions="LayoutOptions.FillAndExpand">
-				<RelativeLayout>
+				<RelativeLayout x:Name="rllEvents">
 	                <ListView x:Name="nextEvent"
 	                          GroupDisplayBinding="{Binding Title}"
 	                          GroupShortNameBinding="{Binding ShortName}"
