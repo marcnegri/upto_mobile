@@ -2,12 +2,25 @@
 <MasterDetailPage x:Class="YouWeesh.Mobile.Views.MenuPage"
                   xmlns="http://xamarin.com/schemas/2014/forms"
                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                  xmlns:local="clr-namespace:YouWeesh.Mobile.Views;assembly=YouWeesh.Mobile">
+                  xmlns:local="clr-namespace:YouWeesh.Mobile.Views;assembly=YouWeesh.Mobile"
+				  xmlns:Customcontrols="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile">
     <MasterDetailPage.Master>
         <ContentPage x:Name="ctnHeader"
                      Title="Menu"
                      Icon="hamburger.png">
-            <StackLayout VerticalOptions="FillAndExpand">
+            <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="White">
+				<RelativeLayout x:Name="mainLayout" HeightRequest="160">
+					<Image Source="portrait4.png" 
+						RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+						HeightRequest="160"
+						Aspect="AspectFill">
+					</Image>
+					<Customcontrols:TofinoLabel Text="Helena Smith" TextColor="White"
+							RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
+							RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-40}"
+							Margin="20,0,0,20"
+							FontSize="18" />
+				</RelativeLayout>
                 <ListView x:Name="listView"
                           ItemSelected="OnItemSelected"
                           SeparatorVisibility="None"
