@@ -88,6 +88,9 @@
     <Compile Include="CustomComponents\TofinoLabel.cs" />
     <Compile Include="CustomComponents\FeedViewTemplateSelector.cs" />
     <Compile Include="Business\Element.cs" />
+    <Compile Include="CustomComponents\AddFloatingButton.xaml.cs">
+      <DependentUpon>AddFloatingButton.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -126,6 +129,9 @@
     <EmbeddedResource Include="Views\LoginForm.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomComponents\AddFloatingButton.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

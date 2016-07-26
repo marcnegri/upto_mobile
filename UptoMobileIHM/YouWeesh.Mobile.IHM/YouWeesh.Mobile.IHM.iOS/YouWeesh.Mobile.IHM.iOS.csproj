@@ -126,6 +126,8 @@
     <BundleResource Include="Resources\portrait4.png" />
     <BundleResource Include="Resources\portrait5.png" />
 
+    <BundleResource Include="Resources\YouWeesh.png" />
+    <BundleResource Include="Resources\AddWeesh.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">

@@ -11,6 +11,9 @@ namespace YouWeesh.Mobile
 
     public class App : Application
     {
+		static public int ScreenWidth;
+		static public int ScreenHeight;
+
         public App()
         {
             MainPage = new Views.LoginForm();

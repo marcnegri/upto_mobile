@@ -42,6 +42,8 @@ namespace YouWeesh.Mobile.IHM.Droid
             global::Xamarin.Forms.Forms.Init(this, bundle);
             global::Xamarin.FormsMaps.Init(this, bundle);
             ImageCircleRenderer.Init();
+			App.ScreenWidth = (int)(Resources.DisplayMetrics.WidthPixels / Resources.DisplayMetrics.Density);
+			App.ScreenHeight = (int)(Resources.DisplayMetrics.HeightPixels / Resources.DisplayMetrics.Density);
             LoadApplication(new App());
         }
     }

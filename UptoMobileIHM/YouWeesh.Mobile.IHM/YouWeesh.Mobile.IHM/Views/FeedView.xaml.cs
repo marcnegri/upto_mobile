@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using YouWeesh.Mobile;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 
@@ -14,6 +15,7 @@ namespace YouWeesh.Mobile.Views
 		ObservableCollection<Business.Element> elements = new ObservableCollection<Business.Element>();
 		bool filterVisible = false;
 		FeedFilterForm feedFilterForm = new FeedFilterForm();
+		AddFloatingButton myFloatingButton = new AddFloatingButton();
 
 		public FeedView()
 		{
@@ -70,30 +72,16 @@ namespace YouWeesh.Mobile.Views
 				Label = "Marcus",
 				Address = "Marcus Home"
 			};
+
+			//Add of the floating button to add a weesh
+			relativeLayout.Children.Add(myFloatingButton, Constraint.Constant(YouWeesh.Mobile.App.ScreenWidth - 80), Constraint.Constant(YouWeesh.Mobile.App.ScreenHeight - 150));
+
 			//MyMap.Pins.Add(pinMarcus);          
 
 			// 1 - test hide /unhide during an event (scroll)
 			// grdListType.HeightRequest = 0;
 
 		}
-
-		private void SearchBar_OnTextChanged(object sender, TextChangedEventArgs e)
-		{
-			feedView.BeginRefresh();
-
-			if (string.IsNullOrWhiteSpace(e.NewTextValue))
-				feedView.ItemsSource = elements;
-			else
-				feedView.ItemsSource = elements.Where(i => i.Title.ToLower().Contains(e.NewTextValue));
-
-			feedView.EndRefresh();
-		}
-
-		private void ImageCell_OnTapped(object sender, EventArgs e)
-		{
-			//grdListType.HeightRequest = 60;
-		}
-
 		/// <summary>
 		/// 
 		/// </summary>

@@ -170,6 +170,8 @@
     <AndroidResource Include="Resources\drawable\portrait3.png" />
     <AndroidResource Include="Resources\drawable\portrait4.png" />
     <AndroidResource Include="Resources\drawable\portrait5.png" />
+    <AndroidResource Include="Resources\drawable\YouWeesh.png" />
+    <AndroidResource Include="Resources\drawable\AddWeesh.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml">

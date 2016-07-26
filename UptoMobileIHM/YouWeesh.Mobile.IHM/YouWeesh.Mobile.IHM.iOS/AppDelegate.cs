@@ -24,8 +24,9 @@ namespace YouWeesh.Mobile.IHM.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
-
-            return base.FinishedLaunching(app, options);
+			App.ScreenWidth = (int)UIScreen.MainScreen.Bounds.Width;
+			App.ScreenHeight = (int)UIScreen.MainScreen.Bounds.Height;
+			return base.FinishedLaunching(app, options);
         }
     }
 }
