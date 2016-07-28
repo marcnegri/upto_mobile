@@ -14,7 +14,26 @@ namespace YouWeesh.Mobile.CustomComponents
         {
             InitializeComponent();
             mainLayout.Padding = new Thickness(5,5,5,5);
-			lblDescription.FontFamily = Device.OnPlatform("Tofino-Black","Tofino-Black", null);
+
+			mainLayout.Children.Add(stlDescription, Constraint.RelativeToParent((parent) =>
+			{
+				return parent.X;
+			}), Constraint.RelativeToParent((parent) =>
+			{
+				return parent.Y + 120;
+			}), Constraint.RelativeToParent((parent) =>
+			{
+				if (lblDescription.Text == null)
+				{
+					return 0;
+				}
+				else {
+					return parent.Width;
+				}
+			}), Constraint.RelativeToParent((parent) =>
+			{
+				return parent.Height - 125;
+			}));
         }
     }
 }

@@ -6,15 +6,14 @@
 		  xmlns:Customcontrols="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile">
 			<RelativeLayout x:Name="mainLayout" HeightRequest="210">
 				<Image Source="{Binding Picture}" 
-				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
-
-				HeightRequest="210"
-				Aspect="AspectFill"
-				Margin="5,5,5,5">
-		</Image>
-				<StackLayout Margin="10,10,10,10" 
-				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
-				Orientation="Horizontal">
+						RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+						HeightRequest="210"
+						Aspect="AspectFill"
+						Margin="5,5,5,5">
+				</Image>
+				<StackLayout Margin="10,10,10,10"  
+							RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
+							Orientation="Horizontal">
 				<controls:CircleImage Aspect="AspectFit" Source="portrait.jpg" HeightRequest="50" WidthRequest="50" />
 				<Customcontrols:TofinoLabel 
                        FontAttributes="Bold"
@@ -24,12 +23,14 @@
                        XAlign="Center"
                        YAlign="Center" />
 				</StackLayout>
-				<StackLayout Margin="10,10,10,10" Opacity="0.80" 
+				<StackLayout Margin="10,10,10,10" Opacity="0.80"
+				x:Name="stlDescription"
 				BackgroundColor="White" 
-				RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
+				Orientation="Horizontal">
+				<!--RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
 				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-90}"
 
-				Orientation="Horizontal">
+				Orientation="Horizontal"-->
 					<Customcontrols:TofinoLabel 
                        Text="{Binding Description}"
                        TextColor="Black" Margin="3,3,3,3" x:Name="lblDescription"/>

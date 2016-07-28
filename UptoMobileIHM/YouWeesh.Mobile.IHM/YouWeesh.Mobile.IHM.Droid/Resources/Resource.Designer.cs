@@ -4362,8 +4362,8 @@ namespace YouWeesh.Mobile.IHM.Droid
 			// aapt resource value: 0x7f0200db
 			public const int mr_ic_play_light = 2130837723;
 			
-			// aapt resource value: 0x7f0200e7
-			public const int notification_template_icon_bg = 2130837735;
+			// aapt resource value: 0x7f0200eb
+			public const int notification_template_icon_bg = 2130837739;
 			
 			// aapt resource value: 0x7f0200dc
 			public const int poker = 2130837724;
@@ -4372,31 +4372,43 @@ namespace YouWeesh.Mobile.IHM.Droid
 			public const int portrait = 2130837725;
 			
 			// aapt resource value: 0x7f0200de
-			public const int settings72 = 2130837726;
+			public const int portrait2 = 2130837726;
 			
 			// aapt resource value: 0x7f0200df
-			public const int showmenu = 2130837727;
+			public const int portrait3 = 2130837727;
 			
 			// aapt resource value: 0x7f0200e0
-			public const int tennis = 2130837728;
+			public const int portrait4 = 2130837728;
 			
 			// aapt resource value: 0x7f0200e1
-			public const int trail = 2130837729;
+			public const int portrait5 = 2130837729;
 			
 			// aapt resource value: 0x7f0200e2
-			public const int twitter128 = 2130837730;
+			public const int settings72 = 2130837730;
 			
 			// aapt resource value: 0x7f0200e3
-			public const int twitter32 = 2130837731;
+			public const int showmenu = 2130837731;
 			
 			// aapt resource value: 0x7f0200e4
-			public const int Vince = 2130837732;
+			public const int tennis = 2130837732;
 			
 			// aapt resource value: 0x7f0200e5
-			public const int weesh = 2130837733;
+			public const int trail = 2130837733;
 			
 			// aapt resource value: 0x7f0200e6
-			public const int weesh72 = 2130837734;
+			public const int twitter128 = 2130837734;
+			
+			// aapt resource value: 0x7f0200e7
+			public const int twitter32 = 2130837735;
+			
+			// aapt resource value: 0x7f0200e8
+			public const int Vince = 2130837736;
+			
+			// aapt resource value: 0x7f0200e9
+			public const int weesh = 2130837737;
+			
+			// aapt resource value: 0x7f0200ea
+			public const int weesh72 = 2130837738;
 			
 			static Drawable()
 			{
