@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using YouWeesh.Mobile;
+using YouWeesh.Mobile.CustomComponents;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 
@@ -88,10 +89,8 @@ namespace YouWeesh.Mobile.Views
 		/// <param name="sender"></param>
 		/// <param name="e"></param>
 
-
 		async void ShowFilterView()
 		{
-			/*
 			filterVisible = !filterVisible;
 
 			if (filterVisible == true)
@@ -103,7 +102,7 @@ namespace YouWeesh.Mobile.Views
 			{
 				await feedFilterForm.LayoutTo(new Rectangle(0, -1 * feedFilterForm.Height, feedFilterForm.Width, feedFilterForm.Height), 250);
 				relativeLayout.Children.Remove(feedFilterForm);
-			}*/
+			}
 
 		}
 

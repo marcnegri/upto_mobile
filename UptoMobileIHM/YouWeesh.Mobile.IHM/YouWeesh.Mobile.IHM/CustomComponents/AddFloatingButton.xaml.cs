@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Threading.Tasks;
+using YouWeesh.Mobile;
+using YouWeesh.Mobile.Views;
 using Xamarin.Forms;
 
-namespace YouWeesh.Mobile
+namespace YouWeesh.Mobile.CustomComponents
 {
 	public partial class AddFloatingButton : ContentView
 	{
@@ -12,14 +14,15 @@ namespace YouWeesh.Mobile
 			InitializeComponent();
 		}
 
-		void OnTapGestureRecognizerTapped(object sender, EventArgs args)
-		{ 
+		async void OnTapGestureRecognizerTapped(object sender, EventArgs args)
+		{
+			//AnimateButton();
+			await circleImage.ScaleTo(0.65, 50, Easing.CubicOut);
+			await circleImage.ScaleTo(0.80, 50, Easing.CubicIn);
 
-			var imageSender = (Image)sender;
-	
-		
+			await this.Navigation.PushModalAsync(new AddWeeshForm());
+
 		}
-
 
 	}
 }
