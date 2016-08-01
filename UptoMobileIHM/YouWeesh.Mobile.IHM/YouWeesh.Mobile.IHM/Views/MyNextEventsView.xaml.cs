@@ -82,28 +82,9 @@ namespace YouWeesh.Mobile.Views
 
         public void eventViewCell_Taped(object sender, EventArgs e)
         {
-            var redContentPage = new ContentPage
-            {
-                Content = new StackLayout
-                {
-                    Children = {
-                    new Label {
-                        Text = "Red",
-                        FontSize = Device.GetNamedSize (NamedSize.Medium, typeof(Label)),
-                        HorizontalOptions = LayoutOptions.Center
-                    },
-                    new BoxView {
-                        Color = Color.Red,
-                        WidthRequest = 200,
-                        HeightRequest = 200,
-                        HorizontalOptions = LayoutOptions.Center,
-                        VerticalOptions = LayoutOptions.CenterAndExpand
-                        }
-                    }
-                }
-            };
+			var EventDetails = new EventDetailsView();
 
-            Children.Add(redContentPage);
+            Children.Add(EventDetails);
             this.SelectedItem = Children[1];
             CurrentPageChanged += HandleCurrentPageChanged;
         }

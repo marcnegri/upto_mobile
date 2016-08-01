@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+		xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="YouWeesh.Mobile.MyProfileView_OK"
+		xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+		xmlns:Customcontrols="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile">>
+		<StackLayout x:Name="stkHeader">
+			<StackLayout HeightRequest="210">
+				<RelativeLayout x:Name="rltHeader">
+					<Image  x:Name="imgBackground"
+							Source="futsal.jpg" 
+							RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+							HeightRequest="210"
+							Aspect="AspectFill"
+							Opacity="0.8">
+					</Image>
+					<controls:CircleImage 
+						x:Name="imgProfile"
+						Aspect="AspectFit" 
+						Source="portrait4.png"
+						BorderColor="White"
+						BorderThickness="2"/>
+					<Customcontrols:TofinoLabel 
+					    x:Name="lblProfileName"
+	                    FontAttributes="Bold"
+	                    FontSize="24"
+	                    Text="Helena Smith"
+	                    TextColor="White"
+					    XAlign="Center"/>
+					<StackLayout Orientation="Horizontal" x:Name="stkLocation" HorizontalOptions="Center" HeightRequest="20">
+						<Image  x:Name="imgLocation"
+								Source="location512.png"
+								HeightRequest="20"
+								Aspect="AspectFill"/>
+						<Customcontrols:TofinoLabel 
+		                    FontAttributes="Bold"
+						    x:Name="lblLocation"
+		                    FontSize="15"
+		                    Text="Geneva, SZ"
+						    XAlign="Center"
+							HeightRequest="20"/>					
+					</StackLayout>
+				</RelativeLayout>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+				<Frame OutlineColor="Green" Padding="2,2,2,2" HorizontalOptions="FillAndExpand" HasShadow="true"><Customcontrols:TofinoLabel Text="103 weeshes" TextColor="Black" HorizontalOptions="Center" FontSize="14"></Customcontrols:TofinoLabel></Frame>
+				<Frame OutlineColor="Green" Padding="2,2,2,2" HorizontalOptions="FillAndExpand" HasShadow="true"><Customcontrols:TofinoLabel Text="20 weeshback" TextColor="Black" HorizontalOptions="Center" FontSize="14"></Customcontrols:TofinoLabel></Frame>
+				<Frame OutlineColor="Green" Padding="2,2,2,2" HorizontalOptions="FillAndExpand" HasShadow="true"><Customcontrols:TofinoLabel Text="18 friends" TextColor="Black" HorizontalOptions="Center" FontSize="14"></Customcontrols:TofinoLabel></Frame>
+			</StackLayout>
+		</StackLayout>
+		<!--StackLayout x:Name="stkContent"></StackLayout-->
+</ContentPage>

@@ -19,9 +19,9 @@ namespace YouWeesh.Mobile.Views
             var masterPageItems = new List<MasterPageItem>();
             masterPageItems.Add(new MasterPageItem
             {
-                Title = "My Weesh",
+                Title = "My Profile",
                 IconSource = "contacts.png",
-                TargetType = typeof(MyWeeshView)
+				TargetType = typeof(MyProfileView)
             });
             masterPageItems.Add(new MasterPageItem
             {

@@ -23,7 +23,12 @@ namespace YouWeesh.Mobile.CustomComponents
 			await this.Navigation.PushModalAsync(new AddWeeshForm());
 
 		}
+		/*
+		void OnTapGestureRecognizerTapped(object sender, EventArgs args)
+		{
 
+			var imageSender = (Image)sender;
+		}*/
 	}
 }
 

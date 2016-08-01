@@ -1,42 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace YouWeesh.Mobile.Views
+namespace YouWeesh.Mobile
 {
-    public partial class EventDetailsView : ContentPage
-    {
-        public EventDetailsView()
-        {
-            InitializeComponent();
+	public partial class MyProfileView : ContentPage
+	{
+		public MyProfileView()
+		{
+			InitializeComponent();
 			this.BackgroundColor = Color.FromHex("#ececec");
 			lblLocation.TextColor = Color.FromRgb(49, 159, 212);
 
 			rltHeader.Children.Add(imgProfile, Constraint.RelativeToParent((parent) =>
 			{
-				return parent.X + (rltHeader.Width /2 - (imgProfile.Width / 2));
+				return parent.X + (parent.Width * 0.35);
 			}), Constraint.RelativeToParent((parent) =>
 			{
-				return parent.Y + (rltHeader.Height - (imgProfile.Height / 2));
+				return parent.Y + (parent.Height * 0.1);
 			}), Constraint.RelativeToParent((parent) =>
 			{
-				return parent.Width * 0.4;
+				return parent.Width * 0.3;
 			}), Constraint.RelativeToParent((parent) =>
 			{
-				return parent.Height * 0.4;
+				return parent.Height * 0.3;
 			}));
-
 
 			rltHeader.Children.Add(lblProfileName, Constraint.RelativeToParent((parent) =>
 			{
 				return parent.X;
 			}), Constraint.RelativeToParent((parent) =>
 			{
-				return parent.Y;
+				return parent.Y + (parent.Height * 0.4);
 			}), Constraint.RelativeToParent((parent) =>
 			{
 				return parent.Width;
@@ -50,7 +46,7 @@ namespace YouWeesh.Mobile.Views
 				return parent.X;
 			}), Constraint.RelativeToParent((parent) =>
 			{
-				return parent.Y + (parent.Height * 0.15);
+				return parent.Y + (parent.Height * 0.55);
 			}), Constraint.RelativeToParent((parent) =>
 			{
 				return parent.Width;
@@ -59,20 +55,9 @@ namespace YouWeesh.Mobile.Views
 				return 20;
 			}));
 
-			rltHeader.Children.Add(stkParticipants, Constraint.RelativeToParent((parent) =>
-			{
-				return parent.X + (parent.Height /4) ;
-			}), Constraint.RelativeToParent((parent) =>
-			{
-				return parent.Y + (parent.Height - stkParticipants.Height );
-			}), Constraint.RelativeToParent((parent) =>
-			{
-				return parent.Width;
-			}), Constraint.RelativeToParent((parent) =>
-			{
-				return 30;
-			}));
+
 
 		}
-    }
+	}
 }
+
