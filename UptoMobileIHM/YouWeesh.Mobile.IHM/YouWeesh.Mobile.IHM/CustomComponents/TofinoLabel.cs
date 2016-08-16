@@ -7,7 +7,7 @@ namespace YouWeesh.Mobile.CustomComponents
 	{
 		public TofinoLabel()
 		{
-			
+			this.FontFamily = Device.OnPlatform("Tofino-Regular.ttf", null ,null);
 		}
 	}
 }

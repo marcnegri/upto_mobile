@@ -14,14 +14,15 @@
 								Aspect="AspectFill"
 								Opacity="0.8">
 						</Image>
-						<controls:CircleImage 
+				<StackLayout Orientation="Horizontal" x:Name="stkImgProfile"  HorizontalOptions="Center">
+						<controls:CircleImage
 							x:Name="imgProfile"
 							Aspect="AspectFit" 
 							Source="portrait4.png"
 							BorderColor="White"
 							BorderThickness="2"
-							HeightRequest="50"
-							WidthRequest="50"/>
+							HeightRequest="75"/>
+					</StackLayout>
 						<Customcontrols:TofinoLabel 
 						    x:Name="lblProfileName"
 		                    FontAttributes="Bold"
@@ -63,7 +64,11 @@
 					<Customcontrols:TofinoLabel 
 						x:Name="lblPrice" 
 						Text="GRATUIT"
-						TextColor="Black" />
+						TextColor="Black"
+						/>
 				</StackLayout>
+				<StackLayout x:Name="stkChatbox">
+				</StackLayout>
+				<Customcontrols:MessageBoxView></Customcontrols:MessageBoxView>
 			</StackLayout>
 </ContentPage>

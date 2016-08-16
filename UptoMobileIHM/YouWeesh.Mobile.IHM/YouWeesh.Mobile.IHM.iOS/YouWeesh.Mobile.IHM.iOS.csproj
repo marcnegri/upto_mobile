@@ -97,6 +97,7 @@
     <ITunesArtwork Include="iTunesArtwork@2x" />
     <None Include="packages.config" />
     <Compile Include="Renderers\FeedViewRenderer.cs" />
+    <Compile Include="Renderers\TofinoLabelRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\YouWeesh.Mobile.IHM\YouWeesh.Mobile.csproj">
@@ -117,7 +118,6 @@
     <BundleResource Include="Resources\Fonts\Tofino-Book.ttf" />
     <BundleResource Include="Resources\Fonts\Tofino-Light.ttf" />
     <BundleResource Include="Resources\Fonts\Tofino-Medium.ttf" />
-    <BundleResource Include="Resources\Fonts\Tofino-Regular.ttf" />
     <BundleResource Include="Resources\Fonts\Tofino-Thin.ttf" />
     <BundleResource Include="Resources\Fonts\Tofino-Ultra.ttf" />
 	
@@ -128,6 +128,16 @@
 
     <BundleResource Include="Resources\YouWeesh.png" />
     <BundleResource Include="Resources\AddWeesh.png" />
+    <BundleResource Include="Resources\trail.jpg" />
+    <BundleResource Include="Resources\tennis.jpg" />
+    <BundleResource Include="Resources\futsal.jpg" />
+    <BundleResource Include="Resources\icon.png" />
+    <BundleResource Include="Resources\location48.png" />
+    <BundleResource Include="Resources\poker.jpg" />
+    <BundleResource Include="Resources\weesh72.png" />
+    <BundleResource Include="Resources\Tofino-Regular.ttf" />
+    <BundleResource Include="Resources\drink.jpg" />
+    <BundleResource Include="Resources\portrait.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -160,40 +170,25 @@
     <Reference Include="Xamarin.Forms.Maps">
       <HintPath>..\..\packages\Xamarin.Forms.Maps.2.3.0.107\lib\Xamarin.iOS10\Xamarin.Forms.Maps.dll</HintPath>
     </Reference>
-    <Reference Include="FAB.Forms">
-      <HintPath>..\..\packages\FAB.Forms.2.1.1\lib\Xamarin.iOS10\FAB.Forms.dll</HintPath>
-    </Reference>
-    <Reference Include="FAB.iOS">
-      <HintPath>..\..\packages\FAB.Forms.2.1.1\lib\Xamarin.iOS10\FAB.iOS.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\emptyFilter48.png" />
     <AndroidResource Include="Resources\foot.jpg" />
     <AndroidResource Include="Resources\friends72.png" />
     <AndroidResource Include="Resources\list48.png" />
-    <AndroidResource Include="Resources\location48.png" />
     <BundleResource Include="Resources\filter.png" />
     <Content Include="Resources\model.jpg" />
     <AndroidResource Include="Resources\settings72.png" />
     <AndroidResource Include="Resources\showmenu.png" />
     <AndroidResource Include="Resources\twitter128.png" />
     <AndroidResource Include="Resources\weesh.png" />
-    <AndroidResource Include="Resources\portrait.jpg" />
-    <AndroidResource Include="Resources\drink.jpg" />
-    <AndroidResource Include="Resources\futsal.jpg" />
     <AndroidResource Include="Resources\google32.png" />
     <AndroidResource Include="Resources\icon_2.png" />
-    <AndroidResource Include="Resources\poker.jpg" />
-    <AndroidResource Include="Resources\tennis.jpg" />
-    <AndroidResource Include="Resources\trail.jpg" />
     <AndroidResource Include="Resources\twitter32.png" />
     <AndroidResource Include="Resources\Vince.png" />
-    <AndroidResource Include="Resources\weesh72.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\facebook32.png" />
-    <EmbeddedResource Include="Resources\icon.png" />
     <EmbeddedResource Include="Resources\hamburger.png" />
   </ItemGroup>
   <ItemGroup>

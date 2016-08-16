@@ -18,13 +18,10 @@ namespace YouWeesh.Mobile.Views
 			
 			InitializeComponent();
 
-			eventsListPage.BackgroundColor = Color.FromRgb(243, 243, 243);
+			eventsListPage.BackgroundColor = Color.Blue;//Color.FromRgb(243, 243, 243);
 
-			#region Events MOCKSvar layout = new RelativeLayout();
+			#region Events MOCKS
 
-			var normalFab = new FAB.Forms.FloatingActionButton();
-			normalFab.Source = "icon.png";
-			normalFab.Size = FAB.Forms.FabSize.Normal;
 			/*
 			rllEvents.Children.Add(
 				normalFab,
@@ -63,7 +60,7 @@ namespace YouWeesh.Mobile.Views
             };
             #endregion
             nextEvent.ItemsSource = pgs;
-			nextEvent.BackgroundColor = Color.FromRgb(243, 243, 243);
+			nextEvent.BackgroundColor = Color.Pink;//Color.FromRgb(243, 243, 243);
         }
 
         public class PageTypeGroup : List<Events>

@@ -17,8 +17,8 @@ namespace YouWeesh.Mobile.CustomComponents
 		async void OnTapGestureRecognizerTapped(object sender, EventArgs args)
 		{
 			//AnimateButton();
-			await circleImage.ScaleTo(0.65, 50, Easing.CubicOut);
-			await circleImage.ScaleTo(0.80, 50, Easing.CubicIn);
+			await circleImage.ScaleTo(0.65, 60, Easing.CubicOut);
+			await circleImage.ScaleTo(0.80, 60, Easing.CubicIn);
 
 			await this.Navigation.PushModalAsync(new AddWeeshForm());
 

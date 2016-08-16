@@ -16,18 +16,18 @@ namespace YouWeesh.Mobile.Views
 			this.BackgroundColor = Color.FromHex("#ececec");
 			lblLocation.TextColor = Color.FromRgb(49, 159, 212);
 
-			rltHeader.Children.Add(imgProfile, Constraint.RelativeToParent((parent) =>
+			rltHeader.Children.Add(stkImgProfile, Constraint.RelativeToParent((parent) =>
 			{
-				return parent.X + (rltHeader.Width /2 - (imgProfile.Width / 2));
+				return parent.X;
 			}), Constraint.RelativeToParent((parent) =>
 			{
 				return parent.Y + (rltHeader.Height - (imgProfile.Height / 2));
 			}), Constraint.RelativeToParent((parent) =>
 			{
-				return parent.Width * 0.4;
+				return parent.Width;
 			}), Constraint.RelativeToParent((parent) =>
 			{
-				return parent.Height * 0.4;
+				return 75;
 			}));
 
 
@@ -73,6 +73,8 @@ namespace YouWeesh.Mobile.Views
 				return 30;
 			}));
 
+			lblDescription.Margin = new Thickness(10,(imgProfile.HeightRequest / 2) + 10,10,10);
+			lblPrice.Margin = new Thickness(10, 10, 10, 10);
 		}
     }
 }

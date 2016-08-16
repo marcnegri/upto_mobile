@@ -5,22 +5,23 @@
             xmlns:controls="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile"
             xmlns:local="clr-namespace:YouWeesh.Mobile.Views;assembly=YouWeesh.Mobile"
             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
-           <StackLayout x:Name="stackLayout"
-               		Orientation="Vertical"
-					VerticalOptions="LayoutOptions.FillAndExpand">
-                <RelativeLayout x:Name="relativeLayout" VerticalOptions="LayoutOptions.FillAndExpand" BackgroundColor="#ececec">
+            <!--RelativeLayout x:Name="relativeLayout" VerticalOptions="LayoutOptions.FillAndExpand" BackgroundColor="Transparent"-->
+
+			<RelativeLayout x:Name="relativeLayout" VerticalOptions="LayoutOptions.FillAndExpand">
                 	<ContentPage.Resources>
     				<ResourceDictionary>
       					<controls:FeedViewTemplateSelector x:Key="ElementTemplateSelector"></controls:FeedViewTemplateSelector>
     				</ResourceDictionary>
   					</ContentPage.Resources>
 			       <ScrollView x:Name="scrlMainView"
-                         Margin="0,10,0,0" VerticalOptions="LayoutOptions.FillAndExpand" BackgroundColor="#ececec" MinimumHeightRequest="1000" HeightRequest="900">
+                         Margin="0,10,0,0" 
+						 VerticalOptions="LayoutOptions.FillAndExpand" 
+                         RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+						 BackgroundColor="Lime">
                     <ListView x:Name="feedView"
                               HasUnevenRows="True"
 							  ItemTemplate="{StaticResource ElementTemplateSelector}">
                     </ListView>
            		 </ScrollView>
-			   </RelativeLayout>
-        </StackLayout>
+			</RelativeLayout>
 </ContentPage>

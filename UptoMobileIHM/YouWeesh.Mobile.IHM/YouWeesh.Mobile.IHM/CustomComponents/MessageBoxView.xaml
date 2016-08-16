@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+		xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="YouWeesh.Mobile.CustomComponents.MessageBoxView">
+	<StackLayout Orientation="Horizontal" BackgroundColor="White" Spacing="0,0,0,0" Padding="0,0,0,0" Margin="0,0,0,0">
+		<Button x:Name="btnSendMedia" HorizontalOptions="Start" Text="..."></Button>
+		<Editor x:Name="edtMessageBox" 
+				HorizontalOptions="FillAndExpand" 
+				Text="Type a message" 
+				TextColor="Black" 
+				Completed="edtMessageBox_Completed" 
+				TextChanged="edtMessageBox_TextChanged" 
+				Focused="edtMessageBox_Focused"
+				Keyboard="Chat"/>
+		<Button x:Name="btnSendMessage" HorizontalOptions="End" Text="Send"></Button>
+	</StackLayout>
+</ContentView>

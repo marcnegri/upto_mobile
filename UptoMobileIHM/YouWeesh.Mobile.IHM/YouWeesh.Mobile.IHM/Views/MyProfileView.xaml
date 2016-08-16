@@ -15,12 +15,13 @@
 							Aspect="AspectFill"
 							Opacity="0.8">
 					</Image>
+				<StackLayout x:Name="stkProfileImg" HorizontalOptions="Center" Orientation="Horizontal">
 					<controls:CircleImage 
-						x:Name="imgProfile"
 						Aspect="AspectFit" 
 						Source="portrait4.png"
 						BorderColor="White"
-						BorderThickness="2"/>
+						BorderThickness="2" />
+				</StackLayout>
 					<Customcontrols:TofinoLabel 
 					    x:Name="lblProfileName"
 	                    FontAttributes="Bold"
