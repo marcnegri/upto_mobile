@@ -28,6 +28,7 @@ namespace YouWeesh.Mobile.Views
 				Text = "List",
 				Icon = "Listviewicon.png",
 				Order = ToolbarItemOrder.Primary,
+				Command = new Command(this.SwitchView),
 				Priority = 0
 			});
 
@@ -36,6 +37,7 @@ namespace YouWeesh.Mobile.Views
 				Text = "Map",
 				Icon = "Mappinicon.png",
 				Order = ToolbarItemOrder.Primary,
+				Command = new Command(this.SwitchView),
 				Priority = 0
 			});
 
@@ -65,7 +67,37 @@ namespace YouWeesh.Mobile.Views
 
 			feedView.ItemsSource = elements;
 
-			var positionMarcus = new Position(46.1914286, 6.1354516);
+
+			var pinMarcus = new CustomPin
+			{
+				Pin = new Pin
+				{
+					Type = PinType.Place,
+					Position = new Position(46.1914286, 6.1354516),
+					Label = "Marcus",
+					Address = "Route des Acacias 23, 1227 Les Acacias, Switzerland"
+				},
+				Id = "User",
+				Url = "http://xamarin.com/about/"
+			};
+
+			var pinJen = new CustomPin
+			{
+				Pin = new Pin
+				{
+					Type = PinType.Place,
+					Position = new Position(46.1963894, 6.142172699999946),
+					Label = "Jen",
+					Address = "Avenue Henri-Dunant 11, 1205 Genève, Switzerland"
+				},
+				Id = "User",
+				Url = "http://xamarin.com/about/"
+			};
+
+			myMap.CustomPins = new List<CustomPin> { pinMarcus, pinJen };
+			myMap.Pins.Add(pinMarcus.Pin);
+			myMap.Pins.Add(pinJen.Pin);
+			/*var positionMarcus = new Position(46.1914286, 6.1354516);
 			var pinMarcus = new Pin
 			{
 				Type = PinType.Place,
@@ -73,12 +105,21 @@ namespace YouWeesh.Mobile.Views
 				Label = "Marcus",
 				Address = "Marcus Home"
 			};
-
+			MyMap.Pins.Add(pinMarcus);
+			//Emulator: Move to Geneva
+			MyMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(46.2043907, 6.143157699999961), Distance.FromMiles(10)));
+*/
 			//Add of the floating button to add a weesh
 			relativeLayout.Children.Add(myFloatingButton, Constraint.Constant(YouWeesh.Mobile.App.ScreenWidth - 80), Constraint.Constant(YouWeesh.Mobile.App.ScreenHeight - 150));
 
-			//MyMap.Pins.Add(pinMarcus);          
+			//Refresh List when current user add a weesh
+			MessagingCenter.Subscribe<AddWeeshForm, String>(this, "NewWeesh", (page, text) =>
+			{
+				feedView.BeginRefresh();
+				elements.Insert(0, new Business.Element { Title = text, Picture = "portrait2.png", CreationDate = "0h00 ago", Location = "0 km", IsEvent = false });
+				feedView.EndRefresh();
 
+			});
 			// 1 - test hide /unhide during an event (scroll)
 			// grdListType.HeightRequest = 0;
 
@@ -106,6 +147,17 @@ namespace YouWeesh.Mobile.Views
 
 		}
 
+		void SwitchView()
+		{
+			if (myMap.IsVisible == false)
+			{
+				
+				myMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(46.2043907, 6.143157699999961), Distance.FromMiles(1)));
+
+			}
+			scrlMainView.IsVisible = !scrlMainView.IsVisible;
+			myMap.IsVisible = !myMap.IsVisible;
+		}
 
 
 	}

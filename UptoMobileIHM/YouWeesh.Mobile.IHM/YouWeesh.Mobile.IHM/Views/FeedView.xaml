@@ -3,11 +3,10 @@
             xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:controls="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile"
-            xmlns:local="clr-namespace:YouWeesh.Mobile.Views;assembly=YouWeesh.Mobile"
-            xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps">
+            xmlns:local="clr-namespace:YouWeesh.Mobile;assembly=YouWeesh.Mobile"
+            xmlns:maps="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile">
             <!--RelativeLayout x:Name="relativeLayout" VerticalOptions="LayoutOptions.FillAndExpand" BackgroundColor="Transparent"-->
-
-			<RelativeLayout x:Name="relativeLayout" VerticalOptions="LayoutOptions.FillAndExpand">
+    	<RelativeLayout x:Name="relativeLayout" VerticalOptions="LayoutOptions.FillAndExpand">
                 	<ContentPage.Resources>
     				<ResourceDictionary>
       					<controls:FeedViewTemplateSelector x:Key="ElementTemplateSelector"></controls:FeedViewTemplateSelector>
@@ -18,10 +17,15 @@
 						 VerticalOptions="LayoutOptions.FillAndExpand" 
                          RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
 						 BackgroundColor="Lime">
-                    <ListView x:Name="feedView"
+                    	<ListView x:Name="feedView"
                               HasUnevenRows="True"
 							  ItemTemplate="{StaticResource ElementTemplateSelector}">
-                    </ListView>
-           		 </ScrollView>
+                    	</ListView>
+           		 	</ScrollView>
+				
+					<maps:CustomMap x:Name="myMap" IsVisible="false" HeightRequest="{x:Static local:App.ScreenHeight}" WidthRequest="{x:Static local:App.ScreenWidth}">
+
+					</maps:CustomMap>
+
 			</RelativeLayout>
 </ContentPage>

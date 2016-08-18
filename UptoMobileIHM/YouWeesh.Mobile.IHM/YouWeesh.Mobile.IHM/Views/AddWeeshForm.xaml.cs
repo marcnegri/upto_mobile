@@ -15,6 +15,7 @@ namespace YouWeesh.Mobile.Views
 		public void btnAddWeesh_Clicked(object sender, EventArgs e)
 		{
 			this.Navigation.PopModalAsync();
+			MessagingCenter.Send<AddWeeshForm, String>(this, "NewWeesh", editorWeesh.Text);
 			//this.Navigation.PushModalAsync(new Views.WeeshesTesst());
 		}
 	}

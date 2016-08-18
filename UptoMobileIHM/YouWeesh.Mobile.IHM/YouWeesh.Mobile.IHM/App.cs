@@ -11,8 +11,8 @@ namespace YouWeesh.Mobile
 
     public class App : Application
     {
-		static public int ScreenWidth;
-		static public int ScreenHeight;
+		static public double ScreenWidth;
+		static public double ScreenHeight;
 
         public App()
         {
