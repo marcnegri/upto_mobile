@@ -18,6 +18,7 @@
                          RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
 						 BackgroundColor="Lime">
                     	<ListView x:Name="feedView"
+
                               HasUnevenRows="True"
 							  ItemTemplate="{StaticResource ElementTemplateSelector}">
                     	</ListView>

@@ -18,7 +18,7 @@ namespace YouWeesh.Mobile.Views
 			
 			InitializeComponent();
 
-			eventsListPage.BackgroundColor = Color.Blue;//Color.FromRgb(243, 243, 243);
+			eventsListPage.BackgroundColor = Color.FromRgb(243, 243, 243);
 
 			#region Events MOCKS
 
@@ -60,7 +60,8 @@ namespace YouWeesh.Mobile.Views
             };
             #endregion
             nextEvent.ItemsSource = pgs;
-			nextEvent.BackgroundColor = Color.Pink;//Color.FromRgb(243, 243, 243);
+			nextEvent.BackgroundColor = Color.FromRgb(243, 243, 243);
+			//nextEvent.GroupHeaderTemplate.SetValue(TextCell.TextProperty, Color.Black);
         }
 
         public class PageTypeGroup : List<Events>
