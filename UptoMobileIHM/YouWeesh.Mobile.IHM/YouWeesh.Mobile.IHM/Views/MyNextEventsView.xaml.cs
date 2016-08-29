@@ -50,13 +50,14 @@ namespace YouWeesh.Mobile.Views
                     new Business.Events { Title = "Vernissage", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "drink.jpg", Location = "Centre sportif du bout du monde", Description="Soirée atelier Cocktails à la potinière. Ambiance cosy avec un pianiste spécialiste de la Bossa Nova. Venez nombreux gouter nos Mojitos !" },
                     new Business.Events { Title = "#Futsal", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "futsal.jpg", Location = "Bout du monde", Description="Match de futsal entre potes, inscrits toi pour jouer avec nous !" },
                     new Business.Events { Title = "Poker party", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "poker.jpg", Location = "Pickwick Bar", Description="Tournoi de poker hebdomadaire, vous remportez des points et montez dans le classement au fil des tournois" }
-                },
+                }
+				/*,
                 new PageTypeGroup("14.07.2016")
                 {
                     new Business.Events { Title = "Vernissage", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "drink.jpg", Location = "Centre sportif du bout du monde" },
                     new Business.Events { Title = "#Futsal", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "futsal.jpg", Location = "Bout du monde" },
                     new Business.Events { Title = "Poker party", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "poker.jpg", Location = "Pickwick Bar" }
-                },
+                },*/
             };
             #endregion
             nextEvent.ItemsSource = pgs;

@@ -12,21 +12,15 @@
       					<controls:FeedViewTemplateSelector x:Key="ElementTemplateSelector"></controls:FeedViewTemplateSelector>
     				</ResourceDictionary>
   					</ContentPage.Resources>
-			       <ScrollView x:Name="scrlMainView"
-                         Margin="0,10,0,0" 
-						 VerticalOptions="LayoutOptions.FillAndExpand" 
-                         RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
-						 BackgroundColor="Lime">
-                    	<ListView x:Name="feedView"
-
+			      	<ListView x:Name="lstfeedView"
+			      			  RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
+							  RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
                               HasUnevenRows="True"
 							  ItemTemplate="{StaticResource ElementTemplateSelector}">
-                    	</ListView>
-           		 	</ScrollView>
-				
-					<maps:CustomMap x:Name="myMap" IsVisible="false" HeightRequest="{x:Static local:App.ScreenHeight}" WidthRequest="{x:Static local:App.ScreenWidth}">
+                    </ListView>
+           		 	<maps:CustomMap x:Name="myMap" IsVisible="false" HeightRequest="{x:Static local:App.ScreenHeight}" WidthRequest="{x:Static local:App.ScreenWidth}">
 
 					</maps:CustomMap>
 
-			</RelativeLayout>
-</ContentPage>
+		</RelativeLayout>
+</ContentPage> 
