@@ -15,7 +15,7 @@
                 </Grid.RowDefinitions>
                 <SearchBar Grid.Row="0"
                            Grid.Column="0"
-                           Placeholder="Search terms..." TextColor="Black"/>
+                           Placeholder="Search terms..." PlaceholderColor="Black"/>
             </Grid>
             <ScrollView VerticalOptions="LayoutOptions.FillAndExpand">
 				<RelativeLayout x:Name="rllEvents">
@@ -33,6 +33,11 @@
 	                            <controls:EventsViewCell x:Name="evtViewCell" Tapped="eventViewCell_Taped" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" />
 	                        </DataTemplate>
 	                    </ListView.ItemTemplate>
+						<ListView.GroupHeaderTemplate>
+                			<DataTemplate>
+                    			<TextCell Text="{Binding Title}" TextColor="Black" />
+                			</DataTemplate>
+            			</ListView.GroupHeaderTemplate>
 	                </ListView>
 				</RelativeLayout>
             </ScrollView>

@@ -23,6 +23,12 @@ namespace YouWeesh.Mobile.Views
                 IconSource = "contacts.png",
 				TargetType = typeof(MyProfileView)
             });
+			masterPageItems.Add(new MasterPageItem
+			{
+				Title = "My Story",
+				IconSource = "todo.png",
+				TargetType = typeof(MyStory)
+			});
             masterPageItems.Add(new MasterPageItem
             {
                 Title = "My Next Events",
