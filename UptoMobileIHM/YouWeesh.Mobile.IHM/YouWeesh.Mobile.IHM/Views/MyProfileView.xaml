@@ -5,9 +5,10 @@
 		x:Class="YouWeesh.Mobile.MyProfileView"
 		xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
 		xmlns:Customcontrols="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile">
+	<ScrollView>
 		<StackLayout x:Name="stkHeader">
 			<StackLayout HeightRequest="210">
-				<RelativeLayout x:Name="rltHeader">
+				<RelativeLayout x:Name="rltHeader" HeightRequest="210">
 					<Image  x:Name="imgBackground"
 							Source="futsal.jpg" 
 							RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
@@ -42,13 +43,52 @@
 						    XAlign="Center"
 							HeightRequest="20"/>					
 					</StackLayout>
+					<StackLayout Orientation="Horizontal" x:Name="stkParticipants" HorizontalOptions="StartAndExpand" Padding="10, 10, 10, 10">
+						<Customcontrols:TofinoLabel 
+									x:Name="lblNbrParticipants"
+									Text="18 friends"
+									TextColor="White"
+									FontSize="18"/>
+					</StackLayout>
+					<StackLayout x:Name="lblRating" Padding="10, 0, 10, 0" >
+						<Label Text="100% fiablity" TextColor="White" HorizontalOptions="EndAndExpand" ></Label>
+						<Image Source="starsRating.png" WidthRequest="80" Aspect="AspectFit" HorizontalOptions="EndAndExpand" ></Image>
+					</StackLayout>
+					<Label x:Name="lblTopTag" Text="Top Tag : #Tennis" TextColor="White"	HorizontalOptions="StartAndExpand" Margin="10, 0, 0, 0"></Label>
 				</RelativeLayout>
 			</StackLayout>
-			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
-				<Frame OutlineColor="Green" Padding="2,2,2,2" HorizontalOptions="FillAndExpand" HasShadow="true"><Customcontrols:TofinoLabel Text="103 weeshes" TextColor="Black" HorizontalOptions="Center" FontSize="14"></Customcontrols:TofinoLabel></Frame>
-				<Frame OutlineColor="Green" Padding="2,2,2,2" HorizontalOptions="FillAndExpand" HasShadow="true"><Customcontrols:TofinoLabel Text="20 weeshback" TextColor="Black" HorizontalOptions="Center" FontSize="14"></Customcontrols:TofinoLabel></Frame>
-				<Frame OutlineColor="Green" Padding="2,2,2,2" HorizontalOptions="FillAndExpand" HasShadow="true"><Customcontrols:TofinoLabel Text="18 friends" TextColor="Black" HorizontalOptions="Center" FontSize="14"></Customcontrols:TofinoLabel></Frame>
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" Padding="10, 0, 10, 0">
+				<Frame OutlineColor="Black" Padding="2,2,2,2" HorizontalOptions="FillAndExpand" HasShadow="true"><Customcontrols:TofinoLabel Text="103 weeshes" TextColor="Black" HorizontalOptions="Center" FontSize="14"></Customcontrols:TofinoLabel></Frame>
+				<Frame OutlineColor="Black" Padding="2,2,2,2" HorizontalOptions="FillAndExpand" HasShadow="true"><Customcontrols:TofinoLabel Text="20 weeshback" TextColor="Black" HorizontalOptions="Center" FontSize="14"></Customcontrols:TofinoLabel></Frame>
+			</StackLayout>
+			<StackLayout x:Name="stkContent" Margin="10, 10, 10, 10">
+				<Label x:Name="lblRecentWeeshes" Text="My weeshes story" TextColor="Black"></Label>
+				<ListView x:Name="lstRecentWeeshes" 
+						VerticalOptions="Fill" 
+						HeightRequest="110" 
+						SeparatorVisibility="Default" 
+						SeparatorColor="Black"
+						RowHeight="35">
+					<ListView.ItemTemplate>
+	                    <DataTemplate>
+	                        <TextCell Text="{Binding Label}" />
+	                    </DataTemplate>
+	                </ListView.ItemTemplate>
+				</ListView>
+				<Label x:Name="lblSeeAllWeeshes" Text="See all..." TextColor="Black" HorizontalOptions="EndAndExpand"></Label>
+				<Label x:Name="lblRecentEvents" Text="My last activites" TextColor="Black"></Label>
+				<ListView x:Name="lstRecentEvents" VerticalOptions="Fill" HeightRequest="155" 					
+						SeparatorVisibility="Default" 
+						SeparatorColor="Black"
+						RowHeight="50">
+					<ListView.ItemTemplate>
+	                    <DataTemplate>
+	                        <ImageCell Text="{Binding Title}" ImageSource="{Binding Picture}" Detail="{Binding Location}" DetailColor="Blue"/>
+	                    </DataTemplate>
+	                </ListView.ItemTemplate>
+				</ListView>
+				<Label x:Name="lblSeeAllEvents" Text="See all..." HorizontalOptions="EndAndExpand" TextColor="Black"></Label>
 			</StackLayout>
 		</StackLayout>
-		<!--StackLayout x:Name="stkContent"></StackLayout-->
+		</ScrollView>
 </ContentPage>
