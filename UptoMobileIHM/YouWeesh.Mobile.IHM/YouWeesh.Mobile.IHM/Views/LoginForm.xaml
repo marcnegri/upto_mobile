@@ -4,38 +4,39 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 			 xmlns:fab="clr-namespace:FAB.Forms;assembly=FAB.Forms"
              Padding="5">
-    <ScrollView>
+    <ScrollView BackgroundColor="White">
         <StackLayout x:Name="stk">
             <Image x:Name="imgWeesh"
                    HorizontalOptions="Center"
-                   Source="weesh72.png" />
-            <Entry BackgroundColor="Silver"
+                   Source="YouWeeshLogo.png" Scale="0.9"/>
+            <Entry BackgroundColor="#319FD4"
                    Focused="Entry_Focused"
                    Placeholder="Username"
-                   TextColor="White" />
-            <Entry BackgroundColor="Silver"
+					HorizontalOptions = "Center"
+                   TextColor="White" WidthRequest="300" />
+            <Entry BackgroundColor="#319FD4"
                    Focused="Entry_Focused"
                    IsPassword="true"
                    Placeholder="Password"
-                   TextColor="White" />
-            <Button BackgroundColor="Silver"
+					HorizontalOptions = "Center"
+                   TextColor="White"  WidthRequest="300" />
+            <Button BackgroundColor="#319FD4"
                     Clicked="btnLogin_Clicked"
+                    HorizontalOptions = "Center"
+					WidthRequest="300"
                     Text="Login" />
             <Label HorizontalOptions="Center"
                    Text="Forgot password?"
                    VerticalOptions="Center" />
-
-
-            <Button Image="facebook32.png" Text="Login With Facebook" />
-            <Button Clicked="BtnTwitter_Clicked"
-                    Image="twitter32.png"
-                    Text="Login With Twitter" />
-            <Button Image="google32.png" Text="Login With Google+" />
+            <Image Source="FacebookLogin.png" HorizontalOptions="Center"/>
+			<Image Source="TwitterLogin.png"  HorizontalOptions="Center"/>
+          	<Image Source="GoogleLogin.png" HorizontalOptions="Center"/>
             <Label HorizontalOptions="Center"
                    Text="Don't have an account yet ?"
                    VerticalOptions="Center" />
 
-            <Button Clicked="btnRegister_Clicked" Text="Register" />
+            <Button BackgroundColor="#319FD4" Clicked="btnRegister_Clicked" HorizontalOptions = "Center"
+					WidthRequest="300" Text="Register" />
 		</StackLayout>
     </ScrollView>
 </ContentPage>

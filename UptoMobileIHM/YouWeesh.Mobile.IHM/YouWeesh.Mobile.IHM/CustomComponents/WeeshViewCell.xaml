@@ -10,8 +10,8 @@
       <StackLayout Orientation="Vertical" Padding="10, 10, 0, 0">
         <Label Text="{Binding Title}" TextColor="#000000" FontAttributes="Bold"/>
       	<StackLayout Orientation="Horizontal" Padding="0, 7, 0, 0">
-          <Label Text="{Binding CreationDate}" TextColor="Gray" FontSize="8"/>
-          <Label Text="{Binding Location}" TextColor="Gray" FontSize="8"/>
+          <Label Text="{Binding CreationDate}" TextColor="Gray" FontSize="12"/>
+          <Label Text="{Binding Location}" TextColor="Gray" FontSize="12"/>
         </StackLayout>     
       </StackLayout>
       <Button Text="Delete" WidthRequest="0" x:Name="buttonDelete" IsVisible="false" TextColor="#f35e20" HorizontalOptions="End"></Button>

@@ -187,6 +187,10 @@
     <AndroidResource Include="Resources\drawable\portrait4_marker.png" />
     <AndroidResource Include="Resources\drawable\eventMarker.png" />
     <AndroidResource Include="Resources\drawable\starsRating.png" />
+    <AndroidResource Include="Resources\drawable\YouWeeshLogo.png" />
+    <AndroidResource Include="Resources\drawable\FacebookLogin.png" />
+    <AndroidResource Include="Resources\drawable\TwitterLogin.png" />
+    <AndroidResource Include="Resources\drawable\GoogleLogin.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml">

@@ -138,6 +138,10 @@
     <BundleResource Include="Resources\Tofino-Regular.ttf" />
     <BundleResource Include="Resources\drink.jpg" />
     <BundleResource Include="Resources\portrait.jpg" />
+    <BundleResource Include="Resources\YouWeeshLogo.png" />
+    <BundleResource Include="Resources\FacebookLogin.png" />
+    <BundleResource Include="Resources\TwitterLogin.png" />
+    <BundleResource Include="Resources\GoogleLogin.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">

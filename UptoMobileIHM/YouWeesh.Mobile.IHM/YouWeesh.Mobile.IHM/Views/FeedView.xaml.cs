@@ -59,7 +59,7 @@ namespace YouWeesh.Mobile.Views
 			//elements.Add(new Business.Element { Title = "#Futsal", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "futsal.jpg", CreationDate = "04h40 ago", Location = "Bout du monde", IsEvent = true });
 			//elements.Add(new Business.Element { Title = "Poker party", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "poker.jpg", CreationDate = "05h50 ago", Location = "Pickwick Bar", IsEvent = true });
 			elements.Add(new Business.Element { Title = "#courrir !!", Picture = "portrait5.png", CreationDate = "06h15 ago", Location = "2 km", IsEvent = false });
-			elements.Add(new Business.Element { Title = "Discuter autour d'un #verre", Picture = "portrait.jpg", CreationDate = "06h45 ago", Location = "1,2 km", IsEvent = false });
+			elements.Add(new Business.Element { Title = "Discuter autour d'un #verre", Picture = "portrait4.jpg", CreationDate = "06h45 ago", Location = "1,2 km", IsEvent = false });
 			elements.Add(new Business.Element { Title = "Aller regarder l'#euro", Picture = "portrait2.png", CreationDate = "07h00 ago", Location = "2,6 km", IsEvent = false });
 			//elements.Add(new Business.Element { Title = "Poker party", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "poker.jpg", CreationDate = "01h30 ago", Location = "Pickwick Bar", Description = "Final des WPT avec Patrick Bruel en Guest Star ! Du lourd ", IsEvent = true });
 			elements.Add(new Business.Element { Title = "Je vais mater l'#euro a la #fanzone", Picture = "portrait3.png", CreationDate = "07h15 ago", Location = "0.6 km", IsEvent = false });
