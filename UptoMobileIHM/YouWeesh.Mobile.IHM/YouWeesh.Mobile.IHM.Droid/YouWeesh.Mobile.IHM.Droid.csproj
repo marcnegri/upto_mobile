@@ -191,6 +191,7 @@
     <AndroidResource Include="Resources\drawable\FacebookLogin.png" />
     <AndroidResource Include="Resources\drawable\TwitterLogin.png" />
     <AndroidResource Include="Resources\drawable\GoogleLogin.png" />
+    <AndroidResource Include="Resources\drawable\weeshback.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml">

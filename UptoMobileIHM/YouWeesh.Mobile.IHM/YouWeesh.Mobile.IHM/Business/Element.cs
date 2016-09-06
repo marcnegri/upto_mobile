@@ -18,6 +18,7 @@ namespace YouWeesh.Mobile.Business
 		private String creationDate;
         private String location;
         private String picture;
+		private int weeshBack;
 		private Boolean isEvent;
         #endregion
 
@@ -34,6 +35,18 @@ namespace YouWeesh.Mobile.Business
                 title = value;
             }
         }
+		public int WeeshBack
+		{
+			get
+			{
+				return weeshBack;
+			}
+
+			set
+			{
+				weeshBack = value;
+			}
+		}
         public string StartDatetime
         {
             get

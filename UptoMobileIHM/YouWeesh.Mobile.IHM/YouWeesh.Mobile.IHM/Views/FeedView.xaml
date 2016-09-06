@@ -6,7 +6,7 @@
             xmlns:local="clr-namespace:YouWeesh.Mobile;assembly=YouWeesh.Mobile"
             xmlns:maps="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile">
             <!--RelativeLayout x:Name="relativeLayout" VerticalOptions="LayoutOptions.FillAndExpand" BackgroundColor="Transparent"-->
-    	<RelativeLayout x:Name="relativeLayout" VerticalOptions="LayoutOptions.FillAndExpand">
+    	<RelativeLayout x:Name="relativeLayout" VerticalOptions="LayoutOptions.FillAndExpand" BackgroundColor="#f2f2f2">
                 	<ContentPage.Resources>
     				<ResourceDictionary>
       					<controls:FeedViewTemplateSelector x:Key="ElementTemplateSelector"></controls:FeedViewTemplateSelector>
@@ -19,8 +19,6 @@
 							  ItemTemplate="{StaticResource ElementTemplateSelector}">
                     </ListView>
            		 	<maps:CustomMap x:Name="myMap" IsVisible="false" HeightRequest="{x:Static local:App.ScreenHeight}" WidthRequest="{x:Static local:App.ScreenWidth}">
-
-					</maps:CustomMap>
-
+           		 	</maps:CustomMap>
 		</RelativeLayout>
 </ContentPage> 
