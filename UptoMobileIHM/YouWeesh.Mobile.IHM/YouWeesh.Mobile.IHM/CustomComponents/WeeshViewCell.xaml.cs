@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using YouWeesh.Mobile.Business;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +16,6 @@ namespace YouWeesh.Mobile.CustomComponents
 		{
 			InitializeComponent();
 
-
 			contentView.SwipeDown += (s, e) =>
 			{
 
@@ -29,26 +29,28 @@ namespace YouWeesh.Mobile.CustomComponents
 
 			contentView.SwipeLeft += (s, e) =>
 			{
-				if (!buttonDelete.IsVisible)
+				/*if (!buttonDelete.IsVisible)
 				{
 					buttonDelete.IsVisible = true;
 					buttonDelete.LayoutTo(new Rectangle(buttonDelete.X, buttonDelete.Y, 80, buttonDelete.Height), 200);
 					contentView.BackgroundColor = Color.FromHex("#D3D3D3");
-				}
+				}*/
 
 			};
 
 			contentView.SwipeRight += (s, e) =>
 			{
-				if (buttonDelete.IsVisible)
+				/*if (buttonDelete.IsVisible)
 				{
 					deactivateDeleteButton();
 
-				}
+				}*/
+				MessagingCenter.Send<WeeshViewCell, int>(this, "WeeshBack", int.Parse(lblId.Text));
 
 			};
-	
 
+
+			//name.SetBinding(
 		}
         private async void deactivateDeleteButton()
         {
@@ -56,5 +58,15 @@ namespace YouWeesh.Mobile.CustomComponents
             await buttonDelete.LayoutTo(new Rectangle(buttonDelete.X, buttonDelete.Y, 0, buttonDelete.Height), 200);
             buttonDelete.IsVisible = false;
         }
+
+		async void OnTapGestureRecognizerTapped(object sender, EventArgs args)
+		{
+			//AnimateButton();
+			await imgProfile.ScaleTo(0.65, 60, Easing.CubicOut);
+			await imgProfile.ScaleTo(0.95, 60, Easing.CubicIn);
+			MessagingCenter.Send<WeeshViewCell, int>(this, "RedirectToMyProfile", int.Parse(lblId.Text));
+			//await this.Navigation.PushModalAsync(new MyProfileView());
+
+		}
     }
 }

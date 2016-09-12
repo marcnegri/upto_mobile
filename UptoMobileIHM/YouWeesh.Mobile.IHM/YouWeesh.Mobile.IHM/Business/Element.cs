@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace YouWeesh.Mobile.Business
 {
-    public class Element
+    public class Element : INotifyPropertyChanged
     {
-        #region PROPERTIES
+		#region PROPERTIES
+		private int id;
         private String title;
         private String startDatetime;
         private String endDatetime;
@@ -20,9 +22,22 @@ namespace YouWeesh.Mobile.Business
         private String picture;
 		private int weeshBack;
 		private Boolean isEvent;
-        #endregion
+		private Boolean isWeeshBacked=false;
+		#endregion
 
-        #region ACCESSORS
+		#region ACCESSORS
+		public int Id
+		{
+			get
+			{
+				return id;
+			}
+
+			set
+			{
+				id = value;
+			}
+		}
         public string Title
         {
             get
@@ -35,6 +50,19 @@ namespace YouWeesh.Mobile.Business
                 title = value;
             }
         }
+		public Boolean IsWeeshBacked
+		{
+			get
+			{
+				return isWeeshBacked;
+			}
+
+			set
+			{
+				isWeeshBacked = value;
+				this.NotifyPropertyChanged("IsWeeshBacked");
+			}
+		}
 		public int WeeshBack
 		{
 			get
@@ -44,7 +72,9 @@ namespace YouWeesh.Mobile.Business
 
 			set
 			{
+				
 				weeshBack = value;
+				this.NotifyPropertyChanged("WeeshBack");
 			}
 		}
         public string StartDatetime
@@ -161,7 +191,15 @@ namespace YouWeesh.Mobile.Business
 			}
 		}
 
-
 		#endregion
+
+		public event PropertyChangedEventHandler PropertyChanged;
+
+		public void NotifyPropertyChanged(string propName)
+		{
+			if (this.PropertyChanged != null)
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
+		}
+
 	}
 }
