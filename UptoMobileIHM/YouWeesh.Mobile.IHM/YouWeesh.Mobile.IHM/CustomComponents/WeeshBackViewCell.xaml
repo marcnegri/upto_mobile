@@ -24,4 +24,5 @@
 </controls2:ContentViewFeedCell>
 <controls:CircleImage Margin="295,0,0,0" Source="{Binding Picture}" Scale="0.97" x:Name="imgProfile"/>
 </RelativeLayout>
+	
 </ViewCell>

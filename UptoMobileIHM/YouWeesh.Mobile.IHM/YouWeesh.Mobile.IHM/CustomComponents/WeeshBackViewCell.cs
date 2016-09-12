@@ -15,7 +15,6 @@ namespace YouWeesh.Mobile.CustomComponents
 		{
 			InitializeComponent();
 
-
 			contentView.SwipeDown += (s, e) =>
 			{
 
