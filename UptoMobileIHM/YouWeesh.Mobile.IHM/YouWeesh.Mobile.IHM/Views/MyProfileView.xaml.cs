@@ -12,30 +12,25 @@ namespace YouWeesh.Mobile
 		{
 			InitializeComponent();
 
+			#region MOCKS
+			ObservableCollection<Business.Element> elements = new ObservableCollection<Business.Element>();
+			elements.Add(new Business.Element { Title = "#courrir !!", Picture = "portrait4.jpg", CreationDate = "06h15 ago", Location = "2 km", IsEvent = false, WeeshBack = 4 });
+			elements.Add(new Business.Element { Title = "Discuter autour d'un #verre", Picture = "portrait4.jpg", CreationDate = "06h45 ago", Location = "1,2 km", IsEvent = false, WeeshBack = 30 });
+			elements.Add(new Business.Element { Title = "Aller regarder l'#euro", Picture = "portrait4.jpg", CreationDate = "07h00 ago", Location = "2,6 km", IsEvent = false, WeeshBack = 5 });
+			#endregion
 
-			this.BackgroundColor = Color.FromHex("#ececec");
-			lblLocation.TextColor = Color.FromRgb(49, 159, 212);
-
-			rltHeader.Children.Add(stkProfileImg, Constraint.RelativeToParent((parent) =>
-			{
-				return parent.X;
-			}), Constraint.RelativeToParent((parent) =>
-			{
-				return parent.Y + (parent.Height * 0.1);
-			}), Constraint.RelativeToParent((parent) =>
-			{
-				return parent.Width;
-			}), Constraint.RelativeToParent((parent) =>
-			{
-				return parent.Height * 0.3;
-			}));
+			this.BackgroundColor = Color.White;//Color.FromHex("#ececec");
+			stkActionInfo.BackgroundColor = Color.FromRgb(49, 159, 212);
+			rltHeader.BackgroundColor = Color.FromRgb(49, 159, 212);
+			stkHeaderWeesh.BackgroundColor = Color.FromRgb(49, 159, 212);
+			stkHeaderEvents.BackgroundColor = Color.FromRgb(49, 159, 212);
 
 			rltHeader.Children.Add(lblProfileName, Constraint.RelativeToParent((parent) =>
 			{
-				return parent.X;
+				return parent.X + 10;
 			}), Constraint.RelativeToParent((parent) =>
 			{
-				return parent.Y + (parent.Height * 0.4);
+				return parent.Y + rltHeader.Height - 50 ;
 			}), Constraint.RelativeToParent((parent) =>
 			{
 				return parent.Width;
@@ -44,33 +39,6 @@ namespace YouWeesh.Mobile
 				return parent.Height;
 			}));
 
-			rltHeader.Children.Add(stkLocation, Constraint.RelativeToParent((parent) =>
-			{
-				return parent.X;
-			}), Constraint.RelativeToParent((parent) =>
-			{
-				return parent.Y + (parent.Height * 0.55);
-			}), Constraint.RelativeToParent((parent) =>
-			{
-				return parent.Width;
-			}), Constraint.RelativeToParent((parent) =>
-			{
-				return 20;
-			}));
-
-			rltHeader.Children.Add(stkParticipants, Constraint.RelativeToParent((parent) =>
-			{
-				return parent.X ;
-			}), Constraint.RelativeToParent((parent) =>
-			{
-				return parent.Y ;
-			}), Constraint.RelativeToParent((parent) =>
-			{
-				return parent.Width;
-			}), Constraint.RelativeToParent((parent) =>
-			{
-				return 60;
-			}));
 
 			rltHeader.Children.Add(lblRating, Constraint.RelativeToParent((parent) =>
 			{
@@ -85,21 +53,7 @@ namespace YouWeesh.Mobile
 			{
 				return parent.Height;
 			}));
-
-			rltHeader.Children.Add(lblTopTag, Constraint.RelativeToParent((parent) =>
-			{
-				return parent.X;
-			}), Constraint.RelativeToParent((parent) =>
-			{
-				return parent.Y + rltHeader.Height - 30;
-			}), Constraint.RelativeToParent((parent) =>
-			{
-				return parent.Width;
-			}), Constraint.RelativeToParent((parent) =>
-			{
-				return parent.Height;
-			}));
-
+			/*
 			ObservableCollection<Weesh> weeshesList = new ObservableCollection<Weesh>();
 			ObservableCollection<Business.Events> events = new ObservableCollection<Business.Events>();
 
@@ -113,14 +67,14 @@ namespace YouWeesh.Mobile
 
 			events.Add(ev1);
 			events.Add(ev2);
-			events.Add(ev3);
-
+			events.Add(ev3);*/
+			/*
 			weeshesList.Add(we);
 			weeshesList.Add(we2);
-			weeshesList.Add(we3);
+			weeshesList.Add(we3);*/
 
-			lstRecentWeeshes.ItemsSource = weeshesList;
-			lstRecentEvents.ItemsSource = events;
+			lstRecentWeeshes.ItemsSource = elements;
+			//lstRecentEvents.ItemsSource = events;
 
 
 		}

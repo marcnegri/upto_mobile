@@ -6,78 +6,64 @@
 		xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
 		xmlns:Customcontrols="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile">
 	<ScrollView>
-		<StackLayout x:Name="stkHeader">
-			<StackLayout HeightRequest="210">
-				<RelativeLayout x:Name="rltHeader" HeightRequest="210">
+		<StackLayout x:Name="stkHeader" Spacing="0">
+			<StackLayout HeightRequest="180">
+				<RelativeLayout x:Name="rltHeader" HeightRequest="180">
 					<Image  x:Name="imgBackground"
-							Source="futsal.jpg" 
+							Source="portrait4.png" 
 							RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
-							HeightRequest="210"
-							Aspect="AspectFill"
-							Opacity="0.8">
+							HeightRequest="180"
+							Aspect="AspectFill">
 					</Image>
-				<StackLayout x:Name="stkProfileImg" HorizontalOptions="Center" Orientation="Horizontal">
-					<controls:CircleImage 
-						Aspect="AspectFit" 
-						Source="portrait4.png"
-						BorderColor="White"
-						BorderThickness="2" />
-				</StackLayout>
 					<Customcontrols:TofinoLabel 
 					    x:Name="lblProfileName"
 	                    FontAttributes="Bold"
-	                    FontSize="24"
+	                    FontSize="18"
 	                    Text="Helena Smith"
 	                    TextColor="White"
-					    XAlign="Center"/>
-					<StackLayout Orientation="Horizontal" x:Name="stkLocation" HorizontalOptions="Center" HeightRequest="20">
-						<Image  x:Name="imgLocation"
-								Source="location512.png"
-								HeightRequest="20"
-								Aspect="AspectFill"/>
-						<Customcontrols:TofinoLabel 
-		                    FontAttributes="Bold"
-						    x:Name="lblLocation"
-		                    FontSize="15"
-		                    Text="Geneva, SZ"
-						    XAlign="Center"
-							HeightRequest="20"/>					
-					</StackLayout>
-					<StackLayout Orientation="Horizontal" x:Name="stkParticipants" HorizontalOptions="StartAndExpand" Padding="10, 10, 10, 10">
-						<Customcontrols:TofinoLabel 
-									x:Name="lblNbrParticipants"
-									Text="18 friends"
-									TextColor="White"
-									FontSize="18"/>
-					</StackLayout>
+					    XAlign="Start"/>
 					<StackLayout x:Name="lblRating" Padding="10, 0, 10, 0" >
-						<Label Text="100% fiablity" TextColor="White" HorizontalOptions="EndAndExpand" ></Label>
+						<Customcontrols:TofinoLabel Text="100% reliability" TextColor="White" HorizontalOptions="EndAndExpand" ></Customcontrols:TofinoLabel>
 						<Image Source="starsRating.png" WidthRequest="80" Aspect="AspectFit" HorizontalOptions="EndAndExpand" ></Image>
 					</StackLayout>
-					<Label x:Name="lblTopTag" Text="Top Tag : #Tennis" TextColor="White"	HorizontalOptions="StartAndExpand" Margin="10, 0, 0, 0"></Label>
 				</RelativeLayout>
 			</StackLayout>
-			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" Padding="10, 0, 10, 0">
-				<Frame OutlineColor="Black" Padding="2,2,2,2" HorizontalOptions="FillAndExpand" HasShadow="true"><Customcontrols:TofinoLabel Text="103 weeshes" TextColor="Black" HorizontalOptions="Center" FontSize="14"></Customcontrols:TofinoLabel></Frame>
-				<Frame OutlineColor="Black" Padding="2,2,2,2" HorizontalOptions="FillAndExpand" HasShadow="true"><Customcontrols:TofinoLabel Text="20 weeshback" TextColor="Black" HorizontalOptions="Center" FontSize="14"></Customcontrols:TofinoLabel></Frame>
+			<StackLayout x:Name="stkActionInfo" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Padding="10, 0, 10, 0" HeightRequest="30">
+				<Frame OutlineColor="Blue" BackgroundColor="Blue" Padding="2,2,2,2" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HasShadow="true"><Customcontrols:TofinoLabel Text="103 Weesh" TextColor="White" HorizontalOptions="Center" FontSize="12"></Customcontrols:TofinoLabel></Frame>
+				<Frame OutlineColor="Blue" BackgroundColor="Blue" Padding="2,2,2,2" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HasShadow="true"><Customcontrols:TofinoLabel Text="20 Weeshback" TextColor="White" HorizontalOptions="Center" FontSize="12"></Customcontrols:TofinoLabel></Frame>
+				<Frame OutlineColor="Blue" BackgroundColor="Blue" Padding="2,2,2,2" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HasShadow="true"><Customcontrols:TofinoLabel Text="32 Events" TextColor="White" HorizontalOptions="Center" FontSize="12"></Customcontrols:TofinoLabel></Frame>
 			</StackLayout>
-			<StackLayout x:Name="stkContent" Margin="10, 10, 10, 10">
-				<Label x:Name="lblRecentWeeshes" Text="My weeshes story" TextColor="Black"></Label>
-				<ListView x:Name="lstRecentWeeshes" 
-						VerticalOptions="Fill" 
-						HeightRequest="110" 
-						SeparatorVisibility="Default" 
-						SeparatorColor="Black"
-						RowHeight="35">
-					<ListView.ItemTemplate>
-	                    <DataTemplate>
-	                        <TextCell Text="{Binding Label}" />
-	                    </DataTemplate>
-	                </ListView.ItemTemplate>
-				</ListView>
+			<StackLayout x:Name="stkContent" Margin="0, 10, 0, 10" Spacing="0">
+				<StackLayout x:Name="stkLocation" Orientation="Horizontal" Margin="0, 10, 0, 0">
+					<Image Source="icoLocation.jpg" HeightRequest="30" WidthRequest="30" Margin="20,0,30,0"></Image><Customcontrols:TofinoLabel Text="Live in Geneva" TextColor="Black"></Customcontrols:TofinoLabel>
+				</StackLayout>
+				<StackLayout x:Name="stkFriends" Orientation="Horizontal" Margin="0, 10, 0, 0">
+					<Image Source="Friends.png" HeightRequest="30" WidthRequest="30" Margin="20,0,30,0"></Image><Customcontrols:TofinoLabel Text="1024 friends" TextColor="Black"></Customcontrols:TofinoLabel>
+				</StackLayout>
+				<StackLayout x:Name="stkBestTags" Orientation="Horizontal" Margin="0, 10, 0, 0">
+					<Image Source="icoActivities.jpg" HeightRequest="30" WidthRequest="30" Margin="20,0,30,0"></Image><Customcontrols:TofinoLabel Text="#Yoga, #Tennis, #Volley" TextColor="Black"></Customcontrols:TofinoLabel>
+				</StackLayout>
+				<StackLayout x:Name="stkHeaderWeesh" Orientation="Horizontal" Margin="0, 20, 0, 0" HeightRequest="40" VerticalOptions="Center">
+					<Image Source="MyWeesh.png" HeightRequest="30" WidthRequest="30" Margin="15,0,30,0" ></Image><Customcontrols:TofinoLabel Text="My weesh story" VerticalOptions="Center" FontAttributes="Bold"></Customcontrols:TofinoLabel>
+				</StackLayout>
+                <ContentPage.Resources>
+				<ResourceDictionary>
+  					<Customcontrols:FeedViewTemplateSelector x:Key="ElementTemplateSelector"></Customcontrols:FeedViewTemplateSelector>
+				</ResourceDictionary>
+				</ContentPage.Resources>
+		      	<ListView x:Name="lstRecentWeeshes"
+					HeightRequest="200"
+					SeparatorVisibility="Default" 
+					SeparatorColor="Black"
+					HasUnevenRows="true"
+					ItemTemplate="{StaticResource ElementTemplateSelector}" VerticalOptions="FillAndExpand">
+                </ListView>
 				<Label x:Name="lblSeeAllWeeshes" Text="See all..." TextColor="Black" HorizontalOptions="EndAndExpand"></Label>
-				<Label x:Name="lblRecentEvents" Text="My last activites" TextColor="Black"></Label>
-				<ListView x:Name="lstRecentEvents" VerticalOptions="Fill" HeightRequest="155" 					
+				<StackLayout x:Name="stkHeaderEvents" Orientation="Horizontal" Margin="0, 20, 0, 0" HeightRequest="40" VerticalOptions="Center">
+					<Image Source="icon.png" HeightRequest="30" WidthRequest="30" Margin="20,0,30,0" ></Image><Label Text="My last activities" VerticalOptions="Center" FontAttributes="Bold"></Label>
+				</StackLayout>
+				<ListView x:Name="lstRecentEvents" 
+						VerticalOptions="Start" 					
 						SeparatorVisibility="Default" 
 						SeparatorColor="Black"
 						RowHeight="50">
