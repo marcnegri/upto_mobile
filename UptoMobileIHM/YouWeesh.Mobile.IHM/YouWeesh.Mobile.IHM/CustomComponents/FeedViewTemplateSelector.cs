@@ -9,6 +9,7 @@ namespace YouWeesh.Mobile.CustomComponents
 		public FeedViewTemplateSelector()
 		{
 			// Retain instances!
+			//fijofiejfoeijeoijoijos
 			this.eventDataTemplate = new DataTemplate(typeof(EventsViewCell));
 			this.weeshDataTemplate = new DataTemplate(typeof(WeeshViewCell));
 			this.weeshBackDataTemplate = new DataTemplate(typeof(WeeshBackViewCell));
