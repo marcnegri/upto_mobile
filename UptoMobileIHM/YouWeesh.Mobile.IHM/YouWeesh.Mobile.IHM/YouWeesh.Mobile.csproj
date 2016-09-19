@@ -85,7 +85,7 @@
     <Compile Include="Views\SettingsForm.xaml.cs">
       <DependentUpon>SettingsForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CustomComponents\TofinoLabel.cs" />
+    <Compile Include="CustomComponents\RobotoLabel.cs" />
     <Compile Include="CustomComponents\FeedViewTemplateSelector.cs" />
     <Compile Include="Business\Element.cs" />
     <Compile Include="CustomComponents\AddFloatingButton.xaml.cs">
@@ -106,6 +106,9 @@
 
     <Compile Include="Views\MyStory.xaml.cs">
       <DependentUpon>MyStory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomComponents\WeeshBackViewCell.cs">
+      <DependentUpon>WeeshBackViewCell.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -156,6 +159,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\MyStory.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomComponents\WeeshBackViewCell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

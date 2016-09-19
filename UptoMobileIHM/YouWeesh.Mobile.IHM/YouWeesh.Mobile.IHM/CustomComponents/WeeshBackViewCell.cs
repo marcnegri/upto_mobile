@@ -50,6 +50,7 @@ namespace YouWeesh.Mobile.CustomComponents
 			};
 	
 
+
 		}
         private async void deactivateDeleteButton()
         {

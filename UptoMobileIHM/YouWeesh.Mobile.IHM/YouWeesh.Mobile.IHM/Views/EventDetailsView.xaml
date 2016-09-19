@@ -23,7 +23,7 @@
 							BorderThickness="2"
 							HeightRequest="75"/>
 					</StackLayout>
-						<Customcontrols:TofinoLabel 
+						<Customcontrols:RobotoLabel 
 						    x:Name="lblProfileName"
 		                    FontAttributes="Bold"
 		                    FontSize="24"
@@ -35,7 +35,7 @@
 									Source="location512.png"
 									HeightRequest="20"
 									Aspect="AspectFill"/>
-							<Customcontrols:TofinoLabel 
+							<Customcontrols:RobotoLabel 
 			                    FontAttributes="Bold"
 							    x:Name="lblLocation"
 			                    FontSize="15"
@@ -48,7 +48,7 @@
 									Source="participants.png"
 									HeightRequest="30"
 									Aspect="AspectFill"/>
-							<Customcontrols:TofinoLabel 
+							<Customcontrols:RobotoLabel 
 									x:Name="lblNbrParticipants"
 									Text="2/120"
 									TextColor="White"
@@ -57,11 +57,11 @@
 					</RelativeLayout>
 				</StackLayout>
 				<StackLayout x:Name="stkContent">
-					<Customcontrols:TofinoLabel 
+					<Customcontrols:RobotoLabel 
 						x:Name="lblDescription" 
 						Text="Samedi une marche découverte et dimanche les courses avec 3 distances : 12 km, 20 km et 32 km"
 						TextColor="Black" />
-					<Customcontrols:TofinoLabel 
+					<Customcontrols:RobotoLabel 
 						x:Name="lblPrice" 
 						Text="GRATUIT"
 						TextColor="Black"

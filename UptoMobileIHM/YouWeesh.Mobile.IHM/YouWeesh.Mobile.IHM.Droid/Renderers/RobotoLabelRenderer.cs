@@ -8,16 +8,16 @@ using Android.Widget;
 using Android.Graphics;
 
 
-[assembly: ExportRenderer (typeof (TofinoLabel), typeof (TofinoLabelRenderer))]
+[assembly: ExportRenderer (typeof (RobotoLabel), typeof (RobotoLabelRenderer))]
 namespace YouWeesh.Mobile.IHM.Droid
 {
-	public class TofinoLabelRenderer : LabelRenderer
+	public class RobotoLabelRenderer : LabelRenderer
 	{
 		protected override void OnElementChanged(ElementChangedEventArgs<Label> e)
 		{
 			base.OnElementChanged(e);
 			var label = (TextView)Control; // for example
-			Typeface font = Typeface.CreateFromAsset(Forms.Context.Assets, "Fonts/Tofino-Regular.ttf");  // font name specified here
+			Typeface font = Typeface.CreateFromAsset(Forms.Context.Assets, "Fonts/Roboto-Regular.ttf");  // font name specified here
 			label.Typeface = font;
 		}
 	}

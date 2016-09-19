@@ -9,16 +9,16 @@ using YouWeesh.Mobile.CustomComponents;
 using System.IO;
 using Foundation;
 
-[assembly:ExportRenderer(typeof(TofinoLabel), typeof(TofinoLabelRenderer))]
+[assembly:ExportRenderer(typeof(RobotoLabel), typeof(RobotoLabelRenderer))]
 namespace YouWeesh.Mobile.IHM.iOS
 {
-	public class TofinoLabelRenderer : LabelRenderer
+	public class RobotoLabelRenderer : LabelRenderer
 	{
 		protected override void OnElementChanged(ElementChangedEventArgs<Label> e)
 		{
 			base.OnElementChanged(e);
 			var label = new Label { 
-				FontFamily ="Fonts/Tofino-Regular.ttf"
+				FontFamily ="Fonts/Roboto-Regular.ttf"
 			};
 		}
 	}

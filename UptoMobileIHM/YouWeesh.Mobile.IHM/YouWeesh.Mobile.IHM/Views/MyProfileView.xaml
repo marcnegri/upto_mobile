@@ -15,7 +15,7 @@
 							HeightRequest="180"
 							Aspect="AspectFill">
 					</Image>
-					<Customcontrols:TofinoLabel 
+					<Customcontrols:RobotoLabel 
 					    x:Name="lblProfileName"
 	                    FontAttributes="Bold"
 	                    FontSize="18"
@@ -23,28 +23,28 @@
 	                    TextColor="White"
 					    XAlign="Start"/>
 					<StackLayout x:Name="lblRating" Padding="10, 0, 10, 0" >
-						<Customcontrols:TofinoLabel Text="100% reliability" TextColor="White" HorizontalOptions="EndAndExpand" ></Customcontrols:TofinoLabel>
+						<Customcontrols:RobotoLabel Text="100% reliability" TextColor="White" HorizontalOptions="EndAndExpand" ></Customcontrols:RobotoLabel>
 						<Image Source="starsRating.png" WidthRequest="80" Aspect="AspectFit" HorizontalOptions="EndAndExpand" ></Image>
 					</StackLayout>
 				</RelativeLayout>
 			</StackLayout>
 			<StackLayout x:Name="stkActionInfo" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Padding="10, 0, 10, 0" HeightRequest="30">
-				<Frame OutlineColor="Blue" BackgroundColor="Blue" Padding="2,2,2,2" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HasShadow="true"><Customcontrols:TofinoLabel Text="103 Weesh" TextColor="White" HorizontalOptions="Center" FontSize="12"></Customcontrols:TofinoLabel></Frame>
-				<Frame OutlineColor="Blue" BackgroundColor="Blue" Padding="2,2,2,2" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HasShadow="true"><Customcontrols:TofinoLabel Text="20 Weeshback" TextColor="White" HorizontalOptions="Center" FontSize="12"></Customcontrols:TofinoLabel></Frame>
-				<Frame OutlineColor="Blue" BackgroundColor="Blue" Padding="2,2,2,2" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HasShadow="true"><Customcontrols:TofinoLabel Text="32 Events" TextColor="White" HorizontalOptions="Center" FontSize="12"></Customcontrols:TofinoLabel></Frame>
+				<Frame OutlineColor="Blue" BackgroundColor="Blue" Padding="2,2,2,2" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HasShadow="true"><Customcontrols:RobotoLabel Text="103 Weesh" TextColor="White" HorizontalOptions="Center" FontSize="12"></Customcontrols:RobotoLabel></Frame>
+				<Frame OutlineColor="Blue" BackgroundColor="Blue" Padding="2,2,2,2" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HasShadow="true"><Customcontrols:RobotoLabel Text="20 Weeshback" TextColor="White" HorizontalOptions="Center" FontSize="12"></Customcontrols:RobotoLabel></Frame>
+				<Frame OutlineColor="Blue" BackgroundColor="Blue" Padding="2,2,2,2" HorizontalOptions="FillAndExpand" VerticalOptions="Center" HasShadow="true"><Customcontrols:RobotoLabel Text="32 Events" TextColor="White" HorizontalOptions="Center" FontSize="12"></Customcontrols:RobotoLabel></Frame>
 			</StackLayout>
 			<StackLayout x:Name="stkContent" Margin="0, 10, 0, 10" Spacing="0">
 				<StackLayout x:Name="stkLocation" Orientation="Horizontal" Margin="0, 10, 0, 0">
-					<Image Source="icoLocation.jpg" HeightRequest="30" WidthRequest="30" Margin="20,0,30,0"></Image><Customcontrols:TofinoLabel Text="Live in Geneva" TextColor="Black"></Customcontrols:TofinoLabel>
+					<Image Source="icoLocation.jpg" HeightRequest="30" WidthRequest="30" Margin="20,0,30,0"></Image><Customcontrols:RobotoLabel Text="Live in Geneva" TextColor="Black"></Customcontrols:RobotoLabel>
 				</StackLayout>
 				<StackLayout x:Name="stkFriends" Orientation="Horizontal" Margin="0, 10, 0, 0">
-					<Image Source="Friends.png" HeightRequest="30" WidthRequest="30" Margin="20,0,30,0"></Image><Customcontrols:TofinoLabel Text="1024 friends" TextColor="Black"></Customcontrols:TofinoLabel>
+					<Image Source="Friends.png" HeightRequest="30" WidthRequest="30" Margin="20,0,30,0"></Image><Customcontrols:RobotoLabel Text="1024 friends" TextColor="Black"></Customcontrols:RobotoLabel>
 				</StackLayout>
 				<StackLayout x:Name="stkBestTags" Orientation="Horizontal" Margin="0, 10, 0, 0">
-					<Image Source="icoActivities.jpg" HeightRequest="30" WidthRequest="30" Margin="20,0,30,0"></Image><Customcontrols:TofinoLabel Text="#Yoga, #Tennis, #Volley" TextColor="Black"></Customcontrols:TofinoLabel>
+					<Image Source="icoActivities.jpg" HeightRequest="30" WidthRequest="30" Margin="20,0,30,0"></Image><Customcontrols:RobotoLabel Text="#Yoga, #Tennis, #Volley" TextColor="Black"></Customcontrols:RobotoLabel>
 				</StackLayout>
 				<StackLayout x:Name="stkHeaderWeesh" Orientation="Horizontal" Margin="0, 20, 0, 0" HeightRequest="40" VerticalOptions="Center">
-					<Image Source="MyWeesh.png" HeightRequest="30" WidthRequest="30" Margin="15,0,30,0" ></Image><Customcontrols:TofinoLabel Text="My weesh story" VerticalOptions="Center" FontAttributes="Bold"></Customcontrols:TofinoLabel>
+					<Image Source="MyWeesh.png" HeightRequest="30" WidthRequest="30" Margin="15,0,30,0" ></Image><Customcontrols:RobotoLabel Text="My weesh story" VerticalOptions="Center" FontAttributes="Bold"></Customcontrols:RobotoLabel>
 				</StackLayout>
                 <ContentPage.Resources>
 				<ResourceDictionary>

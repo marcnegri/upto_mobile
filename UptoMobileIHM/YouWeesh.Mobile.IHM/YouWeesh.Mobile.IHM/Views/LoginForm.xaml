@@ -2,7 +2,7 @@
 <ContentPage x:Class="YouWeesh.Mobile.Views.LoginForm"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-			 xmlns:fab="clr-namespace:FAB.Forms;assembly=FAB.Forms"
+			 xmlns:Customcontrols="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile"
              Padding="5">
     <ScrollView BackgroundColor="White">
         <StackLayout x:Name="stk">
@@ -25,7 +25,7 @@
                     HorizontalOptions = "Center"
 					WidthRequest="300"
                     Text="Login" />
-            <Label HorizontalOptions="Center"
+            <Customcontrols:RobotoLabel HorizontalOptions="Center"
                    Text="Forgot password?"
                    VerticalOptions="Center" />
             <Image Source="FacebookLogin.png" HorizontalOptions="Center"/>

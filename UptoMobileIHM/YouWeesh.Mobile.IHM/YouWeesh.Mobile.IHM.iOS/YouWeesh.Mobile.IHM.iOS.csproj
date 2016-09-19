@@ -113,14 +113,6 @@
     <BundleResource Include="Resources\Filtericon.png" />
     <BundleResource Include="Resources\Listviewicon.png" />
     <BundleResource Include="Resources\Mappinicon.png" />
-	<BundleResource Include="Resources\Fonts\Tofino-Black.ttf" />
-    <BundleResource Include="Resources\Fonts\Tofino-Bold.ttf" />
-    <BundleResource Include="Resources\Fonts\Tofino-Book.ttf" />
-    <BundleResource Include="Resources\Fonts\Tofino-Light.ttf" />
-    <BundleResource Include="Resources\Fonts\Tofino-Medium.ttf" />
-    <BundleResource Include="Resources\Fonts\Tofino-Thin.ttf" />
-    <BundleResource Include="Resources\Fonts\Tofino-Ultra.ttf" />
-	
     <BundleResource Include="Resources\portrait2.png" />
     <BundleResource Include="Resources\portrait3.png" />
     <BundleResource Include="Resources\portrait4.png" />
@@ -143,6 +135,18 @@
     <BundleResource Include="Resources\TwitterLogin.png" />
     <BundleResource Include="Resources\GoogleLogin.png" />
     <BundleResource Include="Resources\weeshback.png" />
+    <BundleResource Include="Resources\Fonts\Roboto-Black.ttf" />
+    <BundleResource Include="Resources\Fonts\Roboto-BlackItalic.ttf" />
+    <BundleResource Include="Resources\Fonts\Roboto-Bold.ttf" />
+    <BundleResource Include="Resources\Fonts\Roboto-BoldItalic.ttf" />
+    <BundleResource Include="Resources\Fonts\Roboto-Italic.ttf" />
+    <BundleResource Include="Resources\Fonts\Roboto-Light.ttf" />
+    <BundleResource Include="Resources\Fonts\Roboto-LightItalic.ttf" />
+    <BundleResource Include="Resources\Fonts\Roboto-Medium.ttf" />
+    <BundleResource Include="Resources\Fonts\Roboto-MediumItalic.ttf" />
+    <BundleResource Include="Resources\Fonts\Roboto-Regular.ttf" />
+    <BundleResource Include="Resources\Fonts\Roboto-Thin.ttf" />
+    <BundleResource Include="Resources\Fonts\Roboto-ThinItalic.ttf" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">

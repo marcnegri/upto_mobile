@@ -15,7 +15,7 @@
 							RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
 							Orientation="Horizontal">
 				<controls:CircleImage Aspect="AspectFit" Source="portrait.jpg" HeightRequest="50" WidthRequest="50" />
-				<Customcontrols:TofinoLabel 
+				<Customcontrols:RobotoLabel 
                        FontAttributes="Bold"
                        FontSize="24"
                        Text="{Binding Title}"
@@ -31,7 +31,7 @@
 				RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-90}"
 
 				Orientation="Horizontal"-->
-					<Customcontrols:TofinoLabel 
+					<Customcontrols:RobotoLabel 
                        Text="{Binding Description}"
                        TextColor="Black" Margin="3,3,3,3" x:Name="lblDescription"/>
 				</StackLayout>
