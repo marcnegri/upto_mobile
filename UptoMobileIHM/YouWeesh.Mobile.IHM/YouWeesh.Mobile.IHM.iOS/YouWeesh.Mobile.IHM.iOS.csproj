@@ -97,7 +97,7 @@
     <ITunesArtwork Include="iTunesArtwork@2x" />
     <None Include="packages.config" />
     <Compile Include="Renderers\FeedViewRenderer.cs" />
-    <Compile Include="Renderers\TofinoLabelRenderer.cs" />
+    <Compile Include="Renderers\RobotoLabelRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\YouWeesh.Mobile.IHM\YouWeesh.Mobile.csproj">

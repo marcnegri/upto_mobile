@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 using YouWeesh.Mobile.Views;
 using Xamarin.Forms;
 using YouWeesh.Mobile.IHM.iOS;
@@ -22,6 +22,6 @@ namespace YouWeesh.Mobile.IHM.iOS
 			};
 		}
 	}
-}*/
+}
 
 
