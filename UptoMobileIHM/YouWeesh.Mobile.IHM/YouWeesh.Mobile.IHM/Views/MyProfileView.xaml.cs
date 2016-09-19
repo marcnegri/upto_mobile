@@ -8,6 +8,11 @@ namespace YouWeesh.Mobile
 {
 	public partial class MyProfileView : ContentPage
 	{
+		void Handle_Clicked(object sender, System.EventArgs e)
+		{
+			throw new NotImplementedException();
+		}
+
 		public MyProfileView()
 		{
 			InitializeComponent();
@@ -30,7 +35,22 @@ namespace YouWeesh.Mobile
 				return parent.X + 10;
 			}), Constraint.RelativeToParent((parent) =>
 			{
-				return parent.Y + rltHeader.Height - 50 ;
+				return parent.Y + rltHeader.Height - 50;
+			}), Constraint.RelativeToParent((parent) =>
+			{
+				return parent.Width;
+			}), Constraint.RelativeToParent((parent) =>
+			{
+				return parent.Height;
+			}));
+
+
+			rltHeader.Children.Add(stkImgProfile, Constraint.RelativeToParent((parent) =>
+			{
+				return parent.X ;
+			}), Constraint.RelativeToParent((parent) =>
+			{
+				return parent.Y;
 			}), Constraint.RelativeToParent((parent) =>
 			{
 				return parent.Width;
@@ -76,7 +96,16 @@ namespace YouWeesh.Mobile
 			lstRecentWeeshes.ItemsSource = elements;
 			//lstRecentEvents.ItemsSource = events;
 
-
+		}
+		/// <summary>
+		/// Buttons the show history clicked.
+		/// </summary>
+		/// <param name="sender">Sender.</param>
+		/// <param name="e">E.</param>
+		public void btnShowHistory_Clicked(object sender, EventArgs e)
+		{
+			Navigation.PushModalAsync(new MyStory());
+			//MessagingCenter.Send<MyStory, String>(this, "MyStory");
 		}
 	}
 }

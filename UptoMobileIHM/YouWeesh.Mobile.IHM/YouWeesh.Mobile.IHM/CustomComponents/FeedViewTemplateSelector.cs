@@ -12,7 +12,7 @@ namespace YouWeesh.Mobile.CustomComponents
 			//fijofiejfoeijeoijoijos
 			this.eventDataTemplate = new DataTemplate(typeof(EventsViewCell));
 			this.weeshDataTemplate = new DataTemplate(typeof(WeeshViewCell));
-			this.weeshBackDataTemplate = new DataTemplate(typeof(WeeshBackViewCell));
+			//this.weeshBackDataTemplate = new DataTemplate(typeof(WeeshBackViewCell));
 		}
 
 		protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
@@ -20,12 +20,12 @@ namespace YouWeesh.Mobile.CustomComponents
 			var element = item as Business.Element;
 			if (element == null)
 				return null;
-			return element.IsEvent ? this.eventDataTemplate : element.IsWeeshBacked ? this.weeshBackDataTemplate : this.weeshDataTemplate;
+			return element.IsEvent ? this.eventDataTemplate : this.weeshDataTemplate;
 		}
 
 		private readonly DataTemplate eventDataTemplate;
 		private readonly DataTemplate weeshDataTemplate;
-		private readonly DataTemplate weeshBackDataTemplate;
+		//private readonly DataTemplate weeshBackDataTemplate;
 	}
 }
 
