@@ -52,7 +52,7 @@ namespace YouWeesh.Mobile.Views
 			});
 
 			elements.Add(new Business.Element {Id = 0, Title = "Jouer au #foot", Picture = "portrait2.png", CreationDate = "01h30 ago", Location = "1 km", IsEvent = false, WeeshBack = 10 });
-			elements.Add(new Business.Element {Id = 1, Title = "Faire une partie de #tennis", Picture = "portrait3.png", CreationDate = "03h30 ago", Location = "1,5 km", IsEvent = false, WeeshBack = 23, IsWeeshBacked=true });
+			elements.Add(new Business.Element {Id = 1, Title = "Faire une partie de #tennis", Picture = "portrait3.png", CreationDate = "03h30 ago", Location = "1,5 km", IsEvent = false, WeeshBack = 23 });
 			elements.Add(new Business.Element {Id = 2, Title = "Trail des Roussets", StartDatetime = "2:30 ago", EndDatetime = "<-> 205km", CreationDate = "02h30 ago", Picture = "trail.jpg", Location = "Centre sportif du bout du monde", Description = "Samedi une marche découverte et dimanche les courses avec 3 distances : 12 km, 20 km et 32 km", IsEvent = true });
 			//elements.Add(new Business.Element { Title = "Tennis playing", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "tennis.jpg", CreationDate = "03h30 ago", Location = "Centre sportif du bout du monde", IsEvent=true });
 			//elements.Add(new Business.Element { Title = "Vernissage", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "drink.jpg", CreationDate = "02h20 ago", Location = "Centre sportif du bout du monde", IsEvent=true });
@@ -124,10 +124,11 @@ namespace YouWeesh.Mobile.Views
 			{
 				lstfeedView.BeginRefresh();
 				YouWeesh.Mobile.Business.Element element = elements.FirstOrDefault(x => x.Id == idElement);
-				int indexElement = elements.IndexOf(element);
-				element.IsWeeshBacked = true;
-				elements.Remove(element);
-				elements.Insert(indexElement,element);
+				//int indexElement = elements.IndexOf(element);
+				element.WeeshBack++;
+				//element.IsWeeshBacked = true;
+				//elements.Remove(element);
+				//elements.Insert(indexElement,element);
 				lstfeedView.EndRefresh();
 
 			});

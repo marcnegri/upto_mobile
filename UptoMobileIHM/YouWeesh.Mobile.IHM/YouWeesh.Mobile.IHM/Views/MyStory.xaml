@@ -1,5 +1,48 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="YouWeesh.Mobile.MyStory">
-	<ContentPage.Content>
-	</ContentPage.Content>
+<?xml version="1.0" encoding="UTF-8"?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:controls="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="YouWeesh.Mobile.MyStory">
+<ContentPage>
+<ContentPage.Resources>
+<ResourceDictionary>
+	<controls:FeedViewTemplateSelector x:Key="ElementTemplateSelector"></controls:FeedViewTemplateSelector>
+</ResourceDictionary>
+</ContentPage.Resources>
+<StackLayout Orientation="Horizontal">
+<ListView x:Name="lstDate" WidthRequest="65"
+	   GroupDisplayBinding="{Binding Title}"
+	   GroupShortNameBinding="{Binding ShortName}"
+	   HasUnevenRows="True"
+	   IsGroupingEnabled="true"
+	   SeparatorVisibility="None" 
+	   BackgroundColor="White"
+	   RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
+	   RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+	 <ListView.ItemTemplate>
+	 <DataTemplate>
+	      <TextCell Text="{Binding Label}" TextColor="Black" />
+	 </DataTemplate>
+	 </ListView.ItemTemplate>
+	 <ListView.GroupHeaderTemplate>
+     <DataTemplate>
+     	  <TextCell Text="{Binding Title}" TextColor="Black" />
+     </DataTemplate>
+     </ListView.GroupHeaderTemplate>
+</ListView>
+<ListView x:Name="lstMyStory"
+	RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
+    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+    HasUnevenRows="True"
+	GroupDisplayBinding="{Binding Title}"
+	GroupShortNameBinding="{Binding ShortName}"	
+	IsGroupingEnabled="true"
+	SeparatorVisibility="None" 
+	BackgroundColor="White"
+	ItemTemplate="{StaticResource ElementTemplateSelector}">
+	 <ListView.GroupHeaderTemplate>
+     <DataTemplate>
+     	  <TextCell Text="{Binding Title}" TextColor="Black" />
+     </DataTemplate>
+     </ListView.GroupHeaderTemplate>
+</ListView>
+</StackLayout>
 </ContentPage>
+</CarouselPage>
