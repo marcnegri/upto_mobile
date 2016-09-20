@@ -133,7 +133,6 @@
     <BundleResource Include="Resources\YouWeeshLogo.png" />
     <BundleResource Include="Resources\FacebookLogin.png" />
     <BundleResource Include="Resources\TwitterLogin.png" />
-    <BundleResource Include="Resources\GoogleLogin.png" />
     <BundleResource Include="Resources\weeshback.png" />
     <BundleResource Include="Resources\Fonts\Roboto-Black.ttf" />
     <BundleResource Include="Resources\Fonts\Roboto-BlackItalic.ttf" />
@@ -195,6 +194,7 @@
     <AndroidResource Include="Resources\icon_2.png" />
     <AndroidResource Include="Resources\twitter32.png" />
     <AndroidResource Include="Resources\Vince.png" />
+    <AndroidResource Include="Resources\GoogleLogin.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\facebook32.png" />

@@ -15,7 +15,7 @@ namespace YouWeesh.Mobile.Views
         {
             InitializeComponent();
 
-            ctnHeader.BackgroundColor = Color.Gray;
+            ctnHeader.BackgroundColor = Color.FromRgb(49, 159, 212);
             var masterPageItems = new List<MasterPageItem>();
             masterPageItems.Add(new MasterPageItem
             {
@@ -41,18 +41,27 @@ namespace YouWeesh.Mobile.Views
                 IconSource = "reminders.png",
                 TargetType = typeof(FeedView)
             });
+
+			masterPageItems.Add(new MasterPageItem
+			{
+				Title = "Test Create Event",
+				IconSource = "settings.png",
+				TargetType = typeof(AddEventForm)
+			});
+
             masterPageItems.Add(new MasterPageItem
             {
                 Title = "Friends",
                 IconSource = "todo.png",
                 TargetType = typeof(FriendsForm)
             });
-            masterPageItems.Add(new MasterPageItem
-            {
-                Title = "Settings",
-                IconSource = "settings.png",
-                TargetType = typeof(SettingsForm)
-            });
+			masterPageItems.Add(new MasterPageItem
+			{
+				Title = "Settings",
+				IconSource = "settings.png",
+				TargetType = typeof(SettingsForm)
+			});
+
             listView.ItemsSource = masterPageItems;
             NavigationPage p = new NavigationPage(new FeedView());
             p.BarBackgroundColor = Color.FromRgb(49,159,212);

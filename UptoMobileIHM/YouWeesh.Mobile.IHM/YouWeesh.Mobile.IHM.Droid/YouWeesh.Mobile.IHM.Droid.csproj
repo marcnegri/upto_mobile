@@ -186,11 +186,19 @@
     <AndroidResource Include="Resources\drawable\portrait4_marker.png" />
     <AndroidResource Include="Resources\drawable\eventMarker.png" />
     <AndroidResource Include="Resources\drawable\starsRating.png" />
-    <AndroidResource Include="Resources\drawable\YouWeeshLogo.png" />
     <AndroidResource Include="Resources\drawable\FacebookLogin.png" />
     <AndroidResource Include="Resources\drawable\TwitterLogin.png" />
     <AndroidResource Include="Resources\drawable\GoogleLogin.png" />
     <AndroidResource Include="Resources\drawable\weeshback.png" />
+    <AndroidResource Include="Resources\drawable\youweeshlogo.png" />
+    <AndroidResource Include="Resources\drawable\icoLocation.jpg" />
+    <AndroidResource Include="Resources\drawable\icoActivities.jpg" />
+    <AndroidResource Include="Resources\drawable\MyWeesh.png" />
+    <AndroidResource Include="Resources\drawable\Friends.png" />
+    <AndroidResource Include="Resources\drawable\camera.png" />
+    <AndroidResource Include="Resources\drawable\date.png" />
+    <AndroidResource Include="Resources\drawable\clock.png" />
+    <AndroidResource Include="Resources\drawable\background.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml">

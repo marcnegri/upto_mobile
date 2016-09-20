@@ -24,13 +24,14 @@
                 <ListView x:Name="listView"
                           ItemSelected="OnItemSelected"
                           SeparatorVisibility="None"
-                          VerticalOptions="FillAndExpand">
+						  VerticalOptions="FillAndExpand"
+						  HorizontalOptions="CenterAndExpand">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <ImageCell ImageSource="{Binding IconSource}" Text="{Binding Title}" />
+                            <TextCell Text="{Binding Title}" />
                         </DataTemplate>
                     </ListView.ItemTemplate>
-                </ListView>
+				</ListView>
             </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>

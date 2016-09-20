@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="YouWeesh.Mobile.AddEventForm"
+		xmlns:Customcontrols="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile">
+	<ScrollView Padding="10,10,10,10">
+		<StackLayout>
+			<StackLayout HorizontalOptions="Center"><Customcontrols:RobotoLabel Text="Create an event" x:Name="lblCreateEvent" FontSize="24" TextColor="Black" FontAttributes="Bold"/></StackLayout>
+			<StackLayout Orientation="Horizontal"><Frame BackgroundColor="White" Padding="0,0,0,0" x:Name="frmCamera"><Image Source="camera.png" WidthRequest="50" HeightRequest="50"></Image></Frame><Frame BackgroundColor="White" Padding="0,0,0,0" HorizontalOptions="FillAndExpand"><Entry HorizontalOptions="FillAndExpand" Placeholder="EVENT NAME" PlaceholderColor="Gray"></Entry></Frame></StackLayout>
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+				<StackLayout BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="10,0,0,0"><Image Source="date.png" WidthRequest="20" HeightRequest="20"></Image><DatePicker TextColor="Gray"></DatePicker></StackLayout>
+				<StackLayout BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="10,0,0,0"><Image Source="clock.png" WidthRequest="20" HeightRequest="20"></Image><TimePicker TextColor="Gray"></TimePicker></StackLayout>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" x:Name="stkLocation">			
+				<StackLayout BackgroundColor="White" Orientation="Horizontal" Padding="10,0,0,0" HorizontalOptions="FillAndExpand"><Image Source="location48.png" WidthRequest="20" HeightRequest="20"></Image><Entry Placeholder="Location" PlaceholderColor="Gray"></Entry></StackLayout>
+			</StackLayout>
+			<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" x:Name="stkEventOptions" HeightRequest="50" VerticalOptions="Center">
+				<StackLayout BackgroundColor="White" HorizontalOptions="FillAndExpand" Padding="10,0,0,0" VerticalOptions="Center" HeightRequest="50" Orientation="Horizontal"><Image Source="Friends.png" VerticalOptions="Center" HeightRequest="20" WidthRequest="20"></Image><Label Text="0" TextColor="Gray" VerticalTextAlignment="Center"></Label><Slider Maximum="100" Minimum="0" WidthRequest="120" VerticalOptions="Center" ></Slider><Label Text="12" TextColor="Gray" VerticalTextAlignment="Center" ></Label></StackLayout>
+				<StackLayout BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="10,0,0,0" VerticalOptions="Center" HeightRequest="50"><Label Text="Public" TextColor="Gray" VerticalTextAlignment="Center"></Label><Switch></Switch><Label Text="Private" TextColor="Gray" VerticalTextAlignment="Center"></Label></StackLayout>
+			</StackLayout>
+			<StackLayout HorizontalOptions="FillAndExpand"><Frame BackgroundColor="White" Padding="0,0,0,0"><Editor TextColor="Gray" Text="Description" x:Name="edtDescription" Completed="edtDescription_Completed" Focused="edtDescription_Focused" HeightRequest="100" Keyboard="Chat"></Editor></Frame></StackLayout>
+			<StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand"><Button Text="Cancel" HorizontalOptions="FillAndExpand"></Button><Button Text="Create" HorizontalOptions="FillAndExpand"></Button></StackLayout>
+		</StackLayout>
+	</ScrollView>
+</ContentPage>

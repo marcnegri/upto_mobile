@@ -107,8 +107,8 @@
     <Compile Include="Views\MyStory.xaml.cs">
       <DependentUpon>MyStory.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CustomComponents\WeeshBackViewCell.cs">
-      <DependentUpon>WeeshBackViewCell.xaml</DependentUpon>
+    <Compile Include="Views\AddEventForm.xaml.cs">
+      <DependentUpon>AddEventForm.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -160,9 +160,8 @@
     <EmbeddedResource Include="Views\MyStory.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="CustomComponents\WeeshBackViewCell.xaml">
+    <EmbeddedResource Include="Views\AddEventForm.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
