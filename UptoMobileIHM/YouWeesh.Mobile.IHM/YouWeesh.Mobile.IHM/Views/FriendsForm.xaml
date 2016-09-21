@@ -2,11 +2,27 @@
 <ContentPage x:Class="YouWeesh.Mobile.Views.FriendsForm"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:controls="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile">
-    <StackLayout BackgroundColor="White">
-        <ScrollView>
-            <Label Text="OIJAfoiajfoiajofiajfoiajfoij" TextColor="Black" />
-            <ListView x:Name="feedView" BackgroundColor="Lime">
+             xmlns:controls="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile"
+		Title="My Friends"
+		Icon="Friends.png">
+    	<StackLayout>
+		<Grid>
+	        <Grid.ColumnDefinitions>
+	            <ColumnDefinition Width="Auto" />
+	        </Grid.ColumnDefinitions>
+	        <Grid.RowDefinitions>
+	            <RowDefinition Height="Auto" />
+	        </Grid.RowDefinitions>
+	        <SearchBar 	Grid.Row="0"
+	                   	Grid.Column="0"
+	                   	Placeholder="Search people, tags &amp; places..." 
+						PlaceholderColor="Gray" 
+						TextColor="Black"
+						/>
+        </Grid>
+        <ScrollView VerticalOptions="LayoutOptions.FillAndExpand">
+            <ListView 	x:Name="feedView" 
+						HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <controls:FriendsViewCell />

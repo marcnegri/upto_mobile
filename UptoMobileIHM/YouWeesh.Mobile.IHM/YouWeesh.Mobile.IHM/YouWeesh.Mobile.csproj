@@ -73,9 +73,6 @@
     <Compile Include="Views\MyNextEventsView.xaml.cs">
       <DependentUpon>MyNextEventsView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\MyWeeshView.xaml.cs">
-      <DependentUpon>MyWeeshView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\RegisterForm.xaml.cs">
       <DependentUpon>RegisterForm.xaml</DependentUpon>
     </Compile>
@@ -196,12 +193,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\FeedView.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\MyWeeshView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

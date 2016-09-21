@@ -15,6 +15,7 @@ namespace YouWeesh.Mobile.Business
         private String lastName;
         private String username;
         private String picture;
+		private String listTags; // a modifier juste declare pour la maquette
         #endregion
 
         #region ACCESSORS
@@ -66,8 +67,21 @@ namespace YouWeesh.Mobile.Business
                 picture = value;
             }
         }
-        #endregion
 
-        public Users(){  }
+		public string ListTags
+		{
+			get
+			{
+				return listTags;
+			}
+
+			set
+			{
+				listTags = value;
+			}
+		}
+		#endregion
+
+		public Users(){  }
     }
 }

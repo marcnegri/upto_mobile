@@ -199,6 +199,7 @@
     <AndroidResource Include="Resources\drawable\date.png" />
     <AndroidResource Include="Resources\drawable\clock.png" />
     <AndroidResource Include="Resources\drawable\background.jpg" />
+    <AndroidResource Include="Resources\drawable\ball.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml">
