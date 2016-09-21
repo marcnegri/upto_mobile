@@ -22,7 +22,7 @@ namespace YouWeesh.Mobile.Business
         private String picture;
 		private int weeshBack;
 		private Boolean isEvent;
-		private Boolean isWeeshBacked=false;
+		//private Boolean isWeeshBacked=false;
 		#endregion
 
 		#region ACCESSORS
@@ -50,19 +50,7 @@ namespace YouWeesh.Mobile.Business
                 title = value;
             }
         }
-		public Boolean IsWeeshBacked
-		{
-			get
-			{
-				return isWeeshBacked;
-			}
 
-			set
-			{
-				isWeeshBacked = value;
-				this.NotifyPropertyChanged("IsWeeshBacked");
-			}
-		}
 		public int WeeshBack
 		{
 			get
