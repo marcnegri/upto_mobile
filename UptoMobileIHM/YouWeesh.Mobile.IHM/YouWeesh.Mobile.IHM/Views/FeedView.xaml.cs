@@ -115,7 +115,7 @@ namespace YouWeesh.Mobile.Views
 			MessagingCenter.Subscribe<AddWeeshForm, String>(this, "NewWeesh", (page, text) =>
 			{
 				lstfeedView.BeginRefresh();
-				elements.Insert(0, new Business.Element { Title = text, Picture = "portrait2.png", CreationDate = "0h00 ago", Location = "0 km", IsEvent = false });
+				elements.Insert(0, new Business.Element { Title = text, Picture = "portrait4.png", CreationDate = "0h00 ago", Location = "0 km", IsEvent = false });
 				lstfeedView.EndRefresh();
 
 			});
@@ -146,6 +146,20 @@ namespace YouWeesh.Mobile.Views
 			{
 				YouWeesh.Mobile.Business.Element element = elements.FirstOrDefault(x => x.Id == idElement);
 				this.Navigation.PushAsync(new MyProfileView());
+
+			});
+
+			MessagingCenter.Subscribe<EventsViewCell, int>(this, "RedirectToMyProfile", (page, idElement) =>
+			{
+				YouWeesh.Mobile.Business.Element element = elements.FirstOrDefault(x => x.Id == idElement);
+				this.Navigation.PushAsync(new MyProfileView());
+
+			});
+
+			MessagingCenter.Subscribe<EventsViewCell, int>(this, "RedirectToEventDetails", (page, idEvent) =>
+			{
+				//YouWeesh.Mobile.Business.Element element = elements.FirstOrDefault(x => x.Id == idElement);
+				this.Navigation.PushAsync(new EventDetailsView());
 
 			});
 			// 1 - test hide /unhide during an event (scroll)

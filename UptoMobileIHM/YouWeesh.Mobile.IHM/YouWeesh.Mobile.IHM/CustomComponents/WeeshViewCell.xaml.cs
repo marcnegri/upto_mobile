@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using ImageCircle.Forms.Plugin.Abstractions;
 
 using Xamarin.Forms;
+using YouWeesh.Mobile.Views;
 
 namespace YouWeesh.Mobile.CustomComponents
 {
@@ -70,6 +71,17 @@ namespace YouWeesh.Mobile.CustomComponents
 			await imgProfile.ScaleTo(0.95, 60, Easing.CubicIn);
 			MessagingCenter.Send<WeeshViewCell, int>(this, "RedirectToMyProfile", int.Parse(lblId.Text));
 			//await this.Navigation.PushModalAsync(new MyProfileView());
+			//await this.Navigation.PushAsync(new MyProfileView());
+
+		}
+
+		async void WeeshBackOnTapGestureRecognizerTapped(object sender, EventArgs args)
+		{
+			//AnimateButton();
+			MessagingCenter.Send<WeeshViewCell, int>(this, "WeeshBack", int.Parse(lblId.Text));
+			//App.Current.MainPage.Navigation
+			//await this.Navigation.PushModalAsync(new MyProfileView());
+			//await this.Navigation.PushAsync(new MyProfileView());
 
 		}
     }

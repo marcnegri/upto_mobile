@@ -18,6 +18,13 @@ namespace YouWeesh.Mobile.Views
 			MessagingCenter.Send<AddWeeshForm, String>(this, "NewWeesh", editorWeesh.Text);
 			//this.Navigation.PushModalAsync(new Views.WeeshesTesst());
 		}
+
+		public void btnCancelWeesh_Clicked(object sender, EventArgs e)
+		{
+			this.Navigation.PopModalAsync();
+			//MessagingCenter.Send<AddWeeshForm, String>(this, "NewWeesh", editorWeesh.Text);
+			//this.Navigation.PushModalAsync(new Views.WeeshesTesst());
+		}
 	}
 }
 
