@@ -58,5 +58,15 @@ namespace YouWeesh.Mobile.CustomComponents
 				handle(sender, args);
 			}
 		}
+
+		public void RelativeLayoutOnTapGestureRecognizerTapped(object sender, TappedEventArgs args) // catches TextChanged to Entry (MyENry)
+		{
+			MessagingCenter.Send<EventsViewCell, int>(this, "RedirectToEventDetails", int.Parse(lblId.Text));
+		}
+
+		public void ImageOnTapGestureRecognizerTapped(object sender, TappedEventArgs args) // catches TextChanged to Entry (MyENry)
+		{
+			MessagingCenter.Send<EventsViewCell, int>(this, "RedirectToMyProfile", int.Parse(lblId.Text));
+		}
     }
 }

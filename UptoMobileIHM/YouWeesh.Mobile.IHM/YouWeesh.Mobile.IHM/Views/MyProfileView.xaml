@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage 
 		xmlns="http://xamarin.com/schemas/2014/forms" 
 		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
@@ -51,10 +51,20 @@
 					<Image Source="icoLocation.jpg" HeightRequest="30" WidthRequest="30" Margin="20,0,30,0"></Image><Customcontrols:RobotoLabel Text="Live in Geneva" TextColor="Black"></Customcontrols:RobotoLabel>
 				</StackLayout>
 				<StackLayout x:Name="stkFriends" Orientation="Horizontal" Margin="0, 10, 0, 0">
-					<Image Source="Friends.png" HeightRequest="30" WidthRequest="30" Margin="20,0,30,0"></Image><Customcontrols:RobotoLabel Text="1024 friends" TextColor="Black"></Customcontrols:RobotoLabel>
+					<Image Source="Friends.png" HeightRequest="30" WidthRequest="30" Margin="20,0,30,0"></Image>
+					<Customcontrols:RobotoLabel Text="1024 friends" TextColor="Black">
+						<Label.GestureRecognizers>
+ 							<TapGestureRecognizer Tapped="FriendsOnTapGestureRecognizerTapped" NumberOfTapsRequired="1" />
+						</Label.GestureRecognizers>
+					</Customcontrols:RobotoLabel>
 				</StackLayout>
 				<StackLayout x:Name="stkBestTags" Orientation="Horizontal" Margin="0, 10, 0, 0">
-					<Image Source="icoActivities.jpg" HeightRequest="30" WidthRequest="30" Margin="20,0,30,0"></Image><Customcontrols:RobotoLabel Text="#Yoga, #Tennis, #Volley" TextColor="Black"></Customcontrols:RobotoLabel>
+					<Image Source="icoActivities.jpg" HeightRequest="30" WidthRequest="30" Margin="20,0,30,0"></Image>
+					<Customcontrols:RobotoLabel Text="#Yoga, #Tennis, #Volley" TextColor="Black">
+						<Label.GestureRecognizers>
+ 							<TapGestureRecognizer Tapped="TagsOnTapGestureRecognizerTapped" NumberOfTapsRequired="1" />
+						</Label.GestureRecognizers>
+					</Customcontrols:RobotoLabel>
 				</StackLayout>
 				<StackLayout x:Name="stkHeaderWeesh" Orientation="Horizontal" Margin="0, 20, 0, 0" HeightRequest="40" VerticalOptions="Center">
 					<Image Source="MyWeesh.png" HeightRequest="30" WidthRequest="30" Margin="15,0,30,0" ></Image><Customcontrols:RobotoLabel Text="My weesh story" VerticalOptions="Center" FontAttributes="Bold" TextColor="White"></Customcontrols:RobotoLabel>

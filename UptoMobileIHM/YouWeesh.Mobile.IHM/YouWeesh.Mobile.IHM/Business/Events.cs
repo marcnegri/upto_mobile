@@ -8,7 +8,8 @@ namespace YouWeesh.Mobile.Business
 {
     public class Events
     {
-        #region PROPERTIES
+		#region PROPERTIES
+		private int id;
         private String title;
         private String startDatetime;
         private String endDatetime;
@@ -20,6 +21,18 @@ namespace YouWeesh.Mobile.Business
         #endregion
 
         #region ACCESSORS
+
+		public int Id
+		{
+			get
+			{
+				return id;
+			}
+			set
+			{
+				id = value;
+			}
+		}
         public string Title
         {
             get

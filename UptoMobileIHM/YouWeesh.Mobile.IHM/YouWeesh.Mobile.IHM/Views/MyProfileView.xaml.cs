@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using Xamarin.Forms;
 using YouWeesh.Mobile.Business;
+using YouWeesh.Mobile.CustomComponents;
+using YouWeesh.Mobile.Views;
 
 namespace YouWeesh.Mobile
 {
@@ -94,6 +97,7 @@ namespace YouWeesh.Mobile
 			weeshesList.Add(we3);*/
 
 			lstRecentWeeshes.ItemsSource = elements;
+
 			//lstRecentEvents.ItemsSource = events;
 
 		}
@@ -104,8 +108,24 @@ namespace YouWeesh.Mobile
 		/// <param name="e">E.</param>
 		public void btnShowHistory_Clicked(object sender, EventArgs e)
 		{
-			Navigation.PushModalAsync(new MyStory());
+			Navigation.PushAsync(new MyStory());
 			//MessagingCenter.Send<MyStory, String>(this, "MyStory");
+		}
+
+		async void FriendsOnTapGestureRecognizerTapped(object sender, EventArgs args)
+		{
+			//AnimateButton();
+			await this.Navigation.PushAsync(new FriendsForm());
+			//await this.Navigation.PushModalAsync(new MyProfileView());
+
+		}
+
+		async void TagsOnTapGestureRecognizerTapped(object sender, EventArgs args)
+		{
+			//AnimateButton();
+			await this.Navigation.PushAsync(new FeedView());
+			//await this.Navigation.PushModalAsync(new MyProfileView());
+
 		}
 	}
 }
