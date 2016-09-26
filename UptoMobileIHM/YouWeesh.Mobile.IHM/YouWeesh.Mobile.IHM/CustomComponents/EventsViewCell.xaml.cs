@@ -37,16 +37,18 @@ namespace YouWeesh.Mobile.CustomComponents
 			}));
 		}
 
+		/*
 		public void eventViewCell_Taped(object sender, EventArgs e)
 		{
-			/*
-			var EventDetails = new EventDetailsView();
-			Children.Add(EventDetails);
-			this.SelectedItem = Children[1];
-			this.Title = "Trail des Roussets";
-			CurrentPageChanged += HandleCurrentPageChanged;*/
-		}
+			//var EventDetails = new EventDetailsView();
+			MessagingCenter.Send<EventsViewCell>(this, "RedirectToEventDetails");
+			//App.Current.MainPage.Navigation.PushAsync(EventDetails);
+			//Children.Add(EventDetails);
+			//this.SelectedItem = Children[1];
+			//this.Title = "Trail des Roussets";
+		}*/
 
+		/*
 		public event EventHandler<TappedEventArgs> TappedToto;
 
 		public void HandleTappedEvent(object sender, TappedEventArgs args) // catches TextChanged to Entry (MyENry)
@@ -57,6 +59,6 @@ namespace YouWeesh.Mobile.CustomComponents
 			{
 				handle(sender, args);
 			}
-		}
+		}*/
     }
 }

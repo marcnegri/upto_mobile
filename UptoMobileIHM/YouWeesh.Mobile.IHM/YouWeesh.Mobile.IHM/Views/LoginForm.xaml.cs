@@ -30,7 +30,7 @@ namespace YouWeesh.Mobile.Views
             var action = await DisplayActionSheet("ActionSheet: Send to?", "Cancel", null, "Email", "Twitter", "Facebook");
         }
 
-        public void btnLogin_Clicked(object sender, EventArgs e)
+        async void btnLogin_Clicked(object sender, EventArgs e)
         {
             this.Navigation.PushModalAsync(new Views.MenuPage());
             //this.Navigation.PushModalAsync(new Views.WeeshesTesst());

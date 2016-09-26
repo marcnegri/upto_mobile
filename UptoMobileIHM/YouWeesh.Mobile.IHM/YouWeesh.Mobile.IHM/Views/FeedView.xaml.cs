@@ -133,6 +133,15 @@ namespace YouWeesh.Mobile.Views
 
 			});
 
+			MessagingCenter.Subscribe<WeeshViewCell, int>(this, "RedirectToEventDetails", (page, idElement) =>
+			{
+				lstfeedView.BeginRefresh();
+				YouWeesh.Mobile.Business.Element element = elements.FirstOrDefault(x => x.Id == idElement);
+				this.Navigation.PushAsync(new EventDetailsView());
+				lstfeedView.EndRefresh();
+
+			});
+
 			MessagingCenter.Subscribe<WeeshViewCell, int>(this, "RedirectToMyProfile", (page, idElement) =>
 			{
 				YouWeesh.Mobile.Business.Element element = elements.FirstOrDefault(x => x.Id == idElement);

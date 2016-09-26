@@ -15,6 +15,7 @@
 			      	<ListView x:Name="lstfeedView"
 			      			  RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
 							  RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
+							  CachingStrategy="RecycleElement"
                               HasUnevenRows="True"
 							  ItemTemplate="{StaticResource ElementTemplateSelector}">
                     </ListView>
