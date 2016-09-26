@@ -8,7 +8,7 @@
 <controls2:ContentViewFeedCell x:Name="contentView"  Margin="30,0,5,0"  HeightRequest="60" BackgroundColor="White" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
     <StackLayout Orientation="Horizontal" Padding="40,0,0,0" >
       <StackLayout Orientation="Vertical">
-        <controls2:RobotoLabel  Text="{Binding Username}" TextColor="#000000" FontAttributes="Bold" FontSize="18"/>
+        <controls2:RobotoLabel Text="{Binding Username}" TextColor="#000000" FontSize="18"/>
        	<StackLayout Orientation="Horizontal" Padding="0,5,0,0" HorizontalOptions="Start">
 			<Image Source="icoActivities.jpg" HeightRequest="20" WidthRequest="20"></Image>
 			<controls2:RobotoLabel  Text="{Binding ListTags}" TextColor="Gray" FontSize="15"/>

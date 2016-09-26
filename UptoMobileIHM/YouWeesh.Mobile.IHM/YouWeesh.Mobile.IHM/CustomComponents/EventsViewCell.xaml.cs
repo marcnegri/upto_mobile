@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using YouWeesh.Mobile.Views;
 
 using Xamarin.Forms;
 
@@ -10,10 +11,10 @@ namespace YouWeesh.Mobile.CustomComponents
 {
     public partial class EventsViewCell : ViewCell
     {
-        public EventsViewCell()
-        {
-            InitializeComponent();
-            mainLayout.Padding = new Thickness(5,5,5,5);
+		public EventsViewCell()
+		{
+			InitializeComponent();
+			mainLayout.Padding = new Thickness(5, 5, 5, 5);
 
 			mainLayout.Children.Add(stlDescription, Constraint.RelativeToParent((parent) =>
 			{
@@ -34,6 +35,28 @@ namespace YouWeesh.Mobile.CustomComponents
 			{
 				return parent.Height - 125;
 			}));
-        }
+		}
+
+		public void eventViewCell_Taped(object sender, EventArgs e)
+		{
+			/*
+			var EventDetails = new EventDetailsView();
+			Children.Add(EventDetails);
+			this.SelectedItem = Children[1];
+			this.Title = "Trail des Roussets";
+			CurrentPageChanged += HandleCurrentPageChanged;*/
+		}
+
+		public event EventHandler<TappedEventArgs> TappedToto;
+
+		public void HandleTappedEvent(object sender, TappedEventArgs args) // catches TextChanged to Entry (MyENry)
+		{
+			var handle = TappedToto;
+
+			if (handle != null)
+			{
+				handle(sender, args);
+			}
+		}
     }
 }

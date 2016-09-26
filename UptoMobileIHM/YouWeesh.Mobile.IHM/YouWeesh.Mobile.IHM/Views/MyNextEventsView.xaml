@@ -30,7 +30,7 @@
 							  RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
 	                    <ListView.ItemTemplate>
 	                        <DataTemplate>
-	                            <controls:EventsViewCell x:Name="evtViewCell" Tapped="eventViewCell_Taped" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" />
+	                            <controls:EventsViewCell x:Name="evtViewCell" TappedToto="eventViewCell_Taped" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" />
 	                        </DataTemplate>
 	                    </ListView.ItemTemplate>
 						<ListView.GroupHeaderTemplate>

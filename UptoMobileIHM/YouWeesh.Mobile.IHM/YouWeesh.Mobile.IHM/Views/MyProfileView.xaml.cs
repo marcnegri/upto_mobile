@@ -25,10 +25,10 @@ namespace YouWeesh.Mobile
 			#endregion
 
 			this.BackgroundColor = Color.White;//Color.FromHex("#ececec");
-			stkActionInfo.BackgroundColor = Color.FromRgb(49, 159, 212);
-			rltHeader.BackgroundColor = Color.FromRgb(49, 159, 212);
-			stkHeaderWeesh.BackgroundColor = Color.FromRgb(49, 159, 212);
-			stkHeaderEvents.BackgroundColor = Color.FromRgb(49, 159, 212);
+			stkActionInfo.BackgroundColor = Color.FromRgb(252, 113, 2);
+			rltHeader.BackgroundColor = Color.FromRgb(252, 113, 2);
+			stkHeaderWeesh.BackgroundColor = Color.FromRgb(252, 113, 2);
+			stkHeaderEvents.BackgroundColor = Color.FromRgb(252, 113, 2);
 
 			rltHeader.Children.Add(lblProfileName, Constraint.RelativeToParent((parent) =>
 			{
