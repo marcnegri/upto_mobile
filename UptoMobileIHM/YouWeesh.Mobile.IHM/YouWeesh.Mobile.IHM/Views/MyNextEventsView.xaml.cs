@@ -108,5 +108,15 @@ namespace YouWeesh.Mobile.Views
                 CurrentPageChanged -= HandleCurrentPageChanged;
             }
         }
+		/*
+		MessagingCenter.Subscribe<WeeshViewCell, int>(this, "RedirectToEventDetails", (page, idElement) =>
+		{
+			lst.
+			lstfeedView.BeginRefresh();
+			YouWeesh.Mobile.Business.Element element = elements.FirstOrDefault(x => x.Id == idElement);
+			this.Navigation.PushAsync(new EventDetailsView());
+			lstfeedView.EndRefresh();
+
+		});*/
     }
 }

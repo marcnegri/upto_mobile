@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <CarouselPage x:Class="YouWeesh.Mobile.Views.MyNextEventsView"
               xmlns="http://xamarin.com/schemas/2014/forms"
               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -26,11 +26,12 @@
 	                          IsGroupingEnabled="true"
 	                          SeparatorVisibility="None" 
 							  BackgroundColor="White"
+							  CachingStrategy="RecycleElement"
 							  RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
 							  RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
 	                    <ListView.ItemTemplate>
 	                        <DataTemplate>
-	                            <controls:EventsViewCell x:Name="evtViewCell" TappedToto="eventViewCell_Taped" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" />
+	                            <controls:EventsViewCell x:Name="evtViewCell" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" />
 	                        </DataTemplate>
 	                    </ListView.ItemTemplate>
 						<ListView.GroupHeaderTemplate>
