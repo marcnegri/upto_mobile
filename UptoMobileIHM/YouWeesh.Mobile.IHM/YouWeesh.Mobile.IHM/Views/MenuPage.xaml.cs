@@ -9,12 +9,11 @@ namespace YouWeesh.Mobile.Views
 {
     public partial class MenuPage : MasterDetailPage
     {
-        public ListView ListView { get { return listView; } }
+		public ListView ListView { get { return lstLeftMenu; } }
 
         public MenuPage()
         {
             InitializeComponent();
-
 			ctnHeader.BackgroundColor = Color.FromRgb(252, 113, 2);// Color.FromRgb(49, 159, 212);
             var masterPageItems = new List<MasterPageItem>();
             masterPageItems.Add(new MasterPageItem
@@ -32,40 +31,41 @@ namespace YouWeesh.Mobile.Views
             masterPageItems.Add(new MasterPageItem
             {
                 Title = "My Next Events",
-                IconSource = "todo.png",
+                IconSource = "MyEvents.png",
                 TargetType = typeof(MyNextEventsView)
             });
             masterPageItems.Add(new MasterPageItem
             {
                 Title = "Weesh/Events feed",
-                IconSource = "reminders.png",
+                IconSource = "MyWeesh.png",
                 TargetType = typeof(FeedView)
             });
-
+			/*
 			masterPageItems.Add(new MasterPageItem
 			{
 				Title = "Test Create Event",
 				IconSource = "settings.png",
 				TargetType = typeof(AddEventForm)
 			});
-
+*/
             masterPageItems.Add(new MasterPageItem
             {
                 Title = "Friends",
-                IconSource = "todo.png",
+                IconSource = "Friends.png",
                 TargetType = typeof(FriendsForm)
             });
 			masterPageItems.Add(new MasterPageItem
 			{
 				Title = "Settings",
-				IconSource = "settings.png",
+				IconSource = "settings72.png",
 				TargetType = typeof(SettingsForm)
 			});
 
-            listView.ItemsSource = masterPageItems;
+			lstLeftMenu.ItemsSource = masterPageItems;
             NavigationPage p = new NavigationPage(new FeedView());
             p.BarBackgroundColor = Color.FromRgb(252, 113, 2);//Color.FromRgb(49,159,212);
             Detail = p;
+
         }
 
         void OnItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -77,7 +77,7 @@ namespace YouWeesh.Mobile.Views
                 {
                     BarBackgroundColor = Color.FromRgb(252, 113, 2)//Color.FromRgb(49, 159, 212)
                 };
-                listView.SelectedItem = null;
+                lstLeftMenu.SelectedItem = null;
                 IsPresented = false;
             }
         }

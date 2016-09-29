@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <MasterDetailPage x:Class="YouWeesh.Mobile.Views.MenuPage"
                   xmlns="http://xamarin.com/schemas/2014/forms"
                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -21,14 +21,15 @@
 							Margin="20,0,0,20"
 							FontSize="18" />
 				</RelativeLayout>
-                <ListView x:Name="listView"
+                <ListView x:Name="lstLeftMenu"
                           ItemSelected="OnItemSelected"
                           SeparatorVisibility="None"
 						  VerticalOptions="FillAndExpand"
-						  HorizontalOptions="CenterAndExpand">
+						  HorizontalOptions="CenterAndExpand"
+						  HasUnevenRows="True">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <TextCell Text="{Binding Title}" />
+                            <Customcontrols:MenuCell/>
                         </DataTemplate>
                     </ListView.ItemTemplate>
 				</ListView>
