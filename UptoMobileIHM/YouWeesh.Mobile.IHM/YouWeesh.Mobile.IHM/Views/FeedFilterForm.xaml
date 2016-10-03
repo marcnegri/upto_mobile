@@ -1,22 +1,39 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms"
                        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                       x:Class="YouWeesh.Mobile.Views.FeedFilterForm">
-  <RelativeLayout BackgroundColor="Gray" HeightRequest="250">
+                       x:Class="YouWeesh.Mobile.Views.FeedFilterForm" >
+    <ContentView.Resources>
+        <ResourceDictionary>
+	        <Style TargetType="Label">
+	            <Setter Property="TextColor" Value="#FC7102" />
+				<Setter Property="VerticalTextAlignment" Value="Center"/>
+	        </Style>
+			<Style TargetType="StackLayout">
+	            <Setter Property="Padding" Value="10,0,0,0" />
+	        </Style>
+        </ResourceDictionary>
+	</ContentView.Resources>
+  <RelativeLayout BackgroundColor="#f2f2f2" HeightRequest="250">
     <TableView Intent="Settings">
       <TableRoot>
         <TableSection Title="Filters">
-          <SwitchCell Text="Weesh" />
-          <SwitchCell Text="Events"/>
-          <SwitchCell Text="Friends"/>
-          <ViewCell>
-              <StackLayout Orientation="Horizontal">
+		<ViewCell>
+      	 	<StackLayout Orientation="Horizontal"><Label Text="Weesh"></Label><Switch x:Name="swcWeesh"/></StackLayout>
+		</ViewCell>
+		<ViewCell>
+			<StackLayout Orientation="Horizontal"><Label Text="Events"></Label><Switch x:Name="swcEvents"/></StackLayout>
+		</ViewCell>
+		<ViewCell>					
+			<StackLayout Orientation="Horizontal"><Label Text="Friends"></Label><Switch x:Name="swcFriends"/></StackLayout>						
+		</ViewCell>
+		<ViewCell>
+            <StackLayout Orientation="Horizontal">
                     <Label HorizontalOptions="Start" VerticalOptions="Center" Text="Distance" />
                     <Slider Maximum="300" Minimum="1" HorizontalOptions="StartAndExpand" WidthRequest="200"></Slider>
-              </StackLayout>            
+            </StackLayout>            
           </ViewCell>
         </TableSection>
       </TableRoot>
-    </TableView> 
+    </TableView>
  </RelativeLayout>
 </ContentView>

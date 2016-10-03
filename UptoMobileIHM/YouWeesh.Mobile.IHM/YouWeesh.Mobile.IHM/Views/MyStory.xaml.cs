@@ -59,6 +59,13 @@ namespace YouWeesh.Mobile
 				this.Navigation.PushAsync(new MyProfileView());
 
 			});
+
+			MessagingCenter.Subscribe<EventsViewCell, int>(this, "RedirectToEventDetails", (page, idEvent) =>
+			{
+				//YouWeesh.Mobile.Business.Element element = elements.FirstOrDefault(x => x.Id == idElement);
+				this.Navigation.PushAsync(new EventDetailsView());
+
+			});
 	
 		}
 
