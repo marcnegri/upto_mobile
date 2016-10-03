@@ -3,10 +3,29 @@ using Xamarin.Forms;
 
 namespace YouWeesh.Mobile.CustomComponents
 {
-	public class FeedView : ListView
+	public class FeedListView : ListView
 	{
-		public FeedView()
+		public FeedListView(ListViewCachingStrategy strategy):base(strategy)
 		{
+			
+				
 		}
+
+		public event EventHandler Scroll;
+		public event EventHandler StopScroll;
+
+
+		public void OnScroll()
+		{
+			if (Scroll != null)
+				Scroll(this, null);
+		}
+
+		public void OnStopScroll()
+		{
+			if (StopScroll != null)
+				StopScroll(this, null);
+		}
+
 	}
 }

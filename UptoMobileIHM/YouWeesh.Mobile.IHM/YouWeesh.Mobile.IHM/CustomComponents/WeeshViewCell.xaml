@@ -9,7 +9,7 @@
     <StackLayout Orientation="Horizontal" Padding="75,0,0,0" >
       <StackLayout Orientation="Vertical">
         <controls2:RobotoLabel  Text="{Binding Title}" TextColor="#000000" FontAttributes="Bold"/>
-       	<StackLayout Orientation="Horizontal" Padding="0,15,0,0" HorizontalOptions="Start">
+       	<StackLayout Orientation="Horizontal" Padding="0,10,0,0" HorizontalOptions="Start">
 			<controls2:RobotoLabel  Text="{Binding Id}" x:Name="lblId" IsVisible="false"/>
 			<Image x:Name="imgWeeshBack" Source="weeshback.png" VerticalOptions="Center" Scale="1">
 				<Image.GestureRecognizers>

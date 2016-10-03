@@ -12,13 +12,15 @@
       					<controls:FeedViewTemplateSelector x:Key="ElementTemplateSelector"></controls:FeedViewTemplateSelector>
     				</ResourceDictionary>
   					</ContentPage.Resources>
-			      	<ListView x:Name="lstfeedView"
+			      	<controls:FeedListView x:Name="lstfeedView"
 			      			  RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
 							  RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
-							  CachingStrategy="RecycleElement"
                               HasUnevenRows="True"
 							  ItemTemplate="{StaticResource ElementTemplateSelector}">
-                    </ListView>
+							   <x:Arguments>
+    								<ListViewCachingStrategy>RecycleElement</ListViewCachingStrategy>
+ 							   </x:Arguments>
+                    </controls:FeedListView>
            		 	<maps:CustomMap x:Name="myMap" IsVisible="false" HeightRequest="{x:Static local:App.ScreenHeight}" WidthRequest="{x:Static local:App.ScreenWidth}">
            		 	</maps:CustomMap>
 		</RelativeLayout>
