@@ -110,6 +110,7 @@
     <Compile Include="CustomComponents\MenuCell.xaml.cs">
       <DependentUpon>MenuCell.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CustomComponents\FeedListView.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
