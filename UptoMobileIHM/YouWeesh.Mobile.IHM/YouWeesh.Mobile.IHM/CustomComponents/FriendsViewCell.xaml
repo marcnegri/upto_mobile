@@ -1,15 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ViewCell x:Class="YouWeesh.Mobile.CustomComponents.FriendsViewCell"
           xmlns="http://xamarin.com/schemas/2014/forms"
           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
           xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
           xmlns:controls2="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile">
-<RelativeLayout x:Name="relativeLayout" HeightRequest="63" Margin="5,3,0,3">
-<controls2:ContentViewFeedCell x:Name="contentView"  Margin="30,0,5,0"  HeightRequest="60" BackgroundColor="White" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+<RelativeLayout x:Name="relativeLayout" HeightRequest="60" Margin="0,0,0,0" BackgroundColor="#F2F2F2">
+<controls2:ContentViewFeedCell x:Name="contentView"  Margin="30,0,5,0"  HeightRequest="60" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
     <StackLayout Orientation="Horizontal" Padding="40,0,0,0" >
       <StackLayout Orientation="Vertical">
-        <controls2:RobotoLabel Text="{Binding Username}" TextColor="#000000" FontSize="18"/>
-       	<StackLayout Orientation="Horizontal" Padding="0,5,0,0" HorizontalOptions="Start">
+        <controls2:RobotoLabel Text="{Binding Username}" TextColor="#000000" FontAttributes="Bold" FontSize="20"/>
+       	<StackLayout Orientation="Horizontal" Padding="0,2,0,0" HorizontalOptions="Start">
 			<Image Source="icoActivities.jpg" HeightRequest="20" WidthRequest="20"></Image>
 			<controls2:RobotoLabel  Text="{Binding ListTags}" TextColor="Gray" FontSize="15"/>
 			<controls2:RobotoLabel  Text="{Binding Id}" x:Name="lblId" IsVisible="false"/>
@@ -18,7 +18,10 @@
       <Button Text="Delete" WidthRequest="0" x:Name="buttonDelete" IsVisible="false" TextColor="#f35e20" HorizontalOptions="End"></Button>
    </StackLayout>  
  </controls2:ContentViewFeedCell>
-<controls:CircleImage Source="{Binding Picture}" Scale="0.95" x:Name="imgProfile">
+<controls:CircleImage Source="{Binding Picture}" Scale="0.7" x:Name="imgProfile">
+<Image.GestureRecognizers>
+ 			<TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped" NumberOfTapsRequired="1" />
+</Image.GestureRecognizers>
 </controls:CircleImage>
 </RelativeLayout>
 </ViewCell>

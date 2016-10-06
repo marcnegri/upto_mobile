@@ -23,7 +23,7 @@
         <ScrollView VerticalOptions="LayoutOptions.FillAndExpand">
             <ListView 	x:Name="feedView" 
 						HasUnevenRows="True"
-						CachingStrategy="RecycleElement">
+						CachingStrategy="RecycleElement" BackgroundColor="Gray">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <controls:FriendsViewCell />

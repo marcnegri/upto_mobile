@@ -2,42 +2,28 @@
 <ContentPage x:Class="YouWeesh.Mobile.Views.LoginForm"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-			 xmlns:Customcontrols="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile"
-             Padding="5">
-    <ScrollView BackgroundColor="White">
-        <StackLayout x:Name="stk">
-            <Image x:Name="imgWeesh"
-                   HorizontalOptions="Center"
-                   Source="YouWeeshLogo.png" Scale="0.9"/>
-            <Entry BackgroundColor="#319FD4"
+			 xmlns:Customcontrols="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile" 
+				BackgroundColor="#FC7102" >
+	<StackLayout x:Name="stkContainer" BackgroundColor="#F2F2F2" Margin="10,150,10,100">
+			<Customcontrols:RobotoLabel HorizontalOptions="CenterAndExpand" Text="LOG IN" TextColor="Black" FontAttributes="Bold"  FontSize="24" x:Name="lblLogin"></Customcontrols:RobotoLabel>
+			 <Entry BackgroundColor="White"
                    Focused="Entry_Focused"
-                   Placeholder="Username"
-					HorizontalOptions = "Center"
-                   TextColor="White" WidthRequest="300" />
-            <Entry BackgroundColor="#319FD4"
+                   Placeholder="Email" PlaceholderColor="#C1C1C1"
+					HorizontalOptions = "Center" WidthRequest="280"
+                   TextColor="White"  Margin="5,10,5,0"/>
+            <Entry BackgroundColor="White"
                    Focused="Entry_Focused"
                    IsPassword="true"
-                   Placeholder="Password"
-					HorizontalOptions = "Center"
-                   TextColor="White"  WidthRequest="300" />
-            <Button BackgroundColor="#319FD4"
+                   Placeholder="Password" PlaceholderColor="#C1C1C1"
+					HorizontalOptions = "Center" WidthRequest="280"
+                   TextColor="White" Margin="5,10,5,10" />
+            <Button BackgroundColor="#FC7102"
                     Clicked="btnLogin_Clicked"
                     HorizontalOptions = "Center"
-					WidthRequest="300"
                     Text="Login" />
             <Customcontrols:RobotoLabel HorizontalOptions="Center"
                    Text="Forgot password?"
 					FontAttributes="Bold"
                    VerticalOptions="Center" />
-            <Image Source="FacebookLogin.png" HorizontalOptions="Center"/>
-			<Image Source="TwitterLogin.png"  HorizontalOptions="Center"/>
-          	<Image Source="GoogleLogin.png" HorizontalOptions="Center"/>
-            <Label HorizontalOptions="Center"
-                   Text="Don't have an account yet ?"
-                   VerticalOptions="Center" />
-
-            <Button BackgroundColor="#319FD4" Clicked="btnRegister_Clicked" HorizontalOptions = "Center"
-					WidthRequest="300" Text="Register" />
-		</StackLayout>
-    </ScrollView>
+    </StackLayout>
 </ContentPage>
