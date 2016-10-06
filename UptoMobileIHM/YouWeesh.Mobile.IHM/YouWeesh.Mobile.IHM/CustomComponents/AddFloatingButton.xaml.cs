@@ -17,7 +17,7 @@ namespace YouWeesh.Mobile.CustomComponents
 		async void OnTapGestureRecognizerTapped(object sender, EventArgs args)
 		{
 			//AnimateButton();
-			cimFab.BackgroundColor = Color.FromRgb(252, 113, 2);
+			cimFab.BackgroundColor = Color.Transparent;
 			await cimFab.ScaleTo(0.65, 60, Easing.CubicOut);
 			await cimFab.ScaleTo(0.80, 60, Easing.CubicIn);
 

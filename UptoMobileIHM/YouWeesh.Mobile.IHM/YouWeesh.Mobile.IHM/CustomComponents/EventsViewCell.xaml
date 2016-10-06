@@ -13,7 +13,7 @@
 						RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
 						HeightRequest="210"
 						Aspect="AspectFill"
-						Margin="5,5,5,5">
+						Margin="0,0,0,0">
 
 				</Image>
 				<StackLayout Margin="10,10,10,10"  
@@ -42,7 +42,7 @@
 				Orientation="Horizontal"-->
 					<Customcontrols:RobotoLabel 
                        Text="{Binding Description}"
-                       TextColor="Black" Margin="3,3,3,3" x:Name="lblDescription"/>
+                       TextColor="Black" Margin="3,3,3,3" x:Name="lblDescription" FontSize="14"/>
 				</StackLayout>
         </RelativeLayout>
         <!--StackLayout BackgroundColor="Black" HeightRequest="2">

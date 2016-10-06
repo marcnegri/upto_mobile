@@ -25,21 +25,25 @@ namespace YouWeesh.Mobile.Views
 			masterPageItems.Add(new MasterPageItem
 			{
 				Title = "My Story",
-				IconSource = "todo.png",
+				IconSource = "myStory.png",
 				TargetType = typeof(MyStory)
 			});
+			/*
             masterPageItems.Add(new MasterPageItem
             {
                 Title = "My Next Events",
-                IconSource = "MyEvents.png",
+                IconSource = "logOut.png",
                 TargetType = typeof(MyNextEventsView)
             });
+*/
+
+			/*
             masterPageItems.Add(new MasterPageItem
             {
                 Title = "Weesh/Events feed",
                 IconSource = "MyWeesh.png",
                 TargetType = typeof(FeedView)
-            });
+            });*/
 			/*
 			masterPageItems.Add(new MasterPageItem
 			{
@@ -59,6 +63,13 @@ namespace YouWeesh.Mobile.Views
 				Title = "Settings",
 				IconSource = "settings72.png",
 				TargetType = typeof(SettingsForm)
+			});
+
+			masterPageItems.Add(new MasterPageItem
+			{
+				Title = "Log out",
+				IconSource = "logOut.png",
+				TargetType = typeof(MyNextEventsView)
 			});
 
 			lstLeftMenu.ItemsSource = masterPageItems;

@@ -47,16 +47,15 @@ namespace YouWeesh.Mobile.CustomComponents
 
 				}*/
 				MessagingCenter.Send<WeeshViewCell, int>(this, "WeeshBack", int.Parse(lblId.Text));
-				imgProfile.TranslateTo(App.ScreenWidth-80, imgProfile.Y, 200);
+				//imgProfile.TranslateTo(App.ScreenWidth-80, imgProfile.Y, 200);
 				//imgProfile.TranslateTo(imgProfile.X + 280, imgProfile.Y, 200);
 				//contentView.LayoutTo(new Rectangle(contentView.X, contentView.Y, contentView.Width - 40, contentView.Height), 200);
 
 
 			};
 
-
-			//name.SetBinding(
 		}
+
         private async void deactivateDeleteButton()
         {
             contentView.BackgroundColor = Color.White;

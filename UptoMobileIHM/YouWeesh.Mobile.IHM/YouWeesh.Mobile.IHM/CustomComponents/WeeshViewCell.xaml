@@ -4,32 +4,33 @@
           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
           xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
           xmlns:controls2="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile">
-<RelativeLayout x:Name="relativeLayout" HeightRequest="60" Margin="0,3,0,3">
-<controls2:ContentViewFeedCell x:Name="contentView"  Margin="5,0,5,0"  HeightRequest="60" BackgroundColor="White" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
-    <StackLayout Orientation="Horizontal" Padding="75,0,0,0" >
-      <StackLayout Orientation="Vertical">
-        <controls2:RobotoLabel  Text="{Binding Title}" TextColor="#000000" FontAttributes="Bold"/>
-       	<StackLayout Orientation="Horizontal" Padding="0,10,0,0" HorizontalOptions="Start">
+<RelativeLayout x:Name="relativeLayout" HeightRequest="70" Margin="0,1,0,1">
+<controls2:ContentViewFeedCell x:Name="contentView"  Margin="0,0,0,0"  HeightRequest="70" BackgroundColor="White" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+    <StackLayout Orientation="Horizontal" Padding="10,0,0,0" >
+	  <controls:CircleImage Source="{Binding Picture}" Margin="0,0,0,0" Aspect="AspectFit" HeightRequest="50" WidthRequest="50" x:Name="imgProfile" VerticalOptions="Center">
+		<Image.GestureRecognizers>
+ 			<TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped" NumberOfTapsRequired="1" />
+		</Image.GestureRecognizers>
+		</controls:CircleImage>
+      <StackLayout Orientation="Vertical" Spacing="0">
+        <controls2:RobotoLabel  Text="{Binding Title}" TextColor="#000000" FontAttributes="Bold" FontSize="20" Margin="0,12,0,0"/>
+       	<StackLayout Orientation="Horizontal" Padding="0,5,0,0" HorizontalOptions="Start">
 			<controls2:RobotoLabel  Text="{Binding Id}" x:Name="lblId" IsVisible="false"/>
 			<Image x:Name="imgWeeshBack" Source="weeshback.png" VerticalOptions="Center" Scale="1">
 				<Image.GestureRecognizers>
  					<TapGestureRecognizer Tapped="WeeshBackOnTapGestureRecognizerTapped" NumberOfTapsRequired="1" />
 				</Image.GestureRecognizers>
 			</Image>
-			<controls2:RobotoLabel  Text="{Binding WeeshBack}" TextColor="Gray" FontSize="12"/>
-			<controls2:RobotoLabel  Text="&#x2022;" TextColor="Gray" FontSize="12"/>
-			<controls2:RobotoLabel  Text="{Binding CreationDate}" TextColor="Gray" FontSize="12"/>
-			<controls2:RobotoLabel  Text="&#x2022;" TextColor="Gray" FontSize="12"/>
-         	<controls2:RobotoLabel  Text="{Binding Location}" TextColor="Gray" FontSize="12"/>
+			<controls2:RobotoLabel  Text="{Binding WeeshBack}" TextColor="Gray" FontSize="16"/>
+			<controls2:RobotoLabel  Text="&#x2022;" TextColor="Gray" FontSize="16"/>
+			<controls2:RobotoLabel  Text="{Binding CreationDate}" TextColor="Gray" FontSize="16"/>
+			<controls2:RobotoLabel  Text="&#x2022;" TextColor="Gray" FontSize="16"/>
+         	<controls2:RobotoLabel  Text="{Binding Location}" TextColor="Gray" FontSize="16"/>
       	</StackLayout>     
       </StackLayout>
       <Button Text="Delete" WidthRequest="0" x:Name="buttonDelete" IsVisible="false" TextColor="#f35e20" HorizontalOptions="End"></Button>
    </StackLayout>  
  </controls2:ContentViewFeedCell>
-<controls:CircleImage Source="{Binding Picture}" Margin="10,0,0,0" Scale="0.95" x:Name="imgProfile">
-<Image.GestureRecognizers>
- 		<TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped" NumberOfTapsRequired="1" />
-</Image.GestureRecognizers>
-</controls:CircleImage>
+
 </RelativeLayout>
 </ViewCell>

@@ -17,8 +17,17 @@ namespace YouWeesh.Mobile.IHM.Droid
 		{
 			base.OnElementChanged(e);
 			var label = (TextView)Control; // for example
-			Typeface font = Typeface.CreateFromAsset(Forms.Context.Assets, "Fonts/Roboto-Regular.ttf");  // font name specified here
+			Typeface font;
+			if (label.Typeface.IsBold)
+			{
+				font = Typeface.CreateFromAsset(Forms.Context.Assets, "Fonts/Roboto-Bold.ttf");  // font name specified here
+			}
+			else {
+				font = Typeface.CreateFromAsset(Forms.Context.Assets, "Fonts/Roboto-Regular.ttf");  // font name specified here
+			}
 			label.Typeface = font;
+
+
 		}
 	}
 }

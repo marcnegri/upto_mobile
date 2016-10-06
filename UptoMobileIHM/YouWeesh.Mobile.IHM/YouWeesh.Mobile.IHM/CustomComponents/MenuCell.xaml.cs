@@ -10,7 +10,7 @@ namespace YouWeesh.Mobile.CustomComponents
 		public MenuCell()
 		{
 			InitializeComponent();
-			lblMenuTitle.TextColor = Color.FromRgb(252, 113, 2);
+			lblMenuTitle.TextColor = Color.Black;//Color.FromRgb(252, 113, 2);
 		}
 	}
 }

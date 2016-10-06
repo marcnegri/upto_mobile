@@ -14,14 +14,14 @@ namespace YouWeesh.Mobile.CustomComponents
 		public EventsViewCell()
 		{
 			InitializeComponent();
-			mainLayout.Padding = new Thickness(5, 5, 5, 5);
+			mainLayout.Padding = new Thickness(1, 0, 1, 0);
 
 			mainLayout.Children.Add(stlDescription, Constraint.RelativeToParent((parent) =>
 			{
 				return parent.X;
 			}), Constraint.RelativeToParent((parent) =>
 			{
-				return parent.Y + 120;
+				return parent.Y + 135;
 			}), Constraint.RelativeToParent((parent) =>
 			{
 				if (lblDescription.Text == null)
@@ -33,7 +33,7 @@ namespace YouWeesh.Mobile.CustomComponents
 				}
 			}), Constraint.RelativeToParent((parent) =>
 			{
-				return parent.Height - 125;
+				return parent.Height - 145;
 			}));
 		}
 

@@ -15,7 +15,7 @@
 						HeightRequest="160"
 						Aspect="AspectFill">
 					</Image>
-					<Customcontrols:RobotoLabel Text="Helena Smith" TextColor="White"
+					<Customcontrols:RobotoLabel Text="Helena Smith" TextColor="White" FontAttributes="Bold"
 							RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
 							RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-40}"
 							Margin="20,0,0,20"

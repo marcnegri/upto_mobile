@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage x:Class="YouWeesh.Mobile.Views.LoginForm"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -27,6 +27,7 @@
                     Text="Login" />
             <Customcontrols:RobotoLabel HorizontalOptions="Center"
                    Text="Forgot password?"
+					FontAttributes="Bold"
                    VerticalOptions="Center" />
             <Image Source="FacebookLogin.png" HorizontalOptions="Center"/>
 			<Image Source="TwitterLogin.png"  HorizontalOptions="Center"/>
