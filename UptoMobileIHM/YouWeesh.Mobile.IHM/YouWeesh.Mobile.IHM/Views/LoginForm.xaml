@@ -4,26 +4,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 			 xmlns:Customcontrols="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile" 
 				BackgroundColor="#FC7102" >
-	<StackLayout x:Name="stkContainer" BackgroundColor="#F2F2F2" Margin="10,150,10,100">
-			<Customcontrols:RobotoLabel HorizontalOptions="CenterAndExpand" Text="LOG IN" TextColor="Black" FontAttributes="Bold"  FontSize="24" x:Name="lblLogin"></Customcontrols:RobotoLabel>
-			 <Entry BackgroundColor="White"
+	<StackLayout Spacing="0">
+		<StackLayout Margin="0,60,0,0">
+			 <Image x:Name="imgLogo" Source="YouWeeshLine.png" Scale="1"></Image>
+		</StackLayout>
+		<StackLayout BackgroundColor="#A5A5A5" HeightRequest="30" Margin="10,80,10,0" Orientation="Horizontal">
+			 <Customcontrols:RobotoLabel Text="New to YouWeesh ?" TextColor="White" HorizontalOptions="Center"></Customcontrols:RobotoLabel>
+			 <Customcontrols:RobotoLabel Text="New Profile" FontAttributes="Bold" TextColor="White" HorizontalOptions="End"></Customcontrols:RobotoLabel>
+		</StackLayout>
+		<StackLayout x:Name="stkContainer" BackgroundColor="#F2F2F2" Margin="10,0,10,80">
+				<Customcontrols:RobotoLabel HorizontalOptions="CenterAndExpand" Text="LOG IN" TextColor="Black" FontAttributes="Bold"  FontSize="22" x:Name="lblLogin"></Customcontrols:RobotoLabel>
+			 		<Entry BackgroundColor="White"
                    Focused="Entry_Focused"
                    Placeholder="Email" PlaceholderColor="#C1C1C1"
 					HorizontalOptions = "Center" WidthRequest="280"
                    TextColor="White"  Margin="5,10,5,0"/>
-            <Entry BackgroundColor="White"
+            		<Entry BackgroundColor="White"
                    Focused="Entry_Focused"
                    IsPassword="true"
                    Placeholder="Password" PlaceholderColor="#C1C1C1"
 					HorizontalOptions = "Center" WidthRequest="280"
                    TextColor="White" Margin="5,10,5,10" />
-            <Button BackgroundColor="#FC7102"
+            		<Button BackgroundColor="#FC7102"
                     Clicked="btnLogin_Clicked"
                     HorizontalOptions = "Center"
                     Text="Login" />
-            <Customcontrols:RobotoLabel HorizontalOptions="Center"
+            	<Customcontrols:RobotoLabel HorizontalOptions="Center"
                    Text="Forgot password?"
 					FontAttributes="Bold"
                    VerticalOptions="Center" />
-    </StackLayout>
+    	</StackLayout>
+	</StackLayout>
 </ContentPage>
