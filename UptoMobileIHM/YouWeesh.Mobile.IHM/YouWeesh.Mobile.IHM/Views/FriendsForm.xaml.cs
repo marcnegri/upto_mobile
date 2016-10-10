@@ -74,6 +74,13 @@ namespace YouWeesh.Mobile.Views
 
             feedView.ItemsSource = usersList;
 
+			MessagingCenter.Subscribe<FriendsViewCell, int>(this, "RedirectToMyProfile", (page, idFriend) =>
+			{
+				//YouWeesh.Mobile.Business.Element element = elements.FirstOrDefault(x => x.Id == idElement);
+				this.Navigation.PushAsync(new MyProfileView());
+
+			});
+
         }
     }
 }

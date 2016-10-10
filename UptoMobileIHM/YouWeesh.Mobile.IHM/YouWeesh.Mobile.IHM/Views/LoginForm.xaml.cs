@@ -13,9 +13,9 @@ namespace YouWeesh.Mobile.Views
     {
         public LoginForm()
         {
-            this.BackgroundColor = Color.White;
+           // this.BackgroundColor = Color.White;
             InitializeComponent();
-            imgWeesh.Aspect = Aspect.AspectFit;
+            //imgWeesh.Aspect = Aspect.AspectFit;
 
 			//normalFab.SizeChanged += (sender, args) => { layout.ForceLayout(); };
         }

@@ -88,9 +88,6 @@
     <Compile Include="CustomComponents\AddFloatingButton.xaml.cs">
       <DependentUpon>AddFloatingButton.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\AddWeeshForm.xaml.cs">
-      <DependentUpon>AddWeeshForm.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\MyProfileView.xaml.cs">
       <DependentUpon>MyProfileView.xaml</DependentUpon>
     </Compile>
@@ -111,6 +108,9 @@
       <DependentUpon>MenuCell.xaml</DependentUpon>
     </Compile>
     <Compile Include="CustomComponents\FeedListView.cs" />
+    <Compile Include="Views\AddWeeshForm.cs">
+      <DependentUpon>AddWeeshForm.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -152,9 +152,6 @@
     <EmbeddedResource Include="CustomComponents\AddFloatingButton.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\AddWeeshForm.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\MyProfileView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -169,6 +166,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomComponents\MenuCell.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AddWeeshForm.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
