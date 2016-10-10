@@ -18,13 +18,13 @@ namespace YouWeesh.Mobile.Views
             var masterPageItems = new List<MasterPageItem>();
             masterPageItems.Add(new MasterPageItem
             {
-                Title = "My Profile",
+                Title = "Profile",
                 IconSource = "contacts.png",
 				TargetType = typeof(MyProfileView)
             });
 			masterPageItems.Add(new MasterPageItem
 			{
-				Title = "My Story",
+				Title = "Story",
 				IconSource = "myStory.png",
 				TargetType = typeof(MyStory)
 			});

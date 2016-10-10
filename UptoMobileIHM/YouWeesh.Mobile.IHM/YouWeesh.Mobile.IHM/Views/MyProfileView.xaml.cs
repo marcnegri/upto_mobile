@@ -22,9 +22,9 @@ namespace YouWeesh.Mobile
 
 			#region MOCKS
 			ObservableCollection<Business.Element> elements = new ObservableCollection<Business.Element>();
-			elements.Add(new Business.Element { Title = "#courrir !!", Picture = "portrait4.jpg", CreationDate = "06h15 ago", Location = "2 km", IsEvent = false, WeeshBack = 4 });
-			elements.Add(new Business.Element { Title = "Discuter autour d'un #verre", Picture = "portrait4.jpg", CreationDate = "06h45 ago", Location = "1,2 km", IsEvent = false, WeeshBack = 30 });
-			elements.Add(new Business.Element { Title = "Aller regarder l'#euro", Picture = "portrait4.jpg", CreationDate = "07h00 ago", Location = "2,6 km", IsEvent = false, WeeshBack = 5 });
+			elements.Add(new Business.Element { Title = "#courir !!".ToUpper(), Picture = "portrait4.jpg", CreationDate = "06h15 ago", Location = "2 km", IsEvent = false, WeeshBack = 4 });
+			elements.Add(new Business.Element { Title = "Discuter autour d'un #verre".ToUpper(), Picture = "portrait4.jpg", CreationDate = "06h45 ago", Location = "1,2 km", IsEvent = false, WeeshBack = 30 });
+			elements.Add(new Business.Element { Title = "Aller regarder l'#euro".ToUpper(), Picture = "portrait4.jpg", CreationDate = "07h00 ago", Location = "2,6 km", IsEvent = false, WeeshBack = 5 });
 			#endregion
 
 			this.BackgroundColor = Color.White;//Color.FromHex("#ececec");
@@ -33,12 +33,12 @@ namespace YouWeesh.Mobile
 			stkHeaderWeesh.BackgroundColor = Color.FromRgb(252, 113, 2);
 			stkHeaderEvents.BackgroundColor = Color.FromRgb(252, 113, 2);
 
-			rltHeader.Children.Add(lblProfileName, Constraint.RelativeToParent((parent) =>
+			rltHeader.Children.Add(stkActionInfo, Constraint.RelativeToParent((parent) =>
 			{
-				return parent.X + 10;
+				return parent.X;
 			}), Constraint.RelativeToParent((parent) =>
 			{
-				return parent.Y + rltHeader.Height - 50;
+				return parent.Y + 95;
 			}), Constraint.RelativeToParent((parent) =>
 			{
 				return parent.Width;
@@ -46,14 +46,13 @@ namespace YouWeesh.Mobile
 			{
 				return parent.Height;
 			}));
-
 
 			rltHeader.Children.Add(stkImgProfile, Constraint.RelativeToParent((parent) =>
 			{
-				return parent.X ;
+				return -140;
 			}), Constraint.RelativeToParent((parent) =>
 			{
-				return parent.Y;
+				return imgBackground.Height - 55;
 			}), Constraint.RelativeToParent((parent) =>
 			{
 				return parent.Width;
@@ -63,19 +62,7 @@ namespace YouWeesh.Mobile
 			}));
 
 
-			rltHeader.Children.Add(lblRating, Constraint.RelativeToParent((parent) =>
-			{
-				return parent.X ;
-			}), Constraint.RelativeToParent((parent) =>
-			{
-				return parent.Y + rltHeader.Height - 50;
-			}), Constraint.RelativeToParent((parent) =>
-			{
-				return parent.Width;
-			}), Constraint.RelativeToParent((parent) =>
-			{
-				return parent.Height;
-			}));
+
 			/*
 			ObservableCollection<Weesh> weeshesList = new ObservableCollection<Weesh>();
 			ObservableCollection<Business.Events> events = new ObservableCollection<Business.Events>();
