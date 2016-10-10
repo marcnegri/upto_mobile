@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 		x:Class="YouWeesh.Mobile.AddEventForm"
@@ -18,7 +18,7 @@
 				<StackLayout BackgroundColor="White" HorizontalOptions="FillAndExpand" Padding="10,0,0,0" VerticalOptions="Center" HeightRequest="50" Orientation="Horizontal"><Image Source="Friends.png" VerticalOptions="Center" HeightRequest="20" WidthRequest="20"></Image><Label Text="0" TextColor="Gray" VerticalTextAlignment="Center"></Label><Slider Maximum="100" Minimum="0" WidthRequest="120" VerticalOptions="Center" ></Slider><Label Text="12" TextColor="Gray" VerticalTextAlignment="Center" ></Label></StackLayout>
 				<StackLayout BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="10,0,0,0" VerticalOptions="Center" HeightRequest="50"><Label Text="Public" TextColor="Gray" VerticalTextAlignment="Center"></Label><Switch></Switch><Label Text="Private" TextColor="Gray" VerticalTextAlignment="Center"></Label></StackLayout>
 			</StackLayout>
-			<StackLayout HorizontalOptions="FillAndExpand"><Frame BackgroundColor="White" Padding="0,0,0,0"><Editor TextColor="Gray" Text="Description" x:Name="edtDescription" Completed="edtDescription_Completed" Focused="edtDescription_Focused" HeightRequest="100" Keyboard="Chat"></Editor></Frame></StackLayout>
+			<StackLayout HorizontalOptions="FillAndExpand"><Frame BackgroundColor="White" Padding="0,0,0,1"><Editor TextColor="Gray" Text="Description" x:Name="edtDescription" Completed="edtDescription_Completed" Focused="edtDescription_Focused" HeightRequest="100" Keyboard="Chat"></Editor></Frame></StackLayout>
 			<StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand"><Button Text="Cancel" HorizontalOptions="FillAndExpand"></Button><Button Text="Create" HorizontalOptions="FillAndExpand"></Button></StackLayout>
 		</StackLayout>
 	</ScrollView>
