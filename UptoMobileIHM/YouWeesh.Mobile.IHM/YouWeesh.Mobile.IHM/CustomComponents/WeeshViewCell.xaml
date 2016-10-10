@@ -13,7 +13,7 @@
 		</Image.GestureRecognizers>
 		</controls:CircleImage>
       <StackLayout Orientation="Vertical" Spacing="0">
-        <controls2:RobotoLabel  Text="{Binding Title}" TextColor="#000000" FontAttributes="Bold" FontSize="20" Margin="0,12,0,0"/>
+        <controls2:RobotoLabel  Text="{Binding Title}" TextColor="#000000" FontAttributes="Bold" FontSize="18" Margin="0,12,0,0"/>
        	<StackLayout Orientation="Horizontal" Padding="0,5,0,0" HorizontalOptions="Start">
 			<controls2:RobotoLabel  Text="{Binding Id}" x:Name="lblId" IsVisible="false"/>
 			<Image x:Name="imgWeeshBack" Source="weeshback.png" VerticalOptions="Center" Scale="1">

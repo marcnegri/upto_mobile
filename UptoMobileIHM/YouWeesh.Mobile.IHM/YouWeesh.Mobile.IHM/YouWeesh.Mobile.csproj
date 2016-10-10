@@ -111,6 +111,9 @@
     <Compile Include="Views\AddWeeshForm.cs">
       <DependentUpon>AddWeeshForm.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CustomComponents\EventsMiniViewCell.xaml.cs">
+      <DependentUpon>EventsMiniViewCell.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -170,6 +173,9 @@
     <EmbeddedResource Include="Views\AddWeeshForm.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomComponents\EventsMiniViewCell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

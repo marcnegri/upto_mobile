@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell x:Class="YouWeesh.Mobile.CustomComponents.EventsMiniViewCell"
+          xmlns="http://xamarin.com/schemas/2014/forms"
+          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		  xmlns:Customcontrols="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile">
+	<StackLayout Orientation="Horizontal" HeightRequest="70" Margin="10,0,0,0">
+		<StackLayout Orientation="Vertical" HorizontalOptions="StartAndExpand">
+			<Customcontrols:RobotoLabel Text="{Binding Title}" TextColor="Black"/>
+			<StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+				<Image Source=""/><Customcontrols:RobotoLabel  Text="7"/><Customcontrols:RobotoLabel Text=" &#x2022; "/><Customcontrols:RobotoLabel Text=" 00:14 "/><Customcontrols:RobotoLabel Text="&#x2022;"/><Customcontrols:RobotoLabel Text="10km"/>
+			</StackLayout>
+		</StackLayout>
+		<Image Source="{Binding Picture}" Aspect="AspectFill" HeightRequest="70" WidthRequest="70" Margin="0,0,0,0" HorizontalOptions="EndAndExpand"/>
+	</StackLayout>
+</ViewCell>

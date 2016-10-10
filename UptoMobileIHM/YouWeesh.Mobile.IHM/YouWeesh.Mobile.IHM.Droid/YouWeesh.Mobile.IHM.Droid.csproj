@@ -17,7 +17,7 @@
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
     <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
     <AndroidStoreUncompressedFileExtensions />
     <MandroidI18n />
@@ -186,11 +186,9 @@
     <AndroidResource Include="Resources\drawable-hdpi\portrait2_marker.png" />
     <AndroidResource Include="Resources\drawable\portrait4_marker.png" />
     <AndroidResource Include="Resources\drawable\eventMarker.png" />
-    <AndroidResource Include="Resources\drawable\starsRating.png" />
     <AndroidResource Include="Resources\drawable\FacebookLogin.png" />
     <AndroidResource Include="Resources\drawable\TwitterLogin.png" />
     <AndroidResource Include="Resources\drawable\GoogleLogin.png" />
-    <AndroidResource Include="Resources\drawable\weeshback.png" />
     <AndroidResource Include="Resources\drawable\youweeshlogo.png" />
     <AndroidResource Include="Resources\drawable\icoLocation.jpg" />
     <AndroidResource Include="Resources\drawable\icoActivities.jpg" />
@@ -208,6 +206,8 @@
     <AndroidResource Include="Resources\drawable\logOut.png" />
     <AndroidResource Include="Resources\drawable\YouWeeshLine.png" />
     <AndroidResource Include="Resources\drawable\rectangle.png" />
+    <AndroidResource Include="Resources\drawable\icoEventsWhite.png" />
+    <AndroidResource Include="Resources\drawable\icoWeeshWhite.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml">
