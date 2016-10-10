@@ -207,6 +207,7 @@
     <AndroidResource Include="Resources\drawable\contacts.png" />
     <AndroidResource Include="Resources\drawable\logOut.png" />
     <AndroidResource Include="Resources\drawable\YouWeeshLine.png" />
+    <AndroidResource Include="Resources\drawable\rectangle.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml">
