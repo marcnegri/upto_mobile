@@ -32,6 +32,8 @@ namespace YouWeesh.Mobile.Views
 
         async void btnLogin_Clicked(object sender, EventArgs e)
         {
+			await imgLogginButton.ScaleTo(0.80, 60, Easing.CubicOut);
+			await imgLogginButton.ScaleTo(1, 60, Easing.CubicIn);
             this.Navigation.PushModalAsync(new Views.MenuPage());
             //this.Navigation.PushModalAsync(new Views.WeeshesTesst());
         }

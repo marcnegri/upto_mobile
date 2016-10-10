@@ -11,12 +11,40 @@
 			<Customcontrols:RobotoLabel Text="New Profile" FontAttributes="Bold" TextColor="White" HorizontalOptions="End" VerticalOptions="Center">
 			</Customcontrols:RobotoLabel>
 		</StackLayout>
-		<StackLayout x:Name="stkContainer" BackgroundColor="#F2F2F2" Margin="10,0,10,80">
+		<StackLayout x:Name="stkContainer" Margin="10,0,10,80" Padding="0,10,0,0" BackgroundColor="#F2F2F2">
 			<Customcontrols:RobotoLabel HorizontalOptions="CenterAndExpand" Text="LOG IN" TextColor="Black" FontAttributes="Bold" FontSize="22" x:Name="lblLogin">
 			</Customcontrols:RobotoLabel>
 			<Entry BackgroundColor="White" Focused="Entry_Focused" Placeholder="Email" PlaceholderColor="#C1C1C1" HorizontalOptions="Center" WidthRequest="280" TextColor="White" Margin="5,10,5,0" />
 			<Entry BackgroundColor="White" Focused="Entry_Focused" IsPassword="true" Placeholder="Password" PlaceholderColor="#C1C1C1" HorizontalOptions="Center" WidthRequest="280" TextColor="White" Margin="5,10,5,10" />
-			<Button BackgroundColor="#FC7102" Clicked="btnLogin_Clicked" HorizontalOptions="Center" Text="Login" />
+			<StackLayout Orientation="Horizontal" Margin="30,0,0,0">
+				<StackLayout Orientation="Vertical">
+					<StackLayout Orientation="Horizontal">
+						<Image Source="Facebook.png">
+						</Image>
+						<Customcontrols:RobotoLabel Text="Log In with Facebook" TextColor="#A5A5A5" HorizontalOptions="Center" VerticalOptions="Center">
+						</Customcontrols:RobotoLabel>
+					</StackLayout>
+					<StackLayout Orientation="Horizontal">
+						<Image Source="twitter.png">
+						</Image>
+						<Customcontrols:RobotoLabel Text="Log In with Twitter" TextColor="#A5A5A5" HorizontalOptions="Center" VerticalOptions="Center">
+						</Customcontrols:RobotoLabel>
+					</StackLayout>
+					<StackLayout Orientation="Horizontal">
+						<Image Source="google.png">
+						</Image>
+						<Customcontrols:RobotoLabel Text="Log In with Google" TextColor="#A5A5A5" HorizontalOptions="Center" VerticalOptions="Center">
+						</Customcontrols:RobotoLabel>
+					</StackLayout>
+				</StackLayout>
+				<StackLayout Orientation="Vertical" Margin="30,0,0,0">
+					<Image x:Name="imgLogginButton" Source="go.png" VerticalOptions="StartAndExpand">
+						<Image.GestureRecognizers>
+							<TapGestureRecognizer Tapped="btnLogin_Clicked" NumberOfTapsRequired="1" />
+						</Image.GestureRecognizers>
+					</Image>
+				</StackLayout>
+			</StackLayout>
 			<Customcontrols:RobotoLabel HorizontalOptions="Center" Text="Forgot password?" FontAttributes="Bold" VerticalOptions="Center" />
 		</StackLayout>
 	</StackLayout>
