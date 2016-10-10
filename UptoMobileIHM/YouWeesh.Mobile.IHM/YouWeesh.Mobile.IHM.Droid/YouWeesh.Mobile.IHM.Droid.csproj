@@ -187,9 +187,6 @@
     <AndroidResource Include="Resources\drawable\portrait4_marker.png" />
     <AndroidResource Include="Resources\drawable\eventMarker.png" />
     <AndroidResource Include="Resources\drawable\starsRating.png" />
-    <AndroidResource Include="Resources\drawable\FacebookLogin.png" />
-    <AndroidResource Include="Resources\drawable\TwitterLogin.png" />
-    <AndroidResource Include="Resources\drawable\GoogleLogin.png" />
     <AndroidResource Include="Resources\drawable\weeshback.png" />
     <AndroidResource Include="Resources\drawable\youweeshlogo.png" />
     <AndroidResource Include="Resources\drawable\icoLocation.jpg" />
@@ -207,7 +204,11 @@
     <AndroidResource Include="Resources\drawable\contacts.png" />
     <AndroidResource Include="Resources\drawable\logOut.png" />
     <AndroidResource Include="Resources\drawable\YouWeeshLine.png" />
-    <AndroidResource Include="Resources\drawable\rectangle.png" />
+    <AndroidResource Include="Resources\drawable\Facebook.png" />
+    <AndroidResource Include="Resources\drawable\twitter.png" />
+    <AndroidResource Include="Resources\drawable\go.png" />
+    <AndroidResource Include="Resources\drawable\yes.png" />
+    <AndroidResource Include="Resources\drawable\google.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml">
@@ -224,9 +225,6 @@
     <Folder Include="Resources\medias\" />
     <Folder Include="Assets\Fonts\" />
     <Folder Include="Resources\layout\" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\twitter128.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\foot.jpg" />
@@ -254,9 +252,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\list48.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\twitter32.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\facebook32.png" />

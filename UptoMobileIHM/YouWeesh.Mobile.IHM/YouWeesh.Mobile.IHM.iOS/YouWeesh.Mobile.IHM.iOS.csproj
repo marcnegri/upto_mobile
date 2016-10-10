@@ -146,6 +146,11 @@
     <BundleResource Include="Resources\Fonts\Roboto-Regular.ttf" />
     <BundleResource Include="Resources\Fonts\Roboto-Thin.ttf" />
     <BundleResource Include="Resources\Fonts\Roboto-ThinItalic.ttf" />
+    <BundleResource Include="Resources\Facebook.png" />
+    <BundleResource Include="Resources\go.png" />
+    <BundleResource Include="Resources\twitter.png" />
+    <BundleResource Include="Resources\yes.png" />
+    <BundleResource Include="Resources\google log in.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">

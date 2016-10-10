@@ -31,6 +31,5 @@
       <Button Text="Delete" WidthRequest="0" x:Name="buttonDelete" IsVisible="false" TextColor="#f35e20" HorizontalOptions="End"></Button>
    </StackLayout>  
  </controls2:ContentViewFeedCell>
-
 </RelativeLayout>
 </ViewCell>
