@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="YouWeesh.Mobile.Views.LoginForm"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:Customcontrols="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile" 
+				BackgroundColor="#FC7102" >
+	<StackLayout Spacing="0">
+		<StackLayout Margin="0,60,0,0">
+			 <Image x:Name="imgLogo" Source="YouWeeshLine.png" Scale="1"></Image>
+		</StackLayout>
+		<StackLayout BackgroundColor="#A5A5A5" HeightRequest="30" Margin="10,80,10,0" Orientation="Horizontal">
+		</StackLayout>
+		<StackLayout x:Name="stkContainer" BackgroundColor="#F2F2F2" Margin="10,0,10,80">
+				<Customcontrols:RobotoLabel HorizontalOptions="CenterAndExpand" Text="Post a new weesh" TextColor="Black" FontAttributes="Bold"  FontSize="22" x:Name="lblLogin"></Customcontrols:RobotoLabel>
+			 		<Entry BackgroundColor="White"
+                   Focused="Entry_Focused"
+                   Placeholder="What are you up to ?" PlaceholderColor="#C1C1C1"
+					HorizontalOptions = "Center" WidthRequest="280"
+                   TextColor="White"  Margin="5,10,5,0"/>
+            		<Button BackgroundColor="#FC7102"
+                    Clicked="btnLogin_Clicked"
+                    HorizontalOptions = "Center"
+                    Text="Create" />
+    	</StackLayout>
+	</StackLayout>
+</ContentPage>

@@ -4,7 +4,7 @@
 		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 		x:Class="YouWeesh.Mobile.MyProfileView"
 		xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
-		xmlns:Customcontrols="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile">
+		xmlns:Customcontrols="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile" Title="Profile">
 	<ScrollView>
 		<StackLayout x:Name="stkHeader" Spacing="0">
 			<StackLayout HeightRequest="210" >
@@ -19,7 +19,7 @@
 						<Customcontrols:RobotoLabel Text="Helena Smith" FontAttributes="Bold" TextColor="White" FontSize="14"/>
 						<StackLayout Orientation="Vertical" Spacing="0" HorizontalOptions="EndAndExpand" Padding="0,0,15,0">
 							<Customcontrols:RobotoLabel Text="100% reliability" TextColor="White" />
-							<Image Source="starsRating.png" WidthRequest="60" Aspect="AspectFit" />
+							<Image Source="reliabilitystar.png" />
 						</StackLayout>
 					</StackLayout>
 				</RelativeLayout>
@@ -57,11 +57,13 @@
 					</Customcontrols:RobotoLabel>
 				</StackLayout>
 				<StackLayout x:Name="stkHeaderWeesh" Orientation="Horizontal" Margin="0, 20, 0, 0" HeightRequest="40" VerticalOptions="Center">
-					<Image Source="icoWeeshWhite.png" HeightRequest="30" WidthRequest="30" Margin="15,0,30,0" ></Image><Customcontrols:RobotoLabel Text="My weesh story" VerticalOptions="Center" FontAttributes="Bold" TextColor="White"></Customcontrols:RobotoLabel>
+					<Image Source="icoWeeshWhite.png" HeightRequest="30" WidthRequest="30" Margin="15,0,30,0" ></Image>
+					<Customcontrols:RobotoLabel Text="My Weesh &#x2022;" VerticalOptions="Center" FontAttributes="Bold" TextColor="White" />
+					<Customcontrols:RobotoLabel Text="103" VerticalTextAlignment="Center" TextColor="Silver"/>
 				</StackLayout>
                 <ContentPage.Resources>
 				<ResourceDictionary>
-  					<Customcontrols:FeedViewTemplateSelector x:Key="ElementTemplateSelector"></Customcontrols:FeedViewTemplateSelector>
+  					<Customcontrols:FeedViewTemplateSelector x:Key="ElementTemplateSelector"/>
 				</ResourceDictionary>
 				</ContentPage.Resources>
 		      	<ListView x:Name="lstRecentWeeshes"
@@ -72,22 +74,28 @@
 					ItemTemplate="{StaticResource ElementTemplateSelector}" 
 					VerticalOptions="FillAndExpand">
                 </ListView>
-				<Button x:Name="btnShowHistory" Text="See all..." TextColor="Black" HorizontalOptions="EndAndExpand" BackgroundColor="Transparent" Clicked="btnShowHistory_Clicked"></Button>
-				<StackLayout x:Name="stkHeaderEvents" Orientation="Horizontal" Margin="0, 20, 0, 0" HeightRequest="40" VerticalOptions="Center">
-					<Image Source="icon.png" HeightRequest="30" WidthRequest="30" Margin="20,0,30,0" ></Image><Label  Text="My last activities" VerticalOptions="Center" FontAttributes="Bold" ></Label>
+				<StackLayout BackgroundColor="Silver" HeightRequest="35">
+					<Button x:Name="btnShowHistory" Text="See more..." BackgroundColor="Transparent" TextColor="Gray" HorizontalOptions="EndAndExpand" Clicked="btnShowHistory_Clicked" FontSize="14"  HeightRequest="40"/>
 				</StackLayout>
-				<ListView x:Name="lstRecentEvents" 
+				<StackLayout x:Name="stkHeaderEvents" Orientation="Horizontal" Margin="0, 0, 0, 0" HeightRequest="40" VerticalOptions="Center">
+					<Image Source="icoEventsWhite.png" HeightRequest="20" WidthRequest="20" Margin="20,0,30,0" ></Image>
+					<Customcontrols:RobotoLabel Text="My Event &#x2022;" VerticalOptions="Center" FontAttributes="Bold" TextColor="White"/>
+					<Customcontrols:RobotoLabel Text="39" VerticalTextAlignment="Center" TextColor="Silver"/>
+				</StackLayout>
+			<!--	<ListView x:Name="lstRecentEvents" 
 						VerticalOptions="Start" 					
 						SeparatorVisibility="Default" 
 						SeparatorColor="Black"
 						RowHeight="50">
 					<ListView.ItemTemplate>
 	                    <DataTemplate>
-	                        <ImageCell Text="{Binding Title}" ImageSource="{Binding Picture}" Detail="{Binding Location}" DetailColor="Blue"/>
+							<Customcontrols:EventsMiniViewCell />
 	                    </DataTemplate>
 	                </ListView.ItemTemplate>
-				</ListView>
-				<Label x:Name="lblSeeAllEvents" Text="See all..." HorizontalOptions="EndAndExpand" TextColor="Black"></Label>
+				</ListView>-->
+				<StackLayout BackgroundColor="Silver" HeightRequest="35">
+					<Button x:Name="btnShowSeeMoreEvents" Text="See more..." BackgroundColor="Transparent" TextColor="Gray" HorizontalOptions="EndAndExpand" Clicked="btnShowHistory_Clicked" FontSize="14"  HeightRequest="40"/>
+				</StackLayout>
 			</StackLayout>
 		</StackLayout>
 		</ScrollView>
