@@ -10,7 +10,7 @@
 			<StackLayout HeightRequest="210" >
 				<RelativeLayout x:Name="rltHeader" HeightRequest="180">
 					<Image  x:Name="imgBackground"
-							Source="background.jpg" 
+							Source="background.png" 
 							RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
 							HeightRequest="180"
 							Aspect="AspectFill">
@@ -82,7 +82,7 @@
 					<Customcontrols:RobotoLabel Text="My Event &#x2022;" VerticalOptions="Center" FontAttributes="Bold" TextColor="White"/>
 					<Customcontrols:RobotoLabel Text="39" VerticalTextAlignment="Center" TextColor="Silver"/>
 				</StackLayout>
-			<!--	<ListView x:Name="lstRecentEvents" 
+				<!--<ListView x:Name="lstRecentEvents" 
 						VerticalOptions="Start" 					
 						SeparatorVisibility="Default" 
 						SeparatorColor="Black"

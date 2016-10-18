@@ -15,20 +15,6 @@ namespace YouWeesh.Mobile.Views
             InitializeComponent();
 			this.BackgroundColor = Color.FromHex("#ececec");
 
-
-			rltHeader.Children.Add(stkImgProfile, Constraint.RelativeToParent((parent) =>
-			{
-				return parent.X;
-			}), Constraint.RelativeToParent((parent) =>
-			{
-				return parent.Y;
-			}), Constraint.RelativeToParent((parent) =>
-			{
-				return parent.Width;
-			}), Constraint.RelativeToParent((parent) =>
-			{
-				return 75;
-			}));
 		}
     }
 }

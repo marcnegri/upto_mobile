@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage x:Class="YouWeesh.Mobile.Views.EventDetailsView"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -7,48 +7,34 @@
 	<ScrollView>
 			<StackLayout x:Name="stkHeader" Spacing="0">
 				<StackLayout HeightRequest="210">
-					<RelativeLayout x:Name="rltHeader" HeightRequest="210">
 						<Image  x:Name="imgBackground"
-								Source="trail.jpg" 
+								Source="trail.png" 
 								RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
 								HeightRequest="210"
-								Aspect="AspectFill"
-								Opacity="0.8">
+								Aspect="AspectFill">
 						</Image>
-				<StackLayout Orientation="Horizontal" x:Name="stkImgProfile"  HorizontalOptions="Center">
-						<controls:CircleImage
-							x:Name="imgProfile"
-							Aspect="AspectFit" 
-							Source="portrait4.png"
-							BorderColor="White"
-							BorderThickness="2"
-							HeightRequest="75"/>
-					</StackLayout>
-					</RelativeLayout>
 				</StackLayout>
-				<StackLayout x:Name="stkContent" Padding="10, 0, 10, 10">
-					<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" x:Name="stkDateTimeDuration">
+				<StackLayout></StackLayout>
+				<StackLayout x:Name="stkContent" Spacing="1">
+					<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" x:Name="stkDateTimeDuration" Spacing="1">
 						<StackLayout BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="10,0,0,0"><Image Source="date.png" WidthRequest="20" HeightRequest="20"></Image><DatePicker TextColor="Gray"></DatePicker></StackLayout>
 						<StackLayout BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="10,0,0,0"><Image Source="clock.png" WidthRequest="20" HeightRequest="20"></Image><TimePicker TextColor="Gray"></TimePicker></StackLayout>
 						<StackLayout BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="10,0,0,0"><Image Source="duration.png" WidthRequest="20" HeightRequest="20"></Image><Label TextColor="Gray" Text="1:30" VerticalTextAlignment="Center"></Label></StackLayout>
 					</StackLayout>
 					<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" x:Name="stkLocation" HeightRequest="50">			
-						<StackLayout BackgroundColor="White" Orientation="Horizontal" Padding="10,0,0,0" HorizontalOptions="FillAndExpand"><Image Source="location48.png" WidthRequest="20" HeightRequest="20"></Image><Customcontrols:RobotoLabel VerticalTextAlignment="Center" Text="Rousset, Alpes de Hautes Provences, FR" TextColor="Gray"></Customcontrols:RobotoLabel></StackLayout>
+						<StackLayout BackgroundColor="White" Orientation="Horizontal" Padding="10,0,0,0" HorizontalOptions="FillAndExpand"><Image Source="location.png" WidthRequest="20" HeightRequest="20"></Image><Customcontrols:RobotoLabel VerticalTextAlignment="Center" Text="Rousset, Alpes de Hautes Provences, FR" TextColor="Gray"></Customcontrols:RobotoLabel></StackLayout>
 					</StackLayout>
-					<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" x:Name="stkEventOptions" HeightRequest="50" VerticalOptions="Center">
+					<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" x:Name="stkEventOptions" HeightRequest="50" VerticalOptions="Center" Spacing="1">
 						<StackLayout BackgroundColor="White" HorizontalOptions="FillAndExpand" Padding="10,0,0,0" VerticalOptions="Center" HeightRequest="50" Orientation="Horizontal"><Image Source="Friends.png" VerticalOptions="Center" HeightRequest="20" WidthRequest="20"></Image><Label Text="4/6 : Jérémy, Claire, Vincent..." TextColor="Gray" VerticalTextAlignment="Center"></Label></StackLayout>
-						<StackLayout BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="10,0,0,0" VerticalOptions="Center" HeightRequest="50"><Label Text="Private" TextColor="Gray" VerticalTextAlignment="Center"></Label></StackLayout>
+						<StackLayout BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="10,0,0,0" VerticalOptions="Center" HeightRequest="50"><Image Source="privateico.png" VerticalOptions="Center" HeightRequest="20" WidthRequest="20"/><Label Text="Private" TextColor="Gray" VerticalTextAlignment="Center"></Label></StackLayout>
 					</StackLayout>
 					<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" x:Name="stkStuff" HeightRequest="50">			
-						<StackLayout BackgroundColor="White" Orientation="Horizontal" Padding="10,0,0,0" HorizontalOptions="FillAndExpand"><Image Source="icoActivities.jpg" HeightRequest="20" WidthRequest="20"></Image><Customcontrols:RobotoLabel VerticalTextAlignment="Center" Text="Runing shoes, water, good mood :)" TextColor="Gray"></Customcontrols:RobotoLabel></StackLayout>
+						<StackLayout BackgroundColor="White" Orientation="Horizontal" Padding="10,0,0,0" HorizontalOptions="FillAndExpand"><Image Source="sport.png" HeightRequest="20" WidthRequest="20"></Image><Customcontrols:RobotoLabel VerticalTextAlignment="Center" Text="Runing shoes, water, good mood :)" TextColor="Gray"></Customcontrols:RobotoLabel></StackLayout>
 					</StackLayout>
 					<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" x:Name="stkDescription">
 						<StackLayout BackgroundColor="White" Orientation="Horizontal" Padding="10,10,10,10" HorizontalOptions="FillAndExpand"><Customcontrols:RobotoLabel VerticalTextAlignment="Center" Text="Samedi une marche découverte et dimanche les courses avec 3 distances : 12 km, 20 km et 32 km. It's gonna be... wait for it... legendary iofiwjofijfowijfoijewfoijfoijefoijwe" TextColor="Gray"></Customcontrols:RobotoLabel></StackLayout>
 					</StackLayout>
 				</StackLayout>
-				<StackLayout x:Name="stkChatbox">
-				</StackLayout>
-				<Customcontrols:MessageBoxView></Customcontrols:MessageBoxView>
 			</StackLayout>
 	</ScrollView>
 </ContentPage>

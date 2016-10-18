@@ -17,7 +17,7 @@
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
     <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
     <AndroidStoreUncompressedFileExtensions />
     <MandroidI18n />
@@ -162,7 +162,6 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
-    <AndroidResource Include="Resources\drawable\trail.jpg" />
     <AndroidResource Include="Resources\drawable\icon.png" />
     <AndroidResource Include="Resources\drawable\Filtericon.png" />
     <AndroidResource Include="Resources\drawable\Listviewicon.png" />
@@ -173,13 +172,11 @@
     <AndroidResource Include="Resources\drawable\portrait5.png" />
     <AndroidResource Include="Resources\drawable\YouWeesh.png" />
     <AndroidResource Include="Resources\drawable\AddWeesh.png" />
-    <AndroidResource Include="Resources\drawable\location512.png" />
     <AndroidResource Include="Resources\drawable\participants.png" />
     <AndroidResource Include="Resources\layout\UserMapInfoWindow.axml" />
     <AndroidResource Include="Resources\layout\EventMapInfoWindow.axml" />
     <AndroidResource Include="Resources\drawable\xamarin.png" />
     <AndroidResource Include="Resources\drawable-hdpi\info.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\monkey.png" />
     <AndroidResource Include="Resources\drawable-hdpi\pin.png" />
     <AndroidResource Include="Resources\drawable\portrait2_marker.png" />
     <AndroidResource Include="Resources\drawable\portrait5_marker.png" />
@@ -187,16 +184,12 @@
     <AndroidResource Include="Resources\drawable\portrait4_marker.png" />
     <AndroidResource Include="Resources\drawable\eventMarker.png" />
     <AndroidResource Include="Resources\drawable\starsRating.png" />
-    <AndroidResource Include="Resources\drawable\weeshback.png" />
     <AndroidResource Include="Resources\drawable\youweeshlogo.png" />
-    <AndroidResource Include="Resources\drawable\icoLocation.jpg" />
-    <AndroidResource Include="Resources\drawable\icoActivities.jpg" />
     <AndroidResource Include="Resources\drawable\MyWeesh.png" />
     <AndroidResource Include="Resources\drawable\Friends.png" />
     <AndroidResource Include="Resources\drawable\camera.png" />
     <AndroidResource Include="Resources\drawable\date.png" />
     <AndroidResource Include="Resources\drawable\clock.png" />
-    <AndroidResource Include="Resources\drawable\background.jpg" />
     <AndroidResource Include="Resources\drawable\ball.png" />
     <AndroidResource Include="Resources\drawable\duration.png" />
     <AndroidResource Include="Resources\drawable\MyEvents.png" />
@@ -209,6 +202,12 @@
     <AndroidResource Include="Resources\drawable\go.png" />
     <AndroidResource Include="Resources\drawable\yes.png" />
     <AndroidResource Include="Resources\drawable\google.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\monkey.png" />
+    <AndroidResource Include="Resources\drawable\trail.png" />
+    <AndroidResource Include="Resources\drawable\background.png" />
+    <AndroidResource Include="Resources\drawable\location.png" />
+    <AndroidResource Include="Resources\drawable\privateico.png" />
+    <AndroidResource Include="Resources\drawable\sport.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml">
@@ -227,9 +226,6 @@
     <Folder Include="Resources\layout\" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\foot.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\showmenu.png" />
   </ItemGroup>
   <ItemGroup>
@@ -245,12 +241,6 @@
     <AndroidResource Include="Resources\drawable\settings72.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\emptyFilter48.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\location48.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\list48.png" />
   </ItemGroup>
   <ItemGroup>
@@ -263,31 +253,10 @@
     <AndroidResource Include="Resources\drawable\weesh72.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\portrait.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\filter.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\tennis.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\values\Styles.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\icon_2.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\poker.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\drink.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\futsal.jpg" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Vince.png" />
