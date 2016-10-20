@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms"
                        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                       xmlns:local="clr-namespace:YouWeesh.Mobile;assembly=YouWeesh.Mobile"
+					   xmlns:controls="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile"
                        x:Class="YouWeesh.Mobile.Views.FeedFilterForm" >
     <ContentView.Resources>
         <ResourceDictionary>
 	        <Style TargetType="Label">
-	            <Setter Property="TextColor" Value="#FC7102" />
+	            <Setter Property="TextColor" Value="#2D2D2D" />
 				<Setter Property="VerticalTextAlignment" Value="Center"/>
 	        </Style>
 			<Style TargetType="StackLayout">
@@ -13,27 +15,20 @@
 	        </Style>
         </ResourceDictionary>
 	</ContentView.Resources>
-  <RelativeLayout BackgroundColor="#f2f2f2" HeightRequest="250">
-    <TableView Intent="Settings">
-      <TableRoot>
-        <TableSection Title="Filters">
-		<ViewCell>
-      	 	<StackLayout Orientation="Horizontal"><Label Text="Weesh"></Label><Switch x:Name="swcWeesh"/></StackLayout>
-		</ViewCell>
-		<ViewCell>
-			<StackLayout Orientation="Horizontal"><Label Text="Events"></Label><Switch x:Name="swcEvents"/></StackLayout>
-		</ViewCell>
-		<ViewCell>					
-			<StackLayout Orientation="Horizontal"><Label Text="Friends"></Label><Switch x:Name="swcFriends"/></StackLayout>						
-		</ViewCell>
-		<ViewCell>
-            <StackLayout Orientation="Horizontal">
-                    <Label HorizontalOptions="Start" VerticalOptions="Center" Text="Distance" />
-                    <Slider Maximum="300" Minimum="1" HorizontalOptions="StartAndExpand" WidthRequest="200"></Slider>
-            </StackLayout>            
-          </ViewCell>
-        </TableSection>
-      </TableRoot>
-    </TableView>
- </RelativeLayout>
+	<StackLayout BackgroundColor="#f2f2f2" HeightRequest="250" WidthRequest="{x:Static local:App.ScreenWidth}">
+		<StackLayout Orientation="Horizontal" Margin="0,10,0,0">
+				<Entry BackgroundColor="White" WidthRequest="250" Placeholder="Search sport, people..." PlaceholderColor="#C1C1C1" HorizontalOptions="Center" TextColor="#C1C1C1" />
+				<Image Source="weeshFilter"></Image>
+				<Image Source="eventFilter"></Image>
+		</StackLayout>
+		<StackLayout Orientation="Horizontal" Margin="0,10,0,0">
+				<controls:RobotoLabel Text="Distance (km)" TextColor="#2D2D2D"></controls:RobotoLabel>
+				<Slider x:Name="slrDistance" WidthRequest="150"></Slider>
+		</StackLayout>	
+		<StackLayout Orientation="Horizontal" Margin="0,10,0,0">
+				<controls:RobotoLabel Text="Private only" TextColor="#2D2D2D"></controls:RobotoLabel>
+				<Switch x:Name="sthPrivate" ></Switch>
+		</StackLayout>
+		<Image Source="go.png" Scale="0.9" Margin="230,40,0,0"></Image>
+	</StackLayout>
 </ContentView>
