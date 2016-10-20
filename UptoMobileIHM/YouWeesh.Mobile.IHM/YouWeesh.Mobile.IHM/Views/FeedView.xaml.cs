@@ -19,8 +19,10 @@ namespace YouWeesh.Mobile.Views
 		FeedFilterForm feedFilterForm = new FeedFilterForm();
 		AddFloatingButton myFloatingButton = new AddFloatingButton();
 
+
 		public FeedView()
 		{
+			this.Icon = "whiteWeeshIco.png";
 			InitializeComponent();
 
 			//Add Buttons on top bar
@@ -45,7 +47,7 @@ namespace YouWeesh.Mobile.Views
 			ToolbarItems.Add(new ToolbarItem
 			{
 				Text = "Filter",
-				Icon = "Filtericon.png",
+				Icon = "FiltericonWhite.png",
 				Order = ToolbarItemOrder.Primary,
 				Command = new Command(this.ShowFilterView),
 				Priority = 1
@@ -96,19 +98,7 @@ namespace YouWeesh.Mobile.Views
 			myMap.CustomPins = new List<CustomPin> { pinMarcus, pinJen };
 			myMap.Pins.Add(pinMarcus.Pin);
 			myMap.Pins.Add(pinJen.Pin);
-			/*var positionMarcus = new Position(46.1914286, 6.1354516);
-			var pinMarcus = new Pin
-			{
-				Type = PinType.Place,
-				Position = positionMarcus,
-				Label = "Marcus",
-				Address = "Marcus Home"
-			};
-			MyMap.Pins.Add(pinMarcus);
-			//Emulator: Move to Geneva
-			MyMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(46.2043907, 6.143157699999961), Distance.FromMiles(10)));
-*/
-			//Add of the floating button to add a weesh
+
 			relativeLayout.Children.Add(myFloatingButton, Constraint.Constant(YouWeesh.Mobile.App.ScreenWidth - 80), Constraint.Constant(YouWeesh.Mobile.App.ScreenHeight - 150));
 
 			//Refresh List when current user add a weesh

@@ -163,7 +163,6 @@
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable\icon.png" />
-    <AndroidResource Include="Resources\drawable\Filtericon.png" />
     <AndroidResource Include="Resources\drawable\Listviewicon.png" />
     <AndroidResource Include="Resources\drawable\Mappinicon.png" />
     <AndroidResource Include="Resources\drawable\portrait2.png" />
@@ -208,6 +207,9 @@
     <AndroidResource Include="Resources\drawable\location.png" />
     <AndroidResource Include="Resources\drawable\privateico.png" />
     <AndroidResource Include="Resources\drawable\sport.png" />
+    <AndroidResource Include="Resources\drawable\weeshIco.png" />
+    <AndroidResource Include="Resources\drawable\whiteWeeshIco.png" />
+    <AndroidResource Include="Resources\drawable\FiltericonWhite.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml">

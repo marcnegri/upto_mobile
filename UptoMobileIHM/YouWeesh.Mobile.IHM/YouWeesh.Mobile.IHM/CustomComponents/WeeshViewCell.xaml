@@ -16,7 +16,7 @@
         <controls2:RobotoLabel  Text="{Binding Title}" TextColor="#3f3f3f" FontAttributes="Bold" FontSize="18" Margin="0,12,0,0"/>
       <StackLayout Orientation="Horizontal" Padding="0,5,0,0" HorizontalOptions="Start">
 			<controls2:RobotoLabel  Text="{Binding Id}" x:Name="lblId" IsVisible="false"/>
-			<Image x:Name="imgWeeshBack" Source="weeshback.png" VerticalOptions="Center" Scale="1">
+			<Image x:Name="imgWeeshBack" Source="weeshIco.png" VerticalOptions="Center" Scale="1">
 				<Image.GestureRecognizers>
  					<TapGestureRecognizer Tapped="WeeshBackOnTapGestureRecognizerTapped" NumberOfTapsRequired="1" />
 				</Image.GestureRecognizers>

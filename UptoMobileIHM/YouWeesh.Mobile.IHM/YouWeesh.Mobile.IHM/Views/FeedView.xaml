@@ -4,8 +4,7 @@
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:controls="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile"
             xmlns:local="clr-namespace:YouWeesh.Mobile;assembly=YouWeesh.Mobile"
-            xmlns:maps="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile">
-            <!--RelativeLayout x:Name="relativeLayout" VerticalOptions="LayoutOptions.FillAndExpand" BackgroundColor="Transparent"-->
+            xmlns:maps="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile" Title="youWeesh" Icon="whiteWeeshIco.png">
     	<RelativeLayout x:Name="relativeLayout" VerticalOptions="LayoutOptions.FillAndExpand" BackgroundColor="#f2f2f2">
                 	<ContentPage.Resources>
     				<ResourceDictionary>
