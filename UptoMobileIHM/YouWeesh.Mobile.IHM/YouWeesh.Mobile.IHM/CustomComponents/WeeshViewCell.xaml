@@ -4,10 +4,9 @@
           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
           xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
           xmlns:controls2="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile">
-<RelativeLayout x:Name="relativeLayout" HeightRequest="70" Margin="0,1,0,1">
-<controls2:ContentViewFeedCell x:Name="contentView"  Margin="0,0,0,0"  HeightRequest="70" BackgroundColor="White" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
+<controls2:ContentViewFeedCell x:Name="contentView"  Margin="0,0,0,0"  HeightRequest="140" BackgroundColor="White" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
     <StackLayout Orientation="Horizontal" Padding="10,0,0,0" >
-	  <controls:CircleImage Source="{Binding Picture}" Margin="0,0,0,0" Aspect="AspectFit" HeightRequest="50" WidthRequest="50" x:Name="imgProfile" VerticalOptions="Center">
+	  <controls:CircleImage Source="{Binding Picture}" Margin="0,0,0,0" Aspect="AspectFit" HeightRequest="50" WidthRequest="50" x:Name="imgProfile" VerticalOptions="Start">
 		<Image.GestureRecognizers>
  			<TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped" NumberOfTapsRequired="1" />
 		</Image.GestureRecognizers>
@@ -17,7 +16,7 @@
         	<controls2:RobotoLabel  Text="{Binding Title}" TextColor="#3f3f3f" FontAttributes="Bold" FontSize="18" Margin="0,12,0,0"/>
 			<Image Source="" HorizontalOptions="End"/>
         </StackLayout>
-		<StackLayout Orientation="Horizontal" Padding="0,5,0,0" HorizontalOptions="Start">
+		<StackLayout Orientation="Horizontal" Padding="0,5,0,0" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand">
 			<controls2:RobotoLabel  Text="{Binding Id}" x:Name="lblId" IsVisible="false"/>
 			<Image x:Name="imgWeeshBack" Source="weeshIco.png" VerticalOptions="Center" Scale="1">
 				<Image.GestureRecognizers>
@@ -34,5 +33,4 @@
       <Button Text="Delete" WidthRequest="0" x:Name="buttonDelete" IsVisible="false" TextColor="#f35e20" HorizontalOptions="End"></Button>
    </StackLayout>  
  </controls2:ContentViewFeedCell>
-</RelativeLayout>
 </ViewCell>

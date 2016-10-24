@@ -17,6 +17,16 @@ namespace YouWeesh.Mobile.CustomComponents
 		{
 			InitializeComponent();
 
+			/*
+			if () { 
+
+			}
+
+			imgProfile.TranslateTo(App.ScreenWidth-80, imgProfile.Y, 200);
+			imgProfile.TranslateTo(imgProfile.X + 280, imgProfile.Y, 200);
+			contentView.LayoutTo(new Rectangle(contentView.X, contentView.Y, contentView.Width - 40, contentView.Height), 200);
+*/
+
 			contentView.SwipeDown += (s, e) =>
 			{
 

@@ -4,14 +4,14 @@
           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 		  xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
 		  xmlns:Customcontrols="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile">
-			<RelativeLayout x:Name="mainLayout" HeightRequest="210">
+			<RelativeLayout x:Name="mainLayout" HeightRequest="260">
 				<RelativeLayout.GestureRecognizers>
  					<TapGestureRecognizer Tapped="RelativeLayoutOnTapGestureRecognizerTapped" NumberOfTapsRequired="1" />
 				</RelativeLayout.GestureRecognizers>
 				<Label  Text="{Binding Id}" x:Name="lblId" IsVisible="false"/>
 				<Image Source="{Binding Picture}" 
 						RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
-						HeightRequest="210"
+						HeightRequest="260"
 						Aspect="AspectFill"
 						Margin="0,0,0,0">
 				</Image>

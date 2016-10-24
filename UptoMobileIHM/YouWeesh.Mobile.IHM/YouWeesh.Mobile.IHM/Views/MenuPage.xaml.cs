@@ -16,18 +16,21 @@ namespace YouWeesh.Mobile.Views
             InitializeComponent();
 			//ctnHeader.BackgroundColor = Color.FromRgb(252, 113, 2);// Color.FromRgb(49, 159, 212);
             var masterPageItems = new List<MasterPageItem>();
-            masterPageItems.Add(new MasterPageItem
-            {
-                Title = "Profile",
-                IconSource = "contacts.png",
-				TargetType = typeof(MyProfileView)
-            });
+
 			masterPageItems.Add(new MasterPageItem
 			{
-				Title = "Story",
+				Title = "Weesh place",
 				IconSource = "myStory.png",
-				TargetType = typeof(MyStory)
+				TargetType = typeof(FeedView)
 			});
+
+			masterPageItems.Add(new MasterPageItem
+			{
+				Title = "Profile",
+				IconSource = "contacts.png",
+				TargetType = typeof(MyProfileView)
+			});
+
 			/*
             masterPageItems.Add(new MasterPageItem
             {
@@ -67,9 +70,9 @@ namespace YouWeesh.Mobile.Views
 
 			masterPageItems.Add(new MasterPageItem
 			{
-				Title = "Log out",
+				Title = "Test TabbedPage",
 				IconSource = "logOut.png",
-				TargetType = typeof(MyNextEventsView)
+				TargetType = typeof(TestTabbedPage)
 			});
 
 			lstLeftMenu.ItemsSource = masterPageItems;

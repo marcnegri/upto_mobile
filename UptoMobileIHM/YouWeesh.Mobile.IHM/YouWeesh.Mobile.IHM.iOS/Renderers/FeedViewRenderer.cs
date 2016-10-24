@@ -6,7 +6,7 @@ using Xamarin.Forms.Platform.iOS;
 using UIKit;
 using System.Collections.Generic;
 
-[assembly:ExportRenderer(typeof(FeedView), typeof(FeedViewRenderer))]
+//[assembly:ExportRenderer(typeof(FeedView), typeof(FeedViewRenderer))]
 namespace YouWeesh.Mobile.IHM.iOS
 {
 	public class FeedViewRenderer : PageRenderer
@@ -33,16 +33,9 @@ namespace YouWeesh.Mobile.IHM.iOS
 				var reorder = (Element.ToolbarItems.Count - 1);
 				var ItemPriority = Element.ToolbarItems[reorder - i].Priority;
 
-				if (ItemPriority == 1)
-				{
-					UIBarButtonItem LeftNavItems = navigationItem.RightBarButtonItems[i];
-					LeftNavList.Add(LeftNavItems);
-				}
-				else if (ItemPriority == 0)
-				{
-					UIBarButtonItem RightNavItems = navigationItem.RightBarButtonItems[i];
-					rightNavList.Add(RightNavItems);
-				}
+				UIBarButtonItem LeftNavItems = navigationItem.RightBarButtonItems[i];
+				LeftNavList.Add(LeftNavItems);
+
 			}
 
 			navigationItem.SetLeftBarButtonItems(LeftNavList.ToArray(), false);
