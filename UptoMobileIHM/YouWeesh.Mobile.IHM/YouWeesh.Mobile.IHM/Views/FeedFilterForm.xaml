@@ -22,11 +22,11 @@
 				<Image Source="eventFilter"></Image>
 		</StackLayout>
 		<StackLayout Orientation="Horizontal" Margin="0,10,0,0">
-				<controls:RobotoLabel Text="Distance (km)" TextColor="#2D2D2D"></controls:RobotoLabel>
+				<controls:RobotoLabel Text="Distance (km)" TextColor="#2D2D2D" FontSize="14"></controls:RobotoLabel>
 				<Slider x:Name="slrDistance" WidthRequest="150"></Slider>
 		</StackLayout>	
 		<StackLayout Orientation="Horizontal" Margin="0,10,0,0">
-				<controls:RobotoLabel Text="Private only" TextColor="#2D2D2D"></controls:RobotoLabel>
+				<controls:RobotoLabel Text="Private only" TextColor="#2D2D2D" FontSize="14"></controls:RobotoLabel>
 				<Switch x:Name="sthPrivate" ></Switch>
 		</StackLayout>
 		<Image Source="go.png" Scale="0.9" Margin="230,40,0,0"></Image>

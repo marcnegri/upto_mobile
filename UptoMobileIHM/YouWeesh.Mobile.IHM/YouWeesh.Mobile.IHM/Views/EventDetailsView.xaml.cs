@@ -31,5 +31,29 @@ namespace YouWeesh.Mobile.Views
 			//MyDataSource.Add("test2");
 			crvEventPictures.ItemsSource = lstEventPictures;*/
 		}
+
+		async void InfosOnTapGestureRecognizerTapped(object sender, EventArgs args)
+		{
+			//AnimateButton();
+			stkContentInfo.IsVisible = true;
+			stkContentChat.IsVisible = false;
+			infoLabel.TextColor = Color.White;
+			chatLabel.TextColor = Color.Black;
+			//await this.Navigation.PushModalAsync(new MyProfileView());
+			//await this.Navigation.PushAsync(new MyProfileView());
+
+		}
+
+		async void ChatOnTapGestureRecognizerTapped(object sender, EventArgs args)
+		{
+			//AnimateButton();
+			stkContentInfo.IsVisible = false;
+			stkContentChat.IsVisible = true;
+			infoLabel.TextColor = Color.Black;
+			chatLabel.TextColor = Color.White;
+			//await this.Navigation.PushModalAsync(new MyProfileView());
+			//await this.Navigation.PushAsync(new MyProfileView());
+
+		}
     }
 }
