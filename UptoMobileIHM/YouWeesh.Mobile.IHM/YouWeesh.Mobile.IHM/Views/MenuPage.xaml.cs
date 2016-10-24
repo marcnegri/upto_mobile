@@ -14,7 +14,7 @@ namespace YouWeesh.Mobile.Views
         public MenuPage()
         {
             InitializeComponent();
-			ctnHeader.BackgroundColor = Color.FromRgb(252, 113, 2);// Color.FromRgb(49, 159, 212);
+			//ctnHeader.BackgroundColor = Color.FromRgb(252, 113, 2);// Color.FromRgb(49, 159, 212);
             var masterPageItems = new List<MasterPageItem>();
             masterPageItems.Add(new MasterPageItem
             {
@@ -74,9 +74,8 @@ namespace YouWeesh.Mobile.Views
 
 			lstLeftMenu.ItemsSource = masterPageItems;
             NavigationPage p = new NavigationPage(new FeedView());
-            p.BarBackgroundColor = Color.FromRgb(252, 113, 2);//Color.FromRgb(49,159,212);
-            Detail = p;
-
+			p.BarBackgroundColor = Color.FromRgb(252, 113, 2);
+			Detail = p;
         }
 
         void OnItemSelected(object sender, SelectedItemChangedEventArgs e)

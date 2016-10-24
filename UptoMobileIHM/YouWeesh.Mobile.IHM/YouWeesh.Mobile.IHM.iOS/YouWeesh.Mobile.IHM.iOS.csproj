@@ -106,34 +106,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Icon-60%403x.png" />
-    <BundleResource Include="Resources\Icon-Small-40%403x.png" />
-    <BundleResource Include="Resources\Icon-Small%403x.png" />
-    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
-    <BundleResource Include="Resources\Filtericon.png" />
-    <BundleResource Include="Resources\Listviewicon.png" />
-    <BundleResource Include="Resources\Mappinicon.png" />
-    <BundleResource Include="Resources\portrait2.png" />
-    <BundleResource Include="Resources\portrait3.png" />
-    <BundleResource Include="Resources\portrait4.png" />
-    <BundleResource Include="Resources\portrait5.png" />
-
-    <BundleResource Include="Resources\YouWeesh.png" />
-    <BundleResource Include="Resources\AddWeesh.png" />
-    <BundleResource Include="Resources\trail.jpg" />
-    <BundleResource Include="Resources\tennis.jpg" />
-    <BundleResource Include="Resources\futsal.jpg" />
-    <BundleResource Include="Resources\icon.png" />
-    <BundleResource Include="Resources\location48.png" />
-    <BundleResource Include="Resources\poker.jpg" />
-    <BundleResource Include="Resources\weesh72.png" />
-    <BundleResource Include="Resources\Tofino-Regular.ttf" />
-    <BundleResource Include="Resources\drink.jpg" />
-    <BundleResource Include="Resources\portrait.jpg" />
-    <BundleResource Include="Resources\YouWeeshLogo.png" />
-    <BundleResource Include="Resources\FacebookLogin.png" />
-    <BundleResource Include="Resources\TwitterLogin.png" />
-    <BundleResource Include="Resources\weeshback.png" />
     <BundleResource Include="Resources\Fonts\Roboto-Black.ttf" />
     <BundleResource Include="Resources\Fonts\Roboto-BlackItalic.ttf" />
     <BundleResource Include="Resources\Fonts\Roboto-Bold.ttf" />
@@ -146,11 +118,58 @@
     <BundleResource Include="Resources\Fonts\Roboto-Regular.ttf" />
     <BundleResource Include="Resources\Fonts\Roboto-Thin.ttf" />
     <BundleResource Include="Resources\Fonts\Roboto-ThinItalic.ttf" />
+    <BundleResource Include="Resources\AddWeesh.png" />
+    <BundleResource Include="Resources\background.png" />
+    <BundleResource Include="Resources\ball.png" />
+    <BundleResource Include="Resources\camera.png" />
+    <BundleResource Include="Resources\clock.png" />
+    <BundleResource Include="Resources\contacts.png" />
+    <BundleResource Include="Resources\date.png" />
+    <BundleResource Include="Resources\duration.png" />
+    <BundleResource Include="Resources\eventFilter.png" />
+    <BundleResource Include="Resources\eventMarker.png" />
     <BundleResource Include="Resources\Facebook.png" />
+    <BundleResource Include="Resources\facebook32.png" />
+    <BundleResource Include="Resources\FiltericonWhite.png" />
+    <BundleResource Include="Resources\Friends.png" />
+    <BundleResource Include="Resources\friends72.png" />
     <BundleResource Include="Resources\go.png" />
+    <BundleResource Include="Resources\google.png" />
+    <BundleResource Include="Resources\google32.png" />
+    <BundleResource Include="Resources\hamburger.png" />
+    <BundleResource Include="Resources\icon.png" />
+    <BundleResource Include="Resources\list48.png" />
+    <BundleResource Include="Resources\Listviewicon.png" />
+    <BundleResource Include="Resources\location.png" />
+    <BundleResource Include="Resources\logOut.png" />
+    <BundleResource Include="Resources\Mappinicon.png" />
+    <BundleResource Include="Resources\MyEvents.png" />
+    <BundleResource Include="Resources\myStory.png" />
+    <BundleResource Include="Resources\MyWeesh.png" />
+    <BundleResource Include="Resources\participants.png" />
+    <BundleResource Include="Resources\portrait2.png" />
+    <BundleResource Include="Resources\portrait2_marker.png" />
+    <BundleResource Include="Resources\portrait3.png" />
+    <BundleResource Include="Resources\portrait4.png" />
+    <BundleResource Include="Resources\portrait4_marker.png" />
+    <BundleResource Include="Resources\portrait5.png" />
+    <BundleResource Include="Resources\portrait5_marker.png" />
+    <BundleResource Include="Resources\privateico.png" />
+    <BundleResource Include="Resources\settings72.png" />
+    <BundleResource Include="Resources\showmenu.png" />
+    <BundleResource Include="Resources\sport.png" />
+    <BundleResource Include="Resources\starsRating.png" />
+    <BundleResource Include="Resources\trail.png" />
     <BundleResource Include="Resources\twitter.png" />
     <BundleResource Include="Resources\yes.png" />
-    <BundleResource Include="Resources\google log in.png" />
+    <BundleResource Include="Resources\weeshFilter.png" />
+    <BundleResource Include="Resources\weeshIco.png" />
+    <BundleResource Include="Resources\whiteWeeshIco.png" />
+    <BundleResource Include="Resources\YouWeesh.png" />
+    <BundleResource Include="Resources\YouWeeshLine.png" />
+    <BundleResource Include="Resources\youweeshlogo.png" />
+    <BundleResource Include="Resources\icoEventsWhite.png" />
+    <BundleResource Include="Resources\icoWeeshWhite.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -183,27 +202,6 @@
     <Reference Include="Xamarin.Forms.Maps">
       <HintPath>..\..\packages\Xamarin.Forms.Maps.2.3.0.107\lib\Xamarin.iOS10\Xamarin.Forms.Maps.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\emptyFilter48.png" />
-    <AndroidResource Include="Resources\foot.jpg" />
-    <AndroidResource Include="Resources\friends72.png" />
-    <AndroidResource Include="Resources\list48.png" />
-    <BundleResource Include="Resources\filter.png" />
-    <Content Include="Resources\model.jpg" />
-    <AndroidResource Include="Resources\settings72.png" />
-    <AndroidResource Include="Resources\showmenu.png" />
-    <AndroidResource Include="Resources\twitter128.png" />
-    <AndroidResource Include="Resources\weesh.png" />
-    <AndroidResource Include="Resources\google32.png" />
-    <AndroidResource Include="Resources\icon_2.png" />
-    <AndroidResource Include="Resources\twitter32.png" />
-    <AndroidResource Include="Resources\Vince.png" />
-    <AndroidResource Include="Resources\GoogleLogin.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\facebook32.png" />
-    <EmbeddedResource Include="Resources\hamburger.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Renderers\" />

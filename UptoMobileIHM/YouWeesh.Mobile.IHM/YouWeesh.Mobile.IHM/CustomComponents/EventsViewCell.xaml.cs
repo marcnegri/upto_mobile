@@ -21,7 +21,7 @@ namespace YouWeesh.Mobile.CustomComponents
 				return parent.X;
 			}), Constraint.RelativeToParent((parent) =>
 			{
-				return parent.Y + 135;
+				return parent.Y + 138;
 			}), Constraint.RelativeToParent((parent) =>
 			{
 				if (lblDescription.Text == null)

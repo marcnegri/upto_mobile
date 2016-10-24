@@ -25,7 +25,7 @@ namespace YouWeesh.Mobile
             };
 
 			lstDate.ItemsSource = dateList;
-
+			/*
 			List<PageTypeGroup> pgs = new List<PageTypeGroup>
 			{
 				new PageTypeGroup("27.06.2016")
@@ -48,10 +48,11 @@ namespace YouWeesh.Mobile
                     new Business.Events { Title = "Vernissage", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "drink.jpg", Location = "Centre sportif du bout du monde" },
                     new Business.Events { Title = "#Futsal", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "futsal.jpg", Location = "Bout du monde" },
                     new Business.Events { Title = "Poker party", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "poker.jpg", Location = "Pickwick Bar" }
-                },*/
-            };
+                },
+            };*/
 
-			lstMyStory.ItemsSource = pgs;
+			//lstMyStory.ItemsSource = pgs;
+
 
 			MessagingCenter.Subscribe<WeeshViewCell, int>(this, "RedirectToMyProfile", (page, idElement) =>
 			{
@@ -69,7 +70,7 @@ namespace YouWeesh.Mobile
 	
 		}
 
-
+		/*
 		public void HandleCurrentPageChanged(object sender, EventArgs e)
 		{
 			if (Children.Count > 1)
@@ -78,7 +79,7 @@ namespace YouWeesh.Mobile
 				Children.Remove(Children[1]);
 				CurrentPageChanged -= HandleCurrentPageChanged;
 			}
-		}
+		}*/
 
 	
 

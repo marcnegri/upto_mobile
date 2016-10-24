@@ -26,7 +26,7 @@
                           SeparatorVisibility="None"
 						  VerticalOptions="FillAndExpand"
 						  HorizontalOptions="CenterAndExpand"
-						  HasUnevenRows="True">
+						  HasUnevenRows="True" Margin="5, 0, 0, 0">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <Customcontrols:MenuCell/>

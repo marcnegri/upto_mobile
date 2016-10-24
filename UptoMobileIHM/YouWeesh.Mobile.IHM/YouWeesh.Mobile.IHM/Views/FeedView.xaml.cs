@@ -67,6 +67,21 @@ namespace YouWeesh.Mobile.Views
 			//elements.Add(new Business.Element { Tile = "Poker party", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "poker.jpg", CreationDate = "01h30 ago", Location = "Pickwick Bar", Description = "Final des WPT avec Patrick Bruel en Guest Star ! Du lourd ", IsEvent = true });
 			elements.Add(new Business.Element { Id = 6, Title = "Je vais mater l'#euro a la #fanzone", Picture = "portrait3.png", CreationDate = "07h15 ago", Location = "0.6 km", IsEvent = false, WeeshBack = 6 });
 			elements.Add(new Business.Element { Id = 7, Title = "J'ai faim de  #nectarine", Picture = "portrait4.png", CreationDate = "12h00 ago", Location = "0,3 km", IsEvent = false, WeeshBack = 40 });
+			elements.Add(new Business.Element { Id = 0, Title = "Jouer au #foot", Picture = "portrait2.png", CreationDate = "01h30 ago", Location = "1 km", IsEvent = false, WeeshBack = 10 });
+			elements.Add(new Business.Element { Id = 1, Title = "Faire une partie de #tennis", Picture = "portrait3.png", CreationDate = "03h30 ago", Location = "1,5 km", IsEvent = false, WeeshBack = 23 });
+			elements.Add(new Business.Element { Id = 2, Title = "Trail des Roussets", StartDatetime = "2:30 ago", EndDatetime = "<-> 205km", CreationDate = "02h30 ago", Picture = "trail.png", Location = "Centre sportif du bout du monde", Description = "Samedi une marche découverte et dimanche les courses avec 3 distances : 12 km, 20 km et 32 km", IsEvent = true });
+			elements.Add(new Business.Element { Id = 0, Title = "Jouer au #foot", Picture = "portrait2.png", CreationDate = "01h30 ago", Location = "1 km", IsEvent = false, WeeshBack = 10 });
+			elements.Add(new Business.Element { Id = 1, Title = "Faire une partie de #tennis", Picture = "portrait3.png", CreationDate = "03h30 ago", Location = "1,5 km", IsEvent = false, WeeshBack = 23 });
+			elements.Add(new Business.Element { Id = 2, Title = "Trail des Roussets", StartDatetime = "2:30 ago", EndDatetime = "<-> 205km", CreationDate = "02h30 ago", Picture = "trail.png", Location = "Centre sportif du bout du monde", Description = "Samedi une marche découverte et dimanche les courses avec 3 distances : 12 km, 20 km et 32 km", IsEvent = true });
+			elements.Add(new Business.Element { Id = 6, Title = "Je vais mater l'#euro a la #fanzone", Picture = "portrait3.png", CreationDate = "07h15 ago", Location = "0.6 km", IsEvent = false, WeeshBack = 6 });
+			elements.Add(new Business.Element { Id = 7, Title = "J'ai faim de  #nectarine", Picture = "portrait4.png", CreationDate = "12h00 ago", Location = "0,3 km", IsEvent = false, WeeshBack = 40 });
+			elements.Add(new Business.Element { Id = 6, Title = "Je vais mater l'#euro a la #fanzone", Picture = "portrait3.png", CreationDate = "07h15 ago", Location = "0.6 km", IsEvent = false, WeeshBack = 6 });
+			elements.Add(new Business.Element { Id = 7, Title = "J'ai faim de  #nectarine", Picture = "portrait4.png", CreationDate = "12h00 ago", Location = "0,3 km", IsEvent = false, WeeshBack = 40 });
+			elements.Add(new Business.Element { Id = 6, Title = "Je vais mater l'#euro a la #fanzone", Picture = "portrait3.png", CreationDate = "07h15 ago", Location = "0.6 km", IsEvent = false, WeeshBack = 6 });
+			elements.Add(new Business.Element { Id = 7, Title = "J'ai faim de  #nectarine", Picture = "portrait4.png", CreationDate = "12h00 ago", Location = "0,3 km", IsEvent = false, WeeshBack = 40 });
+			elements.Add(new Business.Element { Id = 6, Title = "Je vais mater l'#euro a la #fanzone", Picture = "portrait3.png", CreationDate = "07h15 ago", Location = "0.6 km", IsEvent = false, WeeshBack = 6 });
+			elements.Add(new Business.Element { Id = 7, Title = "J'ai faim de  #nectarine", Picture = "portrait4.png", CreationDate = "12h00 ago", Location = "0,3 km", IsEvent = false, WeeshBack = 40 });
+
 			lstfeedView.ItemsSource = elements;
 
 			var pinMarcus = new CustomPin

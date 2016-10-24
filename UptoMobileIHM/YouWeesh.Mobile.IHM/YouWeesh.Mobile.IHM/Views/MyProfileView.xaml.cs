@@ -22,9 +22,9 @@ namespace YouWeesh.Mobile
 
 			#region MOCKS
 			ObservableCollection<Business.Element> elements = new ObservableCollection<Business.Element>();
-			elements.Add(new Business.Element { Title = "#courir !!".ToUpper(), Picture = "portrait4.jpg", CreationDate = "06h15 ago", Location = "2 km", IsEvent = false, WeeshBack = 4 });
-			elements.Add(new Business.Element { Title = "Discuter autour d'un #verre".ToUpper(), Picture = "portrait4.jpg", CreationDate = "06h45 ago", Location = "1,2 km", IsEvent = false, WeeshBack = 30 });
-			elements.Add(new Business.Element { Title = "Aller regarder l'#euro".ToUpper(), Picture = "portrait4.jpg", CreationDate = "07h00 ago", Location = "2,6 km", IsEvent = false, WeeshBack = 5 });
+			elements.Add(new Business.Element { Title = "#courir !!", Picture = "portrait4.png", CreationDate = "06h15 ago", Location = "2 km", IsEvent = false, WeeshBack = 4 });
+			elements.Add(new Business.Element { Title = "Discuter autour d'un #verre", Picture = "portrait4.png", CreationDate = "06h45 ago", Location = "1,2 km", IsEvent = false, WeeshBack = 30 });
+			elements.Add(new Business.Element { Title = "Aller regarder l'#euro", Picture = "portrait4.png", CreationDate = "07h00 ago", Location = "2,6 km", IsEvent = false, WeeshBack = 5 });
 			#endregion
 
 			this.BackgroundColor = Color.White;//Color.FromHex("#ececec");
@@ -49,16 +49,16 @@ namespace YouWeesh.Mobile
 
 			rltHeader.Children.Add(stkImgProfile, Constraint.RelativeToParent((parent) =>
 			{
-				return -140;
+				return 15;
 			}), Constraint.RelativeToParent((parent) =>
 			{
-				return imgBackground.Height - 55;
+				return 125;//return imgBackground.Height - 55;
 			}), Constraint.RelativeToParent((parent) =>
 			{
-				return parent.Width;
+				return 80;//parent.Width;
 			}), Constraint.RelativeToParent((parent) =>
 			{
-				return parent.Height;
+				return 80;//parent.Height;
 			}));
 
 

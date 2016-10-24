@@ -15,7 +15,7 @@
 						Aspect="AspectFill"
 						Margin="0,0,0,0">
 				</Image>
-				<StackLayout Margin="10,10,10,10"  
+				<StackLayout Margin="10,5,10,0"  
 							RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
 							Orientation="Horizontal">
 				<controls:CircleImage Aspect="AspectFit" Source="portrait4.png" HeightRequest="50" WidthRequest="50">
@@ -25,13 +25,19 @@
 				</controls:CircleImage>
 				<Customcontrols:RobotoLabel 
                        FontAttributes="Bold"
-                       FontSize="24"
+                       FontSize="20"
                        Text="{Binding Title}"
                        TextColor="White"
                        XAlign="Center"
-                       YAlign="Center" />
+					   VerticalTextAlignment="Start"/>
 				</StackLayout>
-				<StackLayout Margin="10,10,10,10" Opacity="0.80"
+				<StackLayout x:Name="stkEventDetails" 
+							Orientation="Horizontal" Margin="60,20,0,10"  
+							RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
+							Spacing="0">
+					<Image x:Name="imgWeeshBack" Source="whiteWeeshIco.png" Margin="0"/><Customcontrols:RobotoLabel Text="504 - 57km - 15/06" TextColor="White" VerticalTextAlignment="Center"></Customcontrols:RobotoLabel>
+				</StackLayout>
+				<StackLayout Margin="10,10,10,10" Opacity="0.9"
 				x:Name="stlDescription"
 				BackgroundColor="White" 
 				Orientation="Horizontal">

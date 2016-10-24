@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:controls="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="YouWeesh.Mobile.MyStory">
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:controls="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="YouWeesh.Mobile.MyStory">
 <ContentPage>
 <ContentPage.Resources>
 <ResourceDictionary>
@@ -27,7 +30,7 @@
      </DataTemplate>
      </ListView.GroupHeaderTemplate>
 </ListView>
-<ListView x:Name="lstMyStory"
+<!--<ListView x:Name="lstMyStory"
 	RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
     HasUnevenRows="True"
@@ -42,7 +45,7 @@
      	  <TextCell Text="{Binding Title}" TextColor="Black" />
      </DataTemplate>
      </ListView.GroupHeaderTemplate>
-</ListView>
+</ListView>-->
 </StackLayout>
 </ContentPage>
 </CarouselPage>
