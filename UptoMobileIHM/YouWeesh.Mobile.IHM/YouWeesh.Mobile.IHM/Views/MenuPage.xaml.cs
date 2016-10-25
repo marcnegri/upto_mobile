@@ -70,9 +70,9 @@ namespace YouWeesh.Mobile.Views
 
 			masterPageItems.Add(new MasterPageItem
 			{
-				Title = "Test TabbedPage",
+				Title = "Log out",
 				IconSource = "logOut.png",
-				TargetType = typeof(TestTabbedPage)
+				TargetType = typeof(LoginForm)
 			});
 
 			lstLeftMenu.ItemsSource = masterPageItems;

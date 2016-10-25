@@ -12,6 +12,7 @@
     				</ResourceDictionary>
   					</ContentPage.Resources>
 			      	<controls:FeedListView x:Name="lstfeedView"
+							  SeparatorColor="Gray"
 							  RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"
                               HasUnevenRows="True"
 							  ItemTemplate="{StaticResource ElementTemplateSelector}">

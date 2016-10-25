@@ -65,13 +65,13 @@ namespace YouWeesh.Mobile.CustomComponents
 			};
 
 		}
-
+		/*
         private async void deactivateDeleteButton()
         {
             contentView.BackgroundColor = Color.White;
             await buttonDelete.LayoutTo(new Rectangle(buttonDelete.X, buttonDelete.Y, 0, buttonDelete.Height), 200);
             buttonDelete.IsVisible = false;
-        }
+        }*/
 
 		async void OnTapGestureRecognizerTapped(object sender, EventArgs args)
 		{

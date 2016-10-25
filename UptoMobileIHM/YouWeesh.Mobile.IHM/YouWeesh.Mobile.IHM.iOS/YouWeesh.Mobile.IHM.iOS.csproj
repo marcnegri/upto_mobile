@@ -147,7 +147,6 @@
     <BundleResource Include="Resources\myStory.png" />
     <BundleResource Include="Resources\MyWeesh.png" />
     <BundleResource Include="Resources\participants.png" />
-    <BundleResource Include="Resources\portrait2.png" />
     <BundleResource Include="Resources\portrait2_marker.png" />
     <BundleResource Include="Resources\portrait3.png" />
     <BundleResource Include="Resources\portrait4.png" />
@@ -170,6 +169,7 @@
     <BundleResource Include="Resources\youweeshlogo.png" />
     <BundleResource Include="Resources\icoEventsWhite.png" />
     <BundleResource Include="Resources\icoWeeshWhite.png" />
+    <BundleResource Include="Resources\portrait2.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">

@@ -13,6 +13,7 @@ namespace YouWeesh.Mobile.Business
 		private int id;
         private String title;
         private String startDatetime;
+		private String ownerName;
         private String endDatetime;
         private String description;
         private List<Users> participants;
@@ -26,6 +27,12 @@ namespace YouWeesh.Mobile.Business
 		#endregion
 
 		#region ACCESSORS
+
+		public String OwnerName { 
+		
+			get { return ownerName;}set { ownerName = value; }
+
+		}
 		public int Id
 		{
 			get
