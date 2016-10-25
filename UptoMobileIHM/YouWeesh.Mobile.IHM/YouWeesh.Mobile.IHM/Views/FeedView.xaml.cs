@@ -169,6 +169,8 @@ namespace YouWeesh.Mobile.Views
 			});
 
 			lstfeedView.Scroll += (s, e) => {
+
+				HideFilterView();
 				myFloatingButton.FadeTo(0, 250);
 				//myFloatingButton.IsVisible = false;
 				
@@ -190,8 +192,9 @@ namespace YouWeesh.Mobile.Views
 		/// 
 		/// </summary>
 		/// <param name="sender"></param>
-		/// <param name="e"></param>
-
+		/// <param name="e"></param> 
+		/// 
+		/// 
 		async void ShowFilterView()
 		{
 			filterVisible = !filterVisible;
@@ -208,6 +211,18 @@ namespace YouWeesh.Mobile.Views
 				relativeLayout.Children.Remove(feedFilterForm);
 			}
 
+		}
+
+		async void HideFilterView()
+		{
+
+			if (filterVisible)
+			{
+				filterVisible = false;
+				await feedFilterForm.LayoutTo(new Rectangle(0, -1 * feedFilterForm.Height, feedFilterForm.Width, feedFilterForm.Height), 250);
+				relativeLayout.Children.Remove(feedFilterForm);			
+			}	
+					
 		}
 
 		void SwitchView()
