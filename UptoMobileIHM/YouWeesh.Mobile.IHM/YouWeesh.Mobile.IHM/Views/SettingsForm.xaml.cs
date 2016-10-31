@@ -13,11 +13,12 @@ namespace YouWeesh.Mobile.Views
         public SettingsForm()
         {
             InitializeComponent();
-            Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0);
-            /*
+            //Padding = new Thickness(0, Device.OnPlatform(20, 0, 0), 0, 0);
+            
             pkrLanguage.Items.Add("French");
             pkrLanguage.Items.Add("English");
-            pkrLanguage.Items.Add("Spanish");*/
+            pkrLanguage.Items.Add("Spanish");
+			pkrLanguage.SelectedIndex = 1;
         }
     }
 }

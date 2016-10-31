@@ -4,20 +4,20 @@
                        xmlns:local="clr-namespace:YouWeesh.Mobile;assembly=YouWeesh.Mobile"
 					   xmlns:controls="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile"
                        x:Class="YouWeesh.Mobile.Views.FeedFilterForm" >
-	<StackLayout BackgroundColor="#f2f2f2" HeightRequest="250" WidthRequest="{x:Static local:App.ScreenWidth}" Padding="10,0,0,0">
+	<StackLayout BackgroundColor="#303030" HeightRequest="200" WidthRequest="{x:Static local:App.ScreenWidth}" Padding="10,0,0,0">
 		<StackLayout Orientation="Horizontal" Margin="0,10,0,0">
 				<Entry BackgroundColor="White" WidthRequest="250" Placeholder="Search sport, people..." PlaceholderColor="#C1C1C1" HorizontalOptions="Center" TextColor="#C1C1C1" />
 				<Image Source="weeshFilter"></Image>
 				<Image Source="eventFilter"></Image>
 		</StackLayout>
 		<StackLayout Orientation="Horizontal" Margin="0,10,0,0">
-				<controls:RobotoLabel Text="Distance (km)" TextColor="#2D2D2D" FontAttributes="Bold" FontSize="14"></controls:RobotoLabel>
+				<controls:RobotoLabel Text="Distance (km)" TextColor="White" FontAttributes="Bold" FontSize="14"></controls:RobotoLabel>
 				<Slider x:Name="slrDistance" WidthRequest="150"></Slider>
 		</StackLayout>	
 		<StackLayout Orientation="Horizontal" Margin="0,10,0,0">
-				<controls:RobotoLabel Text="Private only" TextColor="#2D2D2D" FontAttributes="Bold" FontSize="14"></controls:RobotoLabel>
-				<Switch x:Name="sthPrivate" ></Switch>
+				<controls:RobotoLabel Text="Private only" TextColor="White" FontAttributes="Bold" FontSize="14"></controls:RobotoLabel>
+				<Switch x:Name="sthPrivate" Margin="5,0,0,0"></Switch>
 		</StackLayout>
-		<Image Source="go.png" Scale="0.9" Margin="230,40,0,0"></Image>
+		<Image Source="go.png" Scale="0.9" Margin="230,0,0,0"></Image>
 	</StackLayout>
 </ContentView>
