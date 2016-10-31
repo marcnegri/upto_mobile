@@ -170,6 +170,8 @@
     <BundleResource Include="Resources\icoEventsWhite.png" />
     <BundleResource Include="Resources\icoWeeshWhite.png" />
     <BundleResource Include="Resources\portrait2.png" />
+    <BundleResource Include="Resources\weeshplace.png" />
+    <BundleResource Include="Resources\notifications.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">

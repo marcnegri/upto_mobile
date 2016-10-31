@@ -20,8 +20,22 @@ namespace YouWeesh.Mobile.Views
 			masterPageItems.Add(new MasterPageItem
 			{
 				Title = "Weesh place",
-				IconSource = "myStory.png",
+				IconSource = "weeshplace.png",
 				TargetType = typeof(FeedView)
+			});
+
+			masterPageItems.Add(new MasterPageItem
+			{
+				Title = "My Next Events",
+				IconSource = "date.png",
+				TargetType = typeof(MyNextEventsView)
+			});
+
+			masterPageItems.Add(new MasterPageItem
+			{
+				Title = "Notifications",
+				IconSource = "notifications.png",
+				TargetType = typeof(MyProfileView)
 			});
 
 			masterPageItems.Add(new MasterPageItem
@@ -66,13 +80,6 @@ namespace YouWeesh.Mobile.Views
 				Title = "Settings",
 				IconSource = "settings72.png",
 				TargetType = typeof(SettingsForm)
-			});
-
-			masterPageItems.Add(new MasterPageItem
-			{
-				Title = "Log out",
-				IconSource = "logOut.png",
-				TargetType = typeof(LoginForm)
 			});
 
 			lstLeftMenu.ItemsSource = masterPageItems;
