@@ -4,18 +4,22 @@
 		<StackLayout x:Name="stkHeader" Spacing="0">
 			<Image x:Name="imgBackground" Source="trail.png" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" HeightRequest="210" Aspect="AspectFill">
 			</Image>
-			<StackLayout x:Name="stkFrame" Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="#FC7102" HeightRequest="30">
-					<Label Text="infos" x:Name="infoLabel" TextColor="White" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center">
+			<Grid>
+					<Grid.ColumnDefinition>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="*"/>
+					</Grid.ColumnDefinition>
+					<Label Text="infos" x:Name="infoLabel" TextColor="White" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0">
 						<Label.GestureRecognizers>
  								<TapGestureRecognizer Tapped="InfosOnTapGestureRecognizerTapped" NumberOfTapsRequired="1" />
 						</Label.GestureRecognizers>
 					</Label>
-					<Label Text="chat" x:Name="chatLabel" TextColor="Black" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center">
+					<Label Text="chat" x:Name="chatLabel" TextColor="Black" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="1">
 						<Label.GestureRecognizers>
  								<TapGestureRecognizer Tapped="ChatOnTapGestureRecognizerTapped" NumberOfTapsRequired="1" />
 						</Label.GestureRecognizers>
 					</Label>
-			</StackLayout>
+			</Grid>
 			<StackLayout x:Name="stkContentInfo" Spacing="1" IsVisible="true">
 					<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" x:Name="stkDateTimeDuration" Spacing="1">
 						<StackLayout BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="10,0,0,0">

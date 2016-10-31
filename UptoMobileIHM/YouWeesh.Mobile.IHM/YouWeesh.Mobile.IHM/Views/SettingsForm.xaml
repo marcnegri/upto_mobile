@@ -1,47 +1,31 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage x:Class="YouWeesh.Mobile.Views.SettingsForm"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              BackgroundColor="White">
     <ScrollView>
-        <StackLayout>
+        <StackLayout Padding="0,0,50,0">
             <TableView Intent="Settings">
                 <TableRoot>
-                    <TableSection Title="Profile">
-                        <ViewCell>
-                            <StackLayout Orientation="Horizontal">
-                                <Image Source="portrait.jpg" />
-                                <Label Text="Username" TextColor="#f35e20" />
-                                <Label HorizontalOptions="EndAndExpand"
-                                       Text="Vincent"
-                                       TextColor="#503026" />
-                            </StackLayout>
-                        </ViewCell>
-                    </TableSection>
                     <TableSection Title="General">
-                        <ViewCell>
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="Language" />
-                                <Picker x:Name="pkrLanguage" Title="Language" />
-                            </StackLayout>
-                        </ViewCell>
-                    </TableSection>
-                    <TableSection Title="Weesh matching">
-                        <SwitchCell Text="Matching locations" />
-                        <SwitchCell Text="Current location" />
-                        <ViewCell>
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="Matching zone" />
-                                <Picker x:Name="pkrMatchingZone" Title="Language" />
-                                <Label Text="km" />
+						 <ViewCell>
+                            <StackLayout Orientation="Horizontal" VerticalOptions="Center" Padding="15,5,0,0">
+                                <Label Text="Language :"  TextColor="Silver"/>
+                                <Picker x:Name="pkrLanguage" TextColor="Silver" Title="Language" />
                             </StackLayout>
                         </ViewCell>
                     </TableSection>
                     <TableSection Title="Notifications">
-                        <SwitchCell Text="Weeshback" />
-                        <SwitchCell Text="Weeshes matching" />
-                        <SwitchCell Text="My Events News/modification" />
-                        <SwitchCell Text="Friends requests" />
+                       <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="15,5,0,0" VerticalOptions="Center">
+                               <Label TextColor="Silver" Text="Matching Zone (Km) :"></Label>
+							   <Slider x:Name="slrDistance" WidthRequest="150"></Slider>
+                            </StackLayout>
+                        </ViewCell>
+						<SwitchCell Text="Weesh Back :" />
+                        <SwitchCell Text="Weesh Matching :" />
+						<SwitchCell Text="My Events :" />
+						<SwitchCell Text="Friends Requests :" />	
                     </TableSection>
                 </TableRoot>
             </TableView>

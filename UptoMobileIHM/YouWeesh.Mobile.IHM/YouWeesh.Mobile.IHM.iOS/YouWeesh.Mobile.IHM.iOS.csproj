@@ -169,6 +169,8 @@
     <BundleResource Include="Resources\icoEventsWhite.png" />
     <BundleResource Include="Resources\icoWeeshWhite.png" />
     <BundleResource Include="Resources\portrait2.png" />
+    <BundleResource Include="Resources\weeshplace.png" />
+    <BundleResource Include="Resources\notifications.png" />
     <BundleResource Include="Resources\icoCalendar.png" />
     <BundleResource Include="Resources\icoNotifications.png" />
     <BundleResource Include="Resources\sportBlack.png" />

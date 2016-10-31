@@ -9,6 +9,8 @@ using YouWeesh.Mobile.CustomComponents;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 using YouWeesh.Mobile.Business;
+using System.Diagnostics;
+using System.Windows.Input;
 
 namespace YouWeesh.Mobile.Views
 {
@@ -17,8 +19,7 @@ namespace YouWeesh.Mobile.Views
 		ObservableCollection<Business.Element> elements = new ObservableCollection<Business.Element>();
 		bool filterVisible = false;
 		FeedFilterForm feedFilterForm = new FeedFilterForm();
-		AddFloatingButton myFloatingButton = new AddFloatingButton();
-
+		AddFloatingButton myFloatingButton = new AddFloatingButton();	
 
 		public FeedView()
 		{
@@ -182,12 +183,13 @@ namespace YouWeesh.Mobile.Views
 				//myFloatingButton.IsVisible = true;
 
 			};
-
-
 			// 1 - test hide /unhide during an event (scroll)
 			// grdListType.HeightRequest = 0;
 
+
 		}
+
+
 		/// <summary>
 		/// 
 		/// </summary>
@@ -236,7 +238,6 @@ namespace YouWeesh.Mobile.Views
 			lstfeedView.IsVisible = !lstfeedView.IsVisible;
 			myMap.IsVisible = !myMap.IsVisible;
 		}
-
 
 	}
 
