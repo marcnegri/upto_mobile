@@ -21,13 +21,13 @@ namespace YouWeesh.Mobile.CustomComponents
 				return parent.X;
 			}), Constraint.RelativeToParent((parent) =>
 			{
-				return 100;
+				return 120;
 			}), Constraint.RelativeToParent((parent) =>
 			{
 				return parent.Width;
 			}), Constraint.RelativeToParent((parent) =>
 			{
-				return 160;
+				return 140;
 			})); 
 						/*
 			mainLayout.Children.Add(stlDescription, Constraint.RelativeToParent((parent) =>

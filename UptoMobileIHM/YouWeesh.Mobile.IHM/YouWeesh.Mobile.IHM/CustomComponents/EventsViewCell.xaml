@@ -23,15 +23,19 @@
 							BackgroundColor="White" 
 							Opacity="0.95" 
 							x:Name="stkEventInfo"
-							HeightRequest="120"
 							VerticalOptions="End"
-							Padding="0,0,0,5">
+							Spacing="2">
 					<Customcontrols:RobotoLabel 
 	                   FontAttributes="Bold"
 	                   FontSize="14"
 	                   Text="{Binding Title}"
 	                   TextColor="Black"
 						HorizontalTextAlignment="Center"/>
+					<StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="0">
+						<Image x:Name="imgWeeshBack" Source="weeshBackOrange.png" />
+						<Customcontrols:RobotoLabel  Text=" " TextColor="Gray" FontSize="11"/>
+						<Customcontrols:RobotoLabel  Text="{Binding WeeshBack}"  TextColor="#FC7102" FontSize="11"/>
+					</StackLayout>
 					<Customcontrols:RobotoLabel Text="____" TextColor="#FC7102" HorizontalTextAlignment="Center"/>
 			        <StackLayout x:Name="stkSportAndLevel" Orientation="Horizontal" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand">
 						<Image Source="sportGrey.png" HeightRequest="15" WidthRequest="15"/>
@@ -39,8 +43,8 @@
 						<Image Source="middleLevel.png" HeightRequest="7"/>
 					</StackLayout>
 					<Customcontrols:RobotoLabel Text="From 7 to 27 nov. 2016" TextColor="Gray" FontSize="11" HorizontalTextAlignment="Center"/>
-					<Customcontrols:RobotoLabel Text="Montagne a gauche" TextColor="Gray" FontSize="11" HorizontalTextAlignment="Center"/>
-					<Customcontrols:RobotoLabel Text="Gratuit" TextColor="Gray" FontSize="11" HorizontalTextAlignment="Center"/>
+					<Customcontrols:RobotoLabel Text="{Binding Location}" TextColor="Gray" FontSize="11" HorizontalTextAlignment="Center"/>
+					<Customcontrols:RobotoLabel Text="Gratuit" TextColor="Gray" FontSize="11" HorizontalTextAlignment="Center" Margin="0,0,0,5"/>
 				</StackLayout>
         </RelativeLayout>
 </ViewCell>
