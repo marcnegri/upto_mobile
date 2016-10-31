@@ -17,7 +17,7 @@
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
     <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
     <AndroidStoreUncompressedFileExtensions />
     <MandroidI18n />
@@ -221,6 +221,10 @@
     <AndroidResource Include="Resources\drawable\middleLevel.png" />
     <AndroidResource Include="Resources\drawable\futsal.png" />
     <AndroidResource Include="Resources\drawable\weeshplace.png" />
+    <AndroidResource Include="Resources\drawable\tennis.png" />
+    <AndroidResource Include="Resources\drawable\boxe.png" />
+    <AndroidResource Include="Resources\drawable\squash.png" />
+    <AndroidResource Include="Resources\drawable\basket.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml">

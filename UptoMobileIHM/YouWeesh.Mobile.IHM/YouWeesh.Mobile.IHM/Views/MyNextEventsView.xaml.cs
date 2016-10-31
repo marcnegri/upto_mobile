@@ -37,17 +37,17 @@ namespace YouWeesh.Mobile.Views
             List<PageTypeGroup> pgs = new List<PageTypeGroup>
             {
                 new PageTypeGroup("27.06.2016")
-                {
-                    new Business.Events {Id = 10, Title = "Trail des Roussets", StartDatetime = "2:30 ago", EndDatetime = "<-> 205km", Picture = "trail.jpg", Location = "Centre sportif du bout du monde", Description="Samedi une marche découverte et dimanche les courses avec 3 distances : 12 km, 20 km et 32 km" },
-                    new Business.Events {Id = 11,  Title = "Tennis playing", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "tennis.jpg", Location = "Centre sportif du bout du monde", Description="Grand tournoi de Tennis au bout du monde. Un public en folie avec une journée pleine de grands matchs. Venez nombreux !" },
-                    new Business.Events {Id = 12,  Title = "Poker party", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "poker.jpg", Location = "Pickwick Bar", Description="Final des WPT avec Patrick Bruel en Guest Star ! Du lourd " }
-                },
-                new PageTypeGroup("30.06.2016")
-                {
-                    new Business.Events {Id = 13, Title = "Vernissage", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "drink.jpg", Location = "Centre sportif du bout du monde", Description="Soirée atelier Cocktails à la potinière. Ambiance cosy avec un pianiste spécialiste de la Bossa Nova. Venez nombreux gouter nos Mojitos !" },
-                    new Business.Events {Id = 14,  Title = "#Futsal", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "futsal.jpg", Location = "Bout du monde", Description="Match de futsal entre potes, inscrits toi pour jouer avec nous !" },
-                    new Business.Events {Id = 15,  Title = "Poker party", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "poker.jpg", Location = "Pickwick Bar", Description="Tournoi de poker hebdomadaire, vous remportez des points et montez dans le classement au fil des tournois" }
-                }
+				{
+					new Business.Events {Id = 10, Title = "Trail des Roussets", StartDatetime = "2:30 ago", EndDatetime = "<-> 205km", Picture = "trail.png", Location = "Centre sportif du bout du monde", Description="Samedi une marche déouverte et dimanche les courses avec 3 istances  12 km, 20 km et 32 km" },
+					new Business.Events {Id = 11,  Title = "Tennis playing", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "tennis.png", Location = "Centre sportif du bout du monde", Description="Grand tournoi de Tennis au bout du monde. Un public en folie avec une journé pleine de grands matchs. Venez nombreux !" },
+					new Business.Events {Id = 12,  Title = "Streetbasket", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "basket.png", Location = "Terrain de Thonex", Description="Streetbasket sur du bon HipHop old school" }
+				},
+				new PageTypeGroup("30.06.2016")
+				{
+					new Business.Events {Id = 13, Title = "Squash", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "squash.png", Location = "Centre sportif des vernets", Description="Un Squash de fou à" },
+					new Business.Events {Id = 14,  Title = "#Futsal", StartDatetime = "20:00", EndDatetime = "21:00", Picture = "futsal.png", Location = "Bout du monde", Description="Match de futsal entre potes, inscrits toi pour jouer avec nous !" },
+					new Business.Events {Id = 15,  Title = "Session de boxe", StartDatetime = "21:00", EndDatetime = "22:30", Picture = "boxe.png", Location = "Ring de Rives", Description="Session de boxe animé par Mike Tyson au Ring de Rives" }
+				} 
 				/*,
                 new PageTypeGroup("14.07.2016")
                 {
