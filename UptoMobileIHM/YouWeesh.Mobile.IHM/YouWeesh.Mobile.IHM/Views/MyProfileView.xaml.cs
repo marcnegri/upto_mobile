@@ -52,13 +52,13 @@ namespace YouWeesh.Mobile
 				return 15;
 			}), Constraint.RelativeToParent((parent) =>
 			{
-				return 125;//return imgBackground.Height - 55;
+				return 135;//return imgBackground.Height - 55;
 			}), Constraint.RelativeToParent((parent) =>
 			{
-				return 80;//parent.Width;
+				return 70;//parent.Width;
 			}), Constraint.RelativeToParent((parent) =>
 			{
-				return 80;//parent.Height;
+				return 70;//parent.Height;
 			}));
 
 
