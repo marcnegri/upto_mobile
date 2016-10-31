@@ -72,7 +72,7 @@ namespace YouWeesh.Mobile.CustomComponents
             await buttonDelete.LayoutTo(new Rectangle(buttonDelete.X, buttonDelete.Y, 0, buttonDelete.Height), 200);
             buttonDelete.IsVisible = false;
         }*/
-
+		
 		async void OnTapGestureRecognizerTapped(object sender, EventArgs args)
 		{
 			//AnimateButton();
@@ -81,7 +81,6 @@ namespace YouWeesh.Mobile.CustomComponents
 			MessagingCenter.Send<WeeshViewCell, int>(this, "RedirectToMyProfile", int.Parse(lblId.Text));
 			//await this.Navigation.PushModalAsync(new MyProfileView());
 			//await this.Navigation.PushAsync(new MyProfileView());
-
 		}
 
 		async void WeeshBackOnTapGestureRecognizerTapped(object sender, EventArgs args)

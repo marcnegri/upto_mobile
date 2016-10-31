@@ -18,7 +18,7 @@
 				<StackLayout Margin="10,5,10,0"  
 							RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}" 
 							Orientation="Horizontal">
-				<controls:CircleImage Aspect="AspectFit" Source="portrait4.png" HeightRequest="50" WidthRequest="50">
+				<controls:CircleImage Aspect="AspectFit" Source="portrait4.png" HeightRequest="40" WidthRequest="40">
 					<Image.GestureRecognizers>
 							<TapGestureRecognizer Tapped="ImageOnTapGestureRecognizerTapped" NumberOfTapsRequired="1" />
 					</Image.GestureRecognizers>

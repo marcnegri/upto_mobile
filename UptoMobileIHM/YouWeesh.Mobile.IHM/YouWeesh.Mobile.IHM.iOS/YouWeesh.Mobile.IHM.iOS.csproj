@@ -143,7 +143,6 @@
     <BundleResource Include="Resources\location.png" />
     <BundleResource Include="Resources\logOut.png" />
     <BundleResource Include="Resources\Mappinicon.png" />
-    <BundleResource Include="Resources\MyEvents.png" />
     <BundleResource Include="Resources\myStory.png" />
     <BundleResource Include="Resources\MyWeesh.png" />
     <BundleResource Include="Resources\participants.png" />
@@ -170,6 +169,12 @@
     <BundleResource Include="Resources\icoEventsWhite.png" />
     <BundleResource Include="Resources\icoWeeshWhite.png" />
     <BundleResource Include="Resources\portrait2.png" />
+    <BundleResource Include="Resources\icoCalendar.png" />
+    <BundleResource Include="Resources\icoNotifications.png" />
+    <BundleResource Include="Resources\sportBlack.png" />
+    <BundleResource Include="Resources\sportGrey.png" />
+    <BundleResource Include="Resources\weeshBackOrange.png" />
+    <BundleResource Include="Resources\middleLevel.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">

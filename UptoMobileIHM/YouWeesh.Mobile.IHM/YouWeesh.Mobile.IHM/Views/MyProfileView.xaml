@@ -25,11 +25,12 @@
 				</RelativeLayout>
 				<StackLayout x:Name="stkImgProfile">
 						<controls:CircleImage
+							Aspect="AspectFill"
 							x:Name="imgProfile"
 							BorderColor="White"
-							Source="portrait4.png"
-							HeightRequest="80"
-							WidthRequest="80"
+							Source="portrait2.png"
+							HeightRequest="70"
+							WidthRequest="70"
 							BorderThickness="1">
 						</controls:CircleImage>
 					</StackLayout>
