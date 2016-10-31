@@ -4,24 +4,21 @@
           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
           xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
           xmlns:controls2="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile">
-<RelativeLayout x:Name="relativeLayout" HeightRequest="60" Margin="0,0,0,0" BackgroundColor="#F2F2F2">
-<controls2:ContentViewFeedCell x:Name="contentView"  Margin="30,0,5,0"  HeightRequest="60" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}">
-    <StackLayout Orientation="Horizontal" Padding="40,0,0,0" >
+<controls2:ContentViewFeedCell x:Name="contentView" HeightRequest="50">
+    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+	  <controls:CircleImage Source="{Binding Picture}" HeightRequest="35" WidthRequest="35" x:Name="imgProfile" Aspect="AspectFill" VerticalOptions="Center" Margin="10, 0, 0, 0">
+		<Image.GestureRecognizers>
+			<TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped" NumberOfTapsRequired="1" />
+		</Image.GestureRecognizers>
+	  </controls:CircleImage>
       <StackLayout Orientation="Vertical">
-        <controls2:RobotoLabel Text="{Binding Username}" TextColor="#000000" FontAttributes="Bold" FontSize="20"/>
-       	<StackLayout Orientation="Horizontal" Padding="0,2,0,0" HorizontalOptions="Start">
-			<Image Source="icoActivities.jpg" HeightRequest="20" WidthRequest="20"></Image>
-			<controls2:RobotoLabel  Text="{Binding ListTags}" TextColor="Gray" FontSize="15"/>
+        <controls2:RobotoLabel Text="{Binding Username}" TextColor="#000000" FontAttributes="Bold" FontSize="16"/>
+       	<StackLayout Orientation="Horizontal">
+			<Image Source="sportGrey.png" HeightRequest="15" WidthRequest="15" />
+			<controls2:RobotoLabel  Text="{Binding ListTags}" TextColor="Gray" FontSize="13" LineBreakMode="TailTruncation"/>
 			<controls2:RobotoLabel  Text="{Binding Id}" x:Name="lblId" IsVisible="false"/>
       	</StackLayout>     
       </StackLayout>
-      <Button Text="Delete" WidthRequest="0" x:Name="buttonDelete" IsVisible="false" TextColor="#f35e20" HorizontalOptions="End"></Button>
    </StackLayout>  
  </controls2:ContentViewFeedCell>
-<controls:CircleImage Source="{Binding Picture}" Scale="0.7" x:Name="imgProfile">
-<Image.GestureRecognizers>
- 			<TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped" NumberOfTapsRequired="1" />
-</Image.GestureRecognizers>
-</controls:CircleImage>
-</RelativeLayout>
 </ViewCell>

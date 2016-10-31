@@ -59,7 +59,7 @@ namespace YouWeesh.Mobile.Views
 			//elements.Add(new Business.Element { Title = "Tennis playing", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "tennis.jpg", CreationDate = "03h30 ago", Location = "Centre sportif du bout du monde", IsEvent=true });
 			//elements.Add(new Business.Element { Title = "Vernissage", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "drink.jpg", CreationDate = "02h20 ago", Location = "Centre sportif du bout du monde", IsEvent=true });
 			//elements.Add(new Business.Element { Title = "Motivé pour aller au #theatre", Picture = "portrait4.png", CreationDate = "06h00 ago", Location = "0.5 km", IsEvent = false });
-			//elements.Add(new Business.Element { Title = "#Futsal", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "futsal.jpg", CreationDate = "04h40 ago", Location = "Bout du monde", IsEvent = true });
+			elements.Add(new Business.Element { Title = "Grand tournoi de #Futsal a Ville la Grand", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "futsal.png", CreationDate = "04h40 ago", Location = "Bout du monde", IsEvent = true, OwnerName="Vincent Haring" });
 			//elements.Add(new Business.Element { Title = "Poker party", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "poker.jpg", CreationDate = "05h50 ago", Location = "Pickwick Bar", IsEvent = true });
 			elements.Add(new Business.Element { Id = 3, Title = "#courir !!", Picture = "portrait5.png", CreationDate = "06h15 ago", Location = "2 km", IsEvent = false, WeeshBack = 4 });
 			//elements.Add(new Business.Element { Id = 4, Title = "Discuter autour d'un #verre", Picture = "portrait4.jpg", CreationDate = "06h45 ago", Location = "1,2 km", IsEvent = false, WeeshBack = 30 });

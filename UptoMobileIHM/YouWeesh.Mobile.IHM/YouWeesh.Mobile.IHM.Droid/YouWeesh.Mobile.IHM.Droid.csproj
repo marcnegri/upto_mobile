@@ -219,6 +219,7 @@
     <AndroidResource Include="Resources\drawable\sportGrey.png" />
     <AndroidResource Include="Resources\drawable\weeshBackOrange.png" />
     <AndroidResource Include="Resources\drawable\middleLevel.png" />
+    <AndroidResource Include="Resources\drawable\futsal.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml">

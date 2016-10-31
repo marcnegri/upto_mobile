@@ -175,6 +175,7 @@
     <BundleResource Include="Resources\sportGrey.png" />
     <BundleResource Include="Resources\weeshBackOrange.png" />
     <BundleResource Include="Resources\middleLevel.png" />
+    <BundleResource Include="Resources\futsal.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
