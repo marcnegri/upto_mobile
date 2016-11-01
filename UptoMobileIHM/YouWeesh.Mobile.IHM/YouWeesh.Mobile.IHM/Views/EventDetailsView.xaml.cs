@@ -37,8 +37,10 @@ namespace YouWeesh.Mobile.Views
 			//AnimateButton();
 			stkContentInfo.IsVisible = true;
 			stkContentChat.IsVisible = false;
-			infoLabel.TextColor = Color.White;
-			chatLabel.TextColor = Color.Black;
+			infoLabel.TextColor = Color.Black;
+			chatLabel.TextColor = Color.White;
+			grdSwitchViews.Children[0].BackgroundColor = Color.White;
+			grdSwitchViews.Children[1].BackgroundColor = Color.FromHex("#FC7102");
 			//await this.Navigation.PushModalAsync(new MyProfileView());
 			//await this.Navigation.PushAsync(new MyProfileView());
 
@@ -49,8 +51,10 @@ namespace YouWeesh.Mobile.Views
 			//AnimateButton();
 			stkContentInfo.IsVisible = false;
 			stkContentChat.IsVisible = true;
-			infoLabel.TextColor = Color.Black;
-			chatLabel.TextColor = Color.White;
+			infoLabel.TextColor = Color.White;
+			chatLabel.TextColor = Color.Black;
+			grdSwitchViews.Children[1].BackgroundColor = Color.White;
+			grdSwitchViews.Children[0].BackgroundColor = Color.FromHex("#FC7102");
 			//await this.Navigation.PushModalAsync(new MyProfileView());
 			//await this.Navigation.PushAsync(new MyProfileView());
 
