@@ -12,7 +12,8 @@ namespace YouWeesh.Mobile.CustomComponents
 {
     public partial class EventsViewCell : ViewCell
     {
-		public EventsViewCell()
+
+		public EventsViewCell(Boolean displayTime = false)
 		{
 			InitializeComponent();
 
@@ -28,7 +29,9 @@ namespace YouWeesh.Mobile.CustomComponents
 			}), Constraint.RelativeToParent((parent) =>
 			{
 				return 140;
-			})); 
+			}));
+
+			stkLayoutTime.IsVisible = displayTime;
 						/*
 			mainLayout.Children.Add(stlDescription, Constraint.RelativeToParent((parent) =>
 			{
@@ -49,6 +52,7 @@ namespace YouWeesh.Mobile.CustomComponents
 			{
 				return parent.Height - 195;
 			}));*/
+
 		}
 
 		public void eventViewCell_Taped(object sender, EventArgs e)

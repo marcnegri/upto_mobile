@@ -10,6 +10,7 @@ namespace YouWeesh.Mobile.Views
 	public partial class MyNextEventsView : CarouselPage
     {
         ObservableCollection<Business.Events> events = new ObservableCollection<Business.Events>();
+
         public MyNextEventsView()
         {
 			
@@ -38,7 +39,7 @@ namespace YouWeesh.Mobile.Views
             {
                 new PageTypeGroup("27.06.2016")
 				{
-					new Business.Events {Id = 10, Title = "Trail des Roussets", StartDatetime = "2:30 ago", EndDatetime = "<-> 205km", Picture = "trail.png", Location = "Centre sportif du bout du monde", Description="Samedi une marche déouverte et dimanche les courses avec 3 istances  12 km, 20 km et 32 km" },
+					new Business.Events {Id = 10, Title = "Trail des Roussets", StartDatetime = "19:00", EndDatetime = "20:00", Picture = "trail.png", Location = "Centre sportif du bout du monde", Description="Samedi une marche déouverte et dimanche les courses avec 3 istances  12 km, 20 km et 32 km" },
 					new Business.Events {Id = 11,  Title = "Tennis playing", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "tennis.png", Location = "Centre sportif du bout du monde", Description="Grand tournoi de Tennis au bout du monde. Un public en folie avec une journé pleine de grands matchs. Venez nombreux !" },
 					new Business.Events {Id = 12,  Title = "Streetbasket", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "basket.png", Location = "Terrain de Thonex", Description="Streetbasket sur du bon HipHop old school" }
 				},
@@ -56,7 +57,13 @@ namespace YouWeesh.Mobile.Views
                     new Business.Events { Title = "Poker party", StartDatetime = "18:00", EndDatetime = "20:00", Picture = "poker.jpg", Location = "Pickwick Bar" }
                 },*/
             };
-            #endregion
+			#endregion
+			nextEvent.ItemTemplate = new DataTemplate(() =>
+			{
+				var nativeCell = new EventsViewCell(true);
+				return nativeCell;
+			});
+
             nextEvent.ItemsSource = pgs;
 			nextEvent.BackgroundColor = Color.FromRgb(243, 243, 243);
 

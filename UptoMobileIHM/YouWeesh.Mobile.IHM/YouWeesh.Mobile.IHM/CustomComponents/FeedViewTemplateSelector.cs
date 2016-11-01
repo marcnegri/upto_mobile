@@ -10,7 +10,13 @@ namespace YouWeesh.Mobile.CustomComponents
 		{
 			// Retain instances!
 			//fijofiejfoeijeoijoijos
-			this.eventDataTemplate = new DataTemplate(typeof(EventsViewCell));
+			//this.eventDataTemplate = new DataTemplate(typeof(EventsViewCell));
+			this.eventDataTemplate = new DataTemplate(() =>
+			{
+				var nativeCell = new EventsViewCell(false);
+				return nativeCell;
+			});
+
 			this.weeshDataTemplate = new DataTemplate(typeof(WeeshViewCell));
 			//this.weeshBackDataTemplate = new DataTemplate(typeof(WeeshBackViewCell));
 		}
