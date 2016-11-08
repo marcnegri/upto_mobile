@@ -18,6 +18,18 @@ namespace YouWeesh.Mobile.Views
             InitializeComponent();
 			this.BackgroundColor = Color.FromHex("#ececec");
 			Title = "Trail des Roussets";
+			ObservableCollection<String> msgList = new ObservableCollection<String>();
+			String msg = "g";
+			String msg2 = "message2";
+			String msg3 = "message3";
+			String msg4 = "message4";
+
+			msgList.Add(msg);
+			msgList.Add(msg2);
+			msgList.Add(msg3);
+			msgList.Add(msg4);
+			lstMessages.ItemsSource = msgList;
+
 
 			/*
 			ObservableCollection<Events> lstEventPictures = new ObservableCollection<Events>();
@@ -37,10 +49,10 @@ namespace YouWeesh.Mobile.Views
 			//AnimateButton();
 			stkContentInfo.IsVisible = true;
 			stkContentChat.IsVisible = false;
-			infoLabel.TextColor = Color.Black;
-			chatLabel.TextColor = Color.White;
-			grdSwitchViews.Children[0].BackgroundColor = Color.White;
-			grdSwitchViews.Children[1].BackgroundColor = Color.FromHex("#FC7102");
+			infoLabel.TextColor = Color.White;
+			chatLabel.Source = "icoBlackChat.png";
+			grdSwitchViews.Children[1].BackgroundColor = Color.White;
+			grdSwitchViews.Children[0].BackgroundColor = Color.FromHex("#FC7102");
 			//await this.Navigation.PushModalAsync(new MyProfileView());
 			//await this.Navigation.PushAsync(new MyProfileView());
 
@@ -48,13 +60,13 @@ namespace YouWeesh.Mobile.Views
 
 		async void ChatOnTapGestureRecognizerTapped(object sender, EventArgs args)
 		{
-			//AnimateButton();
 			stkContentInfo.IsVisible = false;
+			stkContentInfo.HeightRequest = 0;
 			stkContentChat.IsVisible = true;
-			infoLabel.TextColor = Color.White;
-			chatLabel.TextColor = Color.Black;
-			grdSwitchViews.Children[1].BackgroundColor = Color.White;
-			grdSwitchViews.Children[0].BackgroundColor = Color.FromHex("#FC7102");
+			infoLabel.TextColor = Color.Black;
+			chatLabel.Source = "icoWhiteChat.png";
+			grdSwitchViews.Children[0].BackgroundColor = Color.White;
+			grdSwitchViews.Children[1].BackgroundColor = Color.FromHex("#FC7102");
 			//await this.Navigation.PushModalAsync(new MyProfileView());
 			//await this.Navigation.PushAsync(new MyProfileView());
 

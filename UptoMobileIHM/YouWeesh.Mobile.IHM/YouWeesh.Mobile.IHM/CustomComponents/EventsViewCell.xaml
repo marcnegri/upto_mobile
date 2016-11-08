@@ -20,37 +20,34 @@
 						HeightRequest="260"
 						Aspect="AspectFill"
 						Margin="2"/>
-				<controls:CircleImage Aspect="AspectFit" Source="portrait4.png" HeightRequest="40" WidthRequest="40" Margin="10, 15, 0 ,0">
-					<Image.GestureRecognizers>
-							<TapGestureRecognizer Tapped="ImageOnTapGestureRecognizerTapped" NumberOfTapsRequired="1" />
-					</Image.GestureRecognizers>
-				</controls:CircleImage>
-				<StackLayout Margin="10,5,10,5"   
+				<StackLayout Margin="10,0,10,5"   
 							BackgroundColor="White" 
 							Opacity="0.95" 
 							x:Name="stkEventInfo"
 							VerticalOptions="End"
 							Spacing="2">
-					<Customcontrols:RobotoLabel 
-	                   FontAttributes="Bold"
-	                   FontSize="14"
-	                   Text="{Binding Title}"
-	                   TextColor="Black"
-						HorizontalTextAlignment="Center"/>
-					<StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="0">
+					<StackLayout Orientation="Horizontal" Padding="5,0,0,5" >
+						<controls:CircleImage Source="portrait3.png" Margin="0,5,0,0" Aspect="AspectFill" HeightRequest="40" WidthRequest="40" x:Name="imgProfile" VerticalOptions="Start">
+							<Image.GestureRecognizers>
+					 			<TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped" NumberOfTapsRequired="1" />
+							</Image.GestureRecognizers>
+						</controls:CircleImage>
+				      	<StackLayout Orientation="Vertical" Spacing="0" Margin="0,5,15,0" VerticalOptions="Fill" HorizontalOptions="FillAndExpand">
+							<Customcontrols:RobotoLabel Text="Vincent Haring" FontSize="11" TextColor="Gray"/>
+				        	<Customcontrols:RobotoLabel  Text="{Binding Title}" TextColor="#3f3f3f" FontAttributes="Bold" FontSize="14" Margin="0,5,20,0"/>
+						</StackLayout>
+					</StackLayout>
+				    <StackLayout x:Name="stkSportAndLevel" Orientation="Horizontal" VerticalOptions="EndAndExpand" Margin="50,10,20,5">
+						<Image Source="sportGrey.png" HeightRequest="15" WidthRequest="15"/><Customcontrols:RobotoLabel Text="Tennis / Level" FontSize="12" VerticalTextAlignment="Center" TextColor="Gray"/><Image Source="middleLevel.png" HeightRequest="7"/>
+					</StackLayout>
+					<StackLayout Orientation="Horizontal" Spacing="0" Margin="50,15,20,5" HorizontalOptions="FillAndExpand">
 						<Image x:Name="imgWeeshBack" Source="weeshBackOrange.png" />
 						<Customcontrols:RobotoLabel  Text=" " TextColor="Gray" FontSize="11"/>
-						<Customcontrols:RobotoLabel  Text="{Binding WeeshBack}"  TextColor="#FC7102" FontSize="11"/>
-					</StackLayout>
-					<Customcontrols:RobotoLabel Text="____" TextColor="#FC7102" HorizontalTextAlignment="Center"/>
-			        <StackLayout x:Name="stkSportAndLevel" Orientation="Horizontal" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand">
-						<Image Source="sportGrey.png" HeightRequest="15" WidthRequest="15"/>
-						<Customcontrols:RobotoLabel Text="Tennis / Level" FontSize="12" VerticalTextAlignment="Center" TextColor="Gray"/>
-						<Image Source="middleLevel.png" HeightRequest="7"/>
-					</StackLayout>
-					<Customcontrols:RobotoLabel Text="From 7 to 27 nov. 2016" TextColor="Gray" FontSize="11" HorizontalTextAlignment="Center"/>
-					<Customcontrols:RobotoLabel Text="{Binding Location}" TextColor="Gray" FontSize="11" HorizontalTextAlignment="Center"/>
-					<Customcontrols:RobotoLabel Text="Gratuit" TextColor="Gray" FontSize="11" HorizontalTextAlignment="Center" Margin="0,0,0,5"/>
+						<Customcontrols:RobotoLabel  Text="3"  TextColor="#FC7102" FontSize="11"/>
+						<Customcontrols:RobotoLabel  Text=" &#x2022; " TextColor="Gray" FontSize="11"/>
+						<Customcontrols:RobotoLabel  Text="10/12/2016" TextColor="Gray" FontSize="11"/>
+						<Image Source="weeshIco.png" HorizontalOptions="EndAndExpand" /><Customcontrols:RobotoLabel  Text=" Participate" FontSize="11" TextColor="Gray" />
+			      	</StackLayout>
 				</StackLayout>
         </RelativeLayout>
 	</StackLayout>

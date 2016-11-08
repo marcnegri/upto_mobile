@@ -86,5 +86,15 @@ namespace YouWeesh.Mobile.CustomComponents
 		{
 			MessagingCenter.Send<EventsViewCell, int>(this, "RedirectToMyProfile", int.Parse(lblId.Text));
 		}
+
+		async void OnTapGestureRecognizerTapped(object sender, EventArgs args)
+		{
+			//AnimateButton();
+			await imgProfile.ScaleTo(0.65, 60, Easing.CubicOut);
+			await imgProfile.ScaleTo(0.95, 60, Easing.CubicIn);
+			MessagingCenter.Send<EventsViewCell, int>(this, "RedirectToMyProfile", int.Parse(lblId.Text));
+			//await this.Navigation.PushModalAsync(new MyProfileView());
+			//await this.Navigation.PushAsync(new MyProfileView());
+		}
     }
 }

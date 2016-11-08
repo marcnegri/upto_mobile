@@ -156,7 +156,6 @@
     <BundleResource Include="Resources\settings72.png" />
     <BundleResource Include="Resources\showmenu.png" />
     <BundleResource Include="Resources\sport.png" />
-    <BundleResource Include="Resources\starsRating.png" />
     <BundleResource Include="Resources\trail.png" />
     <BundleResource Include="Resources\twitter.png" />
     <BundleResource Include="Resources\yes.png" />
@@ -178,6 +177,16 @@
     <BundleResource Include="Resources\weeshBackOrange.png" />
     <BundleResource Include="Resources\middleLevel.png" />
     <BundleResource Include="Resources\futsal.png" />
+    <BundleResource Include="Resources\icoBlackChat.png" />
+    <BundleResource Include="Resources\icoWhiteChat.png" />
+    <BundleResource Include="Resources\caroussel.png" />
+    <BundleResource Include="Resources\greyBubble.png" />
+    <BundleResource Include="Resources\orangeBubble.png" />
+    <BundleResource Include="Resources\icoReliabilityFull.png" />
+    <BundleResource Include="Resources\squash.png" />
+    <BundleResource Include="Resources\boxe.png" />
+    <BundleResource Include="Resources\tennis.png" />
+    <BundleResource Include="Resources\basket.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">

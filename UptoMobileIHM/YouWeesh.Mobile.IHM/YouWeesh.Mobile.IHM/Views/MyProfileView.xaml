@@ -4,7 +4,15 @@
 		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 		x:Class="YouWeesh.Mobile.MyProfileView"
 		xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
-		xmlns:Customcontrols="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile" Title="Profile">
+		xmlns:Customcontrols="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile" Title="Profile" Icon="sport.png">
+	    <ContentPage.Resources>
+	        <ResourceDictionary>
+	            <Style TargetType="Customcontrols:RobotoLabel">
+	                <Setter Property="TextColor" Value="Black" />
+	  				<Setter Property="FontSize" Value="12" />
+	            </Style>
+	        </ResourceDictionary>
+	    </ContentPage.Resources>
 	<ScrollView>
 		<StackLayout x:Name="stkHeader" Spacing="0">
 			<StackLayout HeightRequest="210" >
@@ -17,9 +25,9 @@
 					</Image>
 					<StackLayout x:Name="stkActionInfo" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Spacing="0" Padding="100, 0, 0, 0" HeightRequest="30">
 						<Customcontrols:RobotoLabel Text="Helena Smith" FontAttributes="Bold" TextColor="White" FontSize="14"/>
-						<StackLayout Orientation="Vertical" Spacing="0" HorizontalOptions="EndAndExpand" Padding="0,0,15,0">
-							<Customcontrols:RobotoLabel Text="100% reliability" TextColor="White" />
-							<Image Source="reliabilitystar.png" />
+						<StackLayout Orientation="Vertical" Spacing="0" HorizontalOptions="EndAndExpand" VerticalOptions="Start" BackgroundColor="Lime" HeightRequest="30">
+							<Image Source="icoReliabilityFull.png" VerticalOptions="Start" />
+							<Customcontrols:RobotoLabel Text="reliability" TextColor="Blue" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
 						</StackLayout>
 					</StackLayout>
 				</RelativeLayout>
