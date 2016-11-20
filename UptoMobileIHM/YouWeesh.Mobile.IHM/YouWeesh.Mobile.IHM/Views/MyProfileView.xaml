@@ -23,11 +23,11 @@
 							HeightRequest="180"
 							Aspect="AspectFill">
 					</Image>
-					<StackLayout x:Name="stkActionInfo" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Spacing="0" Padding="100, 0, 0, 0" HeightRequest="30">
-						<Customcontrols:RobotoLabel Text="Helena Smith" FontAttributes="Bold" TextColor="White" FontSize="14"/>
-						<StackLayout Orientation="Vertical" Spacing="0" HorizontalOptions="EndAndExpand" VerticalOptions="Start" BackgroundColor="Lime" HeightRequest="30">
-							<Image Source="icoReliabilityFull.png" VerticalOptions="Start" />
-							<Customcontrols:RobotoLabel Text="reliability" TextColor="Blue" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
+					<StackLayout x:Name="stkActionInfo" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Spacing="0" Padding="100, 0, 15, 0" HeightRequest="30">
+						<Customcontrols:RobotoLabel Text="Helena Smith" FontAttributes="Bold" TextColor="White" FontSize="14" VerticalTextAlignment="Center"/>
+						<StackLayout Orientation="Vertical" Spacing="0" HorizontalOptions="EndAndExpand" VerticalOptions="Start" HeightRequest="30">
+							<Image Source="icoReliabilityFull.png" VerticalOptions="Start" HeightRequest="10" Aspect="AspectFill" />
+							<Customcontrols:RobotoLabel Text="reliability" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Start"/>
 						</StackLayout>
 					</StackLayout>
 				</RelativeLayout>
@@ -46,10 +46,10 @@
 			<StackLayout x:Name="stkContent" Margin="0, 5, 0, 5" Spacing="0">
 				<StackLayout x:Name="stkLocation" Orientation="Horizontal" Margin="0, 5, 0, 0">
 						<Image Source="location.png" HeightRequest="30" WidthRequest="30" Margin="20,0,10,0"></Image>
-						<Customcontrols:RobotoLabel Text="Lausanne, SWI" TextColor="Black" VerticalTextAlignment="Center"></Customcontrols:RobotoLabel>
+						<Customcontrols:RobotoLabel Text="Lausanne, SWI" TextColor="Black" VerticalTextAlignment="Center" FontAttributes="Bold"></Customcontrols:RobotoLabel>
 					<StackLayout x:Name="stkFriends" Orientation="Horizontal" Margin="0, 10, 0, 0" Spacing="0" Padding="0,0,0,0">
 						<Image Source="Friends.png" HeightRequest="30" WidthRequest="30" Margin="20,0,10,0"></Image>
-						<Customcontrols:RobotoLabel Text="1024 friends" TextColor="Black" VerticalTextAlignment="Center">
+						<Customcontrols:RobotoLabel Text="1024 friends" TextColor="Black" VerticalTextAlignment="Center" FontAttributes="Bold">
 							<Label.GestureRecognizers>
 	 							<TapGestureRecognizer Tapped="FriendsOnTapGestureRecognizerTapped" NumberOfTapsRequired="1" />
 							</Label.GestureRecognizers>
@@ -57,54 +57,32 @@
 					</StackLayout>
 				</StackLayout>
 				<StackLayout x:Name="stkBestTags" Orientation="Horizontal" Margin="0, 5, 0, 0" Spacing="0">
-					<Image Source="ball.png" HeightRequest="30" WidthRequest="30" Margin="20,0,10,0"></Image>
-					<Customcontrols:RobotoLabel Text="#Yoga, #Tennis, #Volley" TextColor="Black" VerticalTextAlignment="Center">
-						<Label.GestureRecognizers>
- 							<TapGestureRecognizer Tapped="TagsOnTapGestureRecognizerTapped" NumberOfTapsRequired="1" />
-						</Label.GestureRecognizers>
-					</Customcontrols:RobotoLabel>
-				</StackLayout>
-				<StackLayout x:Name="stkHeaderWeesh" Orientation="Horizontal" Margin="0, 20, 0, 0" HeightRequest="40" VerticalOptions="Center">
-					<Image Source="icoWeeshWhite.png" HeightRequest="30" WidthRequest="30" Margin="15,0,30,0" ></Image>
-					<Customcontrols:RobotoLabel Text="My Weesh &#x2022;" VerticalOptions="Center" FontAttributes="Bold" TextColor="White" />
-					<Customcontrols:RobotoLabel Text="103" VerticalTextAlignment="Center" TextColor="Silver"/>
-				</StackLayout>
-                <ContentPage.Resources>
-				<ResourceDictionary>
-  					<Customcontrols:FeedViewTemplateSelector x:Key="ElementTemplateSelector"/>
-				</ResourceDictionary>
-				</ContentPage.Resources>
-		      	<ListView x:Name="lstRecentWeeshes"
-					HeightRequest="220"
-					SeparatorVisibility="Default" 
-					SeparatorColor="Black"
-					HasUnevenRows="true"
-					ItemTemplate="{StaticResource ElementTemplateSelector}" 
-					VerticalOptions="FillAndExpand">
-                </ListView>
-				<StackLayout BackgroundColor="Silver" HeightRequest="35">
-					<Button x:Name="btnShowHistory" Text="See more..." BackgroundColor="Transparent" TextColor="Gray" HorizontalOptions="EndAndExpand" Clicked="btnShowHistory_Clicked" FontSize="14"  HeightRequest="40"/>
-				</StackLayout>
-				<StackLayout x:Name="stkHeaderEvents" Orientation="Horizontal" Margin="0, 0, 0, 0" HeightRequest="40" VerticalOptions="Center">
-					<Image Source="icoEventsWhite.png" HeightRequest="20" WidthRequest="20" Margin="20,0,30,0" ></Image>
-					<Customcontrols:RobotoLabel Text="My Event &#x2022;" VerticalOptions="Center" FontAttributes="Bold" TextColor="White"/>
-					<Customcontrols:RobotoLabel Text="39" VerticalTextAlignment="Center" TextColor="Silver"/>
-				</StackLayout>
-				<!--<ListView x:Name="lstRecentEvents" 
-						VerticalOptions="Start" 					
-						SeparatorVisibility="Default" 
-						SeparatorColor="Black"
-						RowHeight="50">
-					<ListView.ItemTemplate>
-	                    <DataTemplate>
-							<Customcontrols:EventsMiniViewCell />
-	                    </DataTemplate>
-	                </ListView.ItemTemplate>
-				</ListView>-->
-				<StackLayout BackgroundColor="Silver" HeightRequest="35">
-					<Button x:Name="btnShowSeeMoreEvents" Text="See more..." BackgroundColor="Transparent" TextColor="Gray" HorizontalOptions="EndAndExpand" Clicked="btnShowHistory_Clicked" FontSize="14"  HeightRequest="40"/>
+					<Image Source="ball.png" HeightRequest="30" WidthRequest="30" Margin="20,0,10,0" VerticalOptions="Start" />
+					<Grid x:Name="grdBestTags" Margin="0,5,0,0">
+						<Grid.RowDefinitions>
+					    	<RowDefinition Height="25" />
+							<RowDefinition Height="25" />
+							<RowDefinition Height="25" />
+							<RowDefinition Height="25" />
+			  			</Grid.RowDefinitions>
+			  			<Grid.ColumnDefinitions>
+			    			<ColumnDefinition Width="115" />
+							<ColumnDefinition Width="*" />
+			  	</Grid.ColumnDefinitions>
+						<Customcontrols:RobotoLabel Text="#Yoga" TextColor="Black" VerticalTextAlignment="Center" Grid.Row="0" Grid.Column="0" FontAttributes="Bold"/>
+						<Image Source="middleLevel.png" Grid.Row="0" Grid.Column="1"/>
+						<Customcontrols:RobotoLabel Text="#Badminton" TextColor="Black" VerticalTextAlignment="Center" Grid.Row="1" Grid.Column="0" FontAttributes="Bold"/>
+						<Image Source="middleLevel.png" Grid.Row="1" Grid.Column="1"/>						
+						<Customcontrols:RobotoLabel Text="#volley-ball" TextColor="Black" VerticalTextAlignment="Center" Grid.Row="2" Grid.Column="0" FontAttributes="Bold"/>
+						<Image Source="middleLevel.png" Grid.Row="2" Grid.Column="1"/>
+						<Customcontrols:RobotoLabel Text="#boxe" TextColor="Black" VerticalTextAlignment="Center" Grid.Row="3" Grid.Column="0" FontAttributes="Bold"/>
+						<Image Source="middleLevel.png" Grid.Row="3" Grid.Column="1"/>
+					</Grid>
 				</StackLayout>
 			</StackLayout>
+			<Frame HasShadow="true" HorizontalOptions="FillAndExpand" BackgroundColor="#FC7102" Padding="0" HeightRequest="30" Margin="0,10,0,0">
+				<Customcontrols:RobotoLabel Text="Helena's Activity" FontAttributes="Bold" TextColor="White" FontSize="14" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+			</Frame>
 		</StackLayout>
 		</ScrollView>
 </ContentPage>

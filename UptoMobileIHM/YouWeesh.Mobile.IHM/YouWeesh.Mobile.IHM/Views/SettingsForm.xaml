@@ -4,7 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              BackgroundColor="White">
     <ScrollView>
-        <StackLayout Padding="0,0,50,0">
+        <StackLayout>
             <TableView Intent="Settings">
                 <TableRoot>
                     <TableSection Title="General">

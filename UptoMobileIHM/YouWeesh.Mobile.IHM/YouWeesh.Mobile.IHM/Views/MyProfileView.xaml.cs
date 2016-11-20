@@ -30,8 +30,6 @@ namespace YouWeesh.Mobile
 			this.BackgroundColor = Color.White;//Color.FromHex("#ececec");
 			stkActionInfo.BackgroundColor = Color.FromRgb(252, 113, 2);
 			rltHeader.BackgroundColor = Color.FromRgb(252, 113, 2);
-			stkHeaderWeesh.BackgroundColor = Color.FromRgb(252, 113, 2);
-			stkHeaderEvents.BackgroundColor = Color.FromRgb(252, 113, 2);
 
 			rltHeader.Children.Add(stkActionInfo, Constraint.RelativeToParent((parent) =>
 			{
@@ -72,15 +70,6 @@ namespace YouWeesh.Mobile
 			events.Add(ev1);
 			events.Add(ev2);
 			events.Add(ev3);
-			/*
-			weeshesList.Add(we);
-			weeshesList.Add(we2);
-			weeshesList.Add(we3);*/
-
-			lstRecentWeeshes.ItemsSource = elements;
-
-			//lstRecentEvents.ItemsSource = events;
-
 		}
 		/// <summary>
 		/// Buttons the show history clicked.

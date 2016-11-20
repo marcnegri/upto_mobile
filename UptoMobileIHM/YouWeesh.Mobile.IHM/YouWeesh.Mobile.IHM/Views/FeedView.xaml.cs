@@ -19,11 +19,10 @@ namespace YouWeesh.Mobile.Views
 		ObservableCollection<Business.Element> elements = new ObservableCollection<Business.Element>();
 		bool filterVisible = false;
 		FeedFilterForm feedFilterForm = new FeedFilterForm();
-		AddFloatingButton myFloatingButton = new AddFloatingButton();	
+		AddFloatingButton myFloatingButton = new AddFloatingButton();
 
 		public FeedView()
 		{
-			this.Icon = "whiteWeeshIco.png";
 			InitializeComponent();
 
 			//Add Buttons on top bar

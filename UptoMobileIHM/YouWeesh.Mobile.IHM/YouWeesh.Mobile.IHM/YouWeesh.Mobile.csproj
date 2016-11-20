@@ -111,12 +111,16 @@
     <Compile Include="Views\AddWeeshForm.cs">
       <DependentUpon>AddWeeshForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CustomComponents\EventsMiniViewCell.xaml.cs">
-      <DependentUpon>EventsMiniViewCell.xaml</DependentUpon>
-    </Compile>
     <Compile Include="CustomComponents\ChatViewCell.xaml.cs">
       <DependentUpon>ChatViewCell.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CustomComponents\NotificationsViewCell.xaml.cs">
+      <DependentUpon>NotificationsViewCell.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NotificationsVew.xaml.cs">
+      <DependentUpon>NotificationsVew.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Business\Notifications.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -180,12 +184,16 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="CustomComponents\EventsMiniViewCell.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="CustomComponents\ChatViewCell.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomComponents\NotificationsViewCell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NotificationsVew.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
