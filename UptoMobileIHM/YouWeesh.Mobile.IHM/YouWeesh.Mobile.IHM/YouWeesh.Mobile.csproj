@@ -118,7 +118,7 @@
       <DependentUpon>NotificationsViewCell.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\NotificationsVew.xaml.cs">
-      <DependentUpon>NotificationsVew.xaml</DependentUpon>
+      <DependentUpon>NotificationsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Business\Notifications.cs" />
   </ItemGroup>
@@ -192,7 +192,7 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\NotificationsVew.xaml">
+    <EmbeddedResource Include="Views\NotificationsView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

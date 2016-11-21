@@ -17,7 +17,7 @@
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
     <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
     <AndroidStoreUncompressedFileExtensions />
     <MandroidI18n />
@@ -230,8 +230,13 @@
     <AndroidResource Include="Resources\drawable\greyBubble.png" />
     <AndroidResource Include="Resources\drawable\orangeBubble.png" />
     <AndroidResource Include="Resources\drawable\icoReliabilityFull.png" />
-    <AndroidResource Include="Resources\drawable\location3.png" />
+	<AndroidResource Include="Resources\drawable\location3.png" />
     <AndroidResource Include="Resources\drawable\friends2.png" />
+    <AndroidResource Include="Resources\drawable\notifFriend.png" />
+    <AndroidResource Include="Resources\drawable\notifReminder.png" />
+    <AndroidResource Include="Resources\drawable\notifEvents.png" />
+    <AndroidResource Include="Resources\drawable\notifWeeshMatching.png" />
+    <AndroidResource Include="Resources\drawable\icoParticipants.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml">

@@ -36,7 +36,7 @@ namespace YouWeesh.Mobile.Views
 			{
 				Title = "Notifications",
 				IconSource = "icoNotifications.png",
-				TargetType = typeof(NotificationsVew)
+				TargetType = typeof(NotificationsView)
 			});
 
 			masterPageItems.Add(new MasterPageItem
