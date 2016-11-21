@@ -4,7 +4,7 @@
                        xmlns:local="clr-namespace:YouWeesh.Mobile;assembly=YouWeesh.Mobile"
 					   xmlns:controls="clr-namespace:YouWeesh.Mobile.CustomComponents;assembly=YouWeesh.Mobile"
                        x:Class="YouWeesh.Mobile.Views.FeedFilterForm" >
-	<StackLayout BackgroundColor="#303030" HeightRequest="200" WidthRequest="{x:Static local:App.ScreenWidth}" Padding="10,0,0,0">
+	<StackLayout BackgroundColor="#303030" HeightRequest="250" WidthRequest="{x:Static local:App.ScreenWidth}" Padding="10,0,0,0">
 		<StackLayout Orientation="Horizontal" Margin="0,10,0,0">
 				<Entry BackgroundColor="White" WidthRequest="250" Placeholder="Search sport, people..." PlaceholderColor="#C1C1C1" HorizontalOptions="Center" TextColor="#C1C1C1" />
 				<Image Source="weeshFilter"></Image>
@@ -13,6 +13,12 @@
 		<StackLayout Orientation="Horizontal" Margin="0,10,0,0">
 				<controls:RobotoLabel Text="Distance (km)" TextColor="White" FontAttributes="Bold" FontSize="14"></controls:RobotoLabel>
 				<Slider x:Name="slrDistance" WidthRequest="150"></Slider>
+		</StackLayout>
+		<StackLayout Orientation="Horizontal" Margin="0,10,0,0">
+				<controls:RobotoLabel Text="Date " TextColor="White" FontAttributes="Bold" FontSize="14"></controls:RobotoLabel>
+				<DatePicker VerticalOptions="CenterAndExpand">
+         				<DatePicker.Format>yyyy-MM-dd</DatePicker.Format>
+        		</DatePicker>
 		</StackLayout>	
 		<StackLayout Orientation="Horizontal" Margin="0,10,0,0">
 				<controls:RobotoLabel Text="Private only" TextColor="White" FontAttributes="Bold" FontSize="14"></controls:RobotoLabel>

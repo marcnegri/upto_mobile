@@ -49,6 +49,9 @@
 						<Image Source="weeshIco.png" HorizontalOptions="EndAndExpand" /><Customcontrols:RobotoLabel  Text=" Participate" FontSize="11" TextColor="Gray" />
 			      	</StackLayout>
 				</StackLayout>
+				<StackLayout WidthRequest="50" HeightRequest="25" Margin="2" BackgroundColor="#303030">
+					<Customcontrols:RobotoLabel Text="Event" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"></Customcontrols:RobotoLabel>
+				</StackLayout>
         </RelativeLayout>
 	</StackLayout>
 </ViewCell>
