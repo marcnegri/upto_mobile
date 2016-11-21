@@ -187,6 +187,8 @@
     <BundleResource Include="Resources\boxe.png" />
     <BundleResource Include="Resources\tennis.png" />
     <BundleResource Include="Resources\basket.png" />
+    <BundleResource Include="Resources\friends2.png" />
+    <BundleResource Include="Resources\location3.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
