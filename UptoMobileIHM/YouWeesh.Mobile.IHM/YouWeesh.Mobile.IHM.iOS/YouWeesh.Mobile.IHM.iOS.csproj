@@ -187,6 +187,11 @@
     <BundleResource Include="Resources\boxe.png" />
     <BundleResource Include="Resources\tennis.png" />
     <BundleResource Include="Resources\basket.png" />
+    <BundleResource Include="Resources\notifFriend.png" />
+    <BundleResource Include="Resources\notifReminder.png" />
+    <BundleResource Include="Resources\notifEvents.png" />
+    <BundleResource Include="Resources\notifWeeshMatching.png" />
+    <BundleResource Include="Resources\icoParticipants.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">

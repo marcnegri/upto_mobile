@@ -230,6 +230,11 @@
     <AndroidResource Include="Resources\drawable\greyBubble.png" />
     <AndroidResource Include="Resources\drawable\orangeBubble.png" />
     <AndroidResource Include="Resources\drawable\icoReliabilityFull.png" />
+    <AndroidResource Include="Resources\drawable\notifFriend.png" />
+    <AndroidResource Include="Resources\drawable\notifReminder.png" />
+    <AndroidResource Include="Resources\drawable\notifEvents.png" />
+    <AndroidResource Include="Resources\drawable\notifWeeshMatching.png" />
+    <AndroidResource Include="Resources\drawable\icoParticipants.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml">
