@@ -41,11 +41,13 @@
 						<Image Source="sportGrey.png" HeightRequest="15" WidthRequest="15"/><Customcontrols:RobotoLabel Text="Tennis / Level" FontSize="12" VerticalTextAlignment="Center" TextColor="Gray"/><Image Source="middleLevel.png" HeightRequest="7"/>
 					</StackLayout>
 					<StackLayout Orientation="Horizontal" Spacing="0" Margin="50,15,20,5" HorizontalOptions="FillAndExpand">
-						<Image x:Name="imgWeeshBack" Source="weeshBackOrange.png" />
+						<Image x:Name="imgWeeshBack" Source="icoParticipants.png" />
 						<Customcontrols:RobotoLabel  Text=" " TextColor="Gray" FontSize="11"/>
-						<Customcontrols:RobotoLabel  Text="3"  TextColor="#FC7102" FontSize="11"/>
+						<Customcontrols:RobotoLabel  Text="50"  TextColor="#FC7102" FontSize="11"/>
 						<Customcontrols:RobotoLabel  Text=" &#x2022; " TextColor="Gray" FontSize="11"/>
 						<Customcontrols:RobotoLabel  Text="10/12/2016" TextColor="Gray" FontSize="11"/>
+						<Customcontrols:RobotoLabel  Text=" &#x2022; " TextColor="Gray" FontSize="11"/>
+						<Customcontrols:RobotoLabel  Text="120Km" TextColor="Gray" FontSize="11"/>
 						<Image Source="weeshIco.png" HorizontalOptions="EndAndExpand" /><Customcontrols:RobotoLabel  Text=" Participate" FontSize="11" TextColor="Gray" />
 			      	</StackLayout>
 				</StackLayout>
